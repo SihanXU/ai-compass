@@ -3,21 +3,17 @@
   "type": "module",
   "version": "0.1.0",
   "private": true,
-  "description": "A political compass for AI research: a wiki of research ideologies, a 10- and a 50-question test, and a model leaderboard.",
+  "description": "A political compass for AI research: a chart and wiki of research ideologies, with a 10- and a 50-question test.",
   "license": "MIT",
   "scripts": {
     "dev": "astro dev",
     "build": "npm run validate && astro build",
     "preview": "astro preview",
-    "validate": "node scripts/validate.mjs",
-    "eval": "node scripts/eval.mjs"
+    "validate": "node scripts/validate.mjs"
   },
   "dependencies": {
     "astro": "^5.18.2",
     "js-yaml": "^5.5.0",
     "zod": "^3.25.76"
-  },
-  "devDependencies": {
-    "@anthropic-ai/sdk": "^1.10.0"
   }
 }

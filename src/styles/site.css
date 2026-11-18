@@ -1,5 +1,5 @@
 /* AI Research Compass. The design language is sihanxu.me's (tokens.css, the top bar, labels, footer);
-   each kind of page has its own layout below: landing, chart, test, result, wiki, docs, leaderboard. */
+   each kind of page has its own layout below: landing, chart, test, result, wiki, docs. */
 @import './tokens.css';
 
 a { color: var(--accent); text-decoration: none; }
@@ -66,7 +66,7 @@ button { font: inherit; color: inherit; }
 .land-section h2 { font-size: 2.25rem; letter-spacing: -0.02em; color: var(--ink-strong); line-height: 1.2; }
 .land-section .sub { color: var(--muted); margin-top: 0.4rem; max-width: 46em; font-size: 1.05rem; }
 .land-section .chart-tools { margin-top: 1.5rem; }
-.cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; margin-top: 1.75rem; }
+.cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; margin-top: 1.75rem; }
 .card { display: flex; flex-direction: column; gap: 0.5rem; padding: 1.5rem 1.6rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--card); color: var(--ink); transition: border-color 0.2s ease, box-shadow 0.2s ease; }
 a.card:hover { border-color: #d5d9de; box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06); }
 .card .k { font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--faint); }
@@ -74,7 +74,7 @@ a.card:hover { border-color: #d5d9de; box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06)
 .card p { color: var(--muted); font-size: 0.98rem; line-height: 1.6; }
 .card .go { margin-top: auto; padding-top: 0.5rem; color: var(--accent); font-weight: 500; }
 .card .num { font-size: 3rem; font-weight: 800; letter-spacing: -0.05em; color: var(--accent); line-height: 1; }
-.contribute { margin-top: 1.75rem; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+.contribute { margin-top: 1.75rem; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
 .contribute > div { padding: 1.4rem 1.6rem; border-right: 1px solid var(--line); }
 .contribute > div:last-child { border-right: 0; }
 .contribute h3 { font-size: 1.05rem; color: var(--ink-strong); margin-bottom: 0.35rem; }
@@ -326,20 +326,6 @@ a.cell:hover { outline: 2px solid #111; outline-offset: -2px; z-index: 3; }
 .table tbody tr:hover td { background: var(--bg-alt); }
 .table td b { color: var(--ink-strong); }
 
-/* ======================================================= leaderboard */
-.board-head { padding: calc(var(--nav-h) + 2.5rem) 0 1.25rem; display: flex; justify-content: space-between; align-items: flex-end; gap: 2rem; flex-wrap: wrap; }
-.board-head h1 { font-size: clamp(2rem, 4vw, 2.8rem); letter-spacing: -0.03em; color: var(--ink-strong); line-height: 1.1; }
-.board-head p { color: var(--muted); margin-top: 0.5rem; max-width: 46em; }
-.board-grid { display: grid; grid-template-columns: minmax(0, 1fr) 420px; gap: 1.5rem; align-items: start; }
-.scatter { border: 1px solid var(--line); border-radius: var(--radius); background: var(--card); padding: 1rem; }
-.scatter svg { width: 100%; max-width: 640px; margin: 0 auto; height: auto; display: block; font-family: inherit; }
-.empty { border: 1px dashed var(--line-strong); border-radius: var(--radius); padding: 2.5rem 1.5rem; text-align: center; color: var(--muted); background: var(--bg-alt); }
-.empty b { display: block; color: var(--ink-strong); font-size: 1.1rem; margin-bottom: 0.3rem; }
-.submit-box { border: 1px solid var(--line); border-radius: var(--radius); padding: 1.25rem 1.5rem; background: var(--bg-alt); }
-.submit-box h2 { font-size: 1.15rem; color: var(--ink-strong); margin-bottom: 0.5rem; }
-.submit-box p { color: var(--muted); font-size: 0.95rem; margin-bottom: 0.75rem; }
-.submit-box pre { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 0.85rem 1rem; overflow-x: auto; font: 0.8rem/1.6 var(--mono); margin-bottom: 0.75rem; }
-
 /* ======================================================= small screens */
 @media (max-width: 1200px) { .doc { grid-template-columns: 200px minmax(0, 1fr); } .doc-toc { display: none; } }
 @media (max-width: 1000px) {
@@ -347,7 +333,6 @@ a.cell:hover { outline: 2px solid #111; outline-offset: -2px; z-index: 3; }
     .ball-stack { display: none; }
     .cards, .contribute { grid-template-columns: 1fr; }
     .contribute > div { border-right: 0; border-bottom: 1px solid var(--line); }
-    .board-grid { grid-template-columns: 1fr; }
     .near-card { grid-template-columns: 1fr; }
     .cat-list { columns: 2; }
 }

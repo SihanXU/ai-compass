@@ -1,4 +1,4 @@
-// The compass's maths, shared by the build, the browser and the eval script. Pure functions, no data loading.
+// The compass's maths, shared by the build and the browser. Pure functions, no data loading.
 //
 // Coordinates: every score is in [-1, 1].
 //   x: Language (-1) … World (+1)          — chart columns, left to right

@@ -1,6 +1,6 @@
 ## What changes
 
-<!-- An entry, an ideology's data, a statement, a leaderboard run, or the site. -->
+<!-- An entry, an ideology's data, a statement, or the site. -->
 
 ## Checklist
 

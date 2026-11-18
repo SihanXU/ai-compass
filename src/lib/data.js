@@ -1,4 +1,4 @@
-// Loads the repository's data at build time: ideologies, questions, tests, camps, axes, levels, leaderboard runs.
+// Loads the repository's data at build time: ideologies, questions, tests, camps, axes, levels.
 import fs from 'node:fs';
 import path from 'node:path';
 import * as yaml from 'js-yaml';
@@ -31,10 +31,6 @@ export const axes = readYaml('data/axes.yaml').axes;
 export const levels = readYaml('data/levels.yaml').levels;
 export const levelOf = (lv) => levels.find((l) => l.level === lv);
 
-const BOARD = path.join(ROOT, 'data/leaderboard');
-export const leaderboard = fs.existsSync(BOARD)
-  ? fs.readdirSync(BOARD).filter((f) => f.endsWith('.json')).map((f) => JSON.parse(fs.readFileSync(path.join(BOARD, f), 'utf8')))
-  : [];
 
 export const childrenOf = (id) => ideologies.filter((i) => (i.parents || []).includes(id));
 

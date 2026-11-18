@@ -4,7 +4,7 @@ import Layout from '../../layouts/Layout.astro';
 import Chart from '../../components/Chart.astro';
 import Legend from '../../components/Legend.astro';
 import Ball from '../../components/Ball.astro';
-import { ideologies, tests, axes, leaderboard, byId } from '../../lib/data.js';
+import { ideologies, tests, axes, byId } from '../../lib/data.js';
 import { t, url, LANGS } from '../../lib/i18n.js';
 
 export function getStaticPaths() { return LANGS.map((lang) => ({ params: { lang } })); }
@@ -30,7 +30,6 @@ const crowd = [
                     <div><b>{ideologies.length}</b><span>{t(lang, 'statIdeologies')}</span></div>
                     <div><b>{tests.full.questions.length}</b><span>{t(lang, 'statQuestions')}</span></div>
                     <div><b>{axes.length}</b><span>{t(lang, 'statAxes')}</span></div>
-                    {leaderboard.length > 0 && <div><b>{leaderboard.length}</b><span>{t(lang, 'statModels')}</span></div>}
                 </div>
             </div>
             <div class="ball-stack" aria-hidden="true">
@@ -67,13 +66,6 @@ const crowd = [
                     <p>{t(lang, 'cardWikiP')}</p>
                     <span class="go">{t(lang, 'go')}</span>
                 </a>
-                <a class="card" href={url(lang, 'leaderboard')}>
-                    <span class="k">{t(lang, 'cardBoardK')}</span>
-                    {leaderboard.length > 0 && <span class="num">{leaderboard.length}</span>}
-                    <h3>{t(lang, 'cardBoardT')}</h3>
-                    <p>{t(lang, 'cardBoardP')}</p>
-                    <span class="go">{t(lang, 'go')}</span>
-                </a>
             </div>
         </div>
     </section>
@@ -85,7 +77,6 @@ const crowd = [
             <div class="contribute">
                 <div><h3>{t(lang, 'contrib1T')}</h3><p set:html={t(lang, 'contrib1P')} /></div>
                 <div><h3>{t(lang, 'contrib2T')}</h3><p set:html={t(lang, 'contrib2P')} /></div>
-                <div><h3>{t(lang, 'contrib3T')}</h3><p set:html={t(lang, 'contrib3P')} /></div>
             </div>
         </div>
     </section>

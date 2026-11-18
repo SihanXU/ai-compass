@@ -28,7 +28,6 @@ const sections = [
                 <li><a class="active" href={url(lang, 'method')}>{t(lang, 'axesTitle')}</a></li>
                 <li><a href={url(lang, 'chart')}>{t(lang, 'navChart')}</a></li>
                 <li><a href={url(lang, 'wiki')}>{t(lang, 'navWiki')}</a></li>
-                <li><a href={url(lang, 'leaderboard')}>{t(lang, 'navBoard')}</a></li>
                 <li><a href={`${REPO}/blob/main/CONTRIBUTING.md`}>CONTRIBUTING.md ↗</a></li>
             </ol>
         </nav>
@@ -109,13 +108,13 @@ content/wiki/en/&lt;id&gt;.md      {zh ? '英文词条' : 'English entry'}
 content/wiki/zh/&lt;id&gt;.md      {zh ? '中文词条' : 'Chinese entry'}
 data/questions.yaml           {zh ? '全部陈述及其权重' : 'every statement and its weights'}
 data/tests.yaml               {zh ? '两套测试的题目和版本' : 'the two tests and the version'}
-data/leaderboard/*.json       {zh ? '模型评测结果' : 'model runs'}</pre>
+</pre>
             <p>{zh ? '提交前运行 ' : 'Before a pull request, run '}<code>npm run validate</code>{zh ? '，它会检查格子是否重叠、关系引用是否存在、两种语言的词条是否齐全。' : ': it checks that no two ideologies share a cell, every relation points to a real entry, and both languages have every entry.'} <a href={`${REPO}/blob/main/CONTRIBUTING.md`}>CONTRIBUTING.md ↗</a></p>
 
             <h2 id="sources">{zh ? '参照' : 'Sources'}</h2>
             <p>{zh
-                ? '形式参照了网上流行的政治测试和图谱：Political Compass 的两轴四象限；8values 及其衍生测试（9Axes、SapplyValues、LeftValues、PolitiScales 等）的多轴计分、开源题库和结果条；Polcompball 维基的词条结构与“朋友 / 亦敌亦友 / 敌人”的关系写法；网上的意识形态大图。模型榜参照了把大模型放进政治图谱测试的研究。'
-                : 'The form follows the political tests and charts found online: the two axes of the Political Compass; the multi-axis scoring, open question banks and result bars of 8values and the tests built on it (9Axes, SapplyValues, LeftValues, PolitiScales and others); the entry structure and friends / frenemies / enemies of the Polcompball wiki; and the big ideology charts. The leaderboard follows studies that put language models through political compass tests.'}</p>
+                ? '形式参照了网上流行的政治测试和图谱：Political Compass 的两轴四象限；8values 及其衍生测试（9Axes、SapplyValues、LeftValues、PolitiScales 等）的多轴计分、开源题库和结果条；Polcompball 维基的词条结构与“朋友 / 亦敌亦友 / 敌人”的关系写法；网上的意识形态大图。'
+                : 'The form follows the political tests and charts found online: the two axes of the Political Compass; the multi-axis scoring, open question banks and result bars of 8values and the tests built on it (9Axes, SapplyValues, LeftValues, PolitiScales and others); the entry structure and friends / frenemies / enemies of the Polcompball wiki; and the big ideology charts.'}</p>
         </article>
         <nav class="doc-toc">
             <span class="label">{t(lang, 'onThisPage')}</span>

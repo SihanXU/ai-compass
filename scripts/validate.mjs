@@ -127,25 +127,6 @@ for (const k of AXIS_KEYS) {
   if (Math.abs(pos - neg) > 2) warn.push(`axis ${k}: ${pos} statements push to + and ${neg} to − (keep them within 2)`);
 }
 
-// ---------------------------------------------------------------- leaderboard
-const Run = z.object({
-  model: z.string().min(1), provider: z.string().min(1), date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
-  version: z.number().int(), runs: z.number().int().min(1),
-  scores: z.object(Object.fromEntries(AXIS_KEYS.map((k) => [k, z.number().min(-1).max(1)]))),
-  spread: z.object(Object.fromEntries(AXIS_KEYS.map((k) => [k, z.number().min(0)]))).optional(),
-  answers: z.record(z.string(), z.number().min(-2).max(2)),
-}).passthrough();
-const board = path.join(ROOT, 'data/leaderboard');
-if (fs.existsSync(board)) {
-  for (const f of fs.readdirSync(board).filter((x) => x.endsWith('.json'))) {
-    const where = `data/leaderboard/${f}`;
-    try {
-      const r = Run.safeParse(JSON.parse(fs.readFileSync(path.join(board, f), 'utf8')));
-      if (!r.success) r.error.issues.forEach((x) => err(where, `${x.path.join('.')}: ${x.message}`));
-      else if (r.data.version !== tests.version) warn.push(`${where}: made with questions v${r.data.version}, current is v${tests.version}`);
-    } catch (e) { err(where, 'not valid JSON'); }
-  }
-}
 
 warn.forEach((w) => console.warn(`warning  ${w}`));
 if (errors.length) {

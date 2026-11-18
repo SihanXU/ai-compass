@@ -43,7 +43,3 @@ Change `content/wiki/<lang>/<id>.md`. Keep the front matter `summary` (one sente
 ## Change the test
 
 Statements are in `data/questions.yaml`; each has `effects`, how far agreeing moves each axis (`-1`…`1`). Keep each axis balanced (validate warns when it is not). Any change to statements or to which ones a test uses must bump `version` in `data/tests.yaml`.
-
-## Add a leaderboard run
-
-Run `npm run eval` (see the README) and commit the JSON it writes to `data/leaderboard/`. Do not edit runs by hand.

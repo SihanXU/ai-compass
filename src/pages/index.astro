@@ -12,7 +12,9 @@ const zh = url('zh');
     <title>AI Research Compass · AI 研究立场图谱</title>
     <link rel="icon" href="data:,">
     <script define:vars={{ en, zh }}>
-      const pick = (navigator.languages || [navigator.language || '']).some((l) => /^zh/i.test(l)) ? zh : en;
+      // only the browser's first-choice language counts: Chinese first → zh, anything else → en
+      const first = (navigator.languages && navigator.languages[0]) || navigator.language || '';
+      const pick = /^zh/i.test(first) ? zh : en;
       location.replace(pick + location.search + location.hash);
     </script>
 </head>

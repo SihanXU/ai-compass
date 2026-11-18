@@ -72,6 +72,8 @@ export function score(questions, ids, answers) {
   const max = { x: 0, y: 0, p: 0, o: 0, a: 0 };
   ids.forEach((id, i) => {
     const q = questions[id];
+    // "unsure" (0) is not counted: it neither moves the score nor dilutes it
+    if (!answers[i]) return;
     for (const [axis, w] of Object.entries(q.effects)) {
       sum[axis] += (answers[i] ?? 0) * w;
       max[axis] += 2 * Math.abs(w);
@@ -83,15 +85,16 @@ export function score(questions, ids, answers) {
 }
 
 /**
- * Distance from a score to an inner cell or the centre block, in cell units.
+ * Distance from a score to an inner cell or the centre block (at its centre point), in cell units.
  * pw weighs the paradigm axis: one level of mismatch costs as much as sqrt(pw) cells.
  */
 export function distance(ide, s, pw) {
   const g = gridOf(ide.place);
   let u, v;
   if (g.kind === 'center') {
-    u = Math.max(0, Math.abs(s.x / CW) - 1);
-    v = Math.max(0, Math.abs(s.y / CH) - 0.5);
+    // drawn three cells wide and two tall, but matched at its centre like any single cell
+    u = s.x / CW;
+    v = s.y / CH;
   } else {
     u = (s.x - colX(g.c)) / CW;
     v = (s.y - rowY(g.r)) / CH;
@@ -167,7 +170,7 @@ export function scoreSubs(questions, answers) {
   const sum = {}, max = {};
   for (const [id, v] of Object.entries(answers)) {
     const q = questions[id];
-    if (!q || v == null || !q.sub) continue;
+    if (!q || !v || !q.sub) continue;
     for (const [axis, w] of Object.entries(q.effects)) {
       const k = `${axis}.${q.sub[axis]}`;
       sum[k] = (sum[k] || 0) + v * w;

@@ -69,9 +69,9 @@ const sections = [
 
             <h2 id="scoring">{zh ? '计分' : 'Scoring'}</h2>
             <p>{zh
-                ? '每道题五档：强烈同意 +2、同意 +1、中立 0、不同意 −1、强烈反对 −2。答案乘以这道题在各轴上的权重（同意时往哪一端走），按轴求和，再除以这根轴可能的最大值，得到 −1 到 +1 之间的分数。'
-                : 'Each statement has five answers: strongly agree +2, agree +1, neutral 0, disagree −1, strongly disagree −2. The answer is multiplied by the statement’s weight on each axis (which way agreeing moves you), summed per axis, and divided by the most that axis could score, giving a number between −1 and +1.'}</p>
-            <pre>score[axis] = Σ answer × weight[axis] / Σ 2 × |weight[axis]|</pre>
+                ? '每道题五档：强烈同意 +2、同意 +1、不确定（不计分）、不同意 −1、强烈反对 −2。答案乘以这道题在各轴上的权重（同意时往哪一端走），按轴求和，再除以这根轴上已作答题目可能的最大值，得到 −1 到 +1 之间的分数。选“不确定”的题既不推动分数，也不把分数往中间拉。'
+                : 'Each statement has five answers: strongly agree +2, agree +1, unsure (not counted), disagree −1, strongly disagree −2. The answer is multiplied by the statement’s weight on each axis (which way agreeing moves you), summed per axis, and divided by the most the answered statements on that axis could score, giving a number between −1 and +1. An “unsure” neither moves the score nor pulls it toward the middle.'}</p>
+            <pre>score[axis] = Σ answer × weight[axis] / Σ 2 × |weight[axis]|   (sums over statements not answered “unsure”)</pre>
             <p>{zh ? '范式等级与 p 分数的对应：' : 'Paradigm levels and their p score:'}</p>
             <div class="table"><table>
                 <thead><tr><th class="l">{zh ? '等级' : 'Level'}</th><th class="l">{zh ? '名称' : 'Name'}</th><th>p</th></tr></thead>
@@ -80,8 +80,8 @@ const sections = [
 
             <h2 id="matching">{zh ? '匹配' : 'Matching'}</h2>
             <p>{zh
-                ? '你的主义是距离你最近的那一格。距离以“格”为单位：横向一格是 2/13，纵向一格是 2/12；范式每差一个等级，相当于差约 0.7 格。正中央的大格覆盖横向 3 格、纵向 2 格。简单版不看范式，只把横轴和纵轴各三等分，得到九个阵营之一。'
-                : 'Your ideology is the cell nearest to you, measured in cells: one column is 2/13 of x, one row 2/12 of y, and one paradigm level of mismatch costs about 0.7 of a cell. The centre block covers three columns and two rows. The quick test ignores paradigm and splits x and y into thirds, giving one of nine camps.'}</p>
+                ? '你的主义是距离你最近的那一格。距离以“格”为单位：横向一格是 2/13，纵向一格是 2/12；范式每差一个等级，相当于差约 0.7 格。正中央的大格虽然画成 3 × 2 格，但和其他格子一样按它的中心点匹配，不会因为面积大而多吸走人。简单版不看范式，只把横轴和纵轴各三等分，得到九个阵营之一。'
+                : 'Your ideology is the cell nearest to you, measured in cells: one column is 2/13 of x, one row 2/12 of y, and one paradigm level of mismatch costs about 0.7 of a cell. The centre block is drawn three cells wide and two tall, but it is matched at its centre point like any other cell, so its size does not pull extra people in. The quick test ignores paradigm and splits x and y into thirds, giving one of nine camps.'}</p>
             <pre>d² = (Δx / (2/13))² + (Δy / (2/12))² + 0.5 × (Δp / 0.25)²</pre>
             <p>{zh
                 ? '外圈称号各自写明条件（例如“速度 > 0.6”），满足就获得，可以同时获得多个。'

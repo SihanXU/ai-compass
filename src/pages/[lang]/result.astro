@@ -11,7 +11,7 @@ const { lang } = Astro.params;
 const strings = pack(lang, [
   'closest', 'campIs', 'onChart', 'near', 'titles', 'noTitles', 'readEntry', 'retake', 'tryFull', 'share', 'copied',
   'saveImage', 'quickNote', 'noResult', 'paradigm', 'site', 'axes', 'axisCategory', 'catStrongNeg', 'catNeg', 'catMid', 'catPos', 'catStrongPos',
-  'yourCamp', 'yourIdeology', 'subTitle', 'consistencyLabel', 'consistencyLow', 'consistencyHigh',
+  'yourCamp', 'yourIdeology', 'tryPro', 'subTitle', 'consistencyLabel', 'consistencyLow', 'consistencyHigh',
 ]);
 const data = { ...clientData(lang), strings, wiki: url(lang, 'wiki/'), test: url(lang, 'test/') };
 ---
@@ -109,6 +109,7 @@ const data = { ...clientData(lang), strings, wiki: url(lang, 'wiki/'), test: url
     const go = (text, href, primary) => { const a = el('a', 'btn' + (primary ? ' primary' : ''), text); a.href = href; acts.append(a); };
     go(S.readEntry, D.wiki + best.id + '/', true);
     if (quick) go(S.tryFull, D.test + 'full/');
+    if (mode === 'full') go(S.tryPro, D.test + 'pro/');
     go(S.retake, D.test + mode + '/');
     const share = el('button', 'btn', S.share); share.type = 'button';
     share.addEventListener('click', () => { const done = () => { share.textContent = S.copied; }; navigator.clipboard ? navigator.clipboard.writeText(location.href).then(done, done) : done(); });

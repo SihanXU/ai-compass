@@ -381,3 +381,4 @@ a.cell:hover { outline: 2px solid #111; outline-offset: -2px; z-index: 3; }
 .certainty .meter { width: 120px; height: 8px; border-radius: 4px; background: var(--line); overflow: hidden; flex-shrink: 0; }
 .certainty .meter i { display: block; height: 100%; background: var(--accent); }
 .certainty b { color: var(--ink-strong); }
+@media (max-width: 900px) { .quiz-page .cards { grid-template-columns: 1fr !important; } }

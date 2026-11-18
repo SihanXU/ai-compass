@@ -1,0 +1,32 @@
+---
+// The three tests side by side.
+import Layout from '../../../layouts/Layout.astro';
+import { tests } from '../../../lib/data.js';
+import { t, url, LANGS } from '../../../lib/i18n.js';
+
+export function getStaticPaths() { return LANGS.map((lang) => ({ params: { lang } })); }
+const { lang } = Astro.params;
+const list = [
+  ['quick', tests.quick.questions.length, 'quickTitle', 'quickText'],
+  ['full', tests.full.questions.length, 'fullTitle', 'fullText'],
+  ...(tests.pro ? [['pro', tests.pro.questions.length, 'proTitle', 'proText']] : []),
+];
+---
+<Layout lang={lang} title={t(lang, 'testsTitle')} path="test" active="test">
+    <main class="quiz-page">
+        <div class="quiz-intro">
+            <h1>{t(lang, 'testsTitle')}</h1>
+            <p>{t(lang, 'testsDek')}</p>
+        </div>
+        <div class="cards" style="max-width:1100px;margin:1.5rem auto 0;grid-template-columns:repeat(3,minmax(0,1fr))">
+            {list.map(([m, n, title, text]) => (
+                <a class="card" href={url(lang, `test/${m}`)} style={m === 'full' ? 'border-color:var(--accent)' : ''}>
+                    <span class="num">{n}</span>
+                    <h3>{t(lang, title)}</h3>
+                    <p>{t(lang, text)}</p>
+                    <span class="go">{t(lang, 'go')}</span>
+                </a>
+            ))}
+        </div>
+    </main>
+</Layout>

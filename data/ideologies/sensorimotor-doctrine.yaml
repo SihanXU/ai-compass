@@ -1,0 +1,19 @@
+id: sensorimotor-doctrine
+name:
+  en: Sensorimotor Doctrine
+  zh: 感觉运动主义
+motto:
+  en: Perception and action are one loop
+  zh: 感知与行动是同一个回路
+level: 3
+place:
+  col: 12
+  row: 6
+parents: [embodied-statism, cybernetic-primitivism]
+relations:
+  allies: [active-perception-doctrine, morphological-computationalism, subsumption-doctrine, dexterity-doctrine]
+  frenemies: [vla-monarchism]
+  rivals: [captionist-centralism, corpus-fundamentalism, classical-planning-restoration]
+works:
+  - {title: "A sensorimotor account of vision and visual consciousness", year: 2001}
+  - {title: "End-to-End Training of Deep Visuomotor Policies", year: 2015, url: "https://arxiv.org/abs/1504.00702"}

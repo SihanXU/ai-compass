@@ -1,0 +1,19 @@
+id: decentralized-training-doctrine
+name:
+  en: Decentralized-Training Doctrine
+  zh: 去中心化训练主义
+motto:
+  en: Training across a thousand homes
+  zh: 训练分布在千家万户
+level: 3
+place:
+  col: 5
+  row: 10
+parents: [open-weights-communalism]
+relations:
+  allies: [federated-learning-localism, peer-to-peer-inference, open-source-maximalism]
+  frenemies: [mixture-of-experts-federalism, evolutionary-federalism]
+  rivals: [compute-statism, compute-theocracy, frontier-kratocracy]
+works:
+  - {title: "DiLoCo: Distributed Low-Communication Training of Language Models", year: 2023, url: https://arxiv.org/abs/2311.08105}
+  - {title: "Deep Gradient Compression: Reducing the Communication Bandwidth for Distributed Training", year: 2017, url: https://arxiv.org/abs/1712.01887}

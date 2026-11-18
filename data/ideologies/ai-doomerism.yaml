@@ -1,0 +1,20 @@
+id: ai-doomerism
+name:
+  en: AI Doomerism
+  zh: AI 末日主义
+motto:
+  en: Pause. Pause now.
+  zh: 暂停，现在就暂停
+level: 7
+place:
+  ring: right
+  when: {a: <-0.6}
+  at: 9
+parents: []
+relations:
+  allies: [interpretability-reformism, eval-proceduralism, rlhf-paternalism]
+  frenemies: [frontier-kratocracy, circuit-constitutionalism]
+  rivals: [effective-accelerationism, open-source-maximalism, recursive-self-improvementism, autonomous-agent-anarchism]
+works:
+  - {title: "Superintelligence: Paths, Dangers, Strategies", year: 2014}
+  - {title: "Concrete Problems in AI Safety", year: 2016, url: "https://arxiv.org/abs/1606.06565"}

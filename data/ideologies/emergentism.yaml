@@ -1,0 +1,19 @@
+id: emergentism
+name:
+  en: Emergentism
+  zh: 涌现主义
+motto:
+  en: Scale it and everything emerges
+  zh: 大到一定程度，什么都会冒出来
+level: 5
+place:
+  col: 3
+  row: 1
+parents: [bitter-lesson-orthodoxy]
+relations:
+  allies: [next-token-totalitarianism, scale-sublimism, language-singularitarianism]
+  frenemies: [scaling-law-planism]
+  rivals: [eval-proceduralism, symbolic-restorationism, innatism]
+works:
+  - {title: "Language Models are Few-Shot Learners", year: 2020, url: "https://arxiv.org/abs/2005.14165"}
+  - {title: "Emergent Abilities of Large Language Models", year: 2022, url: "https://arxiv.org/abs/2206.07682"}

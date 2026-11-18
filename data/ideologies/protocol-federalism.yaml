@@ -1,0 +1,18 @@
+id: protocol-federalism
+name:
+  en: Protocol Federalism
+  zh: 协议联邦主义
+motto:
+  en: One standard protocol connects every tool
+  zh: 一个标准协议连起所有工具
+level: 4
+place:
+  col: 5
+  row: 8
+parents: [function-call-federalism]
+relations:
+  allies: [harness-liberalism, tool-use-liberalism, composable-liberalism, agent-anarcho-communism]
+  frenemies: [workflow-bureaucratism, computer-use-liberalism]
+  rivals: [chat-absolutism, omni-model-absolutism, any-to-any-imperialism]
+works:
+  - {title: "Model Context Protocol", year: 2024, url: https://modelcontextprotocol.io}

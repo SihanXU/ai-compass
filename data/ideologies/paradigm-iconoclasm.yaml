@@ -1,0 +1,20 @@
+id: paradigm-iconoclasm
+name:
+  en: Paradigm Iconoclasm
+  zh: 范式破坏主义
+motto:
+  en: Tear it all down and start again
+  zh: 推倒一切重来
+level: 1
+place:
+  ring: bottom
+  when: {p: '>0.8'}
+  at: 9
+parents: []
+relations:
+  allies: [objectiveless-anarchism, byte-level-populism, world-model-vanguardism, bio-hybridism]
+  frenemies: [neuro-inspired-visualism]
+  rivals: [scale-sublimism, radical-centrism-or-leaderboardism, bitter-lesson-orthodoxy]
+works:
+  - {title: "The Forward-Forward Algorithm: Some Preliminary Investigations", year: 2022, url: "https://arxiv.org/abs/2212.13345"}
+  - {title: "KAN: Kolmogorov-Arnold Networks", year: 2024, url: "https://arxiv.org/abs/2404.19756"}

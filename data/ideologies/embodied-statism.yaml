@@ -1,0 +1,19 @@
+id: embodied-statism
+name:
+  en: Embodied Statism
+  zh: 具身国家主义
+motto:
+  en: No body, no mind
+  zh: 没有身体就没有智能
+level: 3
+place:
+  col: 12
+  row: 2
+parents: [pan-embodimentism]
+relations:
+  allies: [robot-foundationism, vla-monarchism, sensorimotor-doctrine]
+  frenemies: [humanoid-centralism, subsumption-doctrine]
+  rivals: [text-only-conservatism, corpus-fundamentalism, logos-absolutism]
+works:
+  - {title: "PaLM-E: An Embodied Multimodal Language Model", year: 2023, url: "https://arxiv.org/abs/2303.03378"}
+  - {title: "Habitat: A Platform for Embodied AI Research", year: 2019, url: "https://arxiv.org/abs/1904.01201"}

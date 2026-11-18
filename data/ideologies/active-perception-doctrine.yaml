@@ -1,0 +1,19 @@
+id: active-perception-doctrine
+name:
+  en: Active-Perception Doctrine
+  zh: 主动感知主义
+motto:
+  en: Seeing is an action
+  zh: 看本身就是一种行动
+level: 3
+place:
+  col: 10
+  row: 5
+parents: [sensorimotor-doctrine]
+relations:
+  allies: [embodied-statism, curiosity-liberalism, sensorimotor-doctrine, video-native-doctrine]
+  frenemies: [self-supervised-liberalism]
+  rivals: [captionist-centralism, pixel-totalitarianism, corpus-fundamentalism]
+works:
+  - {title: "Active perception", year: 1988}
+  - {title: "Recurrent Models of Visual Attention", year: 2014, url: "https://arxiv.org/abs/1406.6247"}

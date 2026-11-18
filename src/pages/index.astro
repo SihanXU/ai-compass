@@ -1,0 +1,22 @@
+---
+// The root: send the reader to their language.
+import { url } from '../lib/i18n.js';
+const en = url('en');
+const zh = url('zh');
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Research Compass · AI 研究立场图谱</title>
+    <link rel="icon" href="data:,">
+    <script define:vars={{ en, zh }}>
+      const pick = (navigator.languages || [navigator.language || '']).some((l) => /^zh/i.test(l)) ? zh : en;
+      location.replace(pick + location.search + location.hash);
+    </script>
+</head>
+<body style="font-family:system-ui,sans-serif;padding:3rem">
+    <p><a href={en}>AI Research Compass</a> · <a href={zh}>AI 研究立场图谱</a></p>
+</body>
+</html>

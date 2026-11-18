@@ -1,0 +1,20 @@
+id: video-scalism
+name:
+  en: Video Scalism
+  zh: 视频规模主义
+motto:
+  en: Video is the next internet corpus
+  zh: 视频是下一个互联网语料
+level: 4
+place:
+  col: 9
+  row: 1
+parents: [visualism]
+relations:
+  allies: [world-simulator-statism, video-native-doctrine, compute-statism]
+  frenemies: [latent-prediction-doctrine]
+  rivals: [corpus-fundamentalism, text-only-conservatism, object-centrism]
+works:
+  - {title: "Sequential Modeling Enables Scalable Learning for Large Vision Models", year: 2023}
+  - {title: "VideoPoet: A Large Language Model for Zero-Shot Video Generation", year: 2023}
+  - {title: "Video generation models as world simulators", year: 2024}

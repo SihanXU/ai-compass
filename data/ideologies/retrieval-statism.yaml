@@ -1,0 +1,20 @@
+id: retrieval-statism
+name:
+  en: Retrieval Statism
+  zh: 检索国家主义
+motto:
+  en: Knowledge belongs in an index, not in weights
+  zh: 知识该放在库里而不是参数里
+level: 6
+place:
+  col: 2
+  row: 4
+parents: [rag-mutualism]
+relations:
+  allies: [knowledge-graph-monarchism, memory-constitutionalism, small-model-localism]
+  frenemies: [context-engineering-liberalism, function-call-federalism]
+  rivals: [long-context-expansionism, pretraining-maximalism, corpus-fundamentalism]
+works:
+  - {title: "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks", year: 2020, url: "https://arxiv.org/abs/2005.11401"}
+  - {title: "REALM: Retrieval-Augmented Language Model Pre-Training", year: 2020, url: "https://arxiv.org/abs/2002.08909"}
+  - {title: "Improving language models by retrieving from trillions of tokens", year: 2021, url: "https://arxiv.org/abs/2112.04426"}

@@ -1,0 +1,19 @@
+id: scale-sublimism
+name:
+  en: Scale Sublimism
+  zh: 规模崇高主义
+motto:
+  en: Just a little bigger
+  zh: 再大一点就好了
+level: 4
+place:
+  ring: top
+  when: {'y': '>0.7', p: <-0.6}
+  at: 9
+parents: [scaling-law-planism, bitter-lesson-orthodoxy]
+relations:
+  allies: [compute-theocracy, emergentism, pretraining-maximalism]
+  frenemies: [test-time-centralism]
+  rivals: [paradigm-iconoclasm, world-model-vanguardism, objectiveless-anarchism]
+works:
+  - {title: "Training Compute-Optimal Large Language Models", year: 2022, url: "https://arxiv.org/abs/2203.15556"}

@@ -1,0 +1,20 @@
+id: harness-nihilism
+name:
+  en: Harness Nihilism
+  zh: Harness 虚无主义
+motto:
+  en: The model does not matter; the harness is everything
+  zh: 模型无所谓，harness 才是一切
+level: 4
+place:
+  ring: bottom
+  when: {'y': <-0.85}
+  at: 3
+parents: [harness-liberalism]
+relations:
+  allies: [context-engineering-liberalism, workflow-bureaucratism, agent-solipsism]
+  frenemies: [coding-agent-syndicalism]
+  rivals: [compute-theocracy, scale-sublimism, bitter-lesson-orthodoxy]
+works:
+  - {title: "SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering", year: 2024, url: "https://arxiv.org/abs/2405.15793"}
+  - {title: "Voyager: An Open-Ended Embodied Agent with Large Language Models", year: 2023, url: "https://arxiv.org/abs/2305.16291"}

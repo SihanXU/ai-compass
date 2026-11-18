@@ -1,0 +1,18 @@
+id: prompt-monarchism
+name:
+  en: Prompt Monarchism
+  zh: 提示词君主制
+motto:
+  en: A single system prompt rules all
+  zh: 一切由一段系统提示统治
+level: 8
+place:
+  col: 0
+  row: 2
+parents: [instruction-corporatism]
+relations:
+  allies: [chat-absolutism, prompt-craftism, rlhf-paternalism]
+  frenemies: [context-engineering-liberalism]
+  rivals: [prompt-anarchism, workflow-bureaucratism, fine-tune-cooperativism]
+works:
+  - {title: "Pre-train, Prompt, and Predict: A Systematic Survey of Prompting Methods in Natural Language Processing", year: 2021}

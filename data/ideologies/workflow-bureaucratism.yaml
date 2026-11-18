@@ -1,0 +1,19 @@
+id: workflow-bureaucratism
+name:
+  en: Workflow Bureaucratism
+  zh: 工作流官僚主义
+motto:
+  en: Every step goes in the flowchart
+  zh: 每一步都写进流程图
+level: 7
+place:
+  col: 0
+  row: 8
+parents: [chain-syndicalism]
+relations:
+  allies: [chain-syndicalism, function-call-federalism, eval-proceduralism]
+  frenemies: [harness-liberalism, multi-agent-parliamentarism]
+  rivals: [autonomous-agent-anarchism, agent-anarcho-syndicalism, prompt-anarchism]
+works:
+  - {title: "MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework", year: 2023, url: "https://arxiv.org/abs/2308.00352"}
+  - {title: "DSPy: Compiling Declarative Language Model Calls into Self-Improving Pipelines", year: 2023, url: "https://arxiv.org/abs/2310.03714"}

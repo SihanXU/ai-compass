@@ -1,0 +1,19 @@
+id: tokenizer-reformism
+name:
+  en: Tokenizer Reformism
+  zh: 分词改良主义
+motto:
+  en: It is always the tokenizer
+  zh: 问题总出在分词上
+level: 4
+place:
+  col: 2
+  row: 5
+parents: [linguistic-relativism]
+relations:
+  allies: [linguistic-relativism, unified-vocabulary-centralism, eval-proceduralism]
+  frenemies: [byte-level-populism]
+  rivals: [bitter-lesson-orthodoxy, pixel-totalitarianism]
+works:
+  - {title: "Neural Machine Translation of Rare Words with Subword Units", year: 2016, url: "https://arxiv.org/abs/1508.07909"}
+  - {title: "SentencePiece: A simple and language independent subword tokenizer and detokenizer for Neural Text Processing", year: 2018, url: "https://arxiv.org/abs/1808.06226"}

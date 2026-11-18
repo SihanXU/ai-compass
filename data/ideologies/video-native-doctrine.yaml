@@ -1,0 +1,20 @@
+id: video-native-doctrine
+name:
+  en: Video-Native Doctrine
+  zh: 视频原生主义
+motto:
+  en: Time is the neglected modality
+  zh: 时间是被忽略的模态
+level: 3
+place:
+  col: 10
+  row: 3
+parents: [visualism]
+relations:
+  allies: [video-scalism, world-simulator-statism, predictive-coding-statism]
+  frenemies: [latent-prediction-doctrine, physical-law-absolutism]
+  rivals: [captionist-centralism, text-only-conservatism, geometric-doctrine]
+works:
+  - {title: "VideoMAE: Masked Autoencoders are Data-Efficient Learners for Self-Supervised Video Pre-Training", year: 2022, url: "https://arxiv.org/abs/2203.12602"}
+  - {title: "Quo Vadis, Action Recognition? A New Model and the Kinetics Dataset", year: 2017, url: "https://arxiv.org/abs/1705.07750"}
+  - {title: "Video generation models as world simulators", year: 2024}

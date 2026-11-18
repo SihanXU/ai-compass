@@ -1,0 +1,20 @@
+id: perception-stack-federalism
+name:
+  en: Perception-Stack Federalism
+  zh: 感知栈联邦主义
+motto:
+  en: One module per sensor
+  zh: 每个传感器一个模块
+level: 6
+place:
+  col: 8
+  row: 7
+parents: [robot-federalism]
+relations:
+  allies: [pipeline-pragmatism, robot-federalism, geometric-doctrine, classical-control-conservatism]
+  frenemies: [sensor-network-anarchism]
+  rivals: [end-to-end-driving-absolutism, vla-monarchism]
+works:
+  - {title: "Probabilistic Robotics", year: 2005}
+  - {title: "Stanley: The Robot that Won the DARPA Grand Challenge", year: 2006}
+  - {title: "PointPillars: Fast Encoders for Object Detection from Point Clouds", year: 2018, url: "https://arxiv.org/abs/1812.05784"}

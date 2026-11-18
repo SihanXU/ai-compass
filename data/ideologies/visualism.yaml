@@ -1,0 +1,19 @@
+id: visualism
+name:
+  en: Visualism
+  zh: 视觉主义
+motto:
+  en: Language labels what vision already knows
+  zh: 语言只是视觉的标签
+level: 4
+place:
+  col: 9
+  row: 3
+parents: [pan-embodimentism]
+relations:
+  allies: [self-supervised-vision-statism, video-scalism, pixel-totalitarianism, neuro-inspired-visualism]
+  frenemies: [grounding-doctrine, contrastive-alignmentism]
+  rivals: [text-only-conservatism, logocentrism, corpus-fundamentalism]
+works:
+  - {title: "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale", year: 2020, url: "https://arxiv.org/abs/2010.11929"}
+  - {title: "Sequential Modeling Enables Scalable Learning for Large Vision Models", year: 2023, url: "https://arxiv.org/abs/2312.00785"}

@@ -1,0 +1,19 @@
+id: frontier-kratocracy
+name:
+  en: Frontier Kratocracy
+  zh: 前沿强权主义
+motto:
+  en: Capability belongs to those who can build it
+  zh: 能力属于造得出它的人
+level: 6
+place:
+  ring: right
+  when: {o: <-0.6}
+  at: 1
+parents: [compute-statism]
+relations:
+  allies: [compute-theocracy, rlhf-paternalism, scale-sublimism]
+  frenemies: [ai-doomerism, effective-accelerationism]
+  rivals: [open-source-maximalism, open-weights-communalism, peer-to-peer-inference]
+works:
+  - {title: "GPT-4 Technical Report", year: 2023, url: "https://arxiv.org/abs/2303.08774"}

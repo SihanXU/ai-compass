@@ -1,0 +1,100 @@
+---
+// The chart: 13 × 12 cells, the centre block and the ring of extremes. Each cell links to its wiki entry.
+// The current language is the big line in each cell, the other language the small line.
+import { ideologies, gridOf, colourOf, CENTER } from '../lib/data.js';
+import { t, url, other } from '../lib/i18n.js';
+
+const { lang, tools = true, links = true } = Astro.props;
+const alt = other(lang);
+const cells = ideologies.map((ide) => {
+  const g = gridOf(ide.place);
+  const col = colourOf(ide);
+  const gc = g.kind === 'center' ? `${CENTER.c0 + 2} / ${CENTER.c1 + 3}` : `${g.col + 2}`;
+  const gr = g.kind === 'center' ? `${CENTER.r0 + 2} / ${CENTER.r1 + 3}` : `${g.row + 2}`;
+  return { ide, g, col, style: `grid-column:${gc};grid-row:${gr};background:${col.bg}` };
+});
+const Tag = links ? 'a' : 'div';
+---
+<div class="chart-box" data-chart>
+    {tools && (
+        <div class="chart-tools">
+            <span class="label">{t(lang, 'shade')}</span>
+            <button class="btn" type="button" data-chart-zoom data-fit={t(lang, 'fit')} data-full={t(lang, 'zoom')}>{t(lang, 'zoom')}</button>
+        </div>
+    )}
+    <div class="chart-viewport">
+        <div class="chart-scaler">
+            <div class="chart">
+                {cells.map(({ ide, g, col, style }) => (
+                    <Tag
+                        class:list={['cell', { dark: col.dark, ring: g.kind === 'ring', center: g.kind === 'center' }]}
+                        style={style}
+                        data-id={ide.id}
+                        href={links ? url(lang, `wiki/${ide.id}`) : undefined}
+                        title={`${ide.name[lang]} · ${ide.motto[lang]}`}
+                    >
+                        <span class="main" lang={lang}>{ide.name[lang]}</span>
+                    </Tag>
+                ))}
+                <div class="axes"><i class="ax"></i><i class="ay"></i></div>
+                <div class="marks">
+                    <span class="tag" style="left:50%;top:calc(var(--rh) / -2);transform:translate(-50%,-50%)">{t(lang, 'tagTop')}</span>
+                    <span class="tag" style="left:50%;bottom:calc(var(--rh) / -2);transform:translate(-50%,50%)">{t(lang, 'tagBottom')}</span>
+                    <span class="tag" style="left:calc(var(--rw) / -2);top:50%;transform:translate(-50%,-50%) rotate(-90deg)">{t(lang, 'tagLeft')}</span>
+                    <span class="tag" style="right:calc(var(--rw) / -2);top:50%;transform:translate(50%,-50%) rotate(90deg)">{t(lang, 'tagRight')}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+  // Shrink each cell's words until they fit, then scale the whole chart to the width it is given
+  // ("fit"), or show it at full size with scrolling ("full").
+  function fitText(chart) {
+    chart.querySelectorAll('.cell').forEach((cell) => {
+      const main = cell.querySelector('.main');
+      let m = parseFloat(getComputedStyle(main).fontSize);
+      while ((cell.scrollHeight > cell.clientHeight + 1 || main.scrollWidth > main.clientWidth + 1) && m > 7) {
+        m -= 0.5;
+        main.style.fontSize = `${m}px`;
+      }
+    });
+  }
+  function layout(box) {
+    const viewport = box.querySelector('.chart-viewport');
+    const scaler = box.querySelector('.chart-scaler');
+    const chart = box.querySelector('.chart');
+    const free = viewport.classList.contains('free');
+    const k = free ? 1 : Math.min(1, viewport.clientWidth / chart.offsetWidth);
+    scaler.style.transform = `scale(${k})`;
+    viewport.style.height = `${chart.offsetHeight * k + (free ? 16 : 0)}px`;
+    box.dataset.scale = String(k);
+  }
+  function setup(box) {
+    if (box.dataset.ready) return;
+    box.dataset.ready = '1';
+    fitText(box.querySelector('.chart'));
+    const btn = box.querySelector('[data-chart-zoom]');
+    if (btn) {
+      const sync = () => {
+        const free = box.querySelector('.chart-viewport').classList.contains('free');
+        btn.textContent = free ? btn.dataset.fit : btn.dataset.full;
+        // nothing to zoom when the chart already fits
+        btn.hidden = !free && Number(box.dataset.scale) >= 1;
+      };
+      btn.addEventListener('click', () => {
+        box.querySelector('.chart-viewport').classList.toggle('free');
+        layout(box);
+        sync();
+      });
+      new ResizeObserver(() => { layout(box); sync(); }).observe(box);
+    } else {
+      new ResizeObserver(() => layout(box)).observe(box);
+    }
+    layout(box);
+  }
+  const run = () => document.querySelectorAll('[data-chart]').forEach(setup);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(run); else run();
+  run();
+</script>

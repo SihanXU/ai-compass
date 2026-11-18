@@ -1,0 +1,19 @@
+id: knowledge-graph-monarchism
+name:
+  en: Knowledge-Graph Monarchism
+  zh: 知识图谱君主制
+motto:
+  en: Truth lives in triples
+  zh: 真理住在三元组里
+level: 9
+place:
+  col: 1
+  row: 4
+parents: [symbolic-restorationism]
+relations:
+  allies: [formal-semanticism, retrieval-statism, neuro-symbolic-federalism]
+  frenemies: [rag-mutualism, memory-constitutionalism]
+  rivals: [long-context-expansionism, pretraining-maximalism, emergentism]
+works:
+  - {title: "Translating Embeddings for Modeling Multi-relational Data", year: 2013}
+  - {title: "Wikidata: A Free Collaborative Knowledgebase", year: 2014}

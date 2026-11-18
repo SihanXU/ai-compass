@@ -1,0 +1,20 @@
+id: game-agent-doctrine
+name:
+  en: Game-Agent Doctrine
+  zh: 游戏智能体主义
+motto:
+  en: Games are the gym of AGI
+  zh: 游戏是 AGI 的训练场
+level: 4
+place:
+  col: 10
+  row: 8
+parents: [model-based-planism]
+relations:
+  allies: [open-endedness, world-as-code-doctrine, growing-tree-doctrine, sim-scale-statism]
+  frenemies: [generative-village-communalism, curiosity-liberalism]
+  rivals: [field-robotics-libertarianism, corpus-fundamentalism]
+works:
+  - {title: "Human-level control through deep reinforcement learning", year: 2015}
+  - {title: "Mastering the game of Go with deep neural networks and tree search", year: 2016}
+  - {title: "Grandmaster level in StarCraft II using multi-agent reinforcement learning", year: 2019}

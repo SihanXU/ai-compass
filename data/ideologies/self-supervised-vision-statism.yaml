@@ -1,0 +1,20 @@
+id: self-supervised-vision-statism
+name:
+  en: Self-Supervised Vision Statism
+  zh: 自监督视觉国家主义
+motto:
+  en: No labels, just pixels
+  zh: 不要标签，只要像素
+level: 4
+place:
+  col: 8
+  row: 2
+parents: [self-supervised-liberalism]
+relations:
+  allies: [representation-centralism, visualism, latent-prediction-doctrine]
+  frenemies: [contrastive-alignmentism, contrastive-liberalism]
+  rivals: [captionist-centralism, text-only-conservatism, multimodal-linguism]
+works:
+  - {title: "Masked Autoencoders Are Scalable Vision Learners", year: 2021, url: "https://arxiv.org/abs/2111.06377"}
+  - {title: "Emerging Properties in Self-Supervised Vision Transformers", year: 2021, url: "https://arxiv.org/abs/2104.14294"}
+  - {title: "A Simple Framework for Contrastive Learning of Visual Representations", year: 2020, url: "https://arxiv.org/abs/2002.05709"}

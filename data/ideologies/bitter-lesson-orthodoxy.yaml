@@ -1,0 +1,19 @@
+id: bitter-lesson-orthodoxy
+name:
+  en: Bitter-Lesson Orthodoxy
+  zh: 苦涩教训正统派
+motto:
+  en: Human priors always lose to compute
+  zh: 人类先验终将被算力碾过
+level: 6
+place:
+  col: 3
+  row: 0
+parents: []
+relations:
+  allies: [compute-statism, emergentism, scaling-law-planism]
+  frenemies: [harness-liberalism, test-time-centralism]
+  rivals: [symbolic-restorationism, knowledge-graph-monarchism, neuro-symbolic-federalism, innatism]
+works:
+  - {title: "The Bitter Lesson", year: 2019, url: "http://www.incompleteideas.net/IncIdeas/BitterLesson.html"}
+  - {title: "Mastering the game of Go without human knowledge", year: 2017}

@@ -1,0 +1,19 @@
+id: distributed-embodiment
+name:
+  en: Distributed Embodiment
+  zh: 分布式具身主义
+motto:
+  en: One mind, countless bodies
+  zh: 一个心智，无数身体
+level: 3
+place:
+  col: 9
+  row: 11
+parents: [embodied-statism]
+relations:
+  allies: [swarm-robotics, sensor-network-anarchism, robot-foundationism, pan-embodimentism]
+  frenemies: [robot-foundation-imperialism]
+  rivals: [humanoid-centralism, text-only-conservatism, logocentrism]
+works:
+  - {title: "Learning Hand-Eye Coordination for Robotic Grasping with Deep Learning and Large-Scale Data Collection", year: 2016, url: "https://arxiv.org/abs/1603.02199"}
+  - {title: "Open X-Embodiment: Robotic Learning Datasets and RT-X Models", year: 2023, url: "https://arxiv.org/abs/2310.08864"}

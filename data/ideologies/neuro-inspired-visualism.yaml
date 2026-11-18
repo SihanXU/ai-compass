@@ -1,0 +1,19 @@
+id: neuro-inspired-visualism
+name:
+  en: Neuro-Inspired Visualism
+  zh: 类脑视觉主义
+motto:
+  en: Learn from the visual cortex
+  zh: 向视觉皮层学习
+level: 3
+place:
+  col: 8
+  row: 4
+parents: [visualism]
+relations:
+  allies: [predictive-coding-statism, developmentalism, bio-hybridism]
+  frenemies: [self-supervised-vision-statism, active-perception-doctrine]
+  rivals: [bitter-lesson-orthodoxy, compute-statism, scale-sublimism]
+works:
+  - {title: "Neocognitron: A self-organizing neural network model for a mechanism of pattern recognition unaffected by shift in position", year: 1980}
+  - {title: "Performance-optimized hierarchical models predict neural responses in higher visual cortex", year: 2014}

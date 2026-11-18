@@ -1,0 +1,19 @@
+id: recursive-self-improvementism
+name:
+  en: Recursive Self-Improvementism
+  zh: 递归自我改进主义
+motto:
+  en: Agents build better agents
+  zh: 代理造出更好的代理
+level: 1
+place:
+  col: 3
+  row: 11
+parents: [self-improving-agentism]
+relations:
+  allies: [effective-accelerationism, autonomous-agent-anarchism, open-endedness]
+  frenemies: [harness-nihilism]
+  rivals: [ai-doomerism, scale-sublimism, workflow-bureaucratism]
+works:
+  - {title: "Self-Taught Optimizer (STOP): Recursively Self-Improving Code Generation", year: 2023, url: "https://arxiv.org/abs/2310.02304"}
+  - {title: "Automated Design of Agentic Systems", year: 2024, url: "https://arxiv.org/abs/2408.08435"}

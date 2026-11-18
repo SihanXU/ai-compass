@@ -1,0 +1,18 @@
+id: reactive-anarchism
+name:
+  en: Reactive Anarchism
+  zh: 反应式无政府主义
+motto:
+  en: No plans, only reflexes
+  zh: 不要计划，只要反射
+level: 8
+place:
+  col: 11
+  row: 11
+parents: [subsumption-doctrine]
+relations:
+  allies: [vehicle-primitivism, cybernetic-primitivism, sensorimotor-doctrine]
+  frenemies: [classical-control-conservatism]
+  rivals: [classical-planning-restoration, model-based-planism, world-model-vanguardism]
+works:
+  - {title: "A Robust Layered Control System for a Mobile Robot", year: 1986}

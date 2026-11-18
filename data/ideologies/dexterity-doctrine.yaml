@@ -1,0 +1,19 @@
+id: dexterity-doctrine
+name:
+  en: Dexterity Doctrine
+  zh: 灵巧手主义
+motto:
+  en: Intelligence lives in the hands
+  zh: 智能长在手上
+level: 4
+place:
+  col: 12
+  row: 4
+parents: [embodied-statism]
+relations:
+  allies: [sim-to-real-pragmatism, morphological-computationalism, sensorimotor-doctrine]
+  frenemies: [humanoid-centralism, robot-foundationism]
+  rivals: [swarm-robotics, vehicle-primitivism, text-only-conservatism]
+works:
+  - {title: "Solving Rubik's Cube with a Robot Hand", year: 2019, url: "https://arxiv.org/abs/1910.07113"}
+  - {title: "Learning Complex Dexterous Manipulation with Deep Reinforcement Learning and Demonstrations", year: 2017, url: "https://arxiv.org/abs/1709.10087"}

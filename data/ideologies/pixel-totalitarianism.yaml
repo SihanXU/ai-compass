@@ -1,0 +1,19 @@
+id: pixel-totalitarianism
+name:
+  en: Pixel Totalitarianism
+  zh: 像素极权主义
+motto:
+  en: Text is just another image
+  zh: 文字也只是一张图
+level: 3
+place:
+  col: 8
+  row: 0
+parents: [visualism]
+relations:
+  allies: [visual-token-statism, video-scalism, self-supervised-vision-statism]
+  frenemies: [byte-level-populism]
+  rivals: [tokenizer-reformism, text-only-conservatism, corpus-fundamentalism]
+works:
+  - {title: "Language Modelling with Pixels", year: 2022}
+  - {title: "Pix2Struct: Screenshot Parsing as Pretraining for Visual Language Understanding", year: 2022}

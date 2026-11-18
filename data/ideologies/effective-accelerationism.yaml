@@ -1,0 +1,18 @@
+id: effective-accelerationism
+name:
+  en: Effective Accelerationism
+  zh: 有效加速主义
+motto:
+  en: Floor it
+  zh: 油门踩到底
+level: 3
+place:
+  ring: left
+  when: {a: '>0.6'}
+  at: 1
+parents: []
+relations:
+  allies: [open-source-maximalism, autonomous-agent-anarchism, recursive-self-improvementism, compute-theocracy]
+  frenemies: [frontier-kratocracy]
+  rivals: [ai-doomerism, interpretability-reformism, rlhf-paternalism]
+works: []

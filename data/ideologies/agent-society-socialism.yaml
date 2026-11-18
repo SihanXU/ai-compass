@@ -1,0 +1,19 @@
+id: agent-society-socialism
+name:
+  en: Agent-Society Socialism
+  zh: 智能体社会主义
+motto:
+  en: Agents will form a society
+  zh: 代理终将形成社会
+level: 3
+place:
+  col: 2
+  row: 9
+parents: [multi-agent-parliamentarism]
+relations:
+  allies: [generative-village-communalism, role-play-collectivism, emergent-language-doctrine, agent-anarcho-communism]
+  frenemies: [agent-anarcho-syndicalism, swarm-collectivism]
+  rivals: [agent-solipsism, prompt-monarchism, logos-absolutism]
+works:
+  - {title: "Emergent Tool Use From Multi-Agent Autocurricula", year: 2019, url: https://arxiv.org/abs/1909.07528}
+  - {title: "AgentVerse: Facilitating Multi-Agent Collaboration and Exploring Emergent Behaviors", year: 2023, url: https://arxiv.org/abs/2308.10848}

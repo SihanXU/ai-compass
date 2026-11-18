@@ -1,0 +1,19 @@
+id: native-fusion-centralism
+name:
+  en: Native-Fusion Centralism
+  zh: 原生融合集权主义
+motto:
+  en: Fused from the very first token
+  zh: 从第一个 token 起就融合
+level: 4
+place:
+  col: 7
+  row: 0
+parents: [early-fusion-statism]
+relations:
+  allies: [unified-vocabulary-centralism, omni-model-absolutism, interleaved-statism]
+  frenemies: [contrastive-alignmentism]
+  rivals: [modular-multimodalism, captionist-centralism, multimodal-linguism]
+works:
+  - {title: "Chameleon: Mixed-Modal Early-Fusion Foundation Models", year: 2024, url: "https://arxiv.org/abs/2405.09818"}
+  - {title: "Gemini: A Family of Highly Capable Multimodal Models", year: 2023, url: "https://arxiv.org/abs/2312.11805"}

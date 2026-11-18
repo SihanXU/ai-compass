@@ -1,0 +1,18 @@
+id: autonomous-agent-anarchism
+name:
+  en: Autonomous-Agent Anarchism
+  zh: 全自主代理无政府主义
+motto:
+  en: Give it a goal and walk away
+  zh: 给它一个目标，然后走开
+level: 2
+place:
+  col: 2
+  row: 11
+parents: [harness-liberalism]
+relations:
+  allies: [effective-accelerationism, recursive-self-improvementism, agent-anarcho-syndicalism, coding-agent-syndicalism]
+  frenemies: [self-improving-agentism, harness-nihilism]
+  rivals: [ai-doomerism, workflow-bureaucratism, rlhf-paternalism]
+works:
+  - {title: "ReAct: Synergizing Reasoning and Acting in Language Models", year: 2022, url: "https://arxiv.org/abs/2210.03629"}

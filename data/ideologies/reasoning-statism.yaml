@@ -1,0 +1,20 @@
+id: reasoning-statism
+name:
+  en: Reasoning Statism
+  zh: 推理国家主义
+motto:
+  en: Lengthen the chain of thought; intelligence follows
+  zh: 思维链拉长，智能就来了
+level: 4
+place:
+  col: 3
+  row: 2
+parents: [test-time-centralism]
+relations:
+  allies: [code-as-thought, math-formalism, synthetic-data-planism]
+  frenemies: [rlhf-paternalism]
+  rivals: [harness-liberalism, neuro-symbolic-federalism, embodied-statism]
+works:
+  - {title: "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models", year: 2022, url: "https://arxiv.org/abs/2201.11903"}
+  - {title: "Let's Verify Step by Step", year: 2023, url: "https://arxiv.org/abs/2305.20050"}
+  - {title: "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning", year: 2025, url: "https://arxiv.org/abs/2501.12948"}

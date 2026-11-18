@@ -1,0 +1,18 @@
+id: agent-anarcho-syndicalism
+name:
+  en: Agent Anarcho-Syndicalism
+  zh: 智能体无政府工团主义
+motto:
+  en: Agents self-organize; no orchestrator
+  zh: 代理自治，无需编排者
+level: 3
+place:
+  col: 4
+  row: 10
+parents: [agent-anarcho-communism]
+relations:
+  allies: [swarm-collectivism, emergent-language-doctrine, protocol-federalism, peer-to-peer-inference]
+  frenemies: [multi-agent-parliamentarism, agent-society-socialism]
+  rivals: [workflow-bureaucratism, prompt-monarchism, role-play-collectivism]
+works:
+  - {title: "The Society of Mind", year: 1986}

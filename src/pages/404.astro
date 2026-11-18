@@ -1,0 +1,13 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { t, url } from '../lib/i18n.js';
+---
+<Layout lang="en" title="404">
+    <header class="container chart-page-head">
+        <div>
+            <p class="label">404</p>
+            <h1>{t('en', 'notFound')}</h1>
+            <p><a href={url('en')}>AI Research Compass</a></p>
+        </div>
+    </header>
+</Layout>

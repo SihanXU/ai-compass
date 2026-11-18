@@ -1,0 +1,18 @@
+id: morphological-anarchism
+name:
+  en: Morphological Anarchism
+  zh: 形态无政府主义
+motto:
+  en: Body and brain evolve together
+  zh: 身体与大脑一起进化
+level: 2
+place:
+  col: 12
+  row: 10
+parents: [morphological-computationalism, artificial-life-doctrine]
+relations:
+  allies: [neuroevolutionism, artificial-life-doctrine, pan-embodimentism]
+  frenemies: [embodied-statism]
+  rivals: [humanoid-centralism, robot-foundation-imperialism, vla-monarchism]
+works:
+  - {title: "Evolving Virtual Creatures", year: 1994}

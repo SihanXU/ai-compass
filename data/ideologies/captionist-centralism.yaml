@@ -1,0 +1,19 @@
+id: captionist-centralism
+name:
+  en: Captionist Centralism
+  zh: 描述集权主义
+motto:
+  en: Every image becomes a caption first
+  zh: 每张图都先写成一段话
+level: 6
+place:
+  col: 4
+  row: 1
+parents: [multimodal-linguism]
+relations:
+  allies: [text-only-conservatism, neoliberal-linguism, synthetic-data-planism]
+  frenemies: [modular-multimodalism]
+  rivals: [native-fusion-centralism, pixel-totalitarianism, visualism]
+works:
+  - {title: "Socratic Models: Composing Zero-Shot Multimodal Reasoning with Language", year: 2022, url: "https://arxiv.org/abs/2204.00598"}
+  - {title: "Improving Image Generation with Better Captions", year: 2023}

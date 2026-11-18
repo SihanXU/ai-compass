@@ -1,0 +1,17 @@
+id: agent-anarcho-communism
+name:
+  en: Agent Anarcho-Communism
+  zh: 智能体无政府共产主义
+motto:
+  en: All agents share all tools
+  zh: 所有代理共享所有工具
+level: 3
+place:
+  col: 0
+  row: 11
+parents: [agent-anarcho-syndicalism]
+relations:
+  allies: [protocol-federalism, open-source-maximalism, agent-society-socialism, swarm-collectivism]
+  frenemies: [function-call-federalism]
+  rivals: [frontier-kratocracy, workflow-bureaucratism, prompt-monarchism]
+works: []

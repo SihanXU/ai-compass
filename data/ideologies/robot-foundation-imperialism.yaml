@@ -1,0 +1,19 @@
+id: robot-foundation-imperialism
+name:
+  en: Robot-Foundation Imperialism
+  zh: 机器人基座帝国主义
+motto:
+  en: Every body, one policy
+  zh: 所有本体，同一个策略
+level: 3
+place:
+  col: 12
+  row: 0
+parents: [robot-foundationism]
+relations:
+  allies: [vla-monarchism, sim-scale-statism, distributed-embodiment]
+  frenemies: [humanoid-centralism]
+  rivals: [morphological-computationalism, robot-federalism, classical-control-conservatism]
+works:
+  - {title: "Open X-Embodiment: Robotic Learning Datasets and RT-X Models", year: 2023, url: "https://arxiv.org/abs/2310.08864"}
+  - {title: "Octo: An Open-Source Generalist Robot Policy", year: 2024, url: "https://arxiv.org/abs/2405.12213"}

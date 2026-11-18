@@ -1,0 +1,19 @@
+id: field-robotics-libertarianism
+name:
+  en: Field-Robotics Libertarianism
+  zh: 野外机器人自由意志主义
+motto:
+  en: Test it in real mud
+  zh: 到真实的泥地里去测
+level: 6
+place:
+  col: 12
+  row: 9
+parents: [robot-federalism]
+relations:
+  allies: [sim-to-real-pragmatism, classical-control-conservatism, maker-robotics]
+  frenemies: [sim-scale-statism, swarm-robotics]
+  rivals: [world-simulator-statism, humanoid-centralism, chat-absolutism]
+works:
+  - {title: "Stanley: The Robot that Won the DARPA Grand Challenge", year: 2006}
+  - {title: "Learning quadrupedal locomotion over challenging terrain", year: 2020, url: https://arxiv.org/abs/2010.11251}

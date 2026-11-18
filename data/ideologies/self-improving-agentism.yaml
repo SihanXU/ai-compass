@@ -1,0 +1,20 @@
+id: self-improving-agentism
+name:
+  en: Self-Improving Agentism
+  zh: 自我改进智能体主义
+motto:
+  en: Agents rewrite their own harness
+  zh: 代理改写自己的 harness
+level: 2
+place:
+  col: 3
+  row: 9
+parents: [harness-liberalism]
+relations:
+  allies: [recursive-self-improvementism, open-endedness, coding-agent-syndicalism, evolutionary-federalism]
+  frenemies: [effective-accelerationism, eval-proceduralism]
+  rivals: [ai-doomerism, workflow-bureaucratism, classical-control-conservatism]
+works:
+  - {title: "Automated Design of Agentic Systems", year: 2024, url: https://arxiv.org/abs/2408.08435}
+  - {title: "Reflexion: Language Agents with Verbal Reinforcement Learning", year: 2023, url: https://arxiv.org/abs/2303.11366}
+  - {title: "DSPy: Compiling Declarative Language Model Calls into Self-Improving Pipelines", year: 2023, url: https://arxiv.org/abs/2310.03714}

@@ -1,0 +1,16 @@
+---
+// The whole chart in miniature (15 × 14 squares with the ring), one ideology outlined.
+import { ideologies, gridOf, colourOf, CENTER, COLS, ROWS } from '../lib/data.js';
+const { id } = Astro.props;
+const cells = [];
+for (let r = -1; r <= ROWS; r++) {
+  for (let c = -1; c <= COLS; c++) {
+    let ide = ideologies.find((i) => { const g = gridOf(i.place); return g.kind !== 'center' && g.col === c && g.row === r; });
+    if (!ide && c >= CENTER.c0 && c <= CENTER.c1 && r >= CENTER.r0 && r <= CENTER.r1) ide = ideologies.find((i) => i.place.center);
+    cells.push(ide ? { bg: colourOf(ide).bg, me: ide.id === id } : null);
+  }
+}
+---
+<div class="minimap" aria-hidden="true">
+    {cells.map((c) => (c ? <span class:list={{ me: c.me }} style={`background:${c.bg}`}></span> : <span class="blank"></span>))}
+</div>

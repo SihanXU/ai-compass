@@ -1,0 +1,19 @@
+id: chat-absolutism
+name:
+  en: Chat Absolutism
+  zh: 对话专制主义
+motto:
+  en: 'There is one interface: the chat box'
+  zh: 接口只有一个：对话框
+level: 7
+place:
+  col: 1
+  row: 2
+parents: [instruction-corporatism]
+relations:
+  allies: [rlhf-paternalism, prompt-monarchism, prompt-craftism]
+  frenemies: [multimodal-agentism]
+  rivals: [computer-use-liberalism, workflow-bureaucratism, autonomous-agent-anarchism]
+works:
+  - {title: "Training language models to follow instructions with human feedback", year: 2022, url: "https://arxiv.org/abs/2203.02155"}
+  - {title: "Introducing ChatGPT", year: 2022}

@@ -1,0 +1,19 @@
+id: symbolic-restorationism
+name:
+  en: Symbolic Restorationism
+  zh: 符号复辟主义
+motto:
+  en: GOFAI shall return
+  zh: GOFAI 终将归来
+level: 9
+place:
+  col: 0
+  row: 4
+parents: [logocentrism]
+relations:
+  allies: [knowledge-graph-monarchism, formal-semanticism, classical-planning-restoration, math-formalism]
+  frenemies: [neuro-symbolic-federalism, program-synthesis-doctrine]
+  rivals: [bitter-lesson-orthodoxy, emergentism, next-token-totalitarianism]
+works:
+  - {title: "Computer Science as Empirical Inquiry: Symbols and Search", year: 1976}
+  - {title: "CYC: A Large-Scale Investment in Knowledge Infrastructure", year: 1995}

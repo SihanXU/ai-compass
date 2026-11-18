@@ -1,0 +1,19 @@
+id: linguistic-relativism
+name:
+  en: Linguistic Relativism
+  zh: 语言相对主义
+motto:
+  en: The limits of language are the limits of the world
+  zh: 语言的边界就是世界的边界
+level: 6
+place:
+  col: 1
+  row: 5
+parents: [logocentrism]
+relations:
+  allies: [distributional-semanticism, corpus-fundamentalism, tokenizer-reformism, text-only-conservatism]
+  frenemies: [innatism, multimodal-linguism]
+  rivals: [grounding-doctrine, embodied-statism, visualism]
+works:
+  - {title: "Tractatus Logico-Philosophicus", year: 1921}
+  - {title: "Language, Thought, and Reality", year: 1956}

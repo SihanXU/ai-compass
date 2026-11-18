@@ -1,0 +1,17 @@
+id: prompt-anarchism
+name:
+  en: Prompt Anarchism
+  zh: 提示词无政府主义
+motto:
+  en: No system prompt
+  zh: 没有系统提示
+level: 6
+place:
+  col: 0
+  row: 10
+parents: []
+relations:
+  allies: [local-model-mutualism, open-weights-communalism, open-source-maximalism]
+  frenemies: [prompt-craftism]
+  rivals: [prompt-monarchism, rlhf-paternalism, role-play-collectivism]
+works: []

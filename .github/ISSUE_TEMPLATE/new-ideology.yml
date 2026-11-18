@@ -1,0 +1,22 @@
+name: Propose an ideology
+description: A position in AI research that the chart is missing
+labels: [ideology]
+body:
+  - type: input
+    id: name
+    attributes: { label: Name (English and Chinese), placeholder: "Harness Liberalism / Harness 自由主义" }
+    validations: { required: true }
+  - type: input
+    id: motto
+    attributes: { label: Motto, description: One line it would say about itself. }
+    validations: { required: true }
+  - type: textarea
+    id: beliefs
+    attributes: { label: What it believes, description: Two or three sentences. Cite papers, models or systems, never people. }
+    validations: { required: true }
+  - type: input
+    id: place
+    attributes: { label: Where it sits, description: "Language ↔ World, Monolith ↔ Harness, and a paradigm level 1–9. Name the cell it should take or sit next to." }
+  - type: textarea
+    id: relations
+    attributes: { label: Friends, frenemies, enemies, description: Existing entries it gets along with or fights. }

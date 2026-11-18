@@ -1,0 +1,19 @@
+id: local-model-mutualism
+name:
+  en: Local-Model Mutualism
+  zh: 本地模型互助主义
+motto:
+  en: GPU at home, weights in hand
+  zh: 显卡在家，权重在手
+level: 5
+place:
+  col: 1
+  row: 10
+parents: [small-model-localism, open-weights-communalism]
+relations:
+  allies: [fine-tune-cooperativism, edge-ai-localism, prompt-anarchism]
+  frenemies: [peer-to-peer-inference, model-market-anarchism]
+  rivals: [compute-statism, frontier-kratocracy, compute-theocracy]
+works:
+  - {title: "QLoRA: Efficient Finetuning of Quantized LLMs", year: 2023, url: https://arxiv.org/abs/2305.14314}
+  - {title: "LLaMA: Open and Efficient Foundation Language Models", year: 2023, url: https://arxiv.org/abs/2302.13971}

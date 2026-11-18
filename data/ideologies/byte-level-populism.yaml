@@ -1,0 +1,20 @@
+id: byte-level-populism
+name:
+  en: Byte-Level Populism
+  zh: 字节平民主义
+motto:
+  en: Abolish tokenizers; return to bytes
+  zh: 废除分词，回归字节
+level: 3
+place:
+  col: 3
+  row: 5
+parents: [tokenizer-reformism]
+relations:
+  allies: [pixel-totalitarianism, bitter-lesson-orthodoxy, logos-absolutism]
+  frenemies: [tokenizer-reformism]
+  rivals: [grammarian-conservatism, linguistic-relativism, small-model-localism]
+works:
+  - {title: "ByT5: Towards a Token-Free Future with Pre-trained Byte-to-Byte Models", year: 2021, url: "https://arxiv.org/abs/2105.13626"}
+  - {title: "CANINE: Pre-training an Efficient Tokenization-Free Encoder for Language Representation", year: 2021, url: "https://arxiv.org/abs/2103.06874"}
+  - {title: "MEGABYTE: Predicting Million-byte Sequences with Multiscale Transformers", year: 2023, url: "https://arxiv.org/abs/2305.07185"}

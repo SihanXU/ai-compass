@@ -1,0 +1,17 @@
+id: sensor-network-anarchism
+name:
+  en: Sensor-Network Anarchism
+  zh: 传感网无政府主义
+motto:
+  en: Every camera is a neuron
+  zh: 每个摄像头都是一个神经元
+level: 4
+place:
+  col: 8
+  row: 11
+parents: [edge-ai-localism]
+relations:
+  allies: [edge-ai-localism, distributed-embodiment, federated-learning-localism, swarm-robotics]
+  frenemies: [active-perception-doctrine, ai-doomerism]
+  rivals: [omni-model-absolutism, end-to-end-driving-absolutism, humanoid-centralism]
+works: []

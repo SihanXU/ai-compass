@@ -1,0 +1,20 @@
+---
+// The chart on its own page, as large as the window allows.
+import Layout from '../../layouts/Layout.astro';
+import Chart from '../../components/Chart.astro';
+import Legend from '../../components/Legend.astro';
+import { t, LANGS } from '../../lib/i18n.js';
+
+export function getStaticPaths() { return LANGS.map((lang) => ({ params: { lang } })); }
+const { lang } = Astro.params;
+---
+<Layout lang={lang} title={t(lang, 'navChart')} path="chart" active="chart">
+    <div class="container wide">
+        <header class="chart-page-head">
+            <h1>{t(lang, 'chartPageTitle')}</h1>
+            <p>{t(lang, 'chartNote')}</p>
+        </header>
+        <Chart lang={lang} />
+        <Legend lang={lang} />
+    </div>
+</Layout>

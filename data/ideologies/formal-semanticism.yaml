@@ -1,0 +1,18 @@
+id: formal-semanticism
+name:
+  en: Formal Semanticism
+  zh: 形式语义主义
+motto:
+  en: Meaning can be written in logic
+  zh: 意义可以用逻辑写出来
+level: 8
+place:
+  col: 0
+  row: 6
+parents: [symbolic-restorationism]
+relations:
+  allies: [grammarian-conservatism, knowledge-graph-monarchism, math-formalism, innatism]
+  frenemies: [neuro-symbolic-federalism, code-as-thought]
+  rivals: [distributional-semanticism, next-token-totalitarianism, emergentism]
+works:
+  - {title: "The Proper Treatment of Quantification in Ordinary English", year: 1973}

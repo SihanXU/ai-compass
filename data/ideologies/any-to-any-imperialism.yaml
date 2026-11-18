@@ -1,0 +1,19 @@
+id: any-to-any-imperialism
+name:
+  en: Any-to-Any Imperialism
+  zh: 任意到任意帝国主义
+motto:
+  en: One model annexes every modality
+  zh: 一个模型吞并所有模态
+level: 4
+place:
+  col: 5
+  row: 0
+parents: [unified-vocabulary-centralism]
+relations:
+  allies: [omni-model-absolutism, native-fusion-centralism, understand-generate-unionism]
+  frenemies: [linguistic-multimodalism]
+  rivals: [modular-multimodalism, pipeline-pragmatism, text-only-conservatism]
+works:
+  - {title: "NExT-GPT: Any-to-Any Multimodal LLM", year: 2023}
+  - {title: "Unified-IO 2: Scaling Autoregressive Multimodal Models with Vision, Language, Audio, and Action", year: 2023}

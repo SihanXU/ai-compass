@@ -1,0 +1,19 @@
+id: linguistic-multimodalism
+name:
+  en: Linguistic Multimodalism
+  zh: 语言多模态主义
+motto:
+  en: Multimodal ends, linguistic means
+  zh: 目标是多模态，骨架是语言
+level: 5
+place:
+  col: 5
+  row: 3
+parents: [any-to-any-imperialism]
+relations:
+  allies: [unified-vocabulary-centralism, early-fusion-statism, understand-generate-unionism]
+  frenemies: [multimodal-linguism, diffusion-autoregressive-syncretism]
+  rivals: [visual-multimodalism, modular-multimodalism, text-only-conservatism]
+works:
+  - {title: "Chameleon: Mixed-Modal Early-Fusion Foundation Models", year: 2024, url: "https://arxiv.org/abs/2405.09818"}
+  - {title: "NExT-GPT: Any-to-Any Multimodal LLM", year: 2023, url: "https://arxiv.org/abs/2309.05519"}

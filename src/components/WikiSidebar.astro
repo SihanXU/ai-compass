@@ -1,0 +1,62 @@
+---
+// The wiki's left column: search, a few links, and every entry under its category, the current one marked.
+import { wikiGroups, colourOf } from '../lib/data.js';
+import { t, url, tr } from '../lib/i18n.js';
+const { lang, current = '', group = '' } = Astro.props;
+const groups = wikiGroups();
+---
+<aside class="wiki-side" data-wiki-side>
+    <input class="search" type="search" placeholder={t(lang, 'search')} data-wiki-search aria-label={t(lang, 'search')} />
+    <ul class="top-links">
+        <li><a href={url(lang, 'wiki')}>{t(lang, 'wikiHome')}</a></li>
+        <li><a href={url(lang, 'wiki')} data-random>{t(lang, 'randomEntry')}</a></li>
+        <li><a href={url(lang, 'chart')}>{t(lang, 'navChart')}</a></li>
+        <li><a href={url(lang, 'test/full')}>{t(lang, 'navTest')}</a></li>
+    </ul>
+    <div class="tree">
+        {groups.map((g) => (
+            <details open={g.items.some((i) => i.id === current) || g.key === group}>
+                <summary><a href={url(lang, `wiki/category/${g.key}`)} style="color:inherit">{tr(g.name, lang)}</a><span class="count">{g.items.length}</span></summary>
+                <ul>
+                    {g.items.map((i) => (
+                        <li data-name={`${i.name.en} ${i.name.zh}`.toLowerCase()}>
+                            <a href={url(lang, `wiki/${i.id}`)} class:list={{ active: i.id === current }}><span class="sw-dot" style={`background:${colourOf(i).bg}`}></span>{i.name[lang]}</a>
+                        </li>
+                    ))}
+                </ul>
+            </details>
+        ))}
+    </div>
+</aside>
+
+<script>
+  const side = document.querySelector('[data-wiki-side]');
+  if (side) {
+    const input = side.querySelector('[data-wiki-search]');
+    const tree = side.querySelector('.tree');
+    input.addEventListener('input', () => {
+      const q = input.value.trim().toLowerCase();
+      if (q) tree.style.display = 'block';
+      else tree.style.display = '';
+      side.querySelectorAll('details').forEach((d) => {
+        let n = 0;
+        d.querySelectorAll('li').forEach((li) => { const ok = !q || li.dataset.name.includes(q); li.hidden = !ok; if (ok) n++; });
+        d.hidden = n === 0;
+        if (q) d.open = true;
+      });
+    });
+    input.addEventListener('keydown', (e) => {
+      if (e.key !== 'Enter') return;
+      const first = side.querySelector('li:not([hidden]) a');
+      if (first) location.href = first.href;
+    });
+    const links = [...side.querySelectorAll('.tree li a')];
+    side.querySelector('[data-random]').addEventListener('click', (e) => {
+      e.preventDefault();
+      location.href = links[Math.floor(Math.random() * links.length)].href;
+    });
+    const active = side.querySelector('a.active');
+    // bring the current entry into view inside the sidebar only, without moving the page
+    if (active) side.scrollTop = active.offsetTop - side.clientHeight / 2;
+  }
+</script>

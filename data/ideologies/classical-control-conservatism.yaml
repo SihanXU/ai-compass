@@ -1,0 +1,18 @@
+id: classical-control-conservatism
+name:
+  en: Classical-Control Conservatism
+  zh: 经典控制保守主义
+motto:
+  en: PID never let me down
+  zh: PID 从未让我失望
+level: 8
+place:
+  col: 11
+  row: 5
+parents: [cybernetic-primitivism]
+relations:
+  allies: [physicalism, robot-federalism, classical-planning-restoration, field-robotics-libertarianism]
+  frenemies: [sim-to-real-pragmatism, hierarchical-control]
+  rivals: [vla-monarchism, end-to-end-driving-absolutism, robot-foundation-imperialism]
+works:
+  - {title: "A New Approach to Linear Filtering and Prediction Problems", year: 1960}

@@ -1,0 +1,19 @@
+id: simulation-hypothesism
+name:
+  en: Simulation Hypothesism
+  zh: 模拟假说主义
+motto:
+  en: The world is itself a world model
+  zh: 世界本来就是一个世界模型
+level: 2
+place:
+  ring: tr
+  when: {x: '>0.7', 'y': '>0.7'}
+parents: [world-simulator-statism, world-model-vanguardism]
+relations:
+  allies: [world-model-vanguardism, video-native-doctrine, pan-embodimentism]
+  frenemies: [physical-law-absolutism, sim-scale-statism]
+  rivals: [language-singularitarianism, logocentrism, agent-solipsism]
+works:
+  - {title: "World Models", year: 2018, url: "https://arxiv.org/abs/1803.10122"}
+  - {title: "Genie: Generative Interactive Environments", year: 2024, url: "https://arxiv.org/abs/2402.15391"}

@@ -1,0 +1,18 @@
+id: cybernetic-primitivism
+name:
+  en: Cybernetic Primitivism
+  zh: 控制论原始主义
+motto:
+  en: The feedback loop is everything
+  zh: 反馈回路就是一切
+level: 9
+place:
+  ring: br
+  when: {x: '>0.7', 'y': <-0.7}
+parents: [classical-control-conservatism, subsumption-doctrine]
+relations:
+  allies: [vehicle-primitivism, reactive-anarchism, sensorimotor-doctrine]
+  frenemies: [predictive-coding-statism]
+  rivals: [language-singularitarianism, end-to-end-driving-absolutism, compute-theocracy]
+works:
+  - {title: "Cybernetics: Or Control and Communication in the Animal and the Machine", year: 1948}

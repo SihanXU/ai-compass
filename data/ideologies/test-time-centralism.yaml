@@ -1,0 +1,20 @@
+id: test-time-centralism
+name:
+  en: Test-Time Centralism
+  zh: 测试时算力集权
+motto:
+  en: Think longer at inference
+  zh: 推理时多想一会儿
+level: 4
+place:
+  col: 4
+  row: 2
+parents: [bitter-lesson-orthodoxy]
+relations:
+  allies: [reasoning-statism, code-as-thought, compute-statism]
+  frenemies: [harness-liberalism]
+  rivals: [pretraining-maximalism, small-model-localism, edge-ai-localism]
+works:
+  - {title: "Self-Consistency Improves Chain of Thought Reasoning in Language Models", year: 2022, url: "https://arxiv.org/abs/2203.11171"}
+  - {title: "Tree of Thoughts: Deliberate Problem Solving with Large Language Models", year: 2023, url: "https://arxiv.org/abs/2305.10601"}
+  - {title: "Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters", year: 2024, url: "https://arxiv.org/abs/2408.03314"}

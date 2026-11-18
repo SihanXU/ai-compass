@@ -1,0 +1,20 @@
+id: rlhf-paternalism
+name:
+  en: RLHF Paternalism
+  zh: RLHF 家长主义
+motto:
+  en: Models are raised by human preference
+  zh: 模型由人类偏好管教长大
+level: 6
+place:
+  col: 2
+  row: 2
+parents: [instruction-corporatism]
+relations:
+  allies: [chat-absolutism, prompt-monarchism, eval-proceduralism]
+  frenemies: [pretraining-maximalism, reasoning-statism]
+  rivals: [prompt-anarchism, objectiveless-anarchism, open-source-maximalism]
+works:
+  - {title: "Deep reinforcement learning from human preferences", year: 2017, url: "https://arxiv.org/abs/1706.03741"}
+  - {title: "Training language models to follow instructions with human feedback", year: 2022, url: "https://arxiv.org/abs/2203.02155"}
+  - {title: "Direct Preference Optimization: Your Language Model is Secretly a Reward Model", year: 2023, url: "https://arxiv.org/abs/2305.18290"}

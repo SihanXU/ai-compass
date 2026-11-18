@@ -1,0 +1,19 @@
+id: developmentalism
+name:
+  en: Developmentalism
+  zh: 发展主义
+motto:
+  en: Grow up like a child
+  zh: 像孩子一样长大
+level: 3
+place:
+  col: 9
+  row: 6
+parents: [embodied-statism]
+relations:
+  allies: [intuitive-physics-doctrine, curiosity-liberalism, grounding-doctrine, open-endedness]
+  frenemies: [innatism]
+  rivals: [pretraining-maximalism, corpus-fundamentalism, compute-statism]
+works:
+  - {title: "Computing Machinery and Intelligence", year: 1950}
+  - {title: "Curriculum Learning", year: 2009}

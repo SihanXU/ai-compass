@@ -1,0 +1,19 @@
+id: growing-tree-doctrine
+name:
+  en: Growing-Tree Doctrine
+  zh: 生长树主义
+motto:
+  en: What the model has solved grows into a node
+  zh: 模型解决过的情形长成节点
+level: 3
+place:
+  col: 9
+  row: 8
+parents: [skill-library-doctrine, hierarchical-control]
+relations:
+  allies: [subsumption-doctrine, game-agent-doctrine, self-improving-agentism, sensorimotor-doctrine]
+  frenemies: [classical-planning-restoration, workflow-bureaucratism]
+  rivals: [vla-monarchism, end-to-end-driving-absolutism, chat-absolutism]
+works:
+  - {title: "How to Control an Agent with a Growing Behavior Tree", year: 2026}
+  - {title: "Voyager: An Open-Ended Embodied Agent with Large Language Models", year: 2023, url: https://arxiv.org/abs/2305.16291}

@@ -1,0 +1,20 @@
+id: self-supervised-liberalism
+name:
+  en: Self-Supervised Liberalism
+  zh: 自监督自由主义
+motto:
+  en: Data speaks for itself
+  zh: 数据自己会说话
+level: 4
+place:
+  col: 8
+  row: 5
+parents: [representation-centralism]
+relations:
+  allies: [contrastive-liberalism, latent-prediction-doctrine, multimodal-visualism, visualism]
+  frenemies: [self-supervised-vision-statism, contrastive-alignmentism]
+  rivals: [captionist-centralism, instruction-corporatism]
+works:
+  - {title: "Emerging Properties in Self-Supervised Vision Transformers", year: 2021, url: "https://arxiv.org/abs/2104.14294"}
+  - {title: "Masked Autoencoders Are Scalable Vision Learners", year: 2021, url: "https://arxiv.org/abs/2111.06377"}
+  - {title: "DINOv2: Learning Robust Visual Features without Supervision", year: 2023, url: "https://arxiv.org/abs/2304.07193"}

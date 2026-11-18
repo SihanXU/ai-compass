@@ -1,0 +1,20 @@
+id: object-centrism
+name:
+  en: Object-Centrism
+  zh: 物体中心主义
+motto:
+  en: The world is made of objects
+  zh: 世界由物体组成
+level: 4
+place:
+  col: 9
+  row: 4
+parents: [visualism]
+relations:
+  allies: [intuitive-physics-doctrine, physicalism, neuro-symbolic-federalism]
+  frenemies: [multimodal-visualism, geometric-doctrine]
+  rivals: [bitter-lesson-orthodoxy, pixel-totalitarianism, emergentism]
+works:
+  - {title: "Object-Centric Learning with Slot Attention", year: 2020, url: "https://arxiv.org/abs/2006.15055"}
+  - {title: "MONet: Unsupervised Scene Decomposition and Representation", year: 2019, url: "https://arxiv.org/abs/1901.11390"}
+  - {title: "Multi-Object Representation Learning with Iterative Variational Inference", year: 2019, url: "https://arxiv.org/abs/1903.00450"}

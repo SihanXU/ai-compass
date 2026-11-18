@@ -1,0 +1,19 @@
+id: text-only-conservatism
+name:
+  en: Text-Only Conservatism
+  zh: 纯文本保守主义
+motto:
+  en: Text is enough; vision is surplus
+  zh: 文本就够了，视觉是多余的
+level: 7
+place:
+  col: 1
+  row: 3
+parents: [logocentrism]
+relations:
+  allies: [corpus-fundamentalism, pretraining-maximalism, next-token-totalitarianism]
+  frenemies: [multimodal-linguism, neoliberal-linguism]
+  rivals: [visualism, omni-model-absolutism, embodied-statism]
+works:
+  - {title: "Language Models are Unsupervised Multitask Learners", year: 2019}
+  - {title: "Language Models are Few-Shot Learners", year: 2020, url: "https://arxiv.org/abs/2005.14165"}

@@ -1,0 +1,20 @@
+id: latent-prediction-doctrine
+name:
+  en: Latent-Prediction Doctrine
+  zh: 隐空间预测主义
+motto:
+  en: Predict representations, not pixels
+  zh: 预测表征，而不是像素
+level: 2
+place:
+  col: 10
+  row: 2
+parents: [world-model-vanguardism, self-supervised-liberalism]
+relations:
+  allies: [predictive-coding-statism, model-based-planism, intuitive-physics-doctrine]
+  frenemies: [video-native-doctrine, representation-centralism]
+  rivals: [next-token-totalitarianism, world-simulator-statism, pixel-totalitarianism]
+works:
+  - {title: "A Path Towards Autonomous Machine Intelligence", year: 2022}
+  - {title: "Self-Supervised Learning from Images with a Joint-Embedding Predictive Architecture", year: 2023, url: "https://arxiv.org/abs/2301.08243"}
+  - {title: "Revisiting Feature Prediction for Learning Visual Representations from Video", year: 2024, url: "https://arxiv.org/abs/2404.08471"}

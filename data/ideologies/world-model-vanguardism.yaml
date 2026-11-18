@@ -1,0 +1,20 @@
+id: world-model-vanguardism
+name:
+  en: World-Model Vanguardism
+  zh: 世界模型先锋队
+motto:
+  en: The vanguard first builds a model of the world
+  zh: 先锋队要先建立对世界的预测
+level: 2
+place:
+  col: 10
+  row: 1
+parents: [model-based-planism]
+relations:
+  allies: [latent-prediction-doctrine, world-simulator-statism, intuitive-physics-doctrine]
+  frenemies: [video-scalism]
+  rivals: [next-token-totalitarianism, corpus-fundamentalism, harness-nihilism]
+works:
+  - {title: "World Models", year: 2018, url: "https://arxiv.org/abs/1803.10122"}
+  - {title: "Mastering Diverse Domains through World Models", year: 2023, url: "https://arxiv.org/abs/2301.04104"}
+  - {title: "Genie: Generative Interactive Environments", year: 2024, url: "https://arxiv.org/abs/2402.15391"}

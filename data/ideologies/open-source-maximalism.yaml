@@ -1,0 +1,20 @@
+id: open-source-maximalism
+name:
+  en: Open-Source Maximalism
+  zh: 开源至上主义
+motto:
+  en: If it is not open, it does not count
+  zh: 不开源的都不算
+level: 3
+place:
+  ring: left
+  when: {o: '>0.6'}
+  at: 9
+parents: [open-weights-communalism]
+relations:
+  allies: [open-hardware-mutualism, local-model-mutualism, peer-to-peer-inference, fine-tune-cooperativism]
+  frenemies: [effective-accelerationism]
+  rivals: [frontier-kratocracy, ai-doomerism, compute-theocracy]
+works:
+  - {title: "BLOOM: A 176B-Parameter Open-Access Multilingual Language Model", year: 2022, url: "https://arxiv.org/abs/2211.05100"}
+  - {title: "OLMo: Accelerating the Science of Language Models", year: 2024, url: "https://arxiv.org/abs/2402.00838"}

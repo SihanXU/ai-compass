@@ -1,0 +1,19 @@
+id: composable-liberalism
+name:
+  en: Composable Liberalism
+  zh: 可组合自由主义
+motto:
+  en: Intelligence as building blocks
+  zh: 像乐高一样拼出智能
+level: 4
+place:
+  col: 6
+  row: 9
+parents: [modular-multimodalism, function-call-federalism]
+relations:
+  allies: [protocol-federalism, neuro-symbolic-federalism, pipeline-pragmatism, chain-syndicalism]
+  frenemies: [mixture-of-experts-federalism, workflow-bureaucratism]
+  rivals: [omni-model-absolutism, logos-absolutism, native-fusion-centralism]
+works:
+  - {title: "Neural Module Networks", year: 2016, url: https://arxiv.org/abs/1511.02799}
+  - {title: "DSPy: Compiling Declarative Language Model Calls into Self-Improving Pipelines", year: 2023, url: https://arxiv.org/abs/2310.03714}

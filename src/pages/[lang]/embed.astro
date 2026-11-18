@@ -1,0 +1,51 @@
+---
+// Just the chart, scaled to fit its frame, a pin wandering from cell to cell. For an iframe (sihanxu.me's blog card).
+import Layout from '../../layouts/Layout.astro';
+import Chart from '../../components/Chart.astro';
+import { LANGS } from '../../lib/i18n.js';
+
+export function getStaticPaths() { return LANGS.map((lang) => ({ params: { lang } })); }
+const { lang } = Astro.params;
+---
+<Layout lang={lang} bare path="embed">
+    <style is:global>
+        html, body { height: 100%; overflow: hidden; background: #f8f9fa; }
+        .stage { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; }
+        .stage .chart-box { flex-shrink: 0; }
+        .stage .chart-viewport { overflow: visible; height: auto !important; }
+        .stage .chart-scaler { transform: none !important; }
+        .stage .chart { transform-origin: center center; }
+        .stage .cell { pointer-events: none; }
+    </style>
+    <div class="stage"><Chart lang={lang} tools={false} links={false} /></div>
+</Layout>
+
+<script>
+  const chart = document.querySelector('.chart');
+  const fit = () => {
+    const k = Math.min(innerWidth / chart.offsetWidth, innerHeight / chart.offsetHeight) * 0.98;
+    chart.style.transform = `scale(${k})`;
+  };
+  addEventListener('resize', fit);
+  fit();
+  const cells = [...chart.querySelectorAll('.cell:not(.ring):not(.center)')];
+  const pin = document.createElement('div');
+  pin.className = 'pin';
+  pin.style.left = '50%';
+  pin.style.top = '50%';
+  chart.querySelector('.marks').append(pin);
+  const inner = chart.querySelector('.marks').getBoundingClientRect.bind(chart.querySelector('.marks'));
+  let last = null;
+  function hop() {
+    const c = cells[Math.floor(Math.random() * cells.length)];
+    if (last) last.classList.remove('hit');
+    c.classList.add('hit');
+    last = c;
+    const box = inner();
+    const r = c.getBoundingClientRect();
+    pin.style.left = `${((r.left + r.width / 2 - box.left) / box.width) * 100}%`;
+    pin.style.top = `${((r.top + r.height / 2 - box.top) / box.height) * 100}%`;
+  }
+  setTimeout(hop, 400);
+  setInterval(hop, 2200);
+</script>

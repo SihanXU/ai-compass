@@ -1,0 +1,19 @@
+id: prompt-craftism
+name:
+  en: Prompt Craftism
+  zh: 提示词手工业主义
+motto:
+  en: Every word is worth a fortune
+  zh: 一字千金
+level: 7
+place:
+  col: 0
+  row: 7
+parents: [prompt-monarchism]
+relations:
+  allies: [chain-syndicalism, role-play-collectivism, prompt-monarchism]
+  frenemies: [context-engineering-liberalism]
+  rivals: [prompt-anarchism, fine-tune-cooperativism, bitter-lesson-orthodoxy]
+works:
+  - {title: "Language Models are Few-Shot Learners", year: 2020, url: "https://arxiv.org/abs/2005.14165"}
+  - {title: "Pre-train, Prompt, and Predict: A Systematic Survey of Prompting Methods in Natural Language Processing", year: 2021, url: "https://arxiv.org/abs/2107.13586"}

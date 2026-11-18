@@ -1,0 +1,19 @@
+id: swarm-robotics
+name:
+  en: Swarm Robotics
+  zh: 群体机器人主义
+motto:
+  en: Simple units, complex swarms
+  zh: 简单个体，复杂集体
+level: 4
+place:
+  col: 12
+  row: 8
+parents: [artificial-life-doctrine]
+relations:
+  allies: [swarm-collectivism, reactive-anarchism, distributed-embodiment, sensor-network-anarchism]
+  frenemies: [field-robotics-libertarianism, evolutionary-federalism]
+  rivals: [humanoid-centralism, robot-foundation-imperialism, vla-monarchism]
+works:
+  - {title: "Flocks, Herds, and Schools: A Distributed Behavioral Model", year: 1987}
+  - {title: "Programmable self-assembly in a thousand-robot swarm", year: 2014}

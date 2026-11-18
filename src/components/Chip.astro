@@ -1,0 +1,6 @@
+---
+import { colourOf } from '../lib/data.js';
+import { url } from '../lib/i18n.js';
+const { ide, lang } = Astro.props;
+---
+<a class="chip" href={url(lang, `wiki/${ide.id}`)} title={ide.motto[lang]}><span class="sw" style={`background:${colourOf(ide).bg}`}></span>{ide.name[lang]}</a>

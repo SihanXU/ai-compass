@@ -1,0 +1,20 @@
+id: audio-native-doctrine
+name:
+  en: Audio-Native Doctrine
+  zh: 语音原生主义
+motto:
+  en: Sound came before writing
+  zh: 声音比文字更早
+level: 4
+place:
+  col: 6
+  row: 4
+parents: [omni-model-absolutism]
+relations:
+  allies: [native-fusion-centralism, byte-level-populism, any-to-any-imperialism]
+  frenemies: [multimodal-linguism, chat-absolutism]
+  rivals: [text-only-conservatism, pipeline-pragmatism, captionist-centralism]
+works:
+  - {title: "WaveNet: A Generative Model for Raw Audio", year: 2016, url: "https://arxiv.org/abs/1609.03499"}
+  - {title: "wav2vec 2.0: A Framework for Self-Supervised Learning of Speech Representations", year: 2020, url: "https://arxiv.org/abs/2006.11477"}
+  - {title: "Moshi: a speech-text foundation model for real-time dialogue", year: 2024, url: "https://arxiv.org/abs/2410.00037"}

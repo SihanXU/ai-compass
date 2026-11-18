@@ -1,0 +1,125 @@
+---
+// The method, laid out as documentation: contents on the left, the text, "on this page" on the right.
+import Layout from '../../layouts/Layout.astro';
+import { axes, questionList, tests, levels } from '../../lib/data.js';
+import { t, url, tr, LANGS, REPO } from '../../lib/i18n.js';
+
+export function getStaticPaths() { return LANGS.map((lang) => ({ params: { lang } })); }
+const { lang } = Astro.params;
+const zh = lang === 'zh';
+const quick = new Set(tests.quick.questions);
+const onAxis = (k) => questionList.filter((q) => q.effects[k] !== undefined);
+const pole = (ax, w) => tr(w > 0 ? ax.pos : ax.neg, lang);
+const sections = [
+  ['overview', zh ? '概览' : 'Overview'],
+  ...axes.map((a) => [`axis-${a.key}`, tr(a.title, lang)]),
+  ['scoring', zh ? '计分' : 'Scoring'],
+  ['matching', zh ? '匹配' : 'Matching'],
+  ['principles', zh ? '原则' : 'Principles'],
+  ['contributing', zh ? '参与贡献' : 'Contributing'],
+  ['sources', zh ? '参照' : 'Sources'],
+];
+---
+<Layout lang={lang} title={t(lang, 'axesTitle')} path="method" active="method">
+    <div class="doc">
+        <nav class="doc-nav">
+            <span class="label">{t(lang, 'docs')}</span>
+            <ol>
+                <li><a class="active" href={url(lang, 'method')}>{t(lang, 'axesTitle')}</a></li>
+                <li><a href={url(lang, 'chart')}>{t(lang, 'navChart')}</a></li>
+                <li><a href={url(lang, 'wiki')}>{t(lang, 'navWiki')}</a></li>
+                <li><a href={url(lang, 'leaderboard')}>{t(lang, 'navBoard')}</a></li>
+                <li><a href={`${REPO}/blob/main/CONTRIBUTING.md`}>CONTRIBUTING.md ↗</a></li>
+            </ol>
+        </nav>
+        <article class="doc-body">
+            <h1>{t(lang, 'axesTitle')}</h1>
+            <p class="lede">{t(lang, 'axesDek')}</p>
+
+            <h2 id="overview">{zh ? '概览' : 'Overview'}</h2>
+            <p>{zh
+                ? `图谱由五根轴组成。横轴（表征）和纵轴（架构）把你放到 13 × 12 格的图上，范式轴决定格子的深浅，开放轴和速度轴决定外圈的称号。简单版 ${tests.quick.questions.length} 题只测两根主轴；完整版 ${tests.full.questions.length} 题测全部五根。`
+                : `The chart has five axes. Representation (x) and architecture (y) place you on the 13 × 12 grid, paradigm picks the shade of the cell, and openness and speed decide the titles on the ring. The quick test's ${tests.quick.questions.length} statements measure the two main axes; the full test's ${tests.full.questions.length} measure all five.`}</p>
+            <div class="table"><table>
+                <thead><tr><th class="l">{zh ? '轴' : 'Axis'}</th><th class="l">−1</th><th class="l">+1</th><th>{zh ? '题数' : 'Statements'}</th><th class="l">{zh ? '作用' : 'Used for'}</th></tr></thead>
+                <tbody>{axes.map((a) => (
+                    <tr><td class="l"><b>{a.key}</b> · {tr(a.title, lang)}</td><td class="l">{tr(a.neg, lang)}</td><td class="l">{tr(a.pos, lang)}</td><td>{onAxis(a.key).length}</td>
+                    <td class="l">{a.key === 'x' || a.key === 'y' ? (zh ? '图上位置' : 'place on the chart') : a.key === 'p' ? (zh ? '格子深浅' : 'shade of the cell') : (zh ? '外圈称号' : 'titles on the ring')}</td></tr>
+                ))}</tbody>
+            </table></div>
+
+            {axes.map((ax) => (
+                <>
+                    <h2 id={`axis-${ax.key}`}>{tr(ax.title, lang)} <span class="pill">{ax.key}</span></h2>
+                    <p>{tr(ax.text, lang)}</p>
+                    <div class="table"><table>
+                        <thead><tr><th class="l">ID</th><th class="l">{zh ? '陈述' : 'Statement'}</th><th>{zh ? '同意时' : 'Agreeing moves to'}</th></tr></thead>
+                        <tbody>
+                            {onAxis(ax.key).map((q) => (
+                                <tr>
+                                    <td class="l"><code>{q.id}</code>{quick.has(q.id) && <> <span class="pill">{t(lang, 'inQuick')}</span></>}</td>
+                                    <td class="l wrap">{tr(q.text, lang)}</td>
+                                    <td>{pole(ax, q.effects[ax.key])}</td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table></div>
+                </>
+            ))}
+
+            <h2 id="scoring">{zh ? '计分' : 'Scoring'}</h2>
+            <p>{zh
+                ? '每道题五档：强烈同意 +2、同意 +1、中立 0、不同意 −1、强烈反对 −2。答案乘以这道题在各轴上的权重（同意时往哪一端走），按轴求和，再除以这根轴可能的最大值，得到 −1 到 +1 之间的分数。'
+                : 'Each statement has five answers: strongly agree +2, agree +1, neutral 0, disagree −1, strongly disagree −2. The answer is multiplied by the statement’s weight on each axis (which way agreeing moves you), summed per axis, and divided by the most that axis could score, giving a number between −1 and +1.'}</p>
+            <pre>score[axis] = Σ answer × weight[axis] / Σ 2 × |weight[axis]|</pre>
+            <p>{zh ? '范式等级与 p 分数的对应：' : 'Paradigm levels and their p score:'}</p>
+            <div class="table"><table>
+                <thead><tr><th class="l">{zh ? '等级' : 'Level'}</th><th class="l">{zh ? '名称' : 'Name'}</th><th>p</th></tr></thead>
+                <tbody>{levels.map((l) => <tr><td class="l">{l.level}</td><td class="l"><a href={url(lang, `wiki/category/level-${l.level}`)}>{l[lang]}</a></td><td>{((5 - l.level) / 4).toFixed(2)}</td></tr>)}</tbody>
+            </table></div>
+
+            <h2 id="matching">{zh ? '匹配' : 'Matching'}</h2>
+            <p>{zh
+                ? '你的主义是距离你最近的那一格。距离以“格”为单位：横向一格是 2/13，纵向一格是 2/12；范式每差一个等级，相当于差约 0.7 格。正中央的大格覆盖横向 3 格、纵向 2 格。简单版不看范式，只把横轴和纵轴各三等分，得到九个阵营之一。'
+                : 'Your ideology is the cell nearest to you, measured in cells: one column is 2/13 of x, one row 2/12 of y, and one paradigm level of mismatch costs about 0.7 of a cell. The centre block covers three columns and two rows. The quick test ignores paradigm and splits x and y into thirds, giving one of nine camps.'}</p>
+            <pre>d² = (Δx / (2/13))² + (Δy / (2/12))² + 0.5 × (Δp / 0.25)²</pre>
+            <p>{zh
+                ? '外圈称号各自写明条件（例如“速度 > 0.6”），满足就获得，可以同时获得多个。'
+                : 'Each ring title states its condition (for example “Speed > 0.6”); meet it and you earn the title, and you can earn several.'}</p>
+
+            <h2 id="principles">{zh ? '原则' : 'Principles'}</h2>
+            <ul>
+                {(zh ? [
+                    '不给真实的研究者贴标签。词条只引用论文、模型、系统和概念。',
+                    '每个主义都要写出它最有力的论据和最公允的批评。',
+                    '题目尽量两边对称：每根轴上，同意会把你推向两端的题数量相当（validate 会检查）。',
+                    '题库有版本号；改题会提升版本，旧链接里的结果仍按当时的分数显示。',
+                ] : [
+                    'No real researcher is labelled. Entries cite papers, models, systems and concepts only.',
+                    'Every ideology gets its strongest arguments and its fairest critiques.',
+                    'Statements are balanced: on each axis about as many push each way when agreed with (validate checks this).',
+                    'The question bank is versioned; changing a statement bumps the version, and old links keep the scores they were made with.',
+                ]).map((x) => <li>{x}</li>)}
+            </ul>
+
+            <h2 id="contributing">{zh ? '参与贡献' : 'Contributing'}</h2>
+            <p>{zh ? '所有内容都是仓库里的普通文件：' : 'Everything is a plain file in the repository:'}</p>
+            <pre>data/ideologies/&lt;id&gt;.yaml     {zh ? '位置、等级、名称、口号、关系、代表作' : 'place, level, names, motto, relations, works'}
+content/wiki/en/&lt;id&gt;.md      {zh ? '英文词条' : 'English entry'}
+content/wiki/zh/&lt;id&gt;.md      {zh ? '中文词条' : 'Chinese entry'}
+data/questions.yaml           {zh ? '全部陈述及其权重' : 'every statement and its weights'}
+data/tests.yaml               {zh ? '两套测试的题目和版本' : 'the two tests and the version'}
+data/leaderboard/*.json       {zh ? '模型评测结果' : 'model runs'}</pre>
+            <p>{zh ? '提交前运行 ' : 'Before a pull request, run '}<code>npm run validate</code>{zh ? '，它会检查格子是否重叠、关系引用是否存在、两种语言的词条是否齐全。' : ': it checks that no two ideologies share a cell, every relation points to a real entry, and both languages have every entry.'} <a href={`${REPO}/blob/main/CONTRIBUTING.md`}>CONTRIBUTING.md ↗</a></p>
+
+            <h2 id="sources">{zh ? '参照' : 'Sources'}</h2>
+            <p>{zh
+                ? '形式参照了网上流行的政治测试和图谱：Political Compass 的两轴四象限；8values 及其衍生测试（9Axes、SapplyValues、LeftValues、PolitiScales 等）的多轴计分、开源题库和结果条；Polcompball 维基的词条结构与“朋友 / 亦敌亦友 / 敌人”的关系写法；网上的意识形态大图。模型榜参照了把大模型放进政治图谱测试的研究。'
+                : 'The form follows the political tests and charts found online: the two axes of the Political Compass; the multi-axis scoring, open question banks and result bars of 8values and the tests built on it (9Axes, SapplyValues, LeftValues, PolitiScales and others); the entry structure and friends / frenemies / enemies of the Polcompball wiki; and the big ideology charts. The leaderboard follows studies that put language models through political compass tests.'}</p>
+        </article>
+        <nav class="doc-toc">
+            <span class="label">{t(lang, 'onThisPage')}</span>
+            <ol>{sections.map(([k, s]) => <li><a href={`#${k}`}>{s}</a></li>)}</ol>
+        </nav>
+    </div>
+</Layout>

@@ -1,0 +1,303 @@
+# Every statement in the tests. effects: how "strongly agree" moves each axis (-1..1).
+# Change a question only through a PR that bumps `version` in tests.yaml.
+questions:
+  - id: x1
+    effects:
+      x: -1
+    text:
+      en: Language is the vehicle of thought; a strong enough language model truly understands.
+      zh: 语言是思维的载体，一个足够强的语言模型就具备了真正的理解。
+  - id: x2
+    effects:
+      x: 1
+    text:
+      en: A model that has only read text will never truly know what “heavy” or “slippery” means.
+      zh: 只读过文本的模型，永远不会真正懂得“重”和“滑”是什么意思。
+  - id: x3
+    effects:
+      x: -1
+    text:
+      en: Internet text already holds most of human knowledge.
+      zh: 互联网文本已经包含了人类知识的绝大部分。
+  - id: x4
+    effects:
+      x: 1
+    text:
+      en: A four-year-old has seen more data than any language model has read, and that matters.
+      zh: 一个四岁孩子用眼睛看过的数据，比任何语言模型读过的文本都多，这件事很重要。
+  - id: x5
+    effects:
+      x: -1
+    text:
+      en: The main job of a vision module is to translate images for the language model.
+      zh: 视觉模块的主要作用，是把图像翻译给语言模型看。
+  - id: x6
+    effects:
+      x: 1
+    text:
+      en: The next generation of foundation models should train mainly on video, not text.
+      zh: 下一代基础模型的主要训练数据应该是视频，而不是文本。
+  - id: x7
+    effects:
+      x: -1
+    text:
+      en: Reasoning is fundamentally linguistic; the chain of thought is the thinking itself.
+      zh: 推理本质上是语言性的，思维链就是思考本身。
+  - id: x8
+    effects:
+      x: 1
+    text:
+      en: A system that cannot predict what the physical world does next is not intelligent.
+      zh: 不能预测物理世界下一刻会发生什么的系统，不配叫智能。
+  - id: x9
+    effects:
+      x: 1
+    text:
+      en: Robots and embodied data are a necessary road to general intelligence.
+      zh: 机器人和具身数据是通往通用智能的必经之路。
+  - id: x10
+    effects:
+      x: -1
+    text:
+      en: Most progress in multimodal ability comes from a stronger language backbone.
+      zh: 多模态能力的进步，大部分来自更强的语言主干。
+  - id: x11
+    effects:
+      x: 1
+    text:
+      en: Language is a low-bandwidth, lossy compression of the world.
+      zh: 语言是对世界的一种低带宽、有损的压缩。
+  - id: x12
+    effects:
+      x: -1
+    text:
+      en: A model that writes good code and proves theorems is closer to general intelligence than one that understands video.
+      zh: 能写好代码、能证明定理的模型，比“看懂视频”的模型更接近通用智能。
+  - id: y1
+    effects:
+      'y': 1
+    text:
+      en: Today’s agent frameworks and harnesses will be absorbed by stronger models within a few years.
+      zh: 今天的 agent 框架和 harness，几年后都会被更强的模型吸收掉。
+  - id: y2
+    effects:
+      'y': -1
+    text:
+      en: The same model with a better harness can gain more than a whole model generation.
+      zh: 同一个模型换一个好的 harness，提升可以比换一代模型还大。
+  - id: y3
+    effects:
+      'y': 1
+    text:
+      en: End-to-end training will always beat hand-designed modular pipelines.
+      zh: 端到端训练终将打败人工设计的模块化流水线。
+  - id: y4
+    effects:
+      'y': -1
+    text:
+      en: Intelligence lives in the system (memory, tools, workflow), not just in the weights.
+      zh: 智能更多存在于系统里（记忆、工具、流程），而不只是权重里。
+  - id: y5
+    effects:
+      'y': 1
+    text:
+      en: Tool use is a stopgap; models should eventually do everything internally.
+      zh: 工具调用只是过渡，模型最终应该在内部完成所有事情。
+  - id: y6
+    effects:
+      'y': -1
+    text:
+      en: Several specialized models working together are more reliable than one general model.
+      zh: 几个专门的模型协作，比一个通用大模型更可靠。
+  - id: y7
+    effects:
+      'y': 1
+    text:
+      en: The field should concentrate its resources on training the single strongest base model.
+      zh: 整个领域应该把资源集中在训练一个最强的基座模型上。
+  - id: y8
+    effects:
+      'y': -1
+    text:
+      en: Explicit, readable, editable structure (behavior trees, programs, rules) is the key to reliable agents.
+      zh: 可读、可编辑的显式结构（行为树、程序、规则）是让 agent 可靠的关键。
+  - id: y9
+    effects:
+      'y': 1
+    text:
+      en: Memory, planning and reflection should emerge inside the model, not be bolted on.
+      zh: 记忆、规划、反思都应该在模型内部涌现，而不是外挂上去。
+  - id: y10
+    effects:
+      'y': -1
+    text:
+      en: Context engineering — what the model gets to see — matters more than a bigger model.
+      zh: 上下文工程（给模型看什么）比换一个更大的模型更重要。
+  - id: y11
+    effects:
+      'y': 1
+    text:
+      en: Multi-agent systems mostly patch over the weaknesses of a single model.
+      zh: 多智能体系统大多只是在弥补单个模型的不足。
+  - id: y12
+    effects:
+      'y': -1
+    text:
+      en: An agent should distill what it learns into code or rules instead of calling the model every time.
+      zh: agent 应该把学会的东西沉淀成代码或规则，而不是每次都去调用模型。
+  - id: p1
+    effects:
+      p: 1
+    text:
+      en: The Transformer will not be the final architecture on the way to general intelligence.
+      zh: Transformer 不会是通往通用智能的最终架构。
+  - id: p2
+    effects:
+      p: -1
+    text:
+      en: The current recipe — pretraining, post-training, scale — is enough to reach general intelligence.
+      zh: 现有配方（预训练 + 后训练 + 规模）足以到达通用智能。
+  - id: p3
+    effects:
+      p: 1
+    text:
+      en: The next breakthrough is more likely a small group’s new idea than a bigger cluster.
+      zh: 下一个重大突破更可能来自一个小组的新想法，而不是更大的集群。
+  - id: p4
+    effects:
+      p: 1
+    text:
+      en: Backpropagation on static datasets is itself a paradigm that needs replacing.
+      zh: 在静态数据集上做反向传播，这个范式本身需要被替换。
+  - id: p5
+    effects:
+      p: -1
+    text:
+      en: Most “new architecture” papers end up losing to a scaled-up Transformer.
+      zh: 大多数“新架构”论文，最终都会输给加大规模的 Transformer。
+  - id: p6
+    effects:
+      p: 1
+    text:
+      en: Continual learning after deployment is what current models lack most.
+      zh: 部署后持续学习，是当前模型最缺的能力。
+  - id: p7
+    effects:
+      p: -1
+    text:
+      en: Methods from decades ago are badly underrated; the answers are often already there.
+      zh: 几十年前的老方法被严重低估了，答案往往早就有了。
+  - id: p8
+    effects:
+      p: 1
+    text:
+      en: We need new learning objectives, not next-token or next-pixel prediction.
+      zh: 我们需要全新的学习目标，而不是预测下一个 token 或下一个像素。
+  - id: p9
+    effects:
+      p: -1
+    text:
+      en: Incremental engineering moves the field more than paradigm shifts do.
+      zh: 渐进的工程改进比范式革命更能推动这个领域。
+  - id: p10
+    effects:
+      p: 1
+    text:
+      en: In ten years, today’s mainstream methods will look as dated as SVMs look today.
+      zh: 十年后回看，今天的主流方法会像今天回看 SVM 一样过时。
+  - id: o1
+    effects:
+      o: 1
+    text:
+      en: The weights of the strongest models should be open.
+      zh: 最强模型的权重应该开放。
+  - id: o2
+    effects:
+      o: -1
+    text:
+      en: Frontier capability is better concentrated in a few labs with safety teams.
+      zh: 前沿能力集中在少数有安全团队的实验室里更好。
+  - id: o3
+    effects:
+      o: 1
+    text:
+      en: Results on closed models that no one can reproduce should not count as scientific contributions.
+      zh: 基于闭源模型、无法复现的结果，不该算作科学贡献。
+  - id: o4
+    effects:
+      o: 1
+    text:
+      en: Academia can do frontier research with open models alone.
+      zh: 学术界只靠开放模型，也能做出前沿研究。
+  - id: o5
+    effects:
+      o: -1
+    text:
+      en: Releasing full training data and recipes is too risky.
+      zh: 公开完整的训练数据和配方风险太大。
+  - id: o6
+    effects:
+      o: 1
+    text:
+      en: The open community will catch up with, or even pass, the closed frontier.
+      zh: 开源社区终将追上甚至超过闭源前沿。
+  - id: o7
+    effects:
+      o: -1
+    text:
+      en: A commercial API is the best way to put AI in everyone’s hands.
+      zh: 商业 API 是把 AI 交给大众的最好方式。
+  - id: o8
+    effects:
+      o: 1
+    text:
+      en: Training data should be fully public and auditable.
+      zh: 训练数据应该完全公开、可查。
+  - id: a1
+    effects:
+      a: 1
+    text:
+      en: The faster AI progresses, the better.
+      zh: AI 发展得越快越好。
+  - id: a2
+    effects:
+      a: -1
+    text:
+      en: The chance that advanced AI causes catastrophe deserves serious attention.
+      zh: 先进 AI 带来灾难性后果的可能性，值得认真对待。
+  - id: a3
+    effects:
+      a: 1
+    text:
+      en: Regulation does AI more harm than good.
+      zh: 监管对 AI 的伤害大于帮助。
+  - id: a4
+    effects:
+      a: -1
+    text:
+      en: Frontier training should slow down until alignment is solved.
+      zh: 在对齐问题解决之前，应该放慢前沿模型的训练。
+  - id: a5
+    effects:
+      a: 1
+    text:
+      en: The more autonomy agents get the better; human approval is the bottleneck.
+      zh: 给 agent 的自主权越多越好，人类审批是瓶颈。
+  - id: a6
+    effects:
+      a: -1
+    text:
+      en: Interpretability research should get more resources than capability research.
+      zh: 可解释性研究应该比能力研究获得更多资源。
+  - id: a7
+    effects:
+      a: 1
+    text:
+      en: AI doom talk is mostly marketing or panic.
+      zh: “AI 末日论”主要是营销或者恐慌。
+  - id: a8
+    effects:
+      a: -1
+    text:
+      en: Independent bodies should safety-test models before they are deployed.
+      zh: 模型部署前应该由独立机构做安全评测。

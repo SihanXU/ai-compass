@@ -1,0 +1,18 @@
+id: context-engineering-liberalism
+name:
+  en: Context-Engineering Liberalism
+  zh: 上下文工程自由主义
+motto:
+  en: The right context beats a bigger model
+  zh: 喂对上下文比换模型重要
+level: 4
+place:
+  col: 2
+  row: 8
+parents: [prompt-craftism, rag-mutualism]
+relations:
+  allies: [harness-liberalism, memory-constitutionalism, coding-agent-syndicalism]
+  frenemies: [long-context-expansionism, protocol-federalism]
+  rivals: [compute-statism, scale-sublimism, bitter-lesson-orthodoxy]
+works:
+  - {title: "Lost in the Middle: How Language Models Use Long Contexts", year: 2023, url: https://arxiv.org/abs/2307.03172}

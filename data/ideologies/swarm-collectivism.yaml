@@ -1,0 +1,19 @@
+id: swarm-collectivism
+name:
+  en: Swarm Collectivism
+  zh: 蜂群集体主义
+motto:
+  en: A thousand small models beat one giant
+  zh: 一千个小模型胜过一个大模型
+level: 3
+place:
+  col: 1
+  row: 11
+parents: [multi-agent-parliamentarism]
+relations:
+  allies: [small-model-localism, model-market-anarchism, agent-anarcho-communism, swarm-robotics]
+  frenemies: [mixture-of-experts-federalism]
+  rivals: [compute-theocracy, scale-sublimism, compute-statism]
+works:
+  - {title: "More Agents Is All You Need", year: 2024, url: "https://arxiv.org/abs/2402.05120"}
+  - {title: "Mixture-of-Agents Enhances Large Language Model Capabilities", year: 2024, url: "https://arxiv.org/abs/2406.04692"}

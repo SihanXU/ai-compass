@@ -1,0 +1,19 @@
+id: world-as-code-doctrine
+name:
+  en: World-as-Code Doctrine
+  zh: 世界即代码主义
+motto:
+  en: World state and rules are code
+  zh: 世界的状态与规则都是代码
+level: 3
+place:
+  col: 10
+  row: 9
+parents: [program-synthesis-doctrine, code-as-thought]
+relations:
+  allies: [game-agent-doctrine, classical-planning-restoration, generative-village-communalism]
+  frenemies: [world-model-vanguardism, physical-law-absolutism]
+  rivals: [world-simulator-statism, video-scalism, latent-prediction-doctrine]
+works:
+  - {title: "Code as Policies: Language Model Programs for Embodied Control", year: 2022, url: https://arxiv.org/abs/2209.07753}
+  - {title: "Eureka: Human-Level Reward Design via Coding Large Language Models", year: 2023, url: https://arxiv.org/abs/2310.12931}

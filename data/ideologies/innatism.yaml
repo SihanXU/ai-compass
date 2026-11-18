@@ -1,0 +1,19 @@
+id: innatism
+name:
+  en: Innatism
+  zh: 先天语法主义
+motto:
+  en: Language is innate
+  zh: 语言能力是天生的
+level: 9
+place:
+  col: 0
+  row: 5
+parents: [logocentrism]
+relations:
+  allies: [grammarian-conservatism, formal-semanticism, symbolic-restorationism]
+  frenemies: [linguistic-relativism, intuitive-physics-doctrine]
+  rivals: [distributional-semanticism, emergentism, next-token-totalitarianism, bitter-lesson-orthodoxy]
+works:
+  - {title: "Syntactic Structures", year: 1957}
+  - {title: "Aspects of the Theory of Syntax", year: 1965}

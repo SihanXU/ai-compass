@@ -1,0 +1,20 @@
+id: understand-generate-unionism
+name:
+  en: Understand-Generate Unionism
+  zh: 理解生成统一主义
+motto:
+  en: Seeing and drawing are one act
+  zh: 看与画是同一件事
+level: 4
+place:
+  col: 6
+  row: 1
+parents: [any-to-any-imperialism]
+relations:
+  allies: [diffusion-autoregressive-syncretism, native-fusion-centralism, visual-token-statism]
+  frenemies: [representation-centralism]
+  rivals: [modular-multimodalism, pipeline-pragmatism, captionist-centralism]
+works:
+  - {title: "Emu3: Next-Token Prediction is All You Need", year: 2024}
+  - {title: "Janus: Decoupling Visual Encoding for Unified Multimodal Understanding and Generation", year: 2024}
+  - {title: "Show-o: One Single Transformer to Unify Multimodal Understanding and Generation", year: 2024}

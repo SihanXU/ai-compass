@@ -1,0 +1,19 @@
+id: grammarian-conservatism
+name:
+  en: Grammarian Conservatism
+  zh: 语法学家保守主义
+motto:
+  en: Language has structure; so should models
+  zh: 语言有结构，模型也该有
+level: 8
+place:
+  col: 0
+  row: 3
+parents: [innatism]
+relations:
+  allies: [formal-semanticism, symbolic-restorationism, neuro-symbolic-federalism]
+  frenemies: [distributional-semanticism, circuit-constitutionalism]
+  rivals: [byte-level-populism, next-token-totalitarianism, bitter-lesson-orthodoxy]
+works:
+  - {title: "Recurrent Neural Network Grammars", year: 2016, url: "https://arxiv.org/abs/1602.07776"}
+  - {title: "Building a Large Annotated Corpus of English: The Penn Treebank", year: 1993}

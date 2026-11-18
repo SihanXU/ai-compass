@@ -1,0 +1,19 @@
+id: omni-model-absolutism
+name:
+  en: Omni-Model Absolutism
+  zh: 全模态专制主义
+motto:
+  en: There is no model but the omni model
+  zh: Omni 之外别无模型
+level: 4
+place:
+  col: 6
+  row: 0
+parents: [any-to-any-imperialism]
+relations:
+  allies: [native-fusion-centralism, audio-native-doctrine, compute-statism]
+  frenemies: [multimodal-agentism]
+  rivals: [model-market-anarchism, swarm-collectivism, modular-multimodalism]
+works:
+  - {title: "GPT-4o System Card", year: 2024}
+  - {title: "Qwen2.5-Omni Technical Report", year: 2025}

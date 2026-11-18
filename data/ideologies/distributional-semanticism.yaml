@@ -1,0 +1,20 @@
+id: distributional-semanticism
+name:
+  en: Distributional Semanticism
+  zh: 分布语义主义
+motto:
+  en: A word is known by its company
+  zh: 词义取决于它的邻居
+level: 6
+place:
+  col: 1
+  row: 6
+parents: [corpus-fundamentalism]
+relations:
+  allies: [next-token-totalitarianism, pretraining-maximalism, contrastive-alignmentism, linguistic-relativism]
+  frenemies: [interpretability-reformism]
+  rivals: [formal-semanticism, grounding-doctrine, innatism]
+works:
+  - {title: "Distributional Structure", year: 1954}
+  - {title: "Efficient Estimation of Word Representations in Vector Space", year: 2013, url: "https://arxiv.org/abs/1301.3781"}
+  - {title: "GloVe: Global Vectors for Word Representation", year: 2014}

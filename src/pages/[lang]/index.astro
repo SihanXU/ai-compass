@@ -1,0 +1,92 @@
+---
+// The project's front page: what it is and the two ways in, the chart, what is here, how to contribute.
+import Layout from '../../layouts/Layout.astro';
+import Chart from '../../components/Chart.astro';
+import Legend from '../../components/Legend.astro';
+import Ball from '../../components/Ball.astro';
+import { ideologies, tests, axes, leaderboard, byId } from '../../lib/data.js';
+import { t, url, LANGS } from '../../lib/i18n.js';
+
+export function getStaticPaths() { return LANGS.map((lang) => ({ params: { lang } })); }
+const { lang } = Astro.params;
+// a little crowd of balls from all over the chart
+const crowd = [
+  ['logos-absolutism', 0, 10, 120], ['world-model-vanguardism', 190, 0, 130], ['harness-liberalism', 95, 110, 150],
+  ['linguistic-multimodalism', 0, 175, 100], ['embodied-statism', 240, 150, 110], ['open-weights-communalism', 140, 245, 80],
+  ['symbolic-restorationism', 20, 260, 70], ['radical-centrism-or-leaderboardism', 270, 255, 70],
+].map(([id, x, y, s]) => ({ ide: byId.get(id), x, y, s })).filter((b) => b.ide);
+---
+<Layout lang={lang} active="">
+    <header class="land-hero">
+        <div class="container">
+            <div>
+                <h1>{t(lang, 'heroTitleA')}<br /><span>{t(lang, 'heroTitleB')}</span></h1>
+                <p class="tagline">{t(lang, 'heroTagline')}</p>
+                <div class="actions">
+                    <a class="btn primary big" href={url(lang, 'test/full')}>{t(lang, 'ctaFull')}</a>
+                    <a class="btn big" href={url(lang, 'test/quick')}>{t(lang, 'ctaQuick')}</a>
+                </div>
+                <div class="land-stats">
+                    <div><b>{ideologies.length}</b><span>{t(lang, 'statIdeologies')}</span></div>
+                    <div><b>{tests.full.questions.length}</b><span>{t(lang, 'statQuestions')}</span></div>
+                    <div><b>{axes.length}</b><span>{t(lang, 'statAxes')}</span></div>
+                    <div><b>{leaderboard.length}</b><span>{t(lang, 'statModels')}</span></div>
+                </div>
+            </div>
+            <div class="ball-stack" aria-hidden="true">
+                {crowd.map((b) => <a href={url(lang, `wiki/${b.ide.id}`)} style={`left:${b.x}px;top:${b.y}px`} title={b.ide.name[lang]} tabindex="-1"><Ball ide={b.ide} size={b.s} /></a>)}
+            </div>
+        </div>
+    </header>
+
+    <section class="land-section">
+        <div class="container wide">
+            <h2>{t(lang, 'landChartTitle')}</h2>
+            <p class="sub">{t(lang, 'landChartSub')}</p>
+            <div style="margin-top:1.5rem"><Chart lang={lang} /></div>
+            <Legend lang={lang} />
+            <p style="margin-top:1rem"><a href={url(lang, 'chart')}>{t(lang, 'openChart')} →</a></p>
+        </div>
+    </section>
+
+    <section class="land-section">
+        <div class="container">
+            <h2>{t(lang, 'landWhatTitle')}</h2>
+            <div class="cards">
+                <a class="card" href={url(lang, 'test/full')}>
+                    <span class="k">{t(lang, 'cardTestK')}</span>
+                    <span class="num">{tests.quick.questions.length} · {tests.full.questions.length}</span>
+                    <h3>{t(lang, 'cardTestT')}</h3>
+                    <p>{t(lang, 'cardTestP')}</p>
+                    <span class="go">{t(lang, 'go')}</span>
+                </a>
+                <a class="card" href={url(lang, 'wiki')}>
+                    <span class="k">{t(lang, 'cardWikiK')}</span>
+                    <span class="num">{ideologies.length}</span>
+                    <h3>{t(lang, 'cardWikiT')}</h3>
+                    <p>{t(lang, 'cardWikiP')}</p>
+                    <span class="go">{t(lang, 'go')}</span>
+                </a>
+                <a class="card" href={url(lang, 'leaderboard')}>
+                    <span class="k">{t(lang, 'cardBoardK')}</span>
+                    <span class="num">{leaderboard.length}</span>
+                    <h3>{t(lang, 'cardBoardT')}</h3>
+                    <p>{t(lang, 'cardBoardP')}</p>
+                    <span class="go">{t(lang, 'go')}</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="land-section">
+        <div class="container">
+            <h2>{t(lang, 'landContribTitle')}</h2>
+            <p class="sub">{t(lang, 'landContribSub')}</p>
+            <div class="contribute">
+                <div><h3>{t(lang, 'contrib1T')}</h3><p set:html={t(lang, 'contrib1P')} /></div>
+                <div><h3>{t(lang, 'contrib2T')}</h3><p set:html={t(lang, 'contrib2P')} /></div>
+                <div><h3>{t(lang, 'contrib3T')}</h3><p set:html={t(lang, 'contrib3P')} /></div>
+            </div>
+        </div>
+    </section>
+</Layout>

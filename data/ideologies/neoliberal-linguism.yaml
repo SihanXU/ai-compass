@@ -1,0 +1,20 @@
+id: neoliberal-linguism
+name:
+  en: Neoliberal Linguism
+  zh: 新自由语言主义
+motto:
+  en: The LM is the backbone; the rest are plugins
+  zh: 语言模型是主干，其余皆插件
+level: 6
+place:
+  col: 2
+  row: 3
+parents: [logocentrism]
+relations:
+  allies: [multimodal-linguism, function-call-federalism, modular-multimodalism]
+  frenemies: [harness-liberalism, instruction-corporatism]
+  rivals: [native-fusion-centralism, early-fusion-statism, visualism]
+works:
+  - {title: "Visual Instruction Tuning", year: 2023, url: "https://arxiv.org/abs/2304.08485"}
+  - {title: "BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models", year: 2023, url: "https://arxiv.org/abs/2301.12597"}
+  - {title: "HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in Hugging Face", year: 2023, url: "https://arxiv.org/abs/2303.17580"}

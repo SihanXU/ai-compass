@@ -1,0 +1,18 @@
+id: artificial-life-doctrine
+name:
+  en: Artificial-Life Doctrine
+  zh: 人工生命主义
+motto:
+  en: Intelligence grows out of life
+  zh: 智能从生命里长出来
+level: 2
+place:
+  col: 10
+  row: 10
+parents: [open-endedness]
+relations:
+  allies: [neuroevolutionism, morphological-anarchism, open-endedness, bio-hybridism]
+  frenemies: [developmentalism, evolutionary-federalism]
+  rivals: [compute-theocracy, next-token-totalitarianism, scale-sublimism]
+works:
+  - {title: "Growing Neural Cellular Automata", year: 2020, url: "https://distill.pub/2020/growing-ca/"}

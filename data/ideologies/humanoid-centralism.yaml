@@ -1,0 +1,19 @@
+id: humanoid-centralism
+name:
+  en: Humanoid Centralism
+  zh: 人形集权主义
+motto:
+  en: The world is built for humanoids
+  zh: 世界为人形设计，故用人形
+level: 4
+place:
+  col: 12
+  row: 1
+parents: [embodied-statism]
+relations:
+  allies: [vla-monarchism, dexterity-doctrine, sim-scale-statism]
+  frenemies: [robot-foundation-imperialism]
+  rivals: [morphological-anarchism, swarm-robotics, morphological-computationalism]
+works:
+  - {title: "HumanPlus: Humanoid Shadowing and Imitation from Humans", year: 2024}
+  - {title: "GR00T N1: An Open Foundation Model for Generalist Humanoid Robots", year: 2025}

@@ -1,0 +1,51 @@
+---
+// A category page: a camp, the centre, the ring, or a paradigm level, listing its entries with their summaries.
+import Layout from '../../../../layouts/Layout.astro';
+import WikiSidebar from '../../../../components/WikiSidebar.astro';
+import Ball from '../../../../components/Ball.astro';
+import { getCollection } from 'astro:content';
+import { ideologies, wikiGroups, levels } from '../../../../lib/data.js';
+import { t, url, tr, LANGS } from '../../../../lib/i18n.js';
+
+export function getStaticPaths() {
+  const keys = [...wikiGroups().map((g) => g.key), ...levels.map((l) => `level-${l.level}`)];
+  return LANGS.flatMap((lang) => keys.map((cat) => ({ params: { lang, cat } })));
+}
+const { lang, cat } = Astro.params;
+let name, text, items, group = '';
+if (cat.startsWith('level-')) {
+  const lv = levels.find((l) => `level-${l.level}` === cat);
+  name = t(lang, 'catParadigm', { l: lv[lang] });
+  text = lang === 'zh' ? `范式等级 ${lv.level}：所有在图上以这一档深浅出现的主义。` : `Paradigm level ${lv.level}: every ideology drawn in this shade on the chart.`;
+  items = ideologies.filter((i) => i.level === lv.level);
+} else {
+  const g = wikiGroups().find((x) => x.key === cat);
+  name = tr(g.name, lang); text = tr(g.text, lang); items = g.items; group = g.key;
+}
+const prose = new Map((await getCollection('wiki')).filter((e) => e.id.startsWith(`${lang}/`)).map((e) => [e.id.slice(lang.length + 1), e.data.summary]));
+---
+<Layout lang={lang} title={name} path={`wiki/category/${cat}`} active="wiki">
+    <div class="wiki">
+        <WikiSidebar lang={lang} group={group} />
+        <main class="wiki-main">
+            <nav class="crumbs"><a href={url(lang, 'wiki')}>{t(lang, 'navWiki')}</a><span>›</span><span>{t(lang, 'categories')}</span></nav>
+            <div class="wiki-title"><h1>{t(lang, 'categories')}: {name}</h1></div>
+            <p class="wiki-sub">{t(lang, 'entriesIn', { n: items.length })}</p>
+            <div class="wiki-body">
+                <p class="lead">{text}</p>
+                <div class="table">
+                    <table>
+                        <tbody>
+                            {items.map((i) => (
+                                <tr>
+                                    <td class="l" style="width:52px"><a href={url(lang, `wiki/${i.id}`)}><Ball ide={i} size={36} /></a></td>
+                                    <td class="l wrap"><a href={url(lang, `wiki/${i.id}`)}><b>{i.name[lang]}</b></a><br /><span class="muted" style="font-size:0.9rem">{prose.get(i.id) || i.motto[lang]}</span></td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+</Layout>

@@ -1,0 +1,20 @@
+id: sim-scale-statism
+name:
+  en: Sim-Scale Statism
+  zh: 仿真规模国家主义
+motto:
+  en: A hundred million years in simulation
+  zh: 在仿真里跑一亿年
+level: 4
+place:
+  col: 11
+  row: 1
+parents: [sim-to-real-pragmatism]
+relations:
+  allies: [robot-foundation-imperialism, humanoid-centralism, compute-statism]
+  frenemies: [world-simulator-statism]
+  rivals: [field-robotics-libertarianism, robot-foundationism]
+works:
+  - {title: "Learning Dexterous In-Hand Manipulation", year: 2018, url: "https://arxiv.org/abs/1808.00177"}
+  - {title: "Isaac Gym: High Performance GPU-Based Physics Simulation For Robot Learning", year: 2021, url: "https://arxiv.org/abs/2108.10470"}
+  - {title: "Solving Rubik's Cube with a Robot Hand", year: 2019, url: "https://arxiv.org/abs/1910.07113"}

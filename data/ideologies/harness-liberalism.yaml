@@ -1,0 +1,19 @@
+id: harness-liberalism
+name:
+  en: Harness Liberalism
+  zh: Harness 自由主义
+motto:
+  en: The model is the engine; the harness is the car
+  zh: 模型是引擎，harness 才是车
+level: 4
+place:
+  col: 3
+  row: 8
+parents: [tool-use-liberalism]
+relations:
+  allies: [context-engineering-liberalism, coding-agent-syndicalism, protocol-federalism, memory-constitutionalism]
+  frenemies: [harness-nihilism, workflow-bureaucratism]
+  rivals: [bitter-lesson-orthodoxy, logos-absolutism, compute-theocracy]
+works:
+  - {title: "ReAct: Synergizing Reasoning and Acting in Language Models", year: 2022, url: https://arxiv.org/abs/2210.03629}
+  - {title: "SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering", year: 2024, url: https://arxiv.org/abs/2405.15793}

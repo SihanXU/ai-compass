@@ -1,0 +1,20 @@
+id: pipeline-pragmatism
+name:
+  en: Pipeline Pragmatism
+  zh: 流水线实用主义
+motto:
+  en: 'Detect, segment, recognize: one pipeline'
+  zh: 检测、分割、识别一条龙
+level: 6
+place:
+  col: 7
+  row: 7
+parents: []
+relations:
+  allies: [perception-stack-federalism, modular-multimodalism, robot-federalism, object-centrism]
+  frenemies: [representation-centralism]
+  rivals: [end-to-end-driving-absolutism, omni-model-absolutism, any-to-any-imperialism]
+works:
+  - {title: "Rich feature hierarchies for accurate object detection and semantic segmentation", year: 2013, url: "https://arxiv.org/abs/1311.2524"}
+  - {title: "Mask R-CNN", year: 2017, url: "https://arxiv.org/abs/1703.06870"}
+  - {title: "Segment Anything", year: 2023, url: "https://arxiv.org/abs/2304.02643"}

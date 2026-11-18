@@ -1,0 +1,19 @@
+id: subsumption-doctrine
+name:
+  en: Subsumption Doctrine
+  zh: 包容架构主义
+motto:
+  en: Intelligence without representation
+  zh: 无需表征的智能
+level: 8
+place:
+  col: 11
+  row: 9
+parents: [cybernetic-primitivism]
+relations:
+  allies: [reactive-anarchism, morphological-computationalism, sensorimotor-doctrine, vehicle-primitivism]
+  frenemies: [hierarchical-control, growing-tree-doctrine]
+  rivals: [classical-planning-restoration, symbolic-restorationism, world-model-vanguardism]
+works:
+  - {title: "A Robust Layered Control System for a Mobile Robot", year: 1986}
+  - {title: "Intelligence without representation", year: 1991}

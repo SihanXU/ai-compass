@@ -1,0 +1,216 @@
+---
+// The result: your match on a card, one two-coloured bar per axis with its label, your neighbours and titles, the chart.
+import Layout from '../../layouts/Layout.astro';
+import Chart from '../../components/Chart.astro';
+import Legend from '../../components/Legend.astro';
+import { clientData } from '../../lib/data.js';
+import { t, url, pack, LANGS } from '../../lib/i18n.js';
+
+export function getStaticPaths() { return LANGS.map((lang) => ({ params: { lang } })); }
+const { lang } = Astro.params;
+const strings = pack(lang, [
+  'closest', 'campIs', 'onChart', 'near', 'titles', 'noTitles', 'readEntry', 'retake', 'tryFull', 'share', 'copied',
+  'saveImage', 'quickNote', 'noResult', 'paradigm', 'site', 'axes', 'axisCategory', 'catStrongNeg', 'catNeg', 'catMid', 'catPos', 'catStrongPos',
+  'yourCamp', 'yourIdeology',
+]);
+const data = { ...clientData(lang), strings, wiki: url(lang, 'wiki/'), test: url(lang, 'test/') };
+---
+<Layout lang={lang} title={t(lang, 'resultLabel')} path="result" active="test">
+    <main class="result-page">
+        <div class="container">
+            <section class="match">
+                <div data-r-ball></div>
+                <div>
+                    <p class="label" data-r-label>{t(lang, 'closest')}</p>
+                    <h1 data-r-name>…</h1>
+                    <p class="motto" data-r-motto></p>
+                    <div class="actions" data-r-actions></div>
+                </div>
+            </section>
+            <section class="axes-card" data-r-axes-card>
+                <h2>{t(lang, 'axes')}</h2>
+                <div data-r-axes></div>
+            </section>
+            <section class="near-card" data-r-near-card>
+                <div><h2>{t(lang, 'near')}</h2><ul class="near-list" data-r-near></ul></div>
+                <div data-r-titles-box><h2>{t(lang, 'titles')}</h2><ul class="near-list" data-r-titles></ul><p class="muted" data-r-note hidden style="margin-top:0.75rem;font-size:0.92rem"></p></div>
+            </section>
+        </div>
+        <section class="result-chart">
+            <div class="container wide">
+                <h2>{t(lang, 'resultChart')}</h2>
+                <Chart lang={lang} />
+                <Legend lang={lang} />
+            </div>
+        </section>
+    </main>
+    <script type="application/json" id="compass-data" set:html={JSON.stringify(data)} />
+</Layout>
+
+<script>
+  import { decodeResult, rank, earned, campOf, ideologyColour, gridOf, COLS, ROWS, CENTER } from '../../lib/compass.js';
+  import { ballSvg } from '../../lib/ball.js';
+
+  const D = JSON.parse(document.getElementById('compass-data').textContent);
+  const S = D.strings;
+  const L = D.lang;
+  const $ = (sel) => document.querySelector(sel);
+  const el = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; };
+
+  const res = decodeResult(location.search);
+  if (!res) {
+    $('[data-r-name]').textContent = S.noResult;
+    ['[data-r-axes-card]', '[data-r-near-card]'].forEach((s) => ($(s).hidden = true));
+    const a = el('a', 'btn primary', S.retake); a.href = D.test + 'full/'; $('[data-r-actions]').append(a);
+  } else show(res);
+
+  function category(v, ax) {
+    const pole = v < 0 ? ax.neg[L] : ax.pos[L];
+    const k = v < -0.6 ? 'catStrongNeg' : v < -0.2 ? 'catNeg' : v <= 0.2 ? 'catMid' : v <= 0.6 ? 'catPos' : 'catStrongPos';
+    return S[k].replace('{pole}', pole);
+  }
+
+  function listItem(ide, sub) {
+    const li = el('li');
+    const a = el('a'); a.href = D.wiki + ide.id + '/';
+    a.insertAdjacentHTML('beforeend', ballSvg(ideologyColour(ide).bg, 34, !!ide.place.ring));
+    const tx = el('span'); tx.append(el('span', 't', ide.name[L]), el('span', 'm', sub ?? ide.motto[L]));
+    a.append(tx); li.append(a);
+    return li;
+  }
+
+  function show({ mode, s }) {
+    const quick = mode === 'quick';
+    const ranked = rank(D.ideologies, s, quick);
+    const best = ranked[0].ide;
+    const titles = quick ? [] : earned(D.ideologies, s);
+    const bestCol = ideologyColour(best);
+
+    let name, motto;
+    if (quick) {
+      const c = campOf(s);
+      const camp = D.camps.find((x) => x.col === c.col && x.row === c.row);
+      $('[data-r-label]').textContent = S.campIs;
+      name = camp.name[L]; motto = camp.text[L];
+    } else {
+      name = best.name[L]; motto = best.motto[L];
+    }
+    $('[data-r-ball]').innerHTML = ballSvg(bestCol.bg, 170);
+    const h1 = $('[data-r-name]'); h1.textContent = name;
+    $('[data-r-motto]').textContent = quick ? motto : `“${motto}”`;
+    document.title = `${name} · ${S.site}`;
+
+    const acts = $('[data-r-actions]');
+    const go = (text, href, primary) => { const a = el('a', 'btn' + (primary ? ' primary' : ''), text); a.href = href; acts.append(a); };
+    go(S.readEntry, D.wiki + best.id + '/', true);
+    if (quick) go(S.tryFull, D.test + 'full/');
+    go(S.retake, D.test + mode + '/');
+    const share = el('button', 'btn', S.share); share.type = 'button';
+    share.addEventListener('click', () => { const done = () => { share.textContent = S.copied; }; navigator.clipboard ? navigator.clipboard.writeText(location.href).then(done, done) : done(); });
+    const save = el('button', 'btn', S.saveImage); save.type = 'button';
+    save.addEventListener('click', () => saveImage({ s, quick, name, motto, bg: bestCol.bg }));
+    acts.append(share, save);
+
+    // one bar per axis: the left pole's share on the left in its colour, the right pole's on the right
+    const COLS_AX = { x: ['#d9534f', '#3b7dd8'], y: ['#2f9e5b', '#8e5bd6'], p: ['#5a5f66', '#16a3b8'], o: ['#7d8794', '#e0a020'], a: ['#3f8f8f', '#e8642c'] };
+    const box = $('[data-r-axes]');
+    (quick ? D.axes.slice(0, 2) : D.axes).forEach((ax) => {
+      const v = s[ax.key];
+      const right = Math.round(((v + 1) / 2) * 1000) / 10;
+      const left = Math.round((100 - right) * 10) / 10;
+      const wrap = el('div', 'vbar');
+      const head = el('div', 'vbar-head');
+      head.innerHTML = S.axisCategory.replace('{axis}', `<span>${ax.title[L]}</span>`).replace('{cat}', `<b>${category(v, ax)}</b>`);
+      const row = el('div', 'vbar-row');
+      const track = el('div', 'vbar-track');
+      const l = el('span', 'l', left >= 9 ? `${left}%` : ''); l.style.cssText = `width:${left}%;background:${COLS_AX[ax.key][0]}`;
+      const r = el('span', 'r', right >= 9 ? `${right}%` : ''); r.style.cssText = `width:${right}%;background:${COLS_AX[ax.key][1]}`;
+      track.append(l, r);
+      row.append(el('span', 'pole', ax.neg[L]), track, el('span', 'pole r', ax.pos[L]));
+      wrap.append(head, row);
+      box.append(wrap);
+    });
+
+    const near = $('[data-r-near]');
+    ranked.slice(quick ? 0 : 1, 5).forEach(({ ide }) => near.append(listItem(ide)));
+    if (quick) {
+      $('[data-r-titles-box] h2').textContent = S.onChart;
+      $('[data-r-titles]').append(listItem(best));
+      const note = $('[data-r-note]'); note.textContent = S.quickNote; note.hidden = false;
+    } else {
+      const tl = $('[data-r-titles]');
+      if (!titles.length) tl.append(el('li', 'muted', S.noTitles));
+      titles.forEach((ide) => tl.append(listItem(ide)));
+    }
+
+    const chart = document.querySelector('.chart');
+    chart.querySelectorAll('.cell').forEach((c) => c.classList.add('dim'));
+    const mark = (id, cls) => { const c = chart.querySelector(`.cell[data-id="${id}"]`); if (c) { c.classList.remove('dim'); c.classList.add(cls); } };
+    mark(best.id, 'hit');
+    ranked.slice(1, 5).forEach((e) => mark(e.ide.id, 'near-hit'));
+    titles.forEach((ide) => mark(ide.id, 'near-hit'));
+    const marks = chart.querySelector('.marks');
+    if (quick) {
+      const c = campOf(s);
+      [1 / 3, 2 / 3].forEach((f) => {
+        const v = el('div', 'third v'); v.style.left = `${f * 100}%`; marks.append(v);
+        const h = el('div', 'third h'); h.style.top = `${f * 100}%`; marks.append(h);
+      });
+      const camp = el('div', 'camp'); camp.style.cssText = `left:${(c.col / 3) * 100}%;top:${(c.row / 3) * 100}%;width:33.34%;height:33.34%`;
+      marks.append(camp);
+    }
+    const pin = el('div', 'pin'); pin.style.left = `${((s.x + 1) / 2) * 100}%`; pin.style.top = `${((1 - s.y) / 2) * 100}%`;
+    marks.append(pin);
+  }
+
+  // 1200 × 630: the chart in miniature with your pin, your result beside it
+  function saveImage({ s, quick, name, motto, bg }) {
+    const W = 1200, H = 630, cv = document.createElement('canvas');
+    cv.width = W; cv.height = H;
+    const g = cv.getContext('2d');
+    const font = (w, px) => `${w} ${px}px -apple-system, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif`;
+    g.fillStyle = '#f8f9fa'; g.fillRect(0, 0, W, H);
+    const cs = 34, ox = 48, oy = (H - (ROWS + 2) * cs) / 2;
+    D.ideologies.forEach((ide) => {
+      const gr = gridOf(ide.place);
+      g.fillStyle = ideologyColour(ide).bg;
+      if (gr.kind === 'center') g.fillRect(ox + (CENTER.c0 + 1) * cs, oy + (CENTER.r0 + 1) * cs, 3 * cs - 1, 2 * cs - 1);
+      else g.fillRect(ox + (gr.col + 1) * cs, oy + (gr.row + 1) * cs, cs - 1, cs - 1);
+    });
+    g.fillStyle = 'rgba(0,0,0,0.45)';
+    g.fillRect(ox + cs, oy + cs + (ROWS * cs) / 2 - 1, COLS * cs, 2);
+    g.fillRect(ox + cs + (COLS * cs) / 2 - 1, oy + cs, 2, ROWS * cs);
+    const px = ox + cs + ((s.x + 1) / 2) * COLS * cs, py = oy + cs + ((1 - s.y) / 2) * ROWS * cs;
+    [[14, '#111'], [9, '#fff'], [6, '#2563eb']].forEach(([r, c]) => { g.beginPath(); g.arc(px, py, r, 0, Math.PI * 2); g.fillStyle = c; g.fill(); });
+    const tx = ox + (COLS + 2) * cs + 40, tw = W - tx - 48;
+    const wrap = (text, x, y, w, lh) => {
+      const words = L === 'zh' ? [...text] : text.split(' ');
+      let line = '';
+      for (const wd of words) {
+        const test = line ? (L === 'zh' ? line + wd : `${line} ${wd}`) : wd;
+        if (g.measureText(test).width > w && line) { g.fillText(line, x, y); y += lh; line = wd; } else line = test;
+      }
+      g.fillText(line, x, y);
+      return y + lh;
+    };
+    // the ball
+    g.beginPath(); g.arc(tx + 44, 110, 40, 0, Math.PI * 2); g.fillStyle = bg; g.fill(); g.lineWidth = 3; g.strokeStyle = '#111'; g.stroke();
+    [[tx + 32, 104], [tx + 56, 104]].forEach(([ex, ey]) => { g.beginPath(); g.ellipse(ex, ey, 7.5, 9, 0, 0, Math.PI * 2); g.fillStyle = '#fff'; g.fill(); g.lineWidth = 2; g.stroke(); });
+    g.fillStyle = '#999'; g.font = font(600, 15);
+    g.fillText((quick ? S.campIs : S.closest).toUpperCase(), tx, 186);
+    g.fillStyle = '#111'; g.font = font(800, 44);
+    let y = wrap(name, tx, 236, tw, 50);
+    g.fillStyle = '#333'; g.font = font(400, 21);
+    y = wrap(motto, tx, y + 14, tw, 30);
+    g.fillStyle = '#666'; g.font = font(500, 17);
+    const parts = (quick ? D.axes.slice(0, 2) : D.axes).map((ax) => category(s[ax.key], ax));
+    wrap(parts.join(' · '), tx, Math.max(y + 20, 500), tw, 24);
+    g.fillStyle = '#2563eb'; g.font = font(600, 17);
+    g.fillText(`${S.site} · ${location.host}${location.pathname.replace(/result\/?$/, '')}`, tx, H - 40);
+    cv.toBlob((blob) => {
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob); a.download = 'ai-compass.png'; a.click();
+      setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+    });
+  }
+</script>

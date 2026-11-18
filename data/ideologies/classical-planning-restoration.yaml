@@ -1,0 +1,19 @@
+id: classical-planning-restoration
+name:
+  en: Classical-Planning Restoration
+  zh: 经典规划复辟
+motto:
+  en: PDDL never dies
+  zh: PDDL 永不过时
+level: 8
+place:
+  col: 11
+  row: 8
+parents: [symbolic-restorationism]
+relations:
+  allies: [neuro-symbolic-federalism, hierarchical-control, robot-federalism, formal-semanticism]
+  frenemies: [world-as-code-doctrine, workflow-bureaucratism]
+  rivals: [reactive-anarchism, subsumption-doctrine, end-to-end-driving-absolutism]
+works:
+  - {title: "STRIPS: A New Approach to the Application of Theorem Proving to Problem Solving", year: 1971}
+  - {title: "LLM+P: Empowering Large Language Models with Optimal Planning Proficiency", year: 2023, url: https://arxiv.org/abs/2304.11477}

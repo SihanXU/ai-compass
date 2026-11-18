@@ -1,0 +1,19 @@
+id: compute-theocracy
+name:
+  en: Compute Theocracy
+  zh: 算力神权主义
+motto:
+  en: All are equal before the cluster
+  zh: 在集群面前人人平等
+level: 6
+place:
+  ring: top
+  when: {'y': '>0.85'}
+  at: 3
+parents: [compute-statism]
+relations:
+  allies: [bitter-lesson-orthodoxy, scale-sublimism, frontier-kratocracy]
+  frenemies: [effective-accelerationism]
+  rivals: [harness-nihilism, swarm-collectivism, small-model-localism, peer-to-peer-inference]
+works:
+  - {title: "Scaling Laws for Neural Language Models", year: 2020, url: "https://arxiv.org/abs/2001.08361"}

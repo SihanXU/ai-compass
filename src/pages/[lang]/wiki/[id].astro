@@ -1,0 +1,134 @@
+---
+// A wiki entry: category sidebar; title with tools; infobox (ball, names, position, paradigm, camp, lineage, works);
+// the prose; relationships as friends / frenemies / enemies; how to get it; categories.
+import Layout from '../../../layouts/Layout.astro';
+import WikiSidebar from '../../../components/WikiSidebar.astro';
+import Ball from '../../../components/Ball.astro';
+import MiniMap from '../../../components/MiniMap.astro';
+import { getEntry, render } from 'astro:content';
+import { ideologies, byId, colourOf, childrenOf, levelOf, pointOf, axes, groupOf } from '../../../lib/data.js';
+import { t, url, other, tr, REPO, LANGS } from '../../../lib/i18n.js';
+
+export function getStaticPaths() {
+  return LANGS.flatMap((lang) => ideologies.map((ide) => ({ params: { lang, id: ide.id } })));
+}
+const { lang, id } = Astro.params;
+const alt = other(lang);
+const ide = byId.get(id);
+const entry = await getEntry('wiki', `${lang}/${id}`);
+const { Content, headings } = entry ? await render(entry) : { Content: null, headings: [] };
+const col = colourOf(ide);
+const lv = levelOf(ide.level);
+const group = groupOf(ide);
+const pt = pointOf(ide);
+const f = (v) => (v >= 0 ? '+' : '−') + Math.abs(v).toFixed(2);
+const resolve = (ids = []) => ids.map((x) => byId.get(x)).filter(Boolean);
+const rel = ide.relations || {};
+const friends = resolve(rel.allies), frenemies = resolve(rel.frenemies), enemies = resolve(rel.rivals);
+const parents = resolve(ide.parents);
+const kids = childrenOf(id);
+const works = ide.works || [];
+const axisName = (k) => tr(axes.find((a) => a.key === k).title, lang);
+const ringCond = ide.place.ring ? Object.entries(ide.place.when).map(([k, c]) => `${axisName(k)} ${c.replace('-', '−')}`) : [];
+const toc = [
+  ...headings.filter((h) => h.depth === 2).map((h) => [h.slug, h.text]),
+  ...(works.length ? [['works', t(lang, 'works')]] : []),
+  ['relationships', t(lang, 'relationsTitle')],
+  ['how', t(lang, 'howTo')],
+];
+const relCols = [['friends', 'friends', friends], ['frenemies', 'frenemies', frenemies], ['enemies', 'enemies', enemies]];
+---
+<Layout lang={lang} title={ide.name[lang]} description={entry?.data.summary || ide.motto[lang]} path={`wiki/${id}`} active="wiki">
+    <div class="wiki">
+        <WikiSidebar lang={lang} current={id} />
+        <main class="wiki-main">
+            <nav class="crumbs">
+                <a href={url(lang, 'wiki')}>{t(lang, 'navWiki')}</a><span>›</span>
+                <a href={url(lang, `wiki/category/${group.key}`)}>{tr(group.name, lang)}</a><span>›</span>
+                <span>{ide.name[lang]}</span>
+            </nav>
+            <div class="wiki-title">
+                <h1>{ide.name[lang]}</h1>
+                <div class="tools">
+                    <a href={url(alt, `wiki/${id}`)} lang={alt}>{t(lang, 'readOther')}</a>
+                    <a href={`${REPO}/edit/main/content/wiki/${lang}/${id}.md`}>{t(lang, 'edit')}</a>
+                    <a href={`${REPO}/blob/main/data/ideologies/${id}.yaml`}>{t(lang, 'viewSource')}</a>
+                </div>
+            </div>
+            <p class="wiki-sub">{t(lang, 'fromWiki')}</p>
+
+            <div class="wiki-body">
+                <aside class="infobox">
+                    <div class="ib-head" style={`background:${col.bg};color:${col.dark ? '#fff' : '#111'}`}>{ide.name[lang]}</div>
+                    <div class="ib-art"><Ball ide={ide} size={150} /></div>
+                    <div class="ib-cap">“{ide.motto[lang]}”</div>
+                    <div class="ib-sec">{t(lang, 'ibInfo')}</div>
+                    <dl class="ib-rows">
+                        <div><dt>{t(lang, 'ibCamp')}</dt><dd><a href={url(lang, `wiki/category/${group.key}`)}>{tr(group.name, lang)}</a></dd></div>
+                        {!ide.place.ring && <div><dt>{t(lang, 'ibPosition')}</dt><dd>x {f(pt.x)}<br />y {f(pt.y)}</dd></div>}
+                        <div><dt>{t(lang, 'ibParadigm')}</dt><dd><a href={url(lang, `wiki/category/level-${ide.level}`)}>{lv[lang]}</a></dd></div>
+                        {ringCond.length > 0 && <div><dt>{t(lang, 'ibEarned')}</dt><dd>{ringCond.map((c) => <span style="display:block">{c}</span>)}</dd></div>}
+                        {parents.length > 0 && <div><dt>{t(lang, 'ibParents')}</dt><dd>{parents.map((p) => <a href={url(lang, `wiki/${p.id}`)}>{p.name[lang]}</a>)}</dd></div>}
+                        {kids.length > 0 && <div><dt>{t(lang, 'ibVariants')}</dt><dd>{kids.map((p) => <a href={url(lang, `wiki/${p.id}`)}>{p.name[lang]}</a>)}</dd></div>}
+                    </dl>
+                    <div class="ib-sec">{t(lang, 'ibOnChart')}</div>
+                    <div class="ib-map"><a href={url(lang, 'chart')}><MiniMap id={id} /></a></div>
+                </aside>
+
+                {entry && <p class="lead"><b>{ide.name[lang]}</b>{lang === 'zh' ? '：' : ': '}{entry.data.summary}</p>}
+
+                <nav class="toc">
+                    <span class="label">{t(lang, 'contents')}</span>
+                    <ol>{toc.map(([s, text]) => <li><a href={`#${s}`}>{text}</a></li>)}</ol>
+                </nav>
+
+                {Content ? <Content /> : <p>{ide.motto[lang]}</p>}
+
+                {works.length > 0 && (
+                    <>
+                        <h2 id="works">{t(lang, 'works')}</h2>
+                        <ul class="works-list">
+                            {works.map((w) => <li><span>{w.url ? <a href={w.url}>{w.title}</a> : w.title}</span><span class="yr">{w.year}</span></li>)}
+                        </ul>
+                    </>
+                )}
+
+                <h2 id="relationships">{t(lang, 'relationsTitle')}</h2>
+                <div class="rel-grid">
+                    {relCols.map(([cls, key, list]) => (
+                        <div class={`rel-col ${cls}`}>
+                            <h3>{t(lang, key)}</h3>
+                            <ul>
+                                {list.length === 0 && <li><span class="muted" style="display:block;padding:0.4rem 0.9rem">—</span></li>}
+                                {list.map((p) => (
+                                    <li><a href={url(lang, `wiki/${p.id}`)}><Ball ide={p} size={30} /><span>{p.name[lang]}<small>{p.motto[lang]}</small></span></a></li>
+                                ))}
+                            </ul>
+                        </div>
+                    ))}
+                </div>
+
+                <h2 id="how">{t(lang, 'howTo')}</h2>
+                <p>{ide.place.ring
+                    ? t(lang, 'howToRing', { c: ringCond.join(lang === 'zh' ? '，' : ', ') })
+                    : t(lang, 'howToCell', { x: f(pt.x), y: f(pt.y), p: f(pt.p) })}</p>
+                <div class="actions">
+                    <a class="btn primary" href={url(lang, 'test/full')}>{t(lang, 'fullTitle')}</a>
+                    <a class="btn" href={url(lang, 'test/quick')}>{t(lang, 'quickTitle')}</a>
+                </div>
+
+                <div class="cats">
+                    <b>{t(lang, 'categories')}:</b>
+                    <a href={url(lang, `wiki/category/${group.key}`)}>{tr(group.name, lang)}</a>
+                    <span class="dot">·</span>
+                    <a href={url(lang, `wiki/category/level-${ide.level}`)}>{t(lang, 'catParadigm', { l: lv[lang] })}</a>
+                </div>
+                <p class="wiki-meta">
+                    <span>{t(lang, 'draft')}</span>
+                    <a href={`${REPO}/edit/main/content/wiki/${lang}/${id}.md`}>{t(lang, 'editPage')}</a>
+                    <a href={`${REPO}/edit/main/data/ideologies/${id}.yaml`}>{t(lang, 'editData')}</a>
+                </p>
+            </div>
+        </main>
+    </div>
+</Layout>

@@ -1,0 +1,20 @@
+id: intuitive-physics-doctrine
+name:
+  en: Intuitive-Physics Doctrine
+  zh: 直觉物理主义
+motto:
+  en: Infants learn object permanence first
+  zh: 婴儿先学会物体恒存
+level: 4
+place:
+  col: 10
+  row: 4
+parents: [physicalism, developmentalism]
+relations:
+  allies: [object-centrism, latent-prediction-doctrine, physical-law-absolutism]
+  frenemies: [world-simulator-statism, innatism]
+  rivals: [video-scalism, emergentism, text-only-conservatism]
+works:
+  - {title: "Simulation as an engine of physical scene understanding", year: 2013}
+  - {title: "IntPhys: A Framework and Benchmark for Visual Intuitive Physics Reasoning", year: 2018, url: "https://arxiv.org/abs/1803.07616"}
+  - {title: "Physion: Evaluating Physical Prediction from Vision in Humans and Machines", year: 2021, url: "https://arxiv.org/abs/2106.08261"}

@@ -1,0 +1,19 @@
+id: representation-centralism
+name:
+  en: Representation Centralism
+  zh: 表征集权主义
+motto:
+  en: One good representation rules everything downstream
+  zh: 一个好表征统治所有下游
+level: 4
+place:
+  col: 7
+  row: 2
+parents: [self-supervised-liberalism]
+relations:
+  allies: [self-supervised-vision-statism, contrastive-alignmentism, latent-prediction-doctrine]
+  frenemies: [omni-model-absolutism, bitter-lesson-orthodoxy]
+  rivals: [harness-liberalism, pipeline-pragmatism, end-to-end-driving-absolutism]
+works:
+  - {title: "Representation Learning: A Review and New Perspectives", year: 2013, url: "https://arxiv.org/abs/1206.5538"}
+  - {title: "DINOv2: Learning Robust Visual Features without Supervision", year: 2023, url: "https://arxiv.org/abs/2304.07193"}

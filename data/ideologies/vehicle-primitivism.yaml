@@ -1,0 +1,18 @@
+id: vehicle-primitivism
+name:
+  en: Vehicle Primitivism
+  zh: 小车原始主义
+motto:
+  en: Back to the light-seeking little vehicle
+  zh: 回到最简单的趋光小车
+level: 9
+place:
+  col: 12
+  row: 11
+parents: [reactive-anarchism]
+relations:
+  allies: [cybernetic-primitivism, morphological-computationalism, subsumption-doctrine]
+  frenemies: [maker-robotics]
+  rivals: [compute-theocracy, vla-monarchism, humanoid-centralism]
+works:
+  - {title: "Vehicles: Experiments in Synthetic Psychology", year: 1984}

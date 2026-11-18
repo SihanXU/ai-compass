@@ -1,0 +1,19 @@
+id: diffusion-autoregressive-syncretism
+name:
+  en: Diffusion-Autoregressive Syncretism
+  zh: 扩散自回归融合主义
+motto:
+  en: Denoising and autoregression are one body
+  zh: 去噪与自回归本是一体
+level: 4
+place:
+  col: 7
+  row: 1
+parents: [understand-generate-unionism]
+relations:
+  allies: [native-fusion-centralism, world-simulator-statism, early-fusion-statism]
+  frenemies: [visual-token-statism]
+  rivals: [next-token-totalitarianism, pipeline-pragmatism, captionist-centralism]
+works:
+  - {title: "Transfusion: Predict the Next Token and Diffuse Images with One Multi-Modal Model", year: 2024, url: "https://arxiv.org/abs/2408.11039"}
+  - {title: "Autoregressive Image Generation without Vector Quantization", year: 2024, url: "https://arxiv.org/abs/2406.11838"}

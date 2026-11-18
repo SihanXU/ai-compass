@@ -1,0 +1,19 @@
+id: morphological-computationalism
+name:
+  en: Morphological Computationalism
+  zh: 形态计算主义
+motto:
+  en: The body computes
+  zh: 身体本身就在计算
+level: 3
+place:
+  col: 12
+  row: 5
+parents: [embodied-statism]
+relations:
+  allies: [morphological-anarchism, subsumption-doctrine, dexterity-doctrine, sensorimotor-doctrine]
+  frenemies: [classical-control-conservatism, humanoid-centralism]
+  rivals: [compute-statism, robot-foundation-imperialism, logos-absolutism]
+works:
+  - {title: "Passive Dynamic Walking", year: 1990}
+  - {title: "How the Body Shapes the Way We Think: A New View of Intelligence", year: 2006}

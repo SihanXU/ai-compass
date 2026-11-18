@@ -1,0 +1,20 @@
+id: function-call-federalism
+name:
+  en: Function-Call Federalism
+  zh: 函数调用联邦主义
+motto:
+  en: Every capability is an API
+  zh: 一切能力皆是 API
+level: 5
+place:
+  col: 4
+  row: 7
+parents: [tool-use-liberalism]
+relations:
+  allies: [protocol-federalism, tool-use-liberalism, workflow-bureaucratism]
+  frenemies: [computer-use-liberalism, chain-syndicalism]
+  rivals: [visual-agent-doctrine, omni-model-absolutism]
+works:
+  - {title: "HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in Hugging Face", year: 2023, url: "https://arxiv.org/abs/2303.17580"}
+  - {title: "Gorilla: Large Language Model Connected with Massive APIs", year: 2023, url: "https://arxiv.org/abs/2305.15334"}
+  - {title: "ToolLLM: Facilitating Large Language Models to Master 16000+ Real-world APIs", year: 2023, url: "https://arxiv.org/abs/2307.16789"}

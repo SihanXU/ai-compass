@@ -1,0 +1,20 @@
+id: visual-agent-doctrine
+name:
+  en: Visual-Agent Doctrine
+  zh: 视觉智能体主义
+motto:
+  en: See the screen, use the computer
+  zh: 看着屏幕操作电脑
+level: 4
+place:
+  col: 9
+  row: 7
+parents: [computer-use-liberalism]
+relations:
+  allies: [gui-grounding-doctrine, computer-use-liberalism, multimodal-agentism]
+  frenemies: [function-call-federalism, protocol-federalism]
+  rivals: [text-only-conservatism, workflow-bureaucratism]
+works:
+  - {title: "Set-of-Mark Prompting Unleashes Extraordinary Visual Grounding in GPT-4V", year: 2023, url: "https://arxiv.org/abs/2310.11441"}
+  - {title: "CogAgent: A Visual Language Model for GUI Agents", year: 2023, url: "https://arxiv.org/abs/2312.08914"}
+  - {title: "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments", year: 2024, url: "https://arxiv.org/abs/2404.07972"}

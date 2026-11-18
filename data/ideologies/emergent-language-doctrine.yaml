@@ -1,0 +1,19 @@
+id: emergent-language-doctrine
+name:
+  en: Emergent-Language Doctrine
+  zh: 涌现语言主义
+motto:
+  en: Let agents invent their own language
+  zh: 让代理自己发明语言
+level: 2
+place:
+  col: 5
+  row: 11
+parents: [agent-society-socialism]
+relations:
+  allies: [grounding-doctrine, developmentalism, objectiveless-anarchism]
+  frenemies: [distributional-semanticism]
+  rivals: [corpus-fundamentalism, innatism, logocentrism]
+works:
+  - {title: "Multi-Agent Cooperation and the Emergence of (Natural) Language", year: 2016, url: "https://arxiv.org/abs/1612.07182"}
+  - {title: "Emergence of Grounded Compositional Language in Multi-Agent Populations", year: 2017, url: "https://arxiv.org/abs/1703.04908"}

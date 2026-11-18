@@ -1,0 +1,120 @@
+---
+// The model leaderboard: the models on the two main axes, a sortable table of all five, and how to add one.
+import Layout from '../../layouts/Layout.astro';
+import { leaderboard, ideologies, colourOf, axes } from '../../lib/data.js';
+import { rank, colX, rowY, COLS, ROWS, ideologyColour } from '../../lib/compass.js';
+import { t, url, tr, LANGS, REPO } from '../../lib/i18n.js';
+
+export function getStaticPaths() { return LANGS.map((lang) => ({ params: { lang } })); }
+const { lang } = Astro.params;
+const zh = lang === 'zh';
+// the ideology is recomputed from the stored scores, so a run stays right when the chart changes
+const rows = leaderboard.map((r) => ({ ...r, ide: rank(ideologies, r.scores)[0].ide })).sort((a, b) => a.model.localeCompare(b.model));
+const f = (v) => (v >= 0 ? '+' : '−') + Math.abs(v).toFixed(2);
+// the scatter: the chart's colours as a faint ground, quadrant axes, one dot per model
+const S = 600, P = 40, W = S - 2 * P;
+const X = (x) => P + ((x + 1) / 2) * W;
+const Y = (y) => P + ((1 - y) / 2) * W;
+const ground = ideologies.filter((i) => !i.place.ring && !i.place.center).map((i) => ({
+  x: X(colX(i.place.col) - 1 / COLS), y: Y(rowY(i.place.row) + 1 / ROWS), w: W / COLS, h: W / ROWS, c: ideologyColour(i).bg,
+}));
+const ax = Object.fromEntries(axes.map((a) => [a.key, a]));
+---
+<Layout lang={lang} title={t(lang, 'boardLabel')} path="leaderboard" active="board">
+    <div class="container wide">
+        <header class="board-head">
+            <div>
+                <h1>{t(lang, 'boardTitle')}</h1>
+                <p>{t(lang, 'boardDek')}</p>
+            </div>
+            <a class="btn" href={`${REPO}/blob/main/scripts/eval.mjs`}>scripts/eval.mjs ↗</a>
+        </header>
+
+        <div class="board-grid">
+            <div>
+                <h2 class="label" style="margin-bottom:0.6rem">{t(lang, 'boardScatter')}</h2>
+                <div class="scatter">
+                    <svg viewBox={`0 0 ${S} ${S}`} role="img" aria-label={t(lang, 'boardScatter')}>
+                        <g opacity="0.45">{ground.map((g) => <rect x={g.x} y={g.y} width={g.w} height={g.h} fill={g.c} />)}</g>
+                        <rect x={P} y={P} width={W} height={W} fill="none" stroke="var(--line-strong)" />
+                        <line x1={P} y1={S / 2} x2={S - P} y2={S / 2} stroke="#111" stroke-opacity="0.5" stroke-width="1.5" />
+                        <line x1={S / 2} y1={P} x2={S / 2} y2={S - P} stroke="#111" stroke-opacity="0.5" stroke-width="1.5" />
+                        <text x={S / 2} y={P - 14} text-anchor="middle" font-size="13" font-weight="700" fill="var(--ink-strong)">{tr(ax.y.pos, lang)}</text>
+                        <text x={S / 2} y={S - P + 24} text-anchor="middle" font-size="13" font-weight="700" fill="var(--ink-strong)">{tr(ax.y.neg, lang)}</text>
+                        <text x={P - 10} y={S / 2} text-anchor="middle" font-size="13" font-weight="700" fill="var(--ink-strong)" transform={`rotate(-90 ${P - 10} ${S / 2})`}>{tr(ax.x.neg, lang)}</text>
+                        <text x={S - P + 10} y={S / 2} text-anchor="middle" font-size="13" font-weight="700" fill="var(--ink-strong)" transform={`rotate(90 ${S - P + 10} ${S / 2})`}>{tr(ax.x.pos, lang)}</text>
+                        {rows.map((r) => (
+                            <g>
+                                <circle cx={X(r.scores.x)} cy={Y(r.scores.y)} r="8" fill={colourOf(r.ide).bg} stroke="#111" stroke-width="2" />
+                                <text x={X(r.scores.x) + 12} y={Y(r.scores.y) + 4} font-size="12" font-weight="600" fill="#111" paint-order="stroke" stroke="#fff" stroke-width="3">{r.model}</text>
+                            </g>
+                        ))}
+                    </svg>
+                </div>
+            </div>
+            <div class="submit-box">
+                <h2>{t(lang, 'submitTitle')}</h2>
+                <p>{zh
+                    ? '评测脚本让模型对每道题单独作答，只接受 2、1、0、-1、-2，每题默认问 3 次取平均。支持 Anthropic API 和任何兼容 OpenAI 的接口（包括本地 vLLM、Ollama）。'
+                    : 'The script asks each statement on its own and accepts only 2, 1, 0, -1 or -2; each is asked three times by default and averaged. It speaks the Anthropic API and any OpenAI-compatible endpoint, local vLLM and Ollama included.'}</p>
+                <pre>ANTHROPIC_API_KEY=… npm run eval -- \
+  --provider anthropic --model &lt;model-id&gt;
+
+OPENAI_API_KEY=… npm run eval -- \
+  --provider openai --model &lt;model-id&gt; \
+  --base-url https://api.openai.com/v1
+
+npm run eval -- --provider openai \
+  --model qwen3 --base-url http://localhost:11434/v1</pre>
+                <p>{zh
+                    ? '脚本写出 data/leaderboard/<模型>.json：每题的平均答案、五根轴的分数和多次之间的波动。把它提交成 pull request 即可上榜。'
+                    : 'It writes data/leaderboard/<model>.json with the mean answer to every statement, the five scores and their spread across runs. Open a pull request with it to join the board.'}</p>
+            </div>
+        </div>
+
+        <h2 class="label" style="margin:2rem 0 0.6rem">{t(lang, 'boardLabel')}</h2>
+        {rows.length === 0 ? (
+            <div class="empty"><b>{zh ? '还没有模型' : 'No models yet'}</b>{t(lang, 'boardEmpty')}</div>
+        ) : (
+            <div class="table">
+                <table data-sortable>
+                    <thead><tr>
+                        <th class="l" data-sort="text">{t(lang, 'modelCol')}</th>
+                        <th class="l" data-sort="text">{t(lang, 'ideology')}</th>
+                        {axes.map((a) => <th data-sort="num" title={`${tr(a.neg, lang)} − / + ${tr(a.pos, lang)}`}>{tr(a.title, lang)}</th>)}
+                        <th data-sort="num">{t(lang, 'runs')}</th>
+                        <th data-sort="text">{t(lang, 'date')}</th>
+                    </tr></thead>
+                    <tbody>
+                        {rows.map((r) => (
+                            <tr>
+                                <td class="l"><b>{r.model}</b><br /><span class="muted" style="font-size:0.8rem">{r.provider}</span></td>
+                                <td class="l"><a href={url(lang, `wiki/${r.ide.id}`)} style="display:inline-flex;gap:0.45rem;align-items:center"><span class="sw-dot" style={`background:${colourOf(r.ide).bg}`}></span>{r.ide.name[lang]}</a></td>
+                                {axes.map((a) => <td data-v={r.scores[a.key]} title={r.spread ? `± ${r.spread[a.key].toFixed(2)}` : ''}>{f(r.scores[a.key])}</td>)}
+                                <td data-v={r.runs}>{r.runs}</td>
+                                <td>{r.date}</td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+            </div>
+        )}
+    </div>
+</Layout>
+
+<script>
+  document.querySelectorAll('table[data-sortable]').forEach((table) => {
+    const heads = [...table.querySelectorAll('th')];
+    heads.forEach((th, i) => {
+      if (!th.dataset.sort) return;
+      th.addEventListener('click', () => {
+        const dir = th.getAttribute('aria-sort') === 'ascending' ? 'descending' : 'ascending';
+        heads.forEach((h) => h.removeAttribute('aria-sort'));
+        th.setAttribute('aria-sort', dir);
+        const body = table.tBodies[0];
+        const key = (tr) => { const td = tr.children[i]; return th.dataset.sort === 'num' ? Number(td.dataset.v) : td.textContent.trim().toLowerCase(); };
+        [...body.rows].sort((a, b) => { const x = key(a), y = key(b); return (x < y ? -1 : x > y ? 1 : 0) * (dir === 'ascending' ? 1 : -1); }).forEach((r) => body.append(r));
+      });
+    });
+  });
+</script>

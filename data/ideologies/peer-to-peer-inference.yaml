@@ -1,0 +1,18 @@
+id: peer-to-peer-inference
+name:
+  en: Peer-to-Peer Inference
+  zh: 点对点推理主义
+motto:
+  en: Models flow through the network
+  zh: 模型在网络里流动
+level: 4
+place:
+  col: 7
+  row: 11
+parents: [decentralized-training-doctrine]
+relations:
+  allies: [local-model-mutualism, open-weights-communalism, edge-ai-localism, open-source-maximalism]
+  frenemies: [federated-learning-localism]
+  rivals: [compute-statism, frontier-kratocracy, compute-theocracy]
+works:
+  - {title: "Petals: Collaborative Inference and Fine-tuning of Large Models", year: 2022, url: "https://arxiv.org/abs/2209.01188"}

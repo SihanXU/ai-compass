@@ -1,0 +1,19 @@
+id: predictive-coding-statism
+name:
+  en: Predictive-Coding Statism
+  zh: 预测编码国家主义
+motto:
+  en: The brain is a prediction machine
+  zh: 大脑就是一台预测机器
+level: 3
+place:
+  col: 9
+  row: 2
+parents: [neuro-inspired-visualism]
+relations:
+  allies: [latent-prediction-doctrine, video-native-doctrine, developmentalism]
+  frenemies: [next-token-totalitarianism, world-simulator-statism]
+  rivals: [bitter-lesson-orthodoxy, pipeline-pragmatism, symbolic-restorationism]
+works:
+  - {title: "Deep Predictive Coding Networks for Video Prediction and Unsupervised Learning", year: 2016, url: "https://arxiv.org/abs/1605.08104"}
+  - {title: "The free-energy principle: a unified brain theory?", year: 2010}

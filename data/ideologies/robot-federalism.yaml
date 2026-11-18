@@ -1,0 +1,18 @@
+id: robot-federalism
+name:
+  en: Robot Federalism
+  zh: 机器人联邦主义
+motto:
+  en: 'Plan, perceive, control: divide and rule'
+  zh: 规划、感知、控制分而治之
+level: 6
+place:
+  col: 12
+  row: 7
+parents: []
+relations:
+  allies: [perception-stack-federalism, classical-control-conservatism, classical-planning-restoration, hierarchical-control]
+  frenemies: [sim-to-real-pragmatism]
+  rivals: [vla-monarchism, robot-foundation-imperialism, humanoid-centralism]
+works:
+  - {title: "ROS: an open-source Robot Operating System", year: 2009}

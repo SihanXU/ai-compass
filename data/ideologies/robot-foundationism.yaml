@@ -1,0 +1,20 @@
+id: robot-foundationism
+name:
+  en: Robot Foundationism
+  zh: 机器人基础主义
+motto:
+  en: The data flywheel spins in the real world
+  zh: 数据飞轮在真实世界里转
+level: 4
+place:
+  col: 12
+  row: 3
+parents: [robot-foundation-imperialism, embodied-statism]
+relations:
+  allies: [vla-monarchism, humanoid-centralism, open-hardware-mutualism]
+  frenemies: [sim-to-real-pragmatism, dexterity-doctrine]
+  rivals: [classical-control-conservatism, robot-federalism, text-only-conservatism]
+works:
+  - {title: "RT-1: Robotics Transformer for Real-World Control at Scale", year: 2022, url: "https://arxiv.org/abs/2212.06817"}
+  - {title: "Open X-Embodiment: Robotic Learning Datasets and RT-X Models", year: 2023, url: "https://arxiv.org/abs/2310.08864"}
+  - {title: "π0: A Vision-Language-Action Flow Model for General Robot Control", year: 2024, url: "https://arxiv.org/abs/2410.24164"}

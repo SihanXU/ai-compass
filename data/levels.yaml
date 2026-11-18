@@ -1,0 +1,11 @@
+# The nine paradigm levels, drawn as the shade of each cell. Level 5 is neutral.
+levels:
+  - { level: 1, en: Beyond Revolutionary, zh: 逆天之革命 }
+  - { level: 2, en: Ultra-Revolutionary, zh: 超级革命 }
+  - { level: 3, en: Revolutionary, zh: 革命 }
+  - { level: 4, en: Exploratory, zh: 求新 }
+  - { level: 5, en: Neutral, zh: 中立 }
+  - { level: 6, en: Steady, zh: 稳健 }
+  - { level: 7, en: Conservative, zh: 保守 }
+  - { level: 8, en: Restorationist, zh: 复古 }
+  - { level: 9, en: Old Guard, zh: 老古董 }

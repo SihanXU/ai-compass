@@ -1,0 +1,19 @@
+id: world-simulator-statism
+name:
+  en: World-Simulator Statism
+  zh: 世界模拟器国家主义
+motto:
+  en: Video generation is world simulation
+  zh: 视频生成就是世界模拟
+level: 3
+place:
+  col: 9
+  row: 0
+parents: [video-scalism]
+relations:
+  allies: [world-model-vanguardism, simulation-hypothesism, video-native-doctrine]
+  frenemies: [physical-law-absolutism]
+  rivals: [latent-prediction-doctrine, world-as-code-doctrine, classical-control-conservatism]
+works:
+  - {title: "Video generation models as world simulators", year: 2024}
+  - {title: "Genie: Generative Interactive Environments", year: 2024, url: "https://arxiv.org/abs/2402.15391"}

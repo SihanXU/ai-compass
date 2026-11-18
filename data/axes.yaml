@@ -1,0 +1,38 @@
+# The five axes. Every score lives in [-1, 1]: -1 is the `neg` pole, +1 the `pos` pole.
+# x and y place you on the chart, p picks the shade, o and a only show up as bars and as titles on the ring.
+axes:
+  - key: x
+    neg: { en: Language, zh: 语言 }
+    pos: { en: World, zh: 世界 }
+    title: { en: Representation, zh: 表征 }
+    text:
+      en: What is intelligence built on? On the Language side, language is the medium of thought and text pretraining is where knowledge comes from; other modalities are senses that feed a linguistic core. On the World side, intelligence is grounded in perception, video, physics and a body; language is a late, lossy label on what the senses already know.
+      zh: 智能建立在什么之上？语言一侧认为语言是思维的载体，文本预训练是知识的来源，其他模态只是给语言核心供给信息的感官。世界一侧认为智能扎根于感知、视频、物理和身体，语言只是对感官早已知道的东西贴上的一层有损标签。
+  - key: y
+    neg: { en: Harness, zh: 系统 }
+    pos: { en: Monolith, zh: 统一 }
+    title: { en: Architecture, zh: 架构 }
+    text:
+      en: Where does intelligence live? The Monolith side bets on one end-to-end model; memory, planning and tool use should emerge inside it, and today's scaffolding will be absorbed by the next generation. The Harness side bets on the system around the model — tools, memory, workflows, explicit structure, many agents — and holds that the harness can matter more than the model.
+      zh: 智能住在哪里？统一一侧押注一个端到端的模型：记忆、规划、工具使用都应在模型内部涌现，今天的脚手架会被下一代模型吸收。系统一侧押注模型之外的系统：工具、记忆、工作流、显式结构、多个 agent，认为 harness 可以比模型本身更重要。
+  - key: p
+    neg: { en: Old Guard, zh: 守旧 }
+    pos: { en: Revolution, zh: 革命 }
+    title: { en: Paradigm, zh: 范式 }
+    text:
+      en: Is the current recipe enough? The Revolution side expects new architectures, new objectives and continual learning to replace today's Transformer-plus-scale recipe. The Old Guard side expects incremental engineering on the current recipe to keep winning, or holds that older ideas were right all along. On the chart this axis is the shade of each cell.
+      zh: 现有配方够不够？革命一侧期待新架构、新学习目标和持续学习取代今天的“Transformer 加规模”。守旧一侧认为在现有配方上做渐进的工程改进会继续赢下去，或者认为老方法本来就是对的。在图上，这根轴是每一格颜色的深浅。
+  - key: o
+    neg: { en: Frontier, zh: 闭源前沿 }
+    pos: { en: Open, zh: 开放 }
+    title: { en: Openness, zh: 开放 }
+    text:
+      en: Who should hold the strongest models? The Open side wants open weights, open data and reproducible science. The Frontier side prefers capability concentrated in a few labs that ship it through products and APIs. It earns titles on the ring rather than a place on the chart.
+      zh: 最强的模型该掌握在谁手里？开放一侧要开放权重、开放数据、可复现的科学。闭源前沿一侧倾向于把能力集中在少数实验室，通过产品和 API 提供。这根轴不决定你在图上的格子，只在外圈给称号。
+  - key: a
+    neg: { en: Caution, zh: 审慎 }
+    pos: { en: Acceleration, zh: 加速 }
+    title: { en: Speed, zh: 速度 }
+    text:
+      en: How fast should we go? The Acceleration side wants progress as fast as possible and sees regulation and human sign-off as bottlenecks. The Caution side takes catastrophic risk seriously and wants alignment, interpretability and independent testing to keep pace. It earns titles on the ring rather than a place on the chart.
+      zh: 该走多快？加速一侧希望越快越好，认为监管和人工审批是瓶颈。审慎一侧认真对待灾难性风险，希望对齐、可解释性和独立评测跟得上。这根轴不决定你在图上的格子，只在外圈给称号。

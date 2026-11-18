@@ -1,0 +1,20 @@
+id: synthetic-data-planism
+name:
+  en: Synthetic-Data Planism
+  zh: 合成数据计划经济
+motto:
+  en: Short on data? Print more
+  zh: 数据不够就自己印
+level: 4
+place:
+  col: 6
+  row: 2
+parents: [scaling-law-planism]
+relations:
+  allies: [reasoning-statism, sim-scale-statism, captionist-centralism]
+  frenemies: [corpus-fundamentalism]
+  rivals: [grounding-doctrine, field-robotics-libertarianism]
+works:
+  - {title: "Self-Instruct: Aligning Language Models with Self-Generated Instructions", year: 2022, url: "https://arxiv.org/abs/2212.10560"}
+  - {title: "STaR: Bootstrapping Reasoning With Reasoning", year: 2022, url: "https://arxiv.org/abs/2203.14465"}
+  - {title: "Textbooks Are All You Need", year: 2023, url: "https://arxiv.org/abs/2306.11644"}

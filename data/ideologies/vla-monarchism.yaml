@@ -1,0 +1,20 @@
+id: vla-monarchism
+name:
+  en: VLA Monarchism
+  zh: VLA 君主制
+motto:
+  en: One brain reigns over every robot
+  zh: 一个大脑统治所有机器人
+level: 4
+place:
+  col: 11
+  row: 0
+parents: [robot-foundationism]
+relations:
+  allies: [robot-foundation-imperialism, end-to-end-driving-absolutism, linguistic-multimodalism]
+  frenemies: [hierarchical-control]
+  rivals: [robot-federalism, classical-planning-restoration, morphological-computationalism]
+works:
+  - {title: "RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control", year: 2023, url: "https://arxiv.org/abs/2307.15818"}
+  - {title: "OpenVLA: An Open-Source Vision-Language-Action Model", year: 2024, url: "https://arxiv.org/abs/2406.09246"}
+  - {title: "π0: A Vision-Language-Action Flow Model for General Robot Control", year: 2024, url: "https://arxiv.org/abs/2410.24164"}

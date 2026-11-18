@@ -1,0 +1,19 @@
+id: neuro-symbolic-federalism
+name:
+  en: Neuro-Symbolic Federalism
+  zh: 神经符号联邦主义
+motto:
+  en: Neural perception, symbolic reasoning
+  zh: 神经网络感知，符号系统推理
+level: 6
+place:
+  col: 7
+  row: 9
+parents: [symbolic-restorationism, composable-liberalism]
+relations:
+  allies: [program-synthesis-doctrine, classical-planning-restoration, math-formalism, object-centrism]
+  frenemies: [knowledge-graph-monarchism, code-as-thought]
+  rivals: [bitter-lesson-orthodoxy, next-token-totalitarianism, emergentism]
+works:
+  - {title: "The Neuro-Symbolic Concept Learner: Interpreting Scenes, Words, and Sentences From Natural Supervision", year: 2019, url: https://arxiv.org/abs/1904.12584}
+  - {title: "Solving olympiad geometry without human demonstrations", year: 2024}

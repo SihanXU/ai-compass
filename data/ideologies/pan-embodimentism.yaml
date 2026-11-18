@@ -1,0 +1,20 @@
+id: pan-embodimentism
+name:
+  en: Pan-Embodimentism
+  zh: 泛具身主义
+motto:
+  en: Everything has a body
+  zh: 万物皆有身
+level: 3
+place:
+  ring: right
+  when: {x: '>0.85'}
+  at: 3
+parents: [embodied-statism]
+relations:
+  allies: [morphological-computationalism, sensorimotor-doctrine, distributed-embodiment, simulation-hypothesism]
+  frenemies: [robot-foundation-imperialism]
+  rivals: [logocentrism, language-singularitarianism, corpus-fundamentalism]
+works:
+  - {title: "The Embodied Mind: Cognitive Science and Human Experience", year: 1991}
+  - {title: "Understanding Intelligence", year: 1999}

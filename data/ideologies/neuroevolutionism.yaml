@@ -1,0 +1,19 @@
+id: neuroevolutionism
+name:
+  en: Neuroevolutionism
+  zh: 神经进化主义
+motto:
+  en: Let evolution search
+  zh: 让进化去搜索
+level: 4
+place:
+  col: 11
+  row: 10
+parents: [evolutionary-federalism]
+relations:
+  allies: [artificial-life-doctrine, morphological-anarchism, open-endedness]
+  frenemies: [bitter-lesson-orthodoxy]
+  rivals: [pretraining-maximalism, rlhf-paternalism, classical-control-conservatism]
+works:
+  - {title: "Evolving Neural Networks through Augmenting Topologies", year: 2002}
+  - {title: "Evolution Strategies as a Scalable Alternative to Reinforcement Learning", year: 2017, url: "https://arxiv.org/abs/1703.03864"}

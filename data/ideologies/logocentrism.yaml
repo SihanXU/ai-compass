@@ -1,0 +1,19 @@
+id: logocentrism
+name:
+  en: Logocentrism
+  zh: 逻各斯中心主义
+motto:
+  en: In the beginning was the Word
+  zh: 太初有言
+level: 7
+place:
+  ring: left
+  when: {x: <-0.85}
+  at: 3
+parents: [logos-absolutism]
+relations:
+  allies: [corpus-fundamentalism, text-only-conservatism, language-singularitarianism, linguistic-relativism]
+  frenemies: [grammarian-conservatism]
+  rivals: [pan-embodimentism, visualism, embodied-statism]
+works:
+  - {title: "Language Models are Unsupervised Multitask Learners", year: 2019}

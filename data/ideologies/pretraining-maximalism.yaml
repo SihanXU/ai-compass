@@ -1,0 +1,19 @@
+id: pretraining-maximalism
+name:
+  en: Pretraining Maximalism
+  zh: 预训练至上主义
+motto:
+  en: Pretraining gives ability; post-training is manners
+  zh: 能力来自预训练，后训练只是礼仪
+level: 7
+place:
+  col: 1
+  row: 1
+parents: [next-token-totalitarianism]
+relations:
+  allies: [corpus-fundamentalism, scaling-law-planism, emergentism]
+  frenemies: [rlhf-paternalism]
+  rivals: [test-time-centralism, fine-tune-cooperativism, harness-nihilism]
+works:
+  - {title: "Language Models are Few-Shot Learners", year: 2020, url: "https://arxiv.org/abs/2005.14165"}
+  - {title: "LIMA: Less Is More for Alignment", year: 2023, url: "https://arxiv.org/abs/2305.11206"}

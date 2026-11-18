@@ -1,0 +1,20 @@
+id: circuit-constitutionalism
+name:
+  en: Circuit Constitutionalism
+  zh: 电路宪政主义
+motto:
+  en: Circuits are the constitution
+  zh: 电路即宪法
+level: 4
+place:
+  col: 3
+  row: 6
+parents: [interpretability-reformism]
+relations:
+  allies: [interpretability-reformism, open-weights-communalism, distributional-semanticism]
+  frenemies: [emergentism, formal-semanticism]
+  rivals: [harness-nihilism, compute-theocracy]
+works:
+  - {title: "Zoom In: An Introduction to Circuits", year: 2020}
+  - {title: "A Mathematical Framework for Transformer Circuits", year: 2021}
+  - {title: "In-context Learning and Induction Heads", year: 2022, url: "https://arxiv.org/abs/2209.11895"}

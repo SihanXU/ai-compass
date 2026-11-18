@@ -1,0 +1,20 @@
+id: open-weights-communalism
+name:
+  en: Open-Weights Communalism
+  zh: 开放权重公社主义
+motto:
+  en: Weights belong to the people
+  zh: 权重属于人民
+level: 4
+place:
+  col: 2
+  row: 10
+parents: [open-source-maximalism]
+relations:
+  allies: [fine-tune-cooperativism, local-model-mutualism, decentralized-training-doctrine, open-hardware-mutualism]
+  frenemies: [compute-statism]
+  rivals: [frontier-kratocracy, ai-doomerism, rlhf-paternalism]
+works:
+  - {title: "LLaMA: Open and Efficient Foundation Language Models", year: 2023, url: https://arxiv.org/abs/2302.13971}
+  - {title: "BLOOM: A 176B-Parameter Open-Access Multilingual Language Model", year: 2022, url: https://arxiv.org/abs/2211.05100}
+  - {title: "OLMo: Accelerating the Science of Language Models", year: 2024, url: https://arxiv.org/abs/2402.00838}

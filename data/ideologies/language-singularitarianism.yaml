@@ -1,0 +1,19 @@
+id: language-singularitarianism
+name:
+  en: Language Singularitarianism
+  zh: 语言奇点主义
+motto:
+  en: AGI is already hiding in the text
+  zh: AGI 早已藏在文本里
+level: 2
+place:
+  ring: tl
+  when: {x: <-0.7, 'y': '>0.7'}
+parents: [logos-absolutism, next-token-totalitarianism]
+relations:
+  allies: [corpus-fundamentalism, logocentrism, compute-theocracy, emergentism]
+  frenemies: [reasoning-statism]
+  rivals: [pan-embodimentism, cybernetic-primitivism, embodied-statism]
+works:
+  - {title: "Language Models are Few-Shot Learners", year: 2020, url: "https://arxiv.org/abs/2005.14165"}
+  - {title: "Sparks of Artificial General Intelligence: Early experiments with GPT-4", year: 2023, url: "https://arxiv.org/abs/2303.12712"}

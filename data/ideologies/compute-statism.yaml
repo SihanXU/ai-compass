@@ -1,0 +1,19 @@
+id: compute-statism
+name:
+  en: Compute Statism
+  zh: 算力国家主义
+motto:
+  en: Compute is power; parameters are justice
+  zh: 算力即国力，参数即正义
+level: 6
+place:
+  col: 2
+  row: 0
+parents: [bitter-lesson-orthodoxy]
+relations:
+  allies: [scaling-law-planism, scale-sublimism, frontier-kratocracy]
+  frenemies: [mixture-of-experts-federalism]
+  rivals: [small-model-localism, decentralized-training-doctrine, edge-ai-localism]
+works:
+  - {title: "Scaling Laws for Neural Language Models", year: 2020, url: "https://arxiv.org/abs/2001.08361"}
+  - {title: "Training Compute-Optimal Large Language Models", year: 2022, url: "https://arxiv.org/abs/2203.15556"}

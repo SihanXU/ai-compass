@@ -1,0 +1,19 @@
+id: end-to-end-driving-absolutism
+name:
+  en: End-to-End Driving Absolutism
+  zh: 端到端驾驶专制
+motto:
+  en: Pixels in, steering out
+  zh: 像素进，方向盘出
+level: 4
+place:
+  col: 10
+  row: 0
+parents: [embodied-statism]
+relations:
+  allies: [vla-monarchism, world-simulator-statism, video-scalism]
+  frenemies: [sim-to-real-pragmatism]
+  rivals: [perception-stack-federalism, robot-federalism, classical-control-conservatism]
+works:
+  - {title: "End to End Learning for Self-Driving Cars", year: 2016, url: "https://arxiv.org/abs/1604.07316"}
+  - {title: "Planning-oriented Autonomous Driving", year: 2023, url: "https://arxiv.org/abs/2212.10156"}

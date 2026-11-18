@@ -1,0 +1,19 @@
+id: objectiveless-anarchism
+name:
+  en: Objectiveless Anarchism
+  zh: 无目标函数无政府主义
+motto:
+  en: No objective function
+  zh: 不要目标函数
+level: 1
+place:
+  col: 4
+  row: 11
+parents: [open-endedness]
+relations:
+  allies: [artificial-life-doctrine, curiosity-liberalism, paradigm-iconoclasm]
+  frenemies: [emergentism]
+  rivals: [eval-proceduralism, radical-centrism-or-leaderboardism, rlhf-paternalism]
+works:
+  - {title: "Abandoning Objectives: Evolution Through the Search for Novelty Alone", year: 2011}
+  - {title: "Why Greatness Cannot Be Planned: The Myth of the Objective", year: 2015}

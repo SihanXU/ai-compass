@@ -1,0 +1,19 @@
+id: multimodal-agentism
+name:
+  en: Multimodal Agentism
+  zh: 多模态智能体主义
+motto:
+  en: 'See, hear, speak, act: delegate it all'
+  zh: 看、听、说、做都交给代理
+level: 4
+place:
+  col: 6
+  row: 8
+parents: [tool-use-liberalism, modular-multimodalism]
+relations:
+  allies: [visual-agent-doctrine, computer-use-liberalism, composable-liberalism]
+  frenemies: [omni-model-absolutism, any-to-any-imperialism]
+  rivals: [text-only-conservatism, native-fusion-centralism]
+works:
+  - {title: "HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in Hugging Face", year: 2023, url: https://arxiv.org/abs/2303.17580}
+  - {title: "Visual ChatGPT: Talking, Drawing and Editing with Visual Foundation Models", year: 2023, url: https://arxiv.org/abs/2303.04671}

@@ -1,0 +1,18 @@
+id: bio-hybridism
+name:
+  en: Bio-Hybridism
+  zh: 生物混合主义
+motto:
+  en: Compute with real neurons
+  zh: 用真的神经元计算
+level: 1
+place:
+  col: 10
+  row: 11
+parents: [artificial-life-doctrine]
+relations:
+  allies: [neuro-inspired-visualism, morphological-anarchism, predictive-coding-statism]
+  frenemies: [pan-embodimentism]
+  rivals: [compute-theocracy, compute-statism, symbolic-restorationism]
+works:
+  - {title: "In vitro neurons learn and exhibit sentience when embodied in a simulated game-world", year: 2022}

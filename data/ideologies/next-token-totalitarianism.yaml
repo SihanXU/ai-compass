@@ -1,0 +1,19 @@
+id: next-token-totalitarianism
+name:
+  en: Next-Token Totalitarianism
+  zh: 下一词极权主义
+motto:
+  en: All intelligence is next-token prediction
+  zh: 一切智能都是预测下一个词
+level: 7
+place:
+  col: 1
+  row: 0
+parents: [logos-absolutism]
+relations:
+  allies: [pretraining-maximalism, emergentism, compute-statism]
+  frenemies: [reasoning-statism]
+  rivals: [latent-prediction-doctrine, grammarian-conservatism, innatism]
+works:
+  - {title: "Improving Language Understanding by Generative Pre-Training", year: 2018}
+  - {title: "Language Models are Few-Shot Learners", year: 2020, url: "https://arxiv.org/abs/2005.14165"}

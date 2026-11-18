@@ -1,0 +1,18 @@
+---
+// The shade scale: for each paradigm level, a swatch of each of the six colour families; then the keys.
+import { levels } from '../lib/data.js';
+import { colour, FAMILIES } from '../lib/compass.js';
+import { t, other } from '../lib/i18n.js';
+const { lang } = Astro.props;
+---
+<div class="legend">
+    <div class="legend-scale">
+        {levels.map((l) => (
+            <div class="lv">
+                <div class="sws">{FAMILIES.map((f) => <span style={`background:${colour(f, l.level).bg}`}></span>)}</div>
+                <div class="nm">{l[lang]}</div>
+            </div>
+        ))}
+    </div>
+    <p class="legend-keys" set:html={t(lang, 'keys')} />
+</div>

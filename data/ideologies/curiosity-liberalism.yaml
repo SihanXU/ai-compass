@@ -1,0 +1,20 @@
+id: curiosity-liberalism
+name:
+  en: Curiosity Liberalism
+  zh: 好奇心自由主义
+motto:
+  en: Intrinsic motivation drives exploration
+  zh: 内在动机驱动探索
+level: 3
+place:
+  col: 10
+  row: 6
+parents: [open-endedness]
+relations:
+  allies: [developmentalism, active-perception-doctrine, game-agent-doctrine, model-based-planism]
+  frenemies: [objectiveless-anarchism]
+  rivals: [rlhf-paternalism, workflow-bureaucratism]
+works:
+  - {title: "Unifying Count-Based Exploration and Intrinsic Motivation", year: 2016, url: "https://arxiv.org/abs/1606.01868"}
+  - {title: "Curiosity-driven Exploration by Self-supervised Prediction", year: 2017, url: "https://arxiv.org/abs/1705.05363"}
+  - {title: "Exploration by Random Network Distillation", year: 2018, url: "https://arxiv.org/abs/1810.12894"}

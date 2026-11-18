@@ -1,0 +1,18 @@
+id: generative-village-communalism
+name:
+  en: Generative-Village Communalism
+  zh: 生成式小镇公社主义
+motto:
+  en: A whole town of agents
+  zh: 一整个小镇的代理
+level: 4
+place:
+  col: 9
+  row: 9
+parents: [agent-society-socialism]
+relations:
+  allies: [role-play-collectivism, memory-constitutionalism, world-as-code-doctrine, game-agent-doctrine]
+  frenemies: [multi-agent-parliamentarism]
+  rivals: [eval-proceduralism, embodied-statism]
+works:
+  - {title: "Generative Agents: Interactive Simulacra of Human Behavior", year: 2023, url: https://arxiv.org/abs/2304.03442}

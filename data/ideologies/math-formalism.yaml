@@ -1,0 +1,20 @@
+id: math-formalism
+name:
+  en: Math Formalism
+  zh: 数学形式主义
+motto:
+  en: Only what is proved is reasoned
+  zh: 能证明的才算推理
+level: 6
+place:
+  col: 5
+  row: 4
+parents: [formal-semanticism]
+relations:
+  allies: [symbolic-restorationism, neuro-symbolic-federalism, reasoning-statism]
+  frenemies: [code-as-thought, test-time-centralism]
+  rivals: [emergentism, prompt-craftism, chat-absolutism]
+works:
+  - {title: "Generative Language Modeling for Automated Theorem Proving", year: 2020, url: "https://arxiv.org/abs/2009.03393"}
+  - {title: "LeanDojo: Theorem Proving with Retrieval-Augmented Language Models", year: 2023, url: "https://arxiv.org/abs/2306.15626"}
+  - {title: "Solving olympiad geometry without human demonstrations", year: 2024}

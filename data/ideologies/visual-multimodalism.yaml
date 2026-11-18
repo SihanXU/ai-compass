@@ -1,0 +1,19 @@
+id: visual-multimodalism
+name:
+  en: Visual Multimodalism
+  zh: 视觉多模态主义
+motto:
+  en: Multimodal ends, visual means
+  zh: 目标是多模态，骨架是视觉
+level: 5
+place:
+  col: 7
+  row: 3
+parents: [visualism]
+relations:
+  allies: [pixel-totalitarianism, gui-grounding-doctrine, visual-agent-doctrine]
+  frenemies: [multimodal-visualism, visual-token-statism]
+  rivals: [linguistic-multimodalism, tokenizer-reformism, text-only-conservatism]
+works:
+  - {title: "Pix2Struct: Screenshot Parsing as Pretraining for Visual Language Understanding", year: 2022, url: "https://arxiv.org/abs/2210.03347"}
+  - {title: "Images Speak in Images: A Generalist Painter for In-Context Visual Learning", year: 2022, url: "https://arxiv.org/abs/2212.02499"}

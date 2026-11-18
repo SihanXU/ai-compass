@@ -1,0 +1,19 @@
+id: corpus-fundamentalism
+name:
+  en: Corpus Fundamentalism
+  zh: 语料原教旨主义
+motto:
+  en: The web’s text is all knowledge
+  zh: 互联网文本就是全部知识
+level: 7
+place:
+  col: 0
+  row: 1
+parents: [logocentrism]
+relations:
+  allies: [pretraining-maximalism, text-only-conservatism, distributional-semanticism]
+  frenemies: [synthetic-data-planism, retrieval-statism]
+  rivals: [grounding-doctrine, embodied-statism, video-scalism]
+works:
+  - {title: "Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer", year: 2019, url: "https://arxiv.org/abs/1910.10683"}
+  - {title: "The Pile: An 800GB Dataset of Diverse Text for Language Modeling", year: 2020, url: "https://arxiv.org/abs/2101.00027"}

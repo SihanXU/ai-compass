@@ -1,0 +1,18 @@
+id: early-fusion-statism
+name:
+  en: Early-Fusion Statism
+  zh: 早融合国家主义
+motto:
+  en: Fuse early, fuse everything
+  zh: 越早融合越强
+level: 4
+place:
+  col: 5
+  row: 1
+parents: [unified-vocabulary-centralism]
+relations:
+  allies: [native-fusion-centralism, interleaved-statism, any-to-any-imperialism]
+  frenemies: [contrastive-alignmentism]
+  rivals: [modular-multimodalism, captionist-centralism, perception-stack-federalism]
+works:
+  - {title: "Chameleon: Mixed-Modal Early-Fusion Foundation Models", year: 2024, url: "https://arxiv.org/abs/2405.09818"}

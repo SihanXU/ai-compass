@@ -1,0 +1,74 @@
+# The quick test's nine camps: col 0..2 = Language..World, row 0..2 = Monolith..Harness.
+camps:
+  - col: 0
+    row: 0
+    name:
+      en: Scaling Linguism
+      zh: 规模语言主义
+    text:
+      en: You believe a large enough language model is the core of general intelligence, and that other modalities and add-ons will be absorbed into it.
+      zh: 你相信一个足够大的语言模型就是通用智能的核心，其他模态和外挂终将被它吸收。
+  - col: 0
+    row: 1
+    name:
+      en: Linguism
+      zh: 语言主义
+    text:
+      en: Language is the skeleton of thought. You are neutral on architecture, but your bet is on language.
+      zh: 语言是思维的骨架。架构之争你持中立，但你押注语言。
+  - col: 0
+    row: 2
+    name:
+      en: Agentic Linguism
+      zh: 智能体语言主义
+    text:
+      en: 'The language model is the brain and the system is the body: tools, memory and workflow are where the ability really lives.'
+      zh: 语言模型做大脑，系统做身体：工具、记忆和流程才是能力真正所在。
+  - col: 1
+    row: 0
+    name:
+      en: Omni-Centralism
+      zh: 全模态集权主义
+    text:
+      en: You want one natively omni-modal, end-to-end model that sees, hears, speaks and draws as one.
+      zh: 你要一个原生全模态、端到端的模型，看、听、说、画一体完成。
+  - col: 1
+    row: 1
+    name:
+      en: Multimodalism
+      zh: 多模态主义
+    text:
+      en: 'No central modality and no architectural dogma: whatever works.'
+      zh: 没有中心模态，也没有架构教条：什么管用就用什么。
+  - col: 1
+    row: 2
+    name:
+      en: Modular Multimodalism
+      zh: 模块化多模态主义
+    text:
+      en: Each modality has its own strengths, and a system organizes them.
+      zh: 每个模态各有所长，由系统把它们组织起来。
+  - col: 2
+    row: 0
+    name:
+      en: World-Model Statism
+      zh: 世界模型国家主义
+    text:
+      en: Intelligence comes from predicting the physical world; one big model should learn it from video and interaction.
+      zh: 智能来自对物理世界的预测，应当用一个大模型从视频与交互中学会世界。
+  - col: 2
+    row: 1
+    name:
+      en: Visualism
+      zh: 视觉主义
+    text:
+      en: Perception comes before language; vision is the foundation of intelligence.
+      zh: 感知先于语言，视觉是智能的地基。
+  - col: 2
+    row: 2
+    name:
+      en: Embodied Federalism
+      zh: 具身联邦主义
+    text:
+      en: 'Intelligence grows in systems that deal with the world: perception, planning and control, each doing its part.'
+      zh: 智能长在与世界打交道的系统里：感知、规划、控制分工协作。

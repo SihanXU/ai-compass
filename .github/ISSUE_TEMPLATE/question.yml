@@ -1,0 +1,19 @@
+name: Propose or change a statement
+description: A test statement that is unclear, loaded, or missing
+labels: [question]
+body:
+  - type: input
+    id: id
+    attributes: { label: Statement id, description: "e.g. y4, or 'new'" }
+    validations: { required: true }
+  - type: textarea
+    id: text
+    attributes: { label: Statement (English and Chinese) }
+    validations: { required: true }
+  - type: input
+    id: effects
+    attributes: { label: Axis and direction, description: "Which axis agreeing moves, and which way, e.g. y −1 (toward Harness)" }
+    validations: { required: true }
+  - type: textarea
+    id: why
+    attributes: { label: Why }

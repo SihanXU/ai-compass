@@ -1,0 +1,49 @@
+---
+// The wiki's front page: welcome, then one box per category with its entries in columns.
+import Layout from '../../../layouts/Layout.astro';
+import WikiSidebar from '../../../components/WikiSidebar.astro';
+import Ball from '../../../components/Ball.astro';
+import { ideologies, wikiGroups, groupColour, colourOf, byId } from '../../../lib/data.js';
+import { t, url, tr, LANGS } from '../../../lib/i18n.js';
+
+export function getStaticPaths() { return LANGS.map((lang) => ({ params: { lang } })); }
+const { lang } = Astro.params;
+const groups = wikiGroups();
+const showcase = ['logos-absolutism', 'harness-liberalism', 'world-model-vanguardism', 'linguistic-multimodalism', 'embodied-statism', 'open-weights-communalism', 'symbolic-restorationism']
+  .map((id) => byId.get(id)).filter(Boolean);
+const textColour = (bg) => (/% (2|3|4)\d%\)$/.test(bg) ? '#fff' : '#111');
+---
+<Layout lang={lang} title={t(lang, 'wikiLabel')} path="wiki" active="wiki">
+    <div class="wiki">
+        <WikiSidebar lang={lang} />
+        <main class="wiki-main">
+            <nav class="crumbs"><span>{t(lang, 'navWiki')}</span></nav>
+            <section class="wiki-welcome">
+                <div>
+                    <h1>{t(lang, 'wikiWelcome')}</h1>
+                    <p>{t(lang, 'wikiWelcomeP', { n: ideologies.length })}</p>
+                </div>
+                <div class="balls">{showcase.map((i) => <a href={url(lang, `wiki/${i.id}`)} title={i.name[lang]}><Ball ide={i} size={58} /></a>)}</div>
+            </section>
+            <div class="cat-grid">
+                {groups.map((g) => {
+                    const bg = groupColour(g);
+                    return (
+                        <section class:list={['cat-box', { full: g.key === 'ring' }]}>
+                            <h2 style={`background:${bg};color:${g.key === 'ring' ? '#fff' : textColour(bg)}`}>
+                                <a href={url(lang, `wiki/category/${g.key}`)}>{tr(g.name, lang)}</a>
+                                <small>{t(lang, 'entriesIn', { n: g.items.length })}</small>
+                            </h2>
+                            <p>{tr(g.text, lang)}</p>
+                            <ul>
+                                {g.items.map((i) => (
+                                    <li><a href={url(lang, `wiki/${i.id}`)}><span class="sw-dot" style={`background:${colourOf(i).bg}`}></span>{i.name[lang]}</a></li>
+                                ))}
+                            </ul>
+                        </section>
+                    );
+                })}
+            </div>
+        </main>
+    </div>
+</Layout>

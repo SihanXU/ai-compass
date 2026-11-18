@@ -1,0 +1,20 @@
+id: open-endedness
+name:
+  en: Open-Endedness
+  zh: 开放式学习主义
+motto:
+  en: Learning with no finish line
+  zh: 没有终点的学习
+level: 2
+place:
+  col: 4
+  row: 9
+parents: [artificial-life-doctrine]
+relations:
+  allies: [evolutionary-federalism, curiosity-liberalism, objectiveless-anarchism, neuroevolutionism]
+  frenemies: [self-improving-agentism, game-agent-doctrine]
+  rivals: [eval-proceduralism, radical-centrism-or-leaderboardism, scaling-law-planism]
+works:
+  - {title: "Abandoning Objectives: Evolution Through the Search for Novelty Alone", year: 2011}
+  - {title: "Paired Open-Ended Trailblazer (POET): Endlessly Generating Increasingly Complex and Diverse Learning Environments and Their Solutions", year: 2019, url: https://arxiv.org/abs/1901.01753}
+  - {title: "OMNI: Open-endedness via Models of human Notions of Interestingness", year: 2023, url: https://arxiv.org/abs/2306.01711}

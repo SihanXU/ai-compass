@@ -1,0 +1,20 @@
+id: scaling-law-planism
+name:
+  en: Scaling-Law Planism
+  zh: 规模律计划经济
+motto:
+  en: Tokens and parameters, by five-year plan
+  zh: token 与参数按五年计划配比
+level: 6
+place:
+  col: 2
+  row: 1
+parents: [compute-statism]
+relations:
+  allies: [bitter-lesson-orthodoxy, pretraining-maximalism, scale-sublimism]
+  frenemies: [emergentism]
+  rivals: [small-model-localism, neuro-symbolic-federalism, objectiveless-anarchism]
+works:
+  - {title: "Deep Learning Scaling is Predictable, Empirically", year: 2017, url: "https://arxiv.org/abs/1712.00409"}
+  - {title: "Scaling Laws for Neural Language Models", year: 2020, url: "https://arxiv.org/abs/2001.08361"}
+  - {title: "Training Compute-Optimal Large Language Models", year: 2022, url: "https://arxiv.org/abs/2203.15556"}

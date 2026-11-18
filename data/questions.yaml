@@ -4,300 +4,1298 @@ questions:
   - id: x1
     effects:
       x: -1
+    sub:
+      x: medium
     text:
       en: Language is the vehicle of thought; a strong enough language model truly understands.
       zh: 语言是思维的载体，一个足够强的语言模型就具备了真正的理解。
   - id: x2
     effects:
       x: 1
+    sub:
+      x: source
     text:
       en: A model that has only read text will never truly know what “heavy” or “slippery” means.
       zh: 只读过文本的模型，永远不会真正懂得“重”和“滑”是什么意思。
   - id: x3
     effects:
       x: -1
+    sub:
+      x: source
     text:
       en: Internet text already holds most of human knowledge.
       zh: 互联网文本已经包含了人类知识的绝大部分。
   - id: x4
     effects:
       x: 1
+    sub:
+      x: source
     text:
       en: A four-year-old has seen more data than any language model has read, and that matters.
       zh: 一个四岁孩子用眼睛看过的数据，比任何语言模型读过的文本都多，这件事很重要。
   - id: x5
     effects:
       x: -1
+    sub:
+      x: medium
     text:
       en: The main job of a vision module is to translate images for the language model.
       zh: 视觉模块的主要作用，是把图像翻译给语言模型看。
   - id: x6
     effects:
       x: 1
+    sub:
+      x: source
     text:
       en: The next generation of foundation models should train mainly on video, not text.
       zh: 下一代基础模型的主要训练数据应该是视频，而不是文本。
   - id: x7
     effects:
       x: -1
+    sub:
+      x: medium
     text:
       en: Reasoning is fundamentally linguistic; the chain of thought is the thinking itself.
       zh: 推理本质上是语言性的，思维链就是思考本身。
   - id: x8
     effects:
       x: 1
+    sub:
+      x: medium
     text:
       en: A system that cannot predict what the physical world does next is not intelligent.
       zh: 不能预测物理世界下一刻会发生什么的系统，不配叫智能。
   - id: x9
     effects:
       x: 1
+    sub:
+      x: body
     text:
       en: Robots and embodied data are a necessary road to general intelligence.
       zh: 机器人和具身数据是通往通用智能的必经之路。
   - id: x10
     effects:
       x: -1
+    sub:
+      x: source
     text:
       en: Most progress in multimodal ability comes from a stronger language backbone.
       zh: 多模态能力的进步，大部分来自更强的语言主干。
   - id: x11
     effects:
       x: 1
+    sub:
+      x: medium
     text:
       en: Language is a low-bandwidth, lossy compression of the world.
       zh: 语言是对世界的一种低带宽、有损的压缩。
   - id: x12
     effects:
       x: -1
+    sub:
+      x: body
     text:
       en: A model that writes good code and proves theorems is closer to general intelligence than one that understands video.
       zh: 能写好代码、能证明定理的模型，比“看懂视频”的模型更接近通用智能。
   - id: y1
     effects:
       'y': 1
+    sub:
+      'y': control
     text:
       en: Today’s agent frameworks and harnesses will be absorbed by stronger models within a few years.
       zh: 今天的 agent 框架和 harness，几年后都会被更强的模型吸收掉。
   - id: y2
     effects:
       'y': -1
+    sub:
+      'y': control
     text:
       en: The same model with a better harness can gain more than a whole model generation.
       zh: 同一个模型换一个好的 harness，提升可以比换一代模型还大。
   - id: y3
     effects:
       'y': 1
+    sub:
+      'y': arch
     text:
       en: End-to-end training will always beat hand-designed modular pipelines.
       zh: 端到端训练终将打败人工设计的模块化流水线。
   - id: y4
     effects:
       'y': -1
+    sub:
+      'y': memory
     text:
       en: Intelligence lives in the system (memory, tools, workflow), not just in the weights.
       zh: 智能更多存在于系统里（记忆、工具、流程），而不只是权重里。
   - id: y5
     effects:
       'y': 1
+    sub:
+      'y': memory
     text:
       en: Tool use is a stopgap; models should eventually do everything internally.
       zh: 工具调用只是过渡，模型最终应该在内部完成所有事情。
   - id: y6
     effects:
       'y': -1
+    sub:
+      'y': arch
     text:
       en: Several specialized models working together are more reliable than one general model.
       zh: 几个专门的模型协作，比一个通用大模型更可靠。
   - id: y7
     effects:
       'y': 1
+    sub:
+      'y': arch
     text:
       en: The field should concentrate its resources on training the single strongest base model.
       zh: 整个领域应该把资源集中在训练一个最强的基座模型上。
   - id: y8
     effects:
       'y': -1
+    sub:
+      'y': control
     text:
       en: Explicit, readable, editable structure (behavior trees, programs, rules) is the key to reliable agents.
       zh: 可读、可编辑的显式结构（行为树、程序、规则）是让 agent 可靠的关键。
   - id: y9
     effects:
       'y': 1
+    sub:
+      'y': memory
     text:
       en: Memory, planning and reflection should emerge inside the model, not be bolted on.
       zh: 记忆、规划、反思都应该在模型内部涌现，而不是外挂上去。
   - id: y10
     effects:
       'y': -1
+    sub:
+      'y': memory
     text:
       en: Context engineering — what the model gets to see — matters more than a bigger model.
       zh: 上下文工程（给模型看什么）比换一个更大的模型更重要。
   - id: y11
     effects:
       'y': 1
+    sub:
+      'y': control
     text:
       en: Multi-agent systems mostly patch over the weaknesses of a single model.
       zh: 多智能体系统大多只是在弥补单个模型的不足。
   - id: y12
     effects:
       'y': -1
+    sub:
+      'y': control
     text:
       en: An agent should distill what it learns into code or rules instead of calling the model every time.
       zh: agent 应该把学会的东西沉淀成代码或规则，而不是每次都去调用模型。
   - id: p1
     effects:
       p: 1
+    sub:
+      p: arch
     text:
       en: The Transformer will not be the final architecture on the way to general intelligence.
       zh: Transformer 不会是通往通用智能的最终架构。
   - id: p2
     effects:
       p: -1
+    sub:
+      p: objective
     text:
       en: The current recipe — pretraining, post-training, scale — is enough to reach general intelligence.
       zh: 现有配方（预训练 + 后训练 + 规模）足以到达通用智能。
   - id: p3
     effects:
       p: 1
+    sub:
+      p: arch
     text:
       en: The next breakthrough is more likely a small group’s new idea than a bigger cluster.
       zh: 下一个重大突破更可能来自一个小组的新想法，而不是更大的集群。
   - id: p4
     effects:
       p: 1
+    sub:
+      p: arch
     text:
       en: Backpropagation on static datasets is itself a paradigm that needs replacing.
       zh: 在静态数据集上做反向传播，这个范式本身需要被替换。
   - id: p5
     effects:
       p: -1
+    sub:
+      p: arch
     text:
       en: Most “new architecture” papers end up losing to a scaled-up Transformer.
       zh: 大多数“新架构”论文，最终都会输给加大规模的 Transformer。
   - id: p6
     effects:
       p: 1
+    sub:
+      p: continual
     text:
       en: Continual learning after deployment is what current models lack most.
       zh: 部署后持续学习，是当前模型最缺的能力。
   - id: p7
     effects:
       p: -1
+    sub:
+      p: objective
     text:
       en: Methods from decades ago are badly underrated; the answers are often already there.
       zh: 几十年前的老方法被严重低估了，答案往往早就有了。
   - id: p8
     effects:
       p: 1
+    sub:
+      p: objective
     text:
       en: We need new learning objectives, not next-token or next-pixel prediction.
       zh: 我们需要全新的学习目标，而不是预测下一个 token 或下一个像素。
   - id: p9
     effects:
       p: -1
+    sub:
+      p: arch
     text:
       en: Incremental engineering moves the field more than paradigm shifts do.
       zh: 渐进的工程改进比范式革命更能推动这个领域。
   - id: p10
     effects:
       p: 1
+    sub:
+      p: objective
     text:
       en: In ten years, today’s mainstream methods will look as dated as SVMs look today.
       zh: 十年后回看，今天的主流方法会像今天回看 SVM 一样过时。
   - id: o1
     effects:
       o: 1
+    sub:
+      o: weights
     text:
       en: The weights of the strongest models should be open.
       zh: 最强模型的权重应该开放。
   - id: o2
     effects:
       o: -1
+    sub:
+      o: weights
     text:
       en: Frontier capability is better concentrated in a few labs with safety teams.
       zh: 前沿能力集中在少数有安全团队的实验室里更好。
   - id: o3
     effects:
       o: 1
+    sub:
+      o: science
     text:
       en: Results on closed models that no one can reproduce should not count as scientific contributions.
       zh: 基于闭源模型、无法复现的结果，不该算作科学贡献。
   - id: o4
     effects:
       o: 1
+    sub:
+      o: science
     text:
       en: Academia can do frontier research with open models alone.
       zh: 学术界只靠开放模型，也能做出前沿研究。
   - id: o5
     effects:
       o: -1
+    sub:
+      o: science
     text:
       en: Releasing full training data and recipes is too risky.
       zh: 公开完整的训练数据和配方风险太大。
   - id: o6
     effects:
       o: 1
+    sub:
+      o: weights
     text:
       en: The open community will catch up with, or even pass, the closed frontier.
       zh: 开源社区终将追上甚至超过闭源前沿。
   - id: o7
     effects:
       o: -1
+    sub:
+      o: weights
     text:
       en: A commercial API is the best way to put AI in everyone’s hands.
       zh: 商业 API 是把 AI 交给大众的最好方式。
   - id: o8
     effects:
       o: 1
+    sub:
+      o: science
     text:
       en: Training data should be fully public and auditable.
       zh: 训练数据应该完全公开、可查。
   - id: a1
     effects:
       a: 1
+    sub:
+      a: pace
     text:
       en: The faster AI progresses, the better.
       zh: AI 发展得越快越好。
   - id: a2
     effects:
       a: -1
+    sub:
+      a: pace
     text:
       en: The chance that advanced AI causes catastrophe deserves serious attention.
       zh: 先进 AI 带来灾难性后果的可能性，值得认真对待。
   - id: a3
     effects:
       a: 1
+    sub:
+      a: oversight
     text:
       en: Regulation does AI more harm than good.
       zh: 监管对 AI 的伤害大于帮助。
   - id: a4
     effects:
       a: -1
+    sub:
+      a: pace
     text:
       en: Frontier training should slow down until alignment is solved.
       zh: 在对齐问题解决之前，应该放慢前沿模型的训练。
   - id: a5
     effects:
       a: 1
+    sub:
+      a: oversight
     text:
       en: The more autonomy agents get the better; human approval is the bottleneck.
       zh: 给 agent 的自主权越多越好，人类审批是瓶颈。
   - id: a6
     effects:
       a: -1
+    sub:
+      a: oversight
     text:
       en: Interpretability research should get more resources than capability research.
       zh: 可解释性研究应该比能力研究获得更多资源。
   - id: a7
     effects:
       a: 1
+    sub:
+      a: pace
     text:
       en: AI doom talk is mostly marketing or panic.
       zh: “AI 末日论”主要是营销或者恐慌。
   - id: a8
     effects:
       a: -1
+    sub:
+      a: oversight
     text:
       en: Independent bodies should safety-test models before they are deployed.
       zh: 模型部署前应该由独立机构做安全评测。
+  - id: x13
+    effects:
+      x: 1
+    sub:
+      x: source
+    text:
+      en: Once high-quality web text runs out, the next big source of new knowledge must be sensory data such as video, not synthetic text.
+      zh: 高质量网络文本用完之后，下一个大的新知识来源必须是视频这类感知数据，而不是合成文本。
+  - id: x14
+    effects:
+      x: -1
+    sub:
+      x: source
+    text:
+      en: Model-generated, verifier-checked synthetic text in math, code and reasoning traces can keep feeding pretraining well past the human-text data wall.
+      zh: 由模型生成、再经 verifier 校验的数学、代码和推理轨迹合成数据，足以让预训练越过人类文本的数据墙继续往前走。
+  - id: x15
+    effects:
+      x: -1
+    sub:
+      x: source
+    text:
+      en: Most of the physics a video model learns is already written down somewhere in text; video adds perceptual detail more than new knowledge.
+      zh: 视频模型学到的物理知识，大部分早就以文字形式写在某处了；视频带来的更多是感知细节，而不是新知识。
+  - id: x16
+    effects:
+      x: 1
+    sub:
+      x: source
+    text:
+      en: Interaction data, where a model observes the consequences of its own actions, teaches causal knowledge that passively scraped text cannot.
+      zh: 交互数据——模型亲眼看到自己动作带来的后果——能教会因果知识，这是被动爬取的文本给不了的。
+  - id: x17
+    effects:
+      x: -1
+    sub:
+      x: source
+    text:
+      en: For general reasoning ability, a compute budget spent on code and formal mathematics data buys more than the same budget spent on video.
+      zh: 就通用推理能力而言，同样的算力花在代码和形式化数学数据上，比花在视频上收益更大。
+  - id: x18
+    effects:
+      x: 1
+    sub:
+      x: medium
+    text:
+      en: For long-horizon control, planning in a learned latent world model, as in Dreamer or MuZero, scales better than planning in natural-language steps.
+      zh: 对长程控制来说，像 Dreamer、MuZero 那样在学到的隐空间 world model 里做规划，比用自然语言一步步规划更能 scale。
+  - id: x19
+    effects:
+      x: -1
+    sub:
+      x: medium
+    text:
+      en: Hard geometry and spatial puzzles are best solved by writing code or symbolic descriptions, not by reasoning over pixels or latent images.
+      zh: 困难的几何和空间推理题，最好的解法是写代码或符号化描述，而不是在像素或隐空间图像上推理。
+  - id: x20
+    effects:
+      x: 1
+    sub:
+      x: medium
+    text:
+      en: Reasoning in continuous hidden states, without emitting chain-of-thought tokens, will beat explicit token-level chains of thought at equal compute.
+      zh: 在连续隐状态里推理、不输出思维链 token 的方法，在同等算力下会胜过显式的 token 级思维链。
+  - id: x21
+    effects:
+      x: -1
+    sub:
+      x: medium
+    text:
+      en: Visual chain-of-thought, generating intermediate images or sketches while reasoning, adds little over a good textual chain of thought on multimodal tasks.
+      zh: 视觉思维链（推理中途生成中间图像或草图），在多模态任务上比好的文字思维链多不了多少。
+  - id: x22
+    effects:
+      x: 1
+    sub:
+      x: medium
+    text:
+      en: Predicting in pixel or latent space, as JEPA-style or Genie-style world models do, is a better substrate for intuitive physics than text tokens.
+      zh: 像 JEPA 或 Genie 这类 world model 那样在像素或隐空间里做预测，比文本 token 更适合承载直觉物理。
+  - id: x23
+    effects:
+      x: 1
+    sub:
+      x: body
+    text:
+      en: Object common sense, that cups spill and cloth folds, is learned mainly by acting on objects, so VLA models need large amounts of real robot data.
+      zh: 杯子会洒、布会折这类物体常识，主要是靠动手学会的，所以 VLA 模型离不开大量真实机器人数据。
+  - id: x24
+    effects:
+      x: -1
+    sub:
+      x: body
+    text:
+      en: A disembodied model could solve open problems in mathematics and science without ever controlling a body or a sensor.
+      zh: 一个没有身体的模型，从未控制过任何身体或传感器，也能解决数学和科学里的开放问题。
+  - id: x25
+    effects:
+      x: -1
+    sub:
+      x: body
+    text:
+      en: Most of the reasoning a household robot needs can be done by a language model that has never controlled a body.
+      zh: 家用机器人需要的大部分推理，都可以交给一个从未控制过身体的语言模型来完成。
+  - id: x26
+    effects:
+      x: 1
+    sub:
+      x: body
+    text:
+      en: Any serious benchmark for general intelligence should include physical tasks in the real world, not only text, code and puzzles like ARC.
+      zh: 任何严肃的通用智能 benchmark 都应该包含真实世界中的物理任务，而不只是文本、代码和 ARC 这类谜题。
+  - id: x27
+    effects:
+      x: 1
+    sub:
+      x: body
+    text:
+      en: Training agents to act in physically rich simulators such as MuJoCo or Isaac teaches skills that no amount of text pretraining can substitute for.
+      zh: 在 MuJoCo、Isaac 这类物理丰富的模拟器里训练 agent 动手，学到的技能是再多文本预训练也替代不了的。
+  - id: x28
+    effects:
+      x: -1
+    sub:
+      x: body
+    text:
+      en: Digital agents that operate browsers, terminals and codebases are a more direct path to general intelligence than physical robots.
+      zh: 能操作浏览器、终端和代码库的数字 agent，比实体机器人更直接地通向通用智能。
+  - id: x29
+    effects:
+      x: 1
+    sub:
+      x: body
+    text:
+      en: Touch and proprioception matter as much as vision for a general world model, and today's multimodal models badly neglect them.
+      zh: 对一个通用的 world model 来说，触觉和本体感觉和视觉一样重要，而现在的多模态模型几乎忽视了它们。
+  - id: x30
+    effects:
+      x: -1
+    sub:
+      x: body
+    text:
+      en: 'Embodied AI can wait: once disembodied models are capable enough, controlling robots will follow cheaply as a downstream application.'
+      zh: 具身智能可以先放一放：等无身体的模型足够强了，控制机器人只是一个顺带就能做好的下游应用。
+  - id: y13
+    effects:
+      'y': -1
+    sub:
+      'y': arch
+    text:
+      en: Separately trained perception, prediction and planning modules, as in modular self-driving stacks, are easier to verify than an end-to-end driving network.
+      zh: 像模块化自动驾驶栈那样分别训练感知、预测和规划模块，比一个端到端驾驶网络更容易验证。
+  - id: y14
+    effects:
+      'y': 1
+    sub:
+      'y': arch
+    text:
+      en: Natively multimodal models trained jointly on all modalities will outperform systems that bolt a vision encoder or speech module onto an LLM.
+      zh: 所有模态联合训练的原生多模态模型，会胜过在 LLM 上外接视觉编码器或语音模块的系统。
+  - id: y15
+    effects:
+      'y': -1
+    sub:
+      'y': arch
+    text:
+      en: Pairing a generator with a separately trained verifier or reward model at inference time beats spending the same compute on a bigger generator.
+      zh: 推理时给生成模型配一个单独训练的 verifier 或 reward model，比把同样的算力花在更大的生成模型上更划算。
+  - id: y16
+    effects:
+      'y': 1
+    sub:
+      'y': arch
+    text:
+      en: Mixture-of-experts inside one network is the right way to specialise; separately deployed expert models are an engineering detour.
+      zh: 在一个网络内部用 mixture-of-experts 做专精才是正路，单独部署多个专家模型是工程上的弯路。
+  - id: y17
+    effects:
+      'y': -1
+    sub:
+      'y': arch
+    text:
+      en: Keeping ASR, OCR and TTS as separate components around an LLM is the better design, because each can be fixed without retraining everything.
+      zh: 把 ASR、OCR、TTS 作为独立组件放在 LLM 周围是更好的设计，因为每一块都能单独修，不用整体重训。
+  - id: y18
+    effects:
+      'y': 1
+    sub:
+      'y': arch
+    text:
+      en: One model trained to handle chat, coding, search and computer use beats maintaining a separate fine-tuned model for each product.
+      zh: 训练一个模型同时搞定对话、写代码、搜索和电脑操作，好过为每个产品各维护一个微调模型。
+  - id: y19
+    effects:
+      'y': -1
+    sub:
+      'y': arch
+    text:
+      en: On hard benchmarks such as SWE-bench, systems combining several distinct models will keep holding the top results, rather than any single model.
+      zh: 在 SWE-bench 这类困难 benchmark 上，榜首会一直属于组合了多个不同模型的系统，而不是任何单个模型。
+  - id: y20
+    effects:
+      'y': 1
+    sub:
+      'y': memory
+    text:
+      en: With million-token context windows, most RAG pipelines become unnecessary; putting the documents straight into context is simpler and works better.
+      zh: 有了百万 token 的上下文窗口，大多数 RAG 流水线都没必要了，直接把文档塞进上下文更简单，效果也更好。
+  - id: y21
+    effects:
+      'y': -1
+    sub:
+      'y': memory
+    text:
+      en: Long-term agent memory should live in an external, inspectable store such as files or a database, not be written into the weights.
+      zh: agent 的长期记忆应该放在文件或数据库这类外部、可检查的存储里，而不是写进权重。
+  - id: y22
+    effects:
+      'y': 1
+    sub:
+      'y': memory
+    text:
+      en: Domain knowledge belongs in the weights through continued pretraining or fine-tuning, rather than being retrieved from a document store at inference time.
+      zh: 领域知识应该通过继续预训练或微调放进权重，而不是在推理时从文档库里检索出来。
+  - id: y23
+    effects:
+      'y': -1
+    sub:
+      'y': memory
+    text:
+      en: A mid-sized model with a calculator, code interpreter and web search beats a much larger model without tools on most real-world tasks.
+      zh: 在大多数真实任务上，一个配了计算器、代码解释器和搜索的中等模型，能打过一个大得多但没有工具的模型。
+  - id: y24
+    effects:
+      'y': -1
+    sub:
+      'y': memory
+    text:
+      en: Most hallucinations are better fixed by grounding answers in retrieved sources with citations than by further training the model.
+      zh: 大多数幻觉问题，靠检索来源并给出引用来解决，比继续训练模型更有效。
+  - id: y25
+    effects:
+      'y': 1
+    sub:
+      'y': memory
+    text:
+      en: Test-time training or fast-weight updates on the running context will replace external vector-store memory for long-running agents.
+      zh: 对长时间运行的 agent，test-time training 或 fast weights 式的在线更新，会取代外部的向量库记忆。
+  - id: y26
+    effects:
+      'y': 1
+    sub:
+      'y': control
+    text:
+      en: End-to-end reinforcement learning on agentic tasks will produce better planners than any hand-written workflow or prompt chain.
+      zh: 在 agent 任务上做端到端强化学习，得到的规划能力会超过任何手写的工作流或 prompt 链。
+  - id: y27
+    effects:
+      'y': -1
+    sub:
+      'y': control
+    text:
+      en: For production agents, a fixed workflow with LLM calls at chosen steps is more reliable than letting the model pick its next action freely.
+      zh: 生产环境里的 agent，用固定工作流、只在指定步骤调用 LLM，比让模型自由决定下一步更可靠。
+  - id: y28
+    effects:
+      'y': 1
+    sub:
+      'y': control
+    text:
+      en: Detailed step-by-step scaffolds and long system prompts increasingly hurt frontier models, which plan better when given only the goal.
+      zh: 细致的分步脚手架和冗长的 system prompt 越来越拖累前沿模型，只给目标时它们反而规划得更好。
+  - id: y29
+    effects:
+      'y': -1
+    sub:
+      'y': control
+    text:
+      en: An explicit state machine or orchestration graph, not the model itself, should decide when an agent may call tools, retry or stop.
+      zh: agent 什么时候调用工具、什么时候重试、什么时候停下，应该由显式的状态机或编排图决定，而不是模型自己。
+  - id: y30
+    effects:
+      'y': 1
+    sub:
+      'y': control
+    text:
+      en: Task decomposition should be learned by the model, not specified by developers; hand-designed subtask graphs cap what an agent can achieve.
+      zh: 任务拆解应该由模型自己学会，而不是由开发者指定；手工设计的子任务图会限制 agent 的上限。
+  - id: p11
+    effects:
+      p: 1
+    sub:
+      p: arch
+    text:
+      en: State-space models or other recurrent designs will replace attention as the default architecture for long-context modeling.
+      zh: 在长上下文建模上，状态空间模型或其他循环结构会取代 attention，成为默认架构。
+  - id: p12
+    effects:
+      p: -1
+    sub:
+      p: arch
+    text:
+      en: Hybrid layers, mixture-of-experts and new attention variants are refinements; the core Transformer block will remain the backbone for at least a decade.
+      zh: 混合层、MoE、各种新 attention 都只是修补，Transformer 的核心模块至少还会当十年主干。
+  - id: p13
+    effects:
+      p: -1
+    sub:
+      p: arch
+    text:
+      en: ConvNets and LSTMs trained with modern recipes, data and compute close most of their gap to Transformers.
+      zh: 用现代的训练配方、数据和算力去训 ConvNet 和 LSTM，它们和 Transformer 的差距大部分都能补上。
+  - id: p14
+    effects:
+      p: 1
+    sub:
+      p: objective
+    text:
+      en: Predicting in a learned latent space, as joint-embedding methods do, is a better pretraining signal than reconstructing tokens or pixels.
+      zh: 像 joint-embedding 方法那样在学到的隐空间里做预测，比重建 token 或像素更适合做预训练信号。
+  - id: p15
+    effects:
+      p: 1
+    sub:
+      p: objective
+    text:
+      en: Reinforcement learning from environment reward, not imitation of human data, should become the main source of a model's capabilities.
+      zh: 模型的能力主要应该来自环境奖励驱动的强化学习，而不是对人类数据的模仿。
+  - id: p16
+    effects:
+      p: -1
+    sub:
+      p: objective
+    text:
+      en: Next-token prediction on diverse enough data already forces a model to learn whatever world model the task requires.
+      zh: 只要数据足够多样，预测下一个 token 本身就会逼着模型学出任务所需的世界模型。
+  - id: p17
+    effects:
+      p: 1
+    sub:
+      p: continual
+    text:
+      en: Test-time training, where weights adapt to each new input or task, will become a standard part of inference.
+      zh: Test-time training，即权重针对每个新输入或新任务做适应，会成为推理的标准环节。
+  - id: p18
+    effects:
+      p: -1
+    sub:
+      p: continual
+    text:
+      en: Retrieval over an external memory gives deployed models most of what continual learning promises, without touching the weights.
+      zh: 部署后的模型靠外部记忆加检索，就能拿到持续学习承诺的大部分好处，根本不用动权重。
+  - id: p19
+    effects:
+      p: -1
+    sub:
+      p: continual
+    text:
+      en: A deployed model should be a fixed, versioned checkpoint; weights that drift with user interactions cannot be properly evaluated.
+      zh: 部署的模型应该是固定的、有版本号的 checkpoint；随用户交互不断漂移的权重没法被可靠地评测。
+  - id: p20
+    effects:
+      p: -1
+    sub:
+      p: continual
+    text:
+      en: Catastrophic forgetting is still unsolved at scale, so periodic retraining on refreshed data beats online weight updates.
+      zh: 灾难性遗忘在大规模上仍未解决，所以用更新后的数据定期重训，比在线更新权重更靠谱。
+  - id: o9
+    effects:
+      o: 1
+    sub:
+      o: weights
+    text:
+      en: Public institutions should only adopt AI models whose weights they can download, inspect and host on their own infrastructure.
+      zh: 公共机构只应该采用能下载权重、能检查、能部署在自己基础设施上的 AI 模型。
+  - id: o10
+    effects:
+      o: 1
+    sub:
+      o: weights
+    text:
+      en: Once a model has been superseded by its developer's newer release, its weights should be made public.
+      zh: 一个模型一旦被开发者自己的新版本取代，就应该公开它的权重。
+  - id: o11
+    effects:
+      o: -1
+    sub:
+      o: weights
+    text:
+      en: Open-weight releases should stop above a capability threshold, since safety tuning can be fine-tuned away in a few hours.
+      zh: 超过某个能力阈值的模型就不该再开放权重，因为安全对齐几个小时的微调就能去掉。
+  - id: o12
+    effects:
+      o: -1
+    sub:
+      o: weights
+    text:
+      en: For most developers, a well-priced API with fine-tuning endpoints is worth more than direct access to the weights.
+      zh: 对大多数开发者来说，一个价格合理、支持微调的 API，比直接拿到权重更有价值。
+  - id: o13
+    effects:
+      o: -1
+    sub:
+      o: science
+    text:
+      en: A system card with thorough evaluations is sufficient transparency for a frontier model; its architecture and training code can stay private.
+      zh: 对前沿模型来说，一份评测充分的 system card 就是足够的透明度，架构和训练代码可以不公开。
+  - id: o14
+    effects:
+      o: -1
+    sub:
+      o: science
+    text:
+      en: Detailed results from dangerous-capability evaluations, such as biology uplift studies, should be shared only with vetted researchers.
+      zh: 危险能力评测（比如生物方面的 uplift 研究）的详细结果，只应该提供给经过审核的研究者。
+  - id: o15
+    effects:
+      o: -1
+    sub:
+      o: science
+    text:
+      en: Developers who pay for data curation have a legitimate right to keep their pretraining data mixture a trade secret.
+      zh: 为数据清洗和配比付了钱的开发者，有正当理由把预训练数据配比当作商业机密。
+  - id: a9
+    effects:
+      a: 1
+    sub:
+      a: pace
+    text:
+      en: The cost of delaying AI applications in medicine and science outweighs the risk of deploying them sooner.
+      zh: 推迟 AI 在医学和科学上的应用，代价比提前部署带来的风险更大。
+  - id: a10
+    effects:
+      a: 1
+    sub:
+      a: pace
+    text:
+      en: Each frontier release teaches more about safety than years of analysis beforehand, so releases should not be held back for theoretical risks.
+      zh: 每次前沿模型发布带来的安全经验，比事前多年分析都多，所以不该因为理论上的风险压着不发。
+  - id: a11
+    effects:
+      a: -1
+    sub:
+      a: pace
+    text:
+      en: Developers should commit in advance to pausing training when evaluations reveal dangerous capabilities that current safeguards cannot contain.
+      zh: 开发者应该事先承诺：一旦评测发现现有防护控制不住的危险能力，就暂停训练。
+  - id: a12
+    effects:
+      a: -1
+    sub:
+      a: pace
+    text:
+      en: An international cap on training compute for the largest runs would be worth the slower progress it causes.
+      zh: 对最大规模训练的算力设一个国际上限，即使会拖慢进展，也是值得的。
+  - id: a13
+    effects:
+      a: 1
+    sub:
+      a: oversight
+    text:
+      en: Coding agents should be allowed to merge and deploy their own changes once tests pass, without a human review step.
+      zh: 编程 agent 在测试通过后，应该可以自己合并并部署改动，不需要人工 review 这一步。
+  - id: a14
+    effects:
+      a: 1
+    sub:
+      a: oversight
+    text:
+      en: Mandatory pre-deployment licensing of frontier models would mainly entrench incumbents rather than make models safer.
+      zh: 对前沿模型强制实行部署前许可制度，主要作用是巩固既有玩家，而不是让模型更安全。
+  - id: a15
+    effects:
+      a: -1
+    sub:
+      a: oversight
+    text:
+      en: An agent that can spend money or send messages for a user should get explicit human confirmation before each such action.
+      zh: 能替用户花钱或发消息的 agent，每次执行这类操作前都应该得到人的明确确认。
+  - id: d1
+    effects:
+      x: 0.7
+      'y': -0.7
+    sub:
+      x: body
+      'y': arch
+    text:
+      en: A capable household robot is best built as a modular stack of perception, mapping, planning and control, not one end-to-end policy.
+      zh: 一个能干活的家用机器人，最好由感知、建图、规划、控制几个模块搭起来，而不是一个端到端策略。
+  - id: d2
+    effects:
+      x: -0.7
+      'y': 0.7
+    sub:
+      x: medium
+      'y': arch
+    text:
+      en: A large enough language model can serve as a general agent end to end, with screens and sensor readings simply encoded as tokens.
+      zh: 足够大的语言模型可以端到端地当通用 agent 用，屏幕画面和传感器读数编码成 token 喂进去就行。
+  - id: d3
+    effects:
+      x: 0.7
+      'y': 0.7
+    sub:
+      x: medium
+      'y': arch
+    text:
+      en: One action-conditioned video world model, trained end to end, will replace hand-built simulators and planners in robotics.
+      zh: 一个以动作为条件、端到端训练的视频世界模型，会取代机器人领域里手工搭建的仿真器和规划器。
+  - id: d4
+    effects:
+      x: -0.7
+      'y': -0.7
+    sub:
+      x: source
+      'y': memory
+    text:
+      en: Most of what an AI scientist needs is a language model that calls literature search, code execution and symbolic solvers as tools.
+      zh: AI 科学家需要的，主要就是一个会调用文献检索、代码执行和符号求解器等工具的语言模型。
+  - id: d5
+    effects:
+      x: 0.7
+      p: 0.7
+    sub:
+      x: body
+      p: continual
+    text:
+      en: Robots must keep learning from their own physical interactions after deployment; no fixed pretraining corpus can anticipate the real world.
+      zh: 机器人部署后必须从自己的物理交互中持续学习，任何固定的预训练语料都预料不到真实世界。
+  - id: d6
+    effects:
+      x: -0.7
+      p: -0.7
+    sub:
+      x: source
+      p: objective
+    text:
+      en: More text, code and synthetic reasoning traces under the same next-token objective will keep producing better reasoners.
+      zh: 沿用同样的 next-token 目标，继续加文本、代码和合成推理轨迹，就能不断训出更强的推理模型。
+  - id: d7
+    effects:
+      x: 0.7
+      p: -0.7
+    sub:
+      x: source
+      p: objective
+    text:
+      en: Video models trained with plain next-frame prediction will learn intuitive physics at scale; no new learning objective is needed.
+      zh: 用朴素的下一帧预测训练视频模型，规模上去了就能学会直觉物理，不需要新的学习目标。
+  - id: d8
+    effects:
+      'y': 0.7
+      p: 0.7
+    sub:
+      'y': memory
+      p: continual
+    text:
+      en: Long-term memory should live in weights that update during inference, replacing external vector databases and retrieval pipelines.
+      zh: 长期记忆应该放在推理时会更新的权重里，取代外部向量数据库和检索流水线。
+  - id: d9
+    effects:
+      'y': -0.7
+      p: 0.7
+    sub:
+      'y': memory
+      p: continual
+    text:
+      en: Agents will learn continually by writing new skills into an external, editable library, not by retraining their weights.
+      zh: agent 的持续学习会通过把新技能写进外部可编辑的技能库来实现，而不是重新训练权重。
+  - id: d10
+    effects:
+      'y': 0.7
+      p: -0.7
+    sub:
+      'y': memory
+      p: arch
+    text:
+      en: A plain decoder-only Transformer, scaled up, will learn retrieval and planning internally without any new architectural components.
+      zh: 朴素的 decoder-only Transformer 只要放大规模，就能在内部学会检索和规划，不需要任何新的架构组件。
+  - id: k1
+    effects:
+      x: 0.6
+      'y': 0.4
+    sub:
+      x: source
+      'y': arch
+    text:
+      en: A vision-language model should fully retrain its vision encoder on its own data, rather than keep a frozen contrastive encoder and train only the projector.
+      zh: 视觉语言模型应该用自己的数据把视觉编码器完整地重新训练一遍，而不是冻结一个对比学习编码器、只训练投影层。
+  - id: k2
+    effects:
+      x: -0.4
+      'y': 0.4
+    sub:
+      x: medium
+      'y': memory
+    text:
+      en: For agent performance, deciding exactly what text enters the context window matters more than adding tools, sub-agents or execution environments.
+      zh: 对 agent 的表现来说，精确决定哪些文本进入 context window，比增加工具、sub-agent 或执行环境更重要。
+  - id: k3
+    effects:
+      x: 0.4
+      p: 0.6
+    sub:
+      x: medium
+      p: objective
+    text:
+      en: A world model should predict future states in a learned latent space, not generate future video frames pixel by pixel.
+      zh: 世界模型应该在学到的隐空间里预测未来状态，而不是逐像素地生成未来的视频帧。
+  - id: k4
+    effects:
+      x: -0.8
+      'y': -0.4
+    sub:
+      x: medium
+      'y': arch
+    text:
+      en: Turning images into detailed captions and letting a text-only model reason over them loses little on most real-world tasks.
+      zh: 先把图像转成详细的描述文字，再让纯文本模型在上面推理，在大多数真实任务上损失不大。
+  - id: k5
+    effects:
+      x: 0.6
+      p: -0.6
+    sub:
+      x: body
+      p: arch
+    text:
+      en: Physics simulators with hand-written dynamics will remain essential for training robots; learned video world models will not replace them.
+      zh: 带有手写动力学的物理仿真器仍将是训练机器人的必需品，学出来的视频世界模型取代不了它们。
+  - id: k6
+    effects:
+      x: 0.4
+      'y': 0.4
+      p: 0.6
+    sub:
+      x: medium
+      'y': control
+      p: objective
+    text:
+      en: If RL pushes a model's reasoning traces into sequences no human can read, that is acceptable and may even raise accuracy.
+      zh: 如果 RL 把模型的推理轨迹推成了人类读不懂的序列，这可以接受，甚至可能提高准确率。
+  - id: k7
+    effects:
+      'y': 0.8
+      p: -0.4
+    sub:
+      'y': memory
+      p: arch
+    text:
+      en: Once context windows reach tens of millions of tokens, retrieval pipelines will be unnecessary for most document-grounded tasks.
+      zh: 一旦 context window 达到几千万 token，大多数基于文档的任务就不再需要检索流水线了。
+  - id: k8
+    effects:
+      x: -0.4
+      'y': 0.4
+      p: 0.4
+    sub:
+      x: medium
+      'y': control
+      p: objective
+    text:
+      en: Over the next few years, longer chains of thought at test time will add more capability than further scaling of pretraining.
+      zh: 未来几年里，测试时更长的思维链带来的能力提升，会超过继续放大预训练。
+  - id: k9
+    effects:
+      'y': 0.6
+      p: 0.8
+    sub:
+      'y': memory
+      p: continual
+    text:
+      en: A model that keeps updating its own weights from each user's interactions is worth the cost in reproducibility and auditability.
+      zh: 一个根据每个用户的交互不断更新自身权重的模型，值得为此付出可复现性和可审计性的代价。
+  - id: k10
+    effects:
+      x: -0.4
+      'y': -0.8
+      p: 0.4
+    sub:
+      x: medium
+      'y': memory
+      p: continual
+    text:
+      en: Agents should keep what they learn on the job as editable text notes and skill files rather than fine-tuning it into weights.
+      zh: agent 在工作中学到的东西，应该存成可编辑的文本笔记和 skill 文件，而不是 fine-tune 进权重。
+  - id: k11
+    effects:
+      x: 0.4
+      p: 0.6
+    sub:
+      x: medium
+      p: arch
+    text:
+      en: Within five years, diffusion rather than left-to-right autoregression will be the main way frontier models generate text.
+      zh: 五年之内，前沿模型生成文本的主要方式会是 diffusion，而不是从左到右的自回归。
+  - id: k12
+    effects:
+      x: 0.4
+      'y': 0.6
+    sub:
+      x: medium
+      'y': arch
+    text:
+      en: Using separate visual tokenizers for image understanding and image generation is a mistake; one shared visual representation should serve both.
+      zh: 图像理解和图像生成各用一套视觉 tokenizer 是个错误，应该由同一套视觉表示同时服务两者。
+  - id: k13
+    effects:
+      x: 0.6
+      'y': -0.6
+      p: -0.6
+    sub:
+      x: body
+      'y': control
+      p: arch
+    text:
+      en: Classical motion planning and model-predictive control should stay in the loop underneath any learned robot policy that is actually deployed.
+      zh: 任何真正部署的机器人学习策略之下，都应该保留经典运动规划和模型预测控制。
+  - id: k14
+    effects:
+      x: -0.4
+      'y': 0.6
+      p: -0.4
+    sub:
+      x: medium
+      'y': arch
+      p: objective
+    text:
+      en: Vision-language-action models should emit actions as discrete tokens in the language model's vocabulary, not through a separate continuous action head.
+      zh: VLA 模型应该把动作当作语言模型词表里的离散 token 来输出，而不是另接一个连续的 action head。
+  - id: k15
+    effects:
+      x: 0.4
+      'y': 0.6
+    sub:
+      x: body
+      'y': arch
+    text:
+      en: One policy trained on data from many different robot bodies will beat policies trained for a single specific robot, even on that robot.
+      zh: 用多种不同机器人本体的数据训练出的单一策略，即使在某台特定机器人上，也会胜过专门为它训练的策略。
+  - id: k16
+    effects:
+      x: -0.4
+      p: 0.6
+    sub:
+      x: medium
+      p: arch
+    text:
+      en: Tokenizer-free models that read raw bytes will replace subword tokenization in frontier language models.
+      zh: 直接读取原始字节、不用 tokenizer 的模型，会在前沿语言模型中取代 subword 分词。
+  - id: k17
+    effects:
+      'y': -0.4
+      p: 0.8
+    sub:
+      'y': control
+      p: continual
+    text:
+      en: Agents that rewrite their own scaffolding code and prompts from experience will improve faster than any harness designed by humans.
+      zh: 根据经验改写自身脚手架代码和 prompt 的 agent，会比任何人类设计的 harness 进步得更快。
+  - id: k18
+    effects:
+      x: -0.4
+      'y': -0.6
+      p: -0.8
+    sub:
+      x: source
+      'y': memory
+      p: arch
+    text:
+      en: Curated knowledge graphs still answer factual questions more reliably than any language model's parametric memory, and will keep doing so.
+      zh: 人工整理的知识图谱回答事实性问题仍然比任何语言模型的参数记忆更可靠，而且会一直如此。
+  - id: k19
+    effects:
+      'y': 0.6
+      p: -0.4
+    sub:
+      'y': control
+      p: objective
+    text:
+      en: Multi-agent debate improves answers mainly by sampling more; a single model with majority voting at equal compute matches it.
+      zh: 多 agent 辩论提升答案质量，主要是因为采样更多；同等算力下，单个模型做多数投票就能追平。
+  - id: k20
+    effects:
+      x: 0.4
+      'y': -0.8
+      p: 0.4
+    sub:
+      x: medium
+      'y': arch
+      p: arch
+    text:
+      en: A world model written as executable code, such as a physics program or game engine, generalizes better than a neural video model.
+      zh: 写成可执行代码的世界模型，比如物理程序或游戏引擎，比神经网络视频模型泛化得更好。
+  - id: k21
+    effects:
+      x: 0.4
+      'y': -0.6
+    sub:
+      x: body
+      'y': control
+    text:
+      en: Model-free RL is too sample-hungry for real robots; they must plan explicitly with a learned dynamics model.
+      zh: model-free RL 对真实机器人来说样本效率太低，机器人必须借助学到的动力学模型进行显式规划。
+  - id: k22
+    effects:
+      x: -0.6
+      p: -0.4
+    sub:
+      x: source
+      p: objective
+    text:
+      en: Most of what a multimodal model knows about images comes from their paired captions, so caption quality matters more than image volume.
+      zh: 多模态模型对图像的认识大多来自配对的描述文字，所以 caption 的质量比图像数量更重要。
+  - id: k23
+    effects:
+      x: -0.4
+      'y': 0.4
+    sub:
+      x: source
+      'y': arch
+    text:
+      en: Pretraining one model on interleaved image-text web documents matters more for multimodal ability than scaling paired image-caption data.
+      zh: 对多模态能力来说，用图文交错的网页文档预训练一个模型，比扩大图文配对数据更重要。
+  - id: k24
+    effects:
+      x: -0.4
+      'y': -0.6
+    sub:
+      x: medium
+      'y': control
+    text:
+      en: Coding agents get most of their reliability from test suites and execution feedback, not from the model writing correct code on the first try.
+      zh: coding agent 的可靠性主要来自测试用例和执行反馈，而不是模型第一次就写出正确的代码。
+  - id: k25
+    effects:
+      x: 0.4
+      'y': -0.8
+    sub:
+      x: body
+      'y': arch
+    text:
+      en: Separate detection, tracking, mapping and planning modules remain the right foundation for deployed self-driving, rather than one end-to-end driving network.
+      zh: 对已部署的自动驾驶来说，分开的检测、跟踪、建图和规划模块仍然是正确的基础，而不是一个端到端的驾驶网络。
+  - id: k26
+    effects:
+      x: 0.6
+      'y': 0.6
+    sub:
+      x: medium
+      'y': arch
+    text:
+      en: Speech should be modeled end to end as audio tokens; cascading ASR, a text model and TTS throws away what matters.
+      zh: 语音应该作为音频 token 端到端建模；把 ASR、文本模型和 TTS 串起来，会丢掉真正重要的信息。
+  - id: k27
+    effects:
+      x: -0.4
+      'y': 0.8
+    sub:
+      x: medium
+      'y': control
+    text:
+      en: Letting the model decide how long to think in its own chain of thought beats imposing external search like tree-of-thought over its outputs.
+      zh: 让模型在自己的思维链里决定想多久，比在它的输出上强加 tree-of-thought 之类的外部搜索更好。
+  - id: k28
+    effects:
+      'y': -0.6
+      p: -0.4
+    sub:
+      'y': arch
+      p: objective
+    text:
+      en: Small task-specific models fine-tuned with standard methods will match a frontier general model on most narrow tasks a team actually needs.
+      zh: 用常规方法 fine-tune 的小型专用模型，在一个团队真正需要的大多数窄任务上，能追平前沿通用模型。
+  - id: k29
+    effects:
+      x: 0.6
+      'y': -0.4
+      p: 0.6
+    sub:
+      x: medium
+      'y': arch
+      p: arch
+    text:
+      en: Physical reasoning needs explicit object-centric slot representations; dense patch embeddings will not get there by scaling alone.
+      zh: 物理推理需要显式的以物体为中心的 slot 表示，稠密的 patch embedding 光靠 scaling 做不到。
+  - id: k30
+    effects:
+      x: -0.6
+      'y': 0.4
+      p: -0.6
+    sub:
+      x: source
+      'y': arch
+      p: objective
+    text:
+      en: Next-token prediction on enough text already yields a usable world model inside the network; no separate world-model objective is needed.
+      zh: 在足够多的文本上做 next-token prediction，网络内部就已经有了可用的世界模型，不需要单独的世界模型训练目标。

@@ -42,4 +42,6 @@ Change `content/wiki/<lang>/<id>.md`. Keep the front matter `summary` (one sente
 
 ## Change the test
 
-Statements are in `data/questions.yaml`; each has `effects`, how far agreeing moves each axis (`-1`…`1`). Keep each axis balanced (validate warns when it is not). Any change to statements or to which ones a test uses must bump `version` in `data/tests.yaml`.
+Statements are in `data/questions.yaml`; each has `effects`, how far agreeing moves each axis (`-1`…`1`), and `sub`, its sub-dimension on each of those axes (from `data/subaxes.yaml`). Keep each axis and each sub-dimension balanced (validate warns when it is not). Any change to statements or to which ones a test uses must bump the version in `data/tests.yaml`: `version` for the quick and full tests, `pro.version` for the pro test.
+
+The pro test's follow-ups (`pro.followups.pool`) should load on two or three of x, y and p and point in many different directions: the test picks whichever one best separates the cells nearest to the answerer.

@@ -125,17 +125,105 @@ export function campOf(s) {
 }
 
 // ---------------------------------------------------------------- result links
-export function encodeResult(version, mode, s) {
+export function encodeResult(version, mode, s, extra = {}) {
   const r = (v) => Math.round(v * 100) / 100;
-  return `v=${version}&m=${mode}&s=${AXIS_KEYS.map((k) => r(s[k])).join(',')}`;
+  let out = `v=${version}&m=${mode}&s=${AXIS_KEYS.map((k) => r(s[k])).join(',')}`;
+  if (extra.subs) out += `&u=${SUB_KEYS.map((k) => (k in extra.subs ? r(extra.subs[k]) : '')).join(',')}`;
+  if (extra.c != null) out += `&c=${r(extra.c)}`;
+  return out;
 }
 export function decodeResult(search) {
   const q = new URLSearchParams(search);
   const m = q.get('m');
   const v = (q.get('s') || '').split(',').map(Number);
-  if (!(m === 'quick' || m === 'full') || v.length !== 5 || v.some((n) => !Number.isFinite(n))) return null;
+  if (!(m === 'quick' || m === 'full' || m === 'pro') || v.length !== 5 || v.some((n) => !Number.isFinite(n))) return null;
   const c = (n) => Math.max(-1, Math.min(1, n));
   const s = {};
   AXIS_KEYS.forEach((k, i) => { s[k] = c(v[i]); });
-  return { version: Number(q.get('v')) || 1, mode: m, s };
+  const out = { version: Number(q.get('v')) || 1, mode: m, s };
+  const u = q.get('u');
+  if (u) {
+    const parts = u.split(',');
+    out.subs = {};
+    SUB_KEYS.forEach((k, i) => { const n = parts[i] === '' || parts[i] == null ? NaN : Number(parts[i]); if (Number.isFinite(n)) out.subs[k] = c(n); });
+  }
+  const cc = Number(q.get('c'));
+  if (q.has('c') && Number.isFinite(cc)) out.c = Math.max(0, Math.min(1, cc));
+  return out;
+}
+
+// ---------------------------------------------------------------- the pro test
+/** Sub-dimensions in a fixed order (they travel in result links in this order). Must match data/subaxes.yaml. */
+export const SUB_KEYS = [
+  'x.source', 'x.medium', 'x.body',
+  'y.arch', 'y.memory', 'y.control',
+  'p.arch', 'p.objective', 'p.continual',
+  'o.weights', 'o.science',
+  'a.pace', 'a.oversight',
+];
+
+/** answers: { questionId: -2..2 }. Returns a score in [-1, 1] for every sub-dimension that has at least one answer. */
+export function scoreSubs(questions, answers) {
+  const sum = {}, max = {};
+  for (const [id, v] of Object.entries(answers)) {
+    const q = questions[id];
+    if (!q || v == null || !q.sub) continue;
+    for (const [axis, w] of Object.entries(q.effects)) {
+      const k = `${axis}.${q.sub[axis]}`;
+      sum[k] = (sum[k] || 0) + v * w;
+      max[k] = (max[k] || 0) + 2 * Math.abs(w);
+    }
+  }
+  const out = {};
+  for (const k of SUB_KEYS) if (max[k]) out[k] = sum[k] / max[k];
+  return out;
+}
+
+/** The five axis scores from an answer map (any statements, any order). */
+export function scoreMap(questions, answers) {
+  const ids = Object.keys(answers).filter((id) => questions[id] && answers[id] != null);
+  return score(questions, ids, ids.map((id) => answers[id]));
+}
+
+/**
+ * How consistently the answers point the same way on the three chart axes, 0 … 1.
+ * For each axis: |net pull| / total pull. Someone who agrees with both ends of an axis scores low.
+ */
+export function consistency(questions, answers) {
+  let net = 0, total = 0;
+  for (const axis of ['x', 'y', 'p']) {
+    let s = 0, t = 0;
+    for (const [id, v] of Object.entries(answers)) {
+      const w = questions[id]?.effects?.[axis];
+      if (!w || !v) continue;
+      s += v * w; t += Math.abs(v * w);
+    }
+    net += Math.abs(s); total += t;
+  }
+  return total ? net / total : 1;
+}
+
+/**
+ * The next follow-up: among the unasked statements in the pool, the one whose direction best separates the closest
+ * cells to the current score. Returns { id, pair: [ideA, ideB] } (the pair it separates most), or null.
+ */
+export function pickFollowUp(questions, pool, asked, ideologies, s) {
+  const top = rank(ideologies, s).slice(0, 4);
+  const pts = top.map((e) => ({ ide: e.ide, d: e.d, pt: pointOf(e.ide) }));
+  let best = null;
+  for (const id of pool) {
+    if (asked.has(id) || !questions[id]) continue;
+    const w = questions[id].effects;
+    let total = 0, bestPair = null, bestPairV = -1;
+    for (let i = 0; i < pts.length; i++) {
+      for (let j = i + 1; j < pts.length; j++) {
+        const diff = ['x', 'y', 'p'].reduce((acc, k) => acc + (w[k] || 0) * (pts[i].pt[k] - pts[j].pt[k]), 0);
+        const v = Math.abs(diff) / (1 + pts[i].d + pts[j].d);
+        total += v;
+        if (v > bestPairV) { bestPairV = v; bestPair = [pts[i].ide, pts[j].ide]; }
+      }
+    }
+    if (!best || total > best.total) best = { id, total, pair: bestPair };
+  }
+  return best && best.total > 0 ? { id: best.id, pair: best.pair } : null;
 }

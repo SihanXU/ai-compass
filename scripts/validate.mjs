@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import * as yaml from 'js-yaml';
 import { z } from 'zod';
-import { COLS, ROWS, CENTER, AXIS_KEYS } from '../src/lib/compass.js';
+import { COLS, ROWS, CENTER, AXIS_KEYS, SUB_KEYS } from '../src/lib/compass.js';
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, '$1')), '..');
 const errors = [];
@@ -94,7 +94,7 @@ for (const lang of ['en', 'zh']) {
 }
 
 // ---------------------------------------------------------------- questions, tests, camps, axes, levels
-const Question = z.object({ id: z.string().min(1), effects: z.record(axis, z.number().min(-1).max(1)).refine((o) => Object.keys(o).length > 0), text: pair }).strict();
+const Question = z.object({ id: z.string().min(1), effects: z.record(axis, z.number().min(-1).max(1)).refine((o) => Object.keys(o).length > 0), sub: z.record(axis, z.string()).optional(), text: pair }).strict();
 const qfile = read('data/questions.yaml');
 const qids = new Set();
 for (const q of qfile.questions || []) {
@@ -103,6 +103,17 @@ for (const q of qfile.questions || []) {
   if (qids.has(q.id)) err('data/questions.yaml', `duplicate id ${q.id}`);
   qids.add(q.id);
 }
+const subaxes = read('data/subaxes.yaml').subaxes || {};
+const SUBS = Object.fromEntries(Object.entries(subaxes).map(([k, l]) => [k, new Set(l.map((x) => x.key))]));
+for (const q of qfile.questions || []) {
+  for (const a of Object.keys(q.effects || {})) {
+    const sk = q.sub?.[a];
+    if (!sk) err(`data/questions.yaml ${q.id}`, `needs sub.${a} (a sub-dimension of axis ${a})`);
+    else if (!SUBS[a]?.has(sk)) err(`data/questions.yaml ${q.id}`, `sub.${a}: "${sk}" is not a sub-dimension of ${a} in data/subaxes.yaml`);
+  }
+}
+const SUB_ORDER = Object.entries(subaxes).flatMap(([k, l]) => l.map((x) => `${k}.${x.key}`)).join();
+if (SUB_ORDER !== SUB_KEYS.join()) err('data/subaxes.yaml', `sub-dimensions must be, in order: ${SUB_KEYS.join(', ')} (SUB_KEYS in src/lib/compass.js)`);
 const tests = read('data/tests.yaml');
 if (!Number.isInteger(tests.version)) err('data/tests.yaml', 'version must be an integer');
 for (const mode of ['quick', 'full']) {
@@ -110,6 +121,24 @@ for (const mode of ['quick', 'full']) {
   if (!list.length) err('data/tests.yaml', `${mode} has no questions`);
   if (new Set(list).size !== list.length) err('data/tests.yaml', `${mode} repeats a question`);
   for (const q of list) if (!qids.has(q)) err('data/tests.yaml', `${mode}: no question "${q}"`);
+}
+if (tests.pro) {
+  const core = tests.pro.questions || [], pool = tests.pro.followups?.pool || [];
+  if (!Number.isInteger(tests.pro.version)) err('data/tests.yaml', 'pro.version must be an integer');
+  if (!Number.isInteger(tests.pro.followups?.ask) || tests.pro.followups.ask > pool.length) err('data/tests.yaml', 'pro.followups.ask must be an integer no larger than the pool');
+  if (new Set([...core, ...pool]).size !== core.length + pool.length) err('data/tests.yaml', 'pro repeats a question, or uses one both as core and as follow-up');
+  for (const q of [...core, ...pool]) if (!qids.has(q)) err('data/tests.yaml', `pro: no question "${q}"`);
+  // balance per sub-dimension in the pro core
+  const byId = Object.fromEntries((qfile.questions || []).map((q) => [q.id, q]));
+  const tally = {};
+  for (const id of core) for (const [a, w] of Object.entries(byId[id]?.effects || {})) {
+    const k = `${a}.${byId[id].sub?.[a]}`; tally[k] ??= [0, 0]; tally[k][w > 0 ? 0 : 1]++;
+  }
+  for (const k of SUB_KEYS) {
+    const [pos, neg] = tally[k] || [0, 0];
+    if (pos + neg < 4) err('data/tests.yaml', `pro: sub-dimension ${k} has only ${pos + neg} statements (needs at least 4)`);
+    else if (Math.abs(pos - neg) > 2) warn.push(`pro: ${k} has ${pos} statements pushing + and ${neg} pushing − (keep them within 2)`);
+  }
 }
 const camps = read('data/camps.yaml').camps || [];
 if (camps.length !== 9) err('data/camps.yaml', 'needs exactly nine camps');

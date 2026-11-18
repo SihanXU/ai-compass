@@ -29,6 +29,7 @@ export const tests = readYaml('data/tests.yaml');
 export const camps = readYaml('data/camps.yaml').camps;
 export const axes = readYaml('data/axes.yaml').axes;
 export const levels = readYaml('data/levels.yaml').levels;
+export const subaxes = readYaml('data/subaxes.yaml').subaxes;
 export const levelOf = (lv) => levels.find((l) => l.level === lv);
 
 
@@ -65,8 +66,12 @@ export function clientData(lang) {
     ideologies: ideologies.map((i) => ({
       id: i.id, name: i.name, motto: i.motto, level: i.level, place: i.place,
     })),
-    questions: Object.fromEntries(questionList.map((q) => [q.id, { effects: q.effects, text: q.text }])),
-    tests: { quick: tests.quick.questions, full: tests.full.questions },
+    questions: Object.fromEntries(questionList.map((q) => [q.id, { effects: q.effects, sub: q.sub, text: q.text }])),
+    tests: {
+      quick: tests.quick.questions, full: tests.full.questions,
+      ...(tests.pro ? { pro: tests.pro.questions, proPool: tests.pro.followups.pool, proAsk: tests.pro.followups.ask, proVersion: tests.pro.version } : {}),
+    },
+    subaxes,
     camps,
     axes: axes.map((a) => ({ key: a.key, neg: a.neg, pos: a.pos, title: a.title })),
     levels,

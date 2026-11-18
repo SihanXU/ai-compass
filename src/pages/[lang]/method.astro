@@ -1,7 +1,7 @@
 ---
 // The method, laid out as documentation: contents on the left, the text, "on this page" on the right.
 import Layout from '../../layouts/Layout.astro';
-import { axes, questionList, tests, levels } from '../../lib/data.js';
+import { axes, questionList, tests, levels, subaxes } from '../../lib/data.js';
 import { t, url, tr, LANGS, REPO } from '../../lib/i18n.js';
 
 export function getStaticPaths() { return LANGS.map((lang) => ({ params: { lang } })); }
@@ -15,6 +15,7 @@ const sections = [
   ...axes.map((a) => [`axis-${a.key}`, tr(a.title, lang)]),
   ['scoring', zh ? '计分' : 'Scoring'],
   ['matching', zh ? '匹配' : 'Matching'],
+  ...(tests.pro ? [['pro', zh ? '专业版' : 'Pro test']] : []),
   ['principles', zh ? '原则' : 'Principles'],
   ['contributing', zh ? '参与贡献' : 'Contributing'],
   ['sources', zh ? '参照' : 'Sources'],
@@ -85,6 +86,32 @@ const sections = [
             <p>{zh
                 ? '外圈称号各自写明条件（例如“速度 > 0.6”），满足就获得，可以同时获得多个。'
                 : 'Each ring title states its condition (for example “Speed > 0.6”); meet it and you earn the title, and you can earn several.'}</p>
+
+            {tests.pro && (
+                <>
+                    <h2 id="pro">{zh ? '专业版' : 'Pro test'}</h2>
+                    <p>{zh
+                        ? `专业版有 ${tests.pro.questions.length} 道核心题，外加最多 ${tests.pro.followups.ask} 道追问。每道题除了属于某根轴，还属于这根轴下的一个子维度，结果页会逐项给出子维度的分数。题库单独编版本，目前是 v${tests.pro.version}。`
+                        : `The pro test has ${tests.pro.questions.length} core statements and up to ${tests.pro.followups.ask} follow-ups. Each statement belongs to a sub-dimension of its axis as well as to the axis, and the result scores every sub-dimension. Its question bank is versioned separately, now v${tests.pro.version}.`}</p>
+                    <div class="table"><table>
+                        <thead><tr><th class="l">{zh ? '轴' : 'Axis'}</th><th class="l">{zh ? '子维度' : 'Sub-dimension'}</th><th class="l">{zh ? '含义' : 'Meaning'}</th></tr></thead>
+                        <tbody>
+                            {axes.flatMap((a) => (subaxes[a.key] || []).map((sa) => (
+                                <tr><td class="l">{tr(a.title, lang)}</td><td class="l"><b>{tr(sa.name, lang)}</b></td><td class="l wrap">{tr(sa.text, lang)}</td></tr>
+                            )))}
+                        </tbody>
+                    </table></div>
+                    <h3>{zh ? '追问' : 'Follow-ups'}</h3>
+                    <p>{zh
+                        ? `核心题答完后，测试取出离你最近的四格，再从 ${tests.pro.followups.pool.length} 道追问题里挑出方向最能把这几格分开的一道来问；每答一道就重新计算，最多问 ${tests.pro.followups.ask} 道。追问页会写明它正在区分哪两个主义。追问的答案和核心题一起计分。`
+                        : `After the core statements, the test takes the four cells nearest to you and, from a pool of ${tests.pro.followups.pool.length} follow-ups, asks the one whose direction best separates them; it recomputes after each answer and asks at most ${tests.pro.followups.ask}. Each follow-up says which two ideologies it is telling apart. Follow-up answers count toward the score like the core ones.`}</p>
+                    <h3>{zh ? '一致性' : 'Consistency'}</h3>
+                    <p>{zh
+                        ? '对横轴、纵轴、范式三根轴，一致性 = 每根轴净拉力的绝对值之和 ÷ 所有答案拉力的绝对值之和。同时同意一根轴两端的人，一致性会偏低，结果页会注明位置不太确定（低于 40%）。'
+                        : 'Over the x, y and paradigm axes, consistency = the sum of each axis’s absolute net pull ÷ the sum of every answer’s absolute pull. Someone who agrees with both ends of an axis scores low, and below 40% the result says the position is less certain.'}</p>
+                    <pre>consistency = Σ_axis |Σ answer × weight| / Σ_axis Σ |answer × weight|</pre>
+                </>
+            )}
 
             <h2 id="principles">{zh ? '原则' : 'Principles'}</h2>
             <ul>

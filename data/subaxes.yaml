@@ -1,0 +1,73 @@
+# Each axis splits into sub-dimensions, scored separately in the pro test.
+# A statement names its sub-dimension per axis in `sub` (data/questions.yaml).
+subaxes:
+  x:
+    - key: source
+      name: { en: Knowledge source, zh: 知识来源 }
+      text:
+        en: Where knowledge comes from. Language end, the text and code humanity has written; World end, perception, video and interaction with the world.
+        zh: 知识从哪里来。语言一端认为来自人类写下的文本和代码；世界一端认为来自感知、视频以及与世界的交互。
+    - key: medium
+      name: { en: Reasoning medium, zh: 推理媒介 }
+      text:
+        en: What thinking is done in. Language end, words, chains of thought and code; World end, latent states, images, space and simulation.
+        zh: 思考在什么里面进行。语言一端是文字、思维链和代码；世界一端是隐状态、图像、空间和模拟。
+    - key: body
+      name: { en: Embodiment, zh: 具身 }
+      text:
+        en: Whether intelligence needs a body. Language end, a mind without a body is enough; World end, intelligence comes from acting in the physical world.
+        zh: 智能需不需要身体。语言一端认为没有身体的心智就够了；世界一端认为智能来自在物理世界里行动。
+  y:
+    - key: arch
+      name: { en: Architecture, zh: 架构 }
+      text:
+        en: One model or many parts. Monolith end, a single end-to-end network; Harness end, modules, pipelines and specialised models working together.
+        zh: 一个模型还是多个部件。统一一端是单一的端到端网络；系统一端是模块、流水线和多个专门模型的协作。
+    - key: memory
+      name: { en: Memory and tools, zh: 记忆与工具 }
+      text:
+        en: Where memory and abilities live. Monolith end, in the weights and the context; Harness end, in external memory, retrieval and tools.
+        zh: 记忆和能力放在哪里。统一一端放在权重和上下文里；系统一端放在外部记忆、检索和工具里。
+    - key: control
+      name: { en: Control, zh: 控制 }
+      text:
+        en: Who decides what happens next. Monolith end, the model's own planning; Harness end, explicit structure such as workflows, behaviour trees and orchestrated agents.
+        zh: 下一步由谁决定。统一一端由模型自己规划；系统一端由显式结构决定，比如工作流、行为树和编排起来的多个 agent。
+  p:
+    - key: arch
+      name: { en: Architecture, zh: 架构 }
+      text:
+        en: Whether today's architectures are the last word. Revolution end, new architectures will replace the Transformer; Old Guard end, the current one only needs scaling, or older ideas were right.
+        zh: 今天的架构是不是终点。革命一端认为新架构会取代 Transformer；守旧一端认为现有架构只需要放大，或者老方法本来就对。
+    - key: objective
+      name: { en: Learning objective, zh: 学习目标 }
+      text:
+        en: What models should learn to do. Revolution end, new objectives beyond predicting the next token or pixel; Old Guard end, prediction plus post-training is enough.
+        zh: 模型应该学着做什么。革命一端要超越预测下一个 token 或像素的新目标；守旧一端认为预测加后训练就够了。
+    - key: continual
+      name: { en: Continual learning, zh: 持续学习 }
+      text:
+        en: Whether learning stops at deployment. Revolution end, models must keep learning from experience; Old Guard end, train once, then deploy and update by retraining.
+        zh: 学习是否在部署时停止。革命一端认为模型必须从经验中持续学习；守旧一端认为训练一次、部署，再靠重新训练来更新。
+  o:
+    - key: weights
+      name: { en: Weights and products, zh: 权重与产品 }
+      text:
+        en: Who holds the models. Open end, open weights for everyone; Frontier end, capability delivered through closed products and APIs.
+        zh: 模型掌握在谁手里。开放一端要所有人都能拿到权重；闭源前沿一端通过闭源产品和 API 提供能力。
+    - key: science
+      name: { en: Data and science, zh: 数据与科学 }
+      text:
+        en: How transparent research should be. Open end, open data, recipes and reproducible results; Frontier end, some of this is too risky or too valuable to release.
+        zh: 研究应该有多透明。开放一端要开放数据、配方和可复现的结果；闭源前沿一端认为其中一部分风险太大或太有价值，不该公开。
+  a:
+    - key: pace
+      name: { en: Pace, zh: 节奏 }
+      text:
+        en: How fast progress should go. Acceleration end, as fast as possible; Caution end, slow enough to understand the risks.
+        zh: 进展该有多快。加速一端越快越好；审慎一端要慢到足以看清风险。
+    - key: oversight
+      name: { en: Oversight, zh: 监督 }
+      text:
+        en: How much checking AI needs. Acceleration end, regulation and human sign-off are bottlenecks; Caution end, independent testing, interpretability and human control first.
+        zh: AI 需要多少监督。加速一端认为监管和人工审批是瓶颈；审慎一端优先独立评测、可解释性和人类控制。

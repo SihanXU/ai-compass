@@ -1,35 +1,41 @@
 ---
-// The test: one statement at a time on a card, five coloured answers, keys 1–5, progress kept in the tab.
+// The tests: one statement at a time on a card, five coloured answers, keys 1–5.
+// The pro test adds a follow-up phase: after the core statements it keeps asking whichever unasked follow-up
+// best separates the cells nearest to you, and says which two it is telling apart.
 import Layout from '../../../layouts/Layout.astro';
 import { clientData, tests } from '../../../lib/data.js';
 import { t, url, pack, LANGS } from '../../../lib/i18n.js';
 
 export function getStaticPaths() {
-  return LANGS.flatMap((lang) => ['quick', 'full'].map((mode) => ({ params: { lang, mode } })));
+  const modes = ['quick', 'full', ...(tests.pro ? ['pro'] : [])];
+  return LANGS.flatMap((lang) => modes.map((mode) => ({ params: { lang, mode } })));
 }
+const MODES = ['quick', 'full', ...(tests.pro ? ['pro'] : [])];
 const { lang, mode } = Astro.params;
-const n = tests[mode].questions.length;
-const data = { ...clientData(lang), strings: pack(lang, ['count', 'a2', 'a1', 'a0', 'am1', 'am2']) };
-const title = t(lang, mode === 'quick' ? 'quickTitle' : 'fullTitle');
-const otherMode = mode === 'quick' ? 'full' : 'quick';
+const n = mode === 'pro' ? tests.pro.questions.length + tests.pro.followups.ask : tests[mode].questions.length;
+const version = mode === 'pro' ? tests.pro.version : tests.version;
+const data = { ...clientData(lang), strings: pack(lang, ['count', 'a2', 'a1', 'a0', 'am1', 'am2', 'followCount', 'separating']) };
+const titleKey = { quick: 'quickTitle', full: 'fullTitle', pro: 'proTitle' }[mode];
+const others = MODES.filter((m) => m !== mode);
 ---
-<Layout lang={lang} title={title} path={`test/${mode}`} active="test" footer={false}>
+<Layout lang={lang} title={t(lang, titleKey)} path={`test/${mode}`} active="test" footer={false}>
     <main class="quiz-page">
         <div class="quiz-intro">
-            <h1>{title}</h1>
-            <p>{t(lang, 'quizDek')}</p>
+            <h1>{t(lang, titleKey)}</h1>
+            <p>{t(lang, mode === 'pro' ? 'quizDekPro' : 'quizDek')}</p>
         </div>
         <div class="quiz-card" id="quiz" data-mode={mode} data-result={url(lang, 'result')}>
             <div class="quiz-head">
-                <span class="label">{t(lang, 'site')} · v{tests.version}</span>
+                <span class="label" data-phase>{t(lang, 'site')} · v{version}</span>
                 <span class="quiz-count" data-count>1 / {n}</span>
             </div>
             <div class="bar"><div class="bar-fill" data-bar></div></div>
+            <p class="quiz-sep" data-sep hidden></p>
             <p class="statement" data-text></p>
             <div class="answers" data-answers></div>
             <div class="quiz-foot">
                 <button type="button" class="ghost" data-back>{t(lang, 'back')}</button>
-                <a class="ghost" href={url(lang, `test/${otherMode}`)}>{t(lang, otherMode === 'quick' ? 'quickTitle' : 'fullTitle')} →</a>
+                <span>{others.map((m, i) => <>{i > 0 && ' · '}<a class="ghost" href={url(lang, `test/${m}`)}>{t(lang, { quick: 'quickTitle', full: 'fullTitle', pro: 'proTitle' }[m])}</a></>)}</span>
             </div>
         </div>
     </main>
@@ -37,50 +43,100 @@ const otherMode = mode === 'quick' ? 'full' : 'quick';
 </Layout>
 
 <script>
-  import { score, encodeResult } from '../../../lib/compass.js';
+  import { score, scoreMap, scoreSubs, consistency, pickFollowUp, encodeResult } from '../../../lib/compass.js';
 
   const D = JSON.parse(document.getElementById('compass-data').textContent);
   const root = document.getElementById('quiz');
   const mode = root.dataset.mode;
-  const ids = D.tests[mode];
+  const pro = mode === 'pro';
   const S = D.strings;
-  const KEY = `ai-compass:${mode}:v${D.version}`;
+  const core = pro ? D.tests.pro : D.tests[mode];
+  const ASK = pro ? D.tests.proAsk : 0;
+  const POOL = pro ? D.tests.proPool : [];
+  const version = pro ? D.tests.proVersion : D.version;
+  const total = core.length + ASK;
+  const onChart = D.ideologies;
+
+  // progress: the quick and full tests live in this tab; the long pro test survives closing the browser
+  const KEY = `ai-compass:${mode}:v${version}`;
+  const box = pro ? 'localStorage' : 'sessionStorage';
   const store = {
-    get() { try { return JSON.parse(sessionStorage.getItem(KEY)); } catch { return null; } },
-    set(v) { try { sessionStorage.setItem(KEY, JSON.stringify(v)); } catch { /* private mode */ } },
-    clear() { try { sessionStorage.removeItem(KEY); } catch { /* private mode */ } },
+    get() { try { return JSON.parse(window[box].getItem(KEY)); } catch { return null; } },
+    set(v) { try { window[box].setItem(KEY, JSON.stringify(v)); } catch { /* private mode */ } },
+    clear() { try { window[box].removeItem(KEY); } catch { /* private mode */ } },
   };
   const saved = store.get();
-  const answers = saved && saved.answers && saved.answers.length === ids.length ? saved.answers : new Array(ids.length).fill(null);
-  let i = saved ? Math.min(saved.i ?? 0, ids.length - 1) : 0;
+  let seq = saved?.seq?.length ? saved.seq : [...core];
+  let answers = saved?.answers || {};
+  let pairs = saved?.pairs || {};
+  let i = Math.min(saved?.i ?? 0, seq.length - 1);
+  const save = () => store.set({ seq, answers, pairs, i });
+
   const OPTIONS = [[2, 'a2'], [1, 'a1'], [0, 'a0'], [-1, 'am1'], [-2, 'am2']];
+  const $ = (s) => root.querySelector(s);
 
   function render() {
-    root.querySelector('[data-count]').textContent = S.count.replace('{i}', i + 1).replace('{n}', ids.length);
-    root.querySelector('[data-bar]').style.width = `${(i / ids.length) * 100}%`;
-    root.querySelector('[data-text]').textContent = D.questions[ids[i]].text[D.lang];
-    const box = root.querySelector('[data-answers]');
-    box.innerHTML = '';
+    const id = seq[i];
+    const follow = i >= core.length;
+    $('[data-count]').textContent = follow
+      ? S.followCount.replace('{i}', i - core.length + 1).replace('{n}', ASK)
+      : S.count.replace('{i}', i + 1).replace('{n}', pro ? core.length : total);
+    $('[data-bar]').style.width = `${(i / total) * 100}%`;
+    const sep = $('[data-sep]');
+    if (follow && pairs[id]) {
+      sep.hidden = false;
+      sep.textContent = `${S.separating}${pairs[id].map((x) => x[D.lang]).join(' · ')}`;
+    } else sep.hidden = true;
+    $('[data-text]').textContent = D.questions[id].text[D.lang];
+    const list = $('[data-answers]');
+    list.innerHTML = '';
     OPTIONS.forEach(([v, k], n) => {
       const b = document.createElement('button');
       b.type = 'button';
-      b.className = `answer ${k}` + (answers[i] === v ? ' picked' : '');
+      b.className = `answer ${k}` + (answers[id] === v ? ' picked' : '');
       const kbd = document.createElement('kbd');
       kbd.textContent = String(n + 1);
       b.append(S[k], kbd);
       b.addEventListener('click', () => pick(v));
-      box.appendChild(b);
+      list.appendChild(b);
     });
-    root.querySelector('[data-back]').style.visibility = i === 0 ? 'hidden' : 'visible';
+    $('[data-back]').style.visibility = i === 0 ? 'hidden' : 'visible';
   }
-  function pick(v) {
-    answers[i] = v;
-    if (i < ids.length - 1) { i++; store.set({ answers, i }); render(); return; }
+
+  function finish() {
     store.clear();
-    location.href = `${root.dataset.result}?${encodeResult(D.version, mode, score(D.questions, ids, answers))}`;
+    let s, extra = {};
+    if (pro) {
+      s = scoreMap(D.questions, answers);
+      extra = { subs: scoreSubs(D.questions, answers), c: consistency(D.questions, answers) };
+    } else {
+      s = score(D.questions, core, core.map((id) => answers[id]));
+    }
+    location.href = `${root.dataset.result}?${encodeResult(version, mode, s, extra)}`;
   }
-  function back() { if (i > 0) { i--; store.set({ answers, i }); render(); } }
-  root.querySelector('[data-back]').addEventListener('click', back);
+
+  function pick(v) {
+    const id = seq[i];
+    answers[id] = v;
+    // follow-ups depend on every answer before them: changing an earlier answer drops the ones after it
+    if (pro && seq.length > core.length && i < seq.length - 1) {
+      const keep = Math.max(core.length, i + 1);
+      seq.slice(keep).forEach((x) => { delete answers[x]; delete pairs[x]; });
+      seq = seq.slice(0, keep);
+    }
+    if (i < seq.length - 1) { i++; save(); render(); return; }
+    if (pro && seq.length < total) {
+      const next = pickFollowUp(D.questions, POOL, new Set(seq), onChart, scoreMap(D.questions, answers));
+      if (next) {
+        seq.push(next.id);
+        pairs[next.id] = next.pair.map((ide) => ide.name);
+        i++; save(); render(); return;
+      }
+    }
+    finish();
+  }
+  function back() { if (i > 0) { i--; save(); render(); } }
+  $('[data-back]').addEventListener('click', back);
   document.addEventListener('keydown', (e) => {
     if (e.metaKey || e.ctrlKey || e.altKey) return;
     const v = { 1: 2, 2: 1, 3: 0, 4: -1, 5: -2 }[e.key];

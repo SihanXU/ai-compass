@@ -25,6 +25,7 @@ const crowd = [
                 <div class="actions">
                     <a class="btn primary big" href={url(lang, 'test/full')}>{t(lang, 'ctaFull')}</a>
                     <a class="btn big" href={url(lang, 'test/quick')}>{t(lang, 'ctaQuick')}</a>
+                    {tests.pro && <a class="btn big" href={url(lang, 'test/pro')}>{t(lang, 'ctaPro', { n: tests.pro.questions.length })}</a>}
                 </div>
                 <div class="land-stats">
                     <div><b>{ideologies.length}</b><span>{t(lang, 'statIdeologies')}</span></div>
@@ -54,7 +55,7 @@ const crowd = [
             <div class="cards">
                 <a class="card" href={url(lang, 'test/full')}>
                     <span class="k">{t(lang, 'cardTestK')}</span>
-                    <span class="num">{tests.quick.questions.length} · {tests.full.questions.length}</span>
+                    <span class="num">{tests.quick.questions.length} · {tests.full.questions.length}{tests.pro && ` · ${tests.pro.questions.length}`}</span>
                     <h3>{t(lang, 'cardTestT')}</h3>
                     <p>{t(lang, 'cardTestP')}</p>
                     <span class="go">{t(lang, 'go')}</span>

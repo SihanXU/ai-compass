@@ -1,3 +1,4 @@
+# quick and full share `version`; the pro test has its own. Bump the version when its statements change.
 version: 1
 quick:
   questions:
@@ -63,3 +64,129 @@ full:
     - o8
     - a8
     - p10
+pro:
+  version: 1
+  questions:
+    - x1
+    - y1
+    - p1
+    - d1
+    - o1
+    - x2
+    - y2
+    - a1
+    - p2
+    - x3
+    - y3
+    - p3
+    - d2
+    - o2
+    - x4
+    - y4
+    - a2
+    - p4
+    - x5
+    - y5
+    - p5
+    - d3
+    - o3
+    - x6
+    - y6
+    - a3
+    - p6
+    - x7
+    - y7
+    - p7
+    - d4
+    - o4
+    - x8
+    - y8
+    - a4
+    - p8
+    - x9
+    - y9
+    - p9
+    - d5
+    - o5
+    - x10
+    - y10
+    - a5
+    - p10
+    - x11
+    - y11
+    - p11
+    - d6
+    - o6
+    - x12
+    - y12
+    - a6
+    - p12
+    - x13
+    - y13
+    - p13
+    - d7
+    - o7
+    - x14
+    - y14
+    - a7
+    - p14
+    - x15
+    - y15
+    - p15
+    - d8
+    - o8
+    - x16
+    - y16
+    - a8
+    - p16
+    - x17
+    - y17
+    - p17
+    - d9
+    - o9
+    - x18
+    - y18
+    - a9
+    - p18
+    - x19
+    - y19
+    - p19
+    - d10
+    - o10
+    - x20
+    - y20
+    - a10
+    - p20
+    - x21
+    - y21
+    - o11
+    - x22
+    - y22
+    - a11
+    - x23
+    - y23
+    - o12
+    - x24
+    - y24
+    - a12
+    - x25
+    - y25
+    - o13
+    - x26
+    - y26
+    - a13
+    - x27
+    - y27
+    - o14
+    - x28
+    - y28
+    - a14
+    - x29
+    - y29
+    - o15
+    - x30
+    - y30
+    - a15
+  followups:
+    ask: 8
+    pool: [k1, k2, k3, k4, k5, k6, k7, k8, k9, k10, k11, k12, k13, k14, k15, k16, k17, k18, k19, k20, k21, k22, k23, k24, k25, k26, k27, k28, k29, k30]

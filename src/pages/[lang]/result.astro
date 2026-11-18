@@ -11,7 +11,7 @@ const { lang } = Astro.params;
 const strings = pack(lang, [
   'closest', 'campIs', 'onChart', 'near', 'titles', 'noTitles', 'readEntry', 'retake', 'tryFull', 'share', 'copied',
   'saveImage', 'quickNote', 'noResult', 'paradigm', 'site', 'axes', 'axisCategory', 'catStrongNeg', 'catNeg', 'catMid', 'catPos', 'catStrongPos',
-  'yourCamp', 'yourIdeology',
+  'yourCamp', 'yourIdeology', 'subTitle', 'consistencyLabel', 'consistencyLow', 'consistencyHigh',
 ]);
 const data = { ...clientData(lang), strings, wiki: url(lang, 'wiki/'), test: url(lang, 'test/') };
 ---
@@ -24,12 +24,17 @@ const data = { ...clientData(lang), strings, wiki: url(lang, 'wiki/'), test: url
                     <p class="label" data-r-label>{t(lang, 'closest')}</p>
                     <h1 data-r-name>…</h1>
                     <p class="motto" data-r-motto></p>
+                    <div class="certainty" data-r-cert hidden></div>
                     <div class="actions" data-r-actions></div>
                 </div>
             </section>
             <section class="axes-card" data-r-axes-card>
                 <h2>{t(lang, 'axes')}</h2>
                 <div data-r-axes></div>
+            </section>
+            <section class="axes-card" data-r-subs-card hidden>
+                <h2>{t(lang, 'subTitle')}</h2>
+                <div data-r-subs></div>
             </section>
             <section class="near-card" data-r-near-card>
                 <div><h2>{t(lang, 'near')}</h2><ul class="near-list" data-r-near></ul></div>
@@ -79,7 +84,7 @@ const data = { ...clientData(lang), strings, wiki: url(lang, 'wiki/'), test: url
     return li;
   }
 
-  function show({ mode, s }) {
+  function show({ mode, s, subs, c }) {
     const quick = mode === 'quick';
     const ranked = rank(D.ideologies, s, quick);
     const best = ranked[0].ide;
@@ -130,6 +135,42 @@ const data = { ...clientData(lang), strings, wiki: url(lang, 'wiki/'), test: url
       wrap.append(head, row);
       box.append(wrap);
     });
+
+    // pro: every sub-dimension as a small bar, grouped by axis; and how consistent the answers were
+    if (subs) {
+      const box2 = $('[data-r-subs]');
+      D.axes.forEach((ax) => {
+        const list = (D.subaxes[ax.key] || []).filter((sa) => subs[`${ax.key}.${sa.key}`] != null);
+        if (!list.length) return;
+        const g = el('div', 'sub-group');
+        g.append(el('h3', null, ax.title[L]));
+        list.forEach((sa) => {
+          const v = subs[`${ax.key}.${sa.key}`];
+          const right = Math.round(((v + 1) / 2) * 1000) / 10;
+          const left = Math.round((100 - right) * 10) / 10;
+          const wrap = el('div', 'vbar small');
+          const head = el('div', 'vbar-head');
+          head.innerHTML = `<b>${sa.name[L]}</b> · ${category(v, ax)}`;
+          head.title = sa.text[L];
+          const row = el('div', 'vbar-row');
+          const track = el('div', 'vbar-track');
+          const l = el('span', 'l', left >= 12 ? `${left}%` : ''); l.style.cssText = `width:${left}%;background:${COLS_AX[ax.key][0]}`;
+          const r = el('span', 'r', right >= 12 ? `${right}%` : ''); r.style.cssText = `width:${right}%;background:${COLS_AX[ax.key][1]}`;
+          track.append(l, r);
+          row.append(el('span', 'pole', ax.neg[L]), track, el('span', 'pole r', ax.pos[L]));
+          wrap.append(head, row);
+          g.append(wrap);
+        });
+        box2.append(g);
+      });
+      $('[data-r-subs-card]').hidden = false;
+    }
+    if (c != null) {
+      const cert = $('[data-r-cert]');
+      const pct = Math.round(c * 100);
+      cert.innerHTML = `<span class="meter"><i style="width:${pct}%"></i></span><span><b>${S.consistencyLabel} ${pct}%</b> · ${c < 0.4 ? S.consistencyLow : S.consistencyHigh}</span>`;
+      cert.hidden = false;
+    }
 
     const near = $('[data-r-near]');
     ranked.slice(quick ? 0 : 1, 5).forEach(({ ide }) => near.append(listItem(ide)));

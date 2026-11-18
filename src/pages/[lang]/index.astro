@@ -30,7 +30,7 @@ const crowd = [
                     <div><b>{ideologies.length}</b><span>{t(lang, 'statIdeologies')}</span></div>
                     <div><b>{tests.full.questions.length}</b><span>{t(lang, 'statQuestions')}</span></div>
                     <div><b>{axes.length}</b><span>{t(lang, 'statAxes')}</span></div>
-                    <div><b>{leaderboard.length}</b><span>{t(lang, 'statModels')}</span></div>
+                    {leaderboard.length > 0 && <div><b>{leaderboard.length}</b><span>{t(lang, 'statModels')}</span></div>}
                 </div>
             </div>
             <div class="ball-stack" aria-hidden="true">
@@ -69,7 +69,7 @@ const crowd = [
                 </a>
                 <a class="card" href={url(lang, 'leaderboard')}>
                     <span class="k">{t(lang, 'cardBoardK')}</span>
-                    <span class="num">{leaderboard.length}</span>
+                    {leaderboard.length > 0 && <span class="num">{leaderboard.length}</span>}
                     <h3>{t(lang, 'cardBoardT')}</h3>
                     <p>{t(lang, 'cardBoardP')}</p>
                     <span class="go">{t(lang, 'go')}</span>

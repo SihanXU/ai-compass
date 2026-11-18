@@ -150,7 +150,7 @@ const S = {
   back: ['← Previous', '← 上一题'],
   a2: ['Strongly agree', '强烈同意'],
   a1: ['Agree', '同意'],
-  a0: ['Unsure (not counted)', '不确定（不计分）'],
+  a0: ['Neutral / unsure', '中立 / 不确定'],
   am1: ['Disagree', '不同意'],
   am2: ['Strongly disagree', '强烈反对'],
   quizDek: ['Answer by your own research taste, not by what you think is true of today’s systems. There are no right answers.', '按你自己的研究品味作答，而不是按你对现有系统的判断。没有标准答案。'],

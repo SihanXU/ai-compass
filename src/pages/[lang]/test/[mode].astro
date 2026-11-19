@@ -66,7 +66,10 @@ const others = MODES.filter((m) => m !== mode);
     clear() { try { window[box].removeItem(KEY); } catch { /* private mode */ } },
   };
   const saved = store.get();
-  let seq = saved?.seq?.length ? saved.seq : [...core];
+  // every new attempt asks the statements in a fresh random order (scores do not depend on the order);
+  // an attempt in progress keeps its order
+  const shuffle = (list) => { const a = list.slice(); for (let k = a.length - 1; k > 0; k--) { const j = Math.floor(Math.random() * (k + 1)); [a[k], a[j]] = [a[j], a[k]]; } return a; };
+  let seq = saved?.seq?.length ? saved.seq : shuffle(core);
   let answers = saved?.answers || {};
   let pairs = saved?.pairs || {};
   let i = Math.min(saved?.i ?? 0, seq.length - 1);

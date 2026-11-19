@@ -16,5 +16,5 @@ relations:
   frenemies: [emergentism]
   rivals: [eval-proceduralism, radical-centrism-or-leaderboardism, rlhf-paternalism]
 works:
-  - {title: "Abandoning Objectives: Evolution Through the Search for Novelty Alone", year: 2011}
-  - {title: "Why Greatness Cannot Be Planned: The Myth of the Objective", year: 2015}
+  - {title: 'Abandoning Objectives: Evolution Through the Search for Novelty Alone', year: 2011, url: https://doi.org/10.1162/evco_a_00025}
+  - {title: 'Why Greatness Cannot Be Planned: The Myth of the Objective', year: 2015, url: https://doi.org/10.1007/978-3-319-15524-1}

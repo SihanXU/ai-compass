@@ -16,5 +16,5 @@ relations:
   frenemies: [world-as-code-doctrine, workflow-bureaucratism]
   rivals: [reactive-anarchism, subsumption-doctrine, end-to-end-driving-absolutism]
 works:
-  - {title: "STRIPS: A New Approach to the Application of Theorem Proving to Problem Solving", year: 1971}
-  - {title: "LLM+P: Empowering Large Language Models with Optimal Planning Proficiency", year: 2023, url: https://arxiv.org/abs/2304.11477}
+  - {title: 'STRIPS: A New Approach to the Application of Theorem Proving to Problem Solving', year: 1971, url: https://doi.org/10.1016/0004-3702(71)90010-5}
+  - {title: 'LLM+P: Empowering Large Language Models with Optimal Planning Proficiency', year: 2023, url: https://arxiv.org/abs/2304.11477}

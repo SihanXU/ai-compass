@@ -16,5 +16,5 @@ relations:
   frenemies: [sim-scale-statism, swarm-robotics]
   rivals: [world-simulator-statism, humanoid-centralism, chat-absolutism]
 works:
-  - {title: "Stanley: The Robot that Won the DARPA Grand Challenge", year: 2006}
-  - {title: "Learning quadrupedal locomotion over challenging terrain", year: 2020, url: https://arxiv.org/abs/2010.11251}
+  - {title: 'Stanley: The Robot that Won the DARPA Grand Challenge', year: 2006, url: https://doi.org/10.1002/rob.20147}
+  - {title: Learning quadrupedal locomotion over challenging terrain, year: 2020, url: https://arxiv.org/abs/2010.11251}

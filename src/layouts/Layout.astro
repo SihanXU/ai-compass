@@ -1,12 +1,13 @@
 ---
 // Every page: sihanxu.me's top bar ("Sihan Xu / AI Compass"), the page, the footer.
 import '../styles/site.css';
-import { t, url, other, REPO } from '../lib/i18n.js';
+import { t, url, other, asset, REPO } from '../lib/i18n.js';
 import { tests } from '../lib/data.js';
 
 const { lang, title, description, path = '', active = '', bare = false, footer = true } = Astro.props;
 const fullTitle = title ? `${title} · ${t(lang, 'site')}` : t(lang, 'site');
 const desc = description || t(lang, 'homeDek');
+const ogImage = `${(Astro.site?.href || 'https://sihanxu.me/').replace(/\/$/, '')}${asset(`og/${lang}/site.png`)}`;
 const nav = [
   ['chart', 'chart', 'navChart'],
   ['test', 'test', 'navTest'],
@@ -23,6 +24,9 @@ const nav = [
     <meta name="description" content={desc}>
     <meta property="og:title" content={fullTitle}>
     <meta property="og:description" content={desc}>
+    <meta property="og:image" content={ogImage}>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content={ogImage}>
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='44' fill='%232563eb' stroke='%23111' stroke-width='6'/%3E%3Cellipse cx='36' cy='44' rx='9' ry='11' fill='white' stroke='%23111' stroke-width='4'/%3E%3Cellipse cx='64' cy='44' rx='9' ry='11' fill='white' stroke='%23111' stroke-width='4'/%3E%3C/svg%3E">
     <link rel="alternate" hreflang={other(lang)} href={url(other(lang), path)}>
 </head>

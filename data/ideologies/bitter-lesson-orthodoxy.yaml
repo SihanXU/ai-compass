@@ -16,5 +16,5 @@ relations:
   frenemies: [harness-liberalism, test-time-centralism]
   rivals: [symbolic-restorationism, knowledge-graph-monarchism, neuro-symbolic-federalism, innatism]
 works:
-  - {title: "The Bitter Lesson", year: 2019, url: "http://www.incompleteideas.net/IncIdeas/BitterLesson.html"}
-  - {title: "Mastering the game of Go without human knowledge", year: 2017}
+  - {title: The Bitter Lesson, year: 2019, url: http://www.incompleteideas.net/IncIdeas/BitterLesson.html}
+  - {title: Mastering the game of Go without human knowledge, year: 2017, url: https://doi.org/10.15368/theses.2018.47}

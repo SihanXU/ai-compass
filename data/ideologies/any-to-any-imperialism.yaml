@@ -16,5 +16,5 @@ relations:
   frenemies: [linguistic-multimodalism]
   rivals: [modular-multimodalism, pipeline-pragmatism, text-only-conservatism]
 works:
-  - {title: "NExT-GPT: Any-to-Any Multimodal LLM", year: 2023}
-  - {title: "Unified-IO 2: Scaling Autoregressive Multimodal Models with Vision, Language, Audio, and Action", year: 2023}
+  - {title: 'NExT-GPT: Any-to-Any Multimodal LLM', year: 2023, url: https://arxiv.org/abs/2309.05519}
+  - {title: 'Unified-IO 2: Scaling Autoregressive Multimodal Models with Vision, Language, Audio, and Action', year: 2023, url: https://arxiv.org/abs/2312.17172}

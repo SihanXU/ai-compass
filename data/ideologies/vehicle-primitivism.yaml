@@ -16,4 +16,4 @@ relations:
   frenemies: [maker-robotics]
   rivals: [compute-theocracy, vla-monarchism, humanoid-centralism]
 works:
-  - {title: "Vehicles: Experiments in Synthetic Psychology", year: 1984}
+  - {title: 'Vehicles: Experiments in Synthetic Psychology', year: 1984, url: https://doi.org/10.1016/0004-3702(85)90057-8}

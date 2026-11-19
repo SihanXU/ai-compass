@@ -16,5 +16,5 @@ relations:
   frenemies: [frontier-kratocracy, circuit-constitutionalism]
   rivals: [effective-accelerationism, open-source-maximalism, recursive-self-improvementism, autonomous-agent-anarchism]
 works:
-  - {title: "Superintelligence: Paths, Dangers, Strategies", year: 2014}
-  - {title: "Concrete Problems in AI Safety", year: 2016, url: "https://arxiv.org/abs/1606.06565"}
+  - {title: 'Superintelligence: Paths, Dangers, Strategies', year: 2014, url: https://doi.org/10.1093/pq/pqv034}
+  - {title: Concrete Problems in AI Safety, year: 2016, url: https://arxiv.org/abs/1606.06565}

@@ -15,4 +15,4 @@ relations:
   frenemies: [predictive-coding-statism]
   rivals: [language-singularitarianism, end-to-end-driving-absolutism, compute-theocracy]
 works:
-  - {title: "Cybernetics: Or Control and Communication in the Animal and the Machine", year: 1948}
+  - {title: 'Cybernetics: Or Control and Communication in the Animal and the Machine', year: 1948, url: https://doi.org/10.7551/mitpress/11810.001.0001}

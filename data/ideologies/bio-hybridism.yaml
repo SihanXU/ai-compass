@@ -16,4 +16,4 @@ relations:
   frenemies: [pan-embodimentism]
   rivals: [compute-theocracy, compute-statism, symbolic-restorationism]
 works:
-  - {title: "In vitro neurons learn and exhibit sentience when embodied in a simulated game-world", year: 2022}
+  - {title: In vitro neurons learn and exhibit sentience when embodied in a simulated game-world, year: 2022, url: https://doi.org/10.1101/2021.12.02.471005}

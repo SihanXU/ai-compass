@@ -16,5 +16,5 @@ relations:
   frenemies: [multimodal-agentism]
   rivals: [model-market-anarchism, swarm-collectivism, modular-multimodalism]
 works:
-  - {title: "GPT-4o System Card", year: 2024}
-  - {title: "Qwen2.5-Omni Technical Report", year: 2025}
+  - {title: GPT-4o System Card, year: 2024, url: https://arxiv.org/abs/2410.21276}
+  - {title: Qwen2.5-Omni Technical Report, year: 2025, url: https://arxiv.org/abs/2503.20215}

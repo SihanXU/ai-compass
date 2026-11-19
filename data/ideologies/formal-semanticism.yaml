@@ -16,4 +16,4 @@ relations:
   frenemies: [neuro-symbolic-federalism, code-as-thought]
   rivals: [distributional-semanticism, next-token-totalitarianism, emergentism]
 works:
-  - {title: "The Proper Treatment of Quantification in Ordinary English", year: 1973}
+  - {title: The Proper Treatment of Quantification in Ordinary English, year: 1973, url: https://doi.org/10.1007/978-94-010-2506-5_10}

@@ -16,4 +16,4 @@ relations:
   frenemies: [embodied-statism]
   rivals: [humanoid-centralism, robot-foundation-imperialism, vla-monarchism]
 works:
-  - {title: "Evolving Virtual Creatures", year: 1994}
+  - {title: Evolving Virtual Creatures, year: 1994, url: https://doi.org/10.1145/3596711.3596785}

@@ -16,6 +16,6 @@ relations:
   frenemies: [code-as-thought, test-time-centralism]
   rivals: [emergentism, prompt-craftism, chat-absolutism]
 works:
-  - {title: "Generative Language Modeling for Automated Theorem Proving", year: 2020, url: "https://arxiv.org/abs/2009.03393"}
-  - {title: "LeanDojo: Theorem Proving with Retrieval-Augmented Language Models", year: 2023, url: "https://arxiv.org/abs/2306.15626"}
-  - {title: "Solving olympiad geometry without human demonstrations", year: 2024}
+  - {title: Generative Language Modeling for Automated Theorem Proving, year: 2020, url: https://arxiv.org/abs/2009.03393}
+  - {title: 'LeanDojo: Theorem Proving with Retrieval-Augmented Language Models', year: 2023, url: https://arxiv.org/abs/2306.15626}
+  - {title: Solving olympiad geometry without human demonstrations, year: 2024, url: https://doi.org/10.1038/s41586-023-06747-5}

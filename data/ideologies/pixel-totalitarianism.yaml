@@ -16,5 +16,5 @@ relations:
   frenemies: [byte-level-populism]
   rivals: [tokenizer-reformism, text-only-conservatism, corpus-fundamentalism]
 works:
-  - {title: "Language Modelling with Pixels", year: 2022}
-  - {title: "Pix2Struct: Screenshot Parsing as Pretraining for Visual Language Understanding", year: 2022}
+  - {title: Language Modelling with Pixels, year: 2022, url: https://arxiv.org/abs/2207.06991}
+  - {title: 'Pix2Struct: Screenshot Parsing as Pretraining for Visual Language Understanding', year: 2022, url: https://arxiv.org/abs/2210.03347}

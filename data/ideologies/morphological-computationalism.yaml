@@ -16,5 +16,5 @@ relations:
   frenemies: [classical-control-conservatism, humanoid-centralism]
   rivals: [compute-statism, robot-foundation-imperialism, logos-absolutism]
 works:
-  - {title: "Passive Dynamic Walking", year: 1990}
-  - {title: "How the Body Shapes the Way We Think: A New View of Intelligence", year: 2006}
+  - {title: Passive Dynamic Walking, year: 1990, url: https://arxiv.org/abs/2609.35935}
+  - {title: 'How the Body Shapes the Way We Think: A New View of Intelligence', year: 2006, url: https://doi.org/10.7551/mitpress/3585.003.0018}

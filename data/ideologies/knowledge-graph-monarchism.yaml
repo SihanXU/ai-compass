@@ -16,5 +16,5 @@ relations:
   frenemies: [rag-mutualism, memory-constitutionalism]
   rivals: [long-context-expansionism, pretraining-maximalism, emergentism]
 works:
-  - {title: "Translating Embeddings for Modeling Multi-relational Data", year: 2013}
-  - {title: "Wikidata: A Free Collaborative Knowledgebase", year: 2014}
+  - {title: Translating Embeddings for Modeling Multi-relational Data, year: 2013, url: https://papers.nips.cc/paper/5071-translating-embeddings-for-modeling-multi-relational-data}
+  - {title: 'Wikidata: A Free Collaborative Knowledgebase', year: 2014, url: https://doi.org/10.1145/2629489}

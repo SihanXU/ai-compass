@@ -16,5 +16,5 @@ relations:
   frenemies: [reasoning-statism]
   rivals: [latent-prediction-doctrine, grammarian-conservatism, innatism]
 works:
-  - {title: "Improving Language Understanding by Generative Pre-Training", year: 2018}
-  - {title: "Language Models are Few-Shot Learners", year: 2020, url: "https://arxiv.org/abs/2005.14165"}
+  - {title: Improving Language Understanding by Generative Pre-Training, year: 2018, url: https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf}
+  - {title: Language Models are Few-Shot Learners, year: 2020, url: https://arxiv.org/abs/2005.14165}

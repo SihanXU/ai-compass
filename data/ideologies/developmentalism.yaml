@@ -16,5 +16,5 @@ relations:
   frenemies: [innatism]
   rivals: [pretraining-maximalism, corpus-fundamentalism, compute-statism]
 works:
-  - {title: "Computing Machinery and Intelligence", year: 1950}
-  - {title: "Curriculum Learning", year: 2009}
+  - {title: Computing Machinery and Intelligence, year: 1950, url: https://doi.org/10.1109/9780470544297.ch3}
+  - {title: Curriculum Learning, year: 2009, url: https://doi.org/10.4135/9781526435781.n7}

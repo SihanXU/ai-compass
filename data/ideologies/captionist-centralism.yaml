@@ -16,5 +16,5 @@ relations:
   frenemies: [modular-multimodalism]
   rivals: [native-fusion-centralism, pixel-totalitarianism, visualism]
 works:
-  - {title: "Socratic Models: Composing Zero-Shot Multimodal Reasoning with Language", year: 2022, url: "https://arxiv.org/abs/2204.00598"}
-  - {title: "Improving Image Generation with Better Captions", year: 2023}
+  - {title: 'Socratic Models: Composing Zero-Shot Multimodal Reasoning with Language', year: 2022, url: https://arxiv.org/abs/2204.00598}
+  - {title: Improving Image Generation with Better Captions, year: 2023, url: https://cdn.openai.com/papers/dall-e-3.pdf}

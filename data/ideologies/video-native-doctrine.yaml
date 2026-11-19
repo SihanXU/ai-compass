@@ -16,6 +16,6 @@ relations:
   frenemies: [latent-prediction-doctrine, physical-law-absolutism]
   rivals: [captionist-centralism, text-only-conservatism, geometric-doctrine]
 works:
-  - {title: "VideoMAE: Masked Autoencoders are Data-Efficient Learners for Self-Supervised Video Pre-Training", year: 2022, url: "https://arxiv.org/abs/2203.12602"}
-  - {title: "Quo Vadis, Action Recognition? A New Model and the Kinetics Dataset", year: 2017, url: "https://arxiv.org/abs/1705.07750"}
-  - {title: "Video generation models as world simulators", year: 2024}
+  - {title: 'VideoMAE: Masked Autoencoders are Data-Efficient Learners for Self-Supervised Video Pre-Training', year: 2022, url: https://arxiv.org/abs/2203.12602}
+  - {title: 'Quo Vadis, Action Recognition? A New Model and the Kinetics Dataset', year: 2017, url: https://arxiv.org/abs/1705.07750}
+  - {title: Video generation models as world simulators, year: 2024, url: https://openai.com/index/video-generation-models-as-world-simulators/}

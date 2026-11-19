@@ -16,5 +16,5 @@ relations:
   frenemies: [robot-foundation-imperialism]
   rivals: [logocentrism, language-singularitarianism, corpus-fundamentalism]
 works:
-  - {title: "The Embodied Mind: Cognitive Science and Human Experience", year: 1991}
-  - {title: "Understanding Intelligence", year: 1999}
+  - {title: 'The Embodied Mind: Cognitive Science and Human Experience', year: 1991, url: https://en.wikipedia.org/wiki/The_Embodied_Mind}
+  - {title: Understanding Intelligence, year: 1999, url: https://doi.org/10.4324/9780080508009-7}

@@ -16,5 +16,5 @@ relations:
   frenemies: [reasoning-statism, harness-liberalism]
   rivals: [autonomous-agent-anarchism, agent-anarcho-syndicalism]
 works:
-  - {title: "AI Chains: Transparent and Controllable Human-AI Interaction by Chaining Large Language Model Prompts", year: 2022, url: "https://arxiv.org/abs/2110.01691"}
-  - {title: "LangChain", year: 2022}
+  - {title: 'AI Chains: Transparent and Controllable Human-AI Interaction by Chaining Large Language Model Prompts', year: 2022, url: https://arxiv.org/abs/2110.01691}
+  - {title: LangChain, year: 2022, url: https://github.com/langchain-ai/langchain}

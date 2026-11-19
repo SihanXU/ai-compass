@@ -16,6 +16,6 @@ relations:
   frenemies: [interpretability-reformism]
   rivals: [formal-semanticism, grounding-doctrine, innatism]
 works:
-  - {title: "Distributional Structure", year: 1954}
-  - {title: "Efficient Estimation of Word Representations in Vector Space", year: 2013, url: "https://arxiv.org/abs/1301.3781"}
-  - {title: "GloVe: Global Vectors for Word Representation", year: 2014}
+  - {title: Distributional Structure, year: 1954, url: https://doi.org/10.1007/978-94-009-8467-7_1}
+  - {title: Efficient Estimation of Word Representations in Vector Space, year: 2013, url: https://arxiv.org/abs/1301.3781}
+  - {title: 'GloVe: Global Vectors for Word Representation', year: 2014, url: https://doi.org/10.3115/v1/d14-1162}

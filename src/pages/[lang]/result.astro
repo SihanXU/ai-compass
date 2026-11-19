@@ -11,9 +11,9 @@ const { lang } = Astro.params;
 const strings = pack(lang, [
   'closest', 'campIs', 'onChart', 'near', 'titles', 'noTitles', 'readEntry', 'retake', 'tryFull', 'share', 'copied',
   'saveImage', 'quickNote', 'noResult', 'paradigm', 'site', 'axes', 'axisCategory', 'catStrongNeg', 'catNeg', 'catMid', 'catPos', 'catStrongPos',
-  'yourCamp', 'yourIdeology', 'tryPro', 'subTitle', 'consistencyLabel', 'consistencyLow', 'consistencyHigh',
+  'yourCamp', 'yourIdeology', 'tryPro', 'shareBtn', 'sharePortrait', 'shareLandscape', 'shareSave', 'shareCopyImage', 'shareCopyLink', 'shareNative', 'shareCopied', 'shareScan', 'shareText', 'shareClose', 'shareOn', 'shareCardResult', 'brand', 'consistencyLabel', 'subTitle', 'consistencyLabel', 'consistencyLow', 'consistencyHigh',
 ]);
-const data = { ...clientData(lang), strings, wiki: url(lang, 'wiki/'), test: url(lang, 'test/') };
+const data = { ...clientData(lang), strings, wiki: url(lang, 'wiki/'), test: url(lang, 'test/'), shareBase: url(lang, 'share/'), home: url(lang) };
 ---
 <Layout lang={lang} title={t(lang, 'resultLabel')} path="result" active="test">
     <main class="result-page">
@@ -49,12 +49,41 @@ const data = { ...clientData(lang), strings, wiki: url(lang, 'wiki/'), test: url
             </div>
         </section>
     </main>
+    <dialog class="share" data-share>
+        <div class="share-head">
+            <h2>{t(lang, 'shareBtn')}</h2>
+            <button type="button" class="ghost" data-share-close aria-label={t(lang, 'shareClose')}>✕</button>
+        </div>
+        <div class="share-body">
+            <div class="share-preview">
+                <div class="seg">
+                    <button type="button" class="on" data-format="portrait">{t(lang, 'sharePortrait')}</button>
+                    <button type="button" data-format="landscape">{t(lang, 'shareLandscape')}</button>
+                </div>
+                <img data-share-img alt="" />
+            </div>
+            <div class="share-side">
+                <div class="share-actions">
+                    <button type="button" class="btn primary" data-act="save">{t(lang, 'shareSave')}</button>
+                    <button type="button" class="btn" data-act="copy-image">{t(lang, 'shareCopyImage')}</button>
+                    <button type="button" class="btn" data-act="copy-link">{t(lang, 'shareCopyLink')}</button>
+                    <button type="button" class="btn" data-act="native" hidden>{t(lang, 'shareNative')}</button>
+                </div>
+                <input class="share-link" data-share-link readonly />
+                <div class="share-qr"><canvas data-share-qr width="220" height="220"></canvas><span>{t(lang, 'shareScan')}</span></div>
+                <p class="label">{t(lang, 'shareOn')}</p>
+                <div class="chips" data-share-sites></div>
+            </div>
+        </div>
+    </dialog>
     <script type="application/json" id="compass-data" set:html={JSON.stringify(data)} />
 </Layout>
 
 <script>
   import { toChart, decodeResult, rank, earned, campOf, ideologyColour, gridOf, COLS, ROWS, CENTER } from '../../lib/compass.js';
   import { ballSvg } from '../../lib/ball.js';
+  import { drawShareCard } from '../../lib/sharecard.js';
+  import qrcode from 'qrcode-generator';
 
   const D = JSON.parse(document.getElementById('compass-data').textContent);
   const S = D.strings;
@@ -62,18 +91,8 @@ const data = { ...clientData(lang), strings, wiki: url(lang, 'wiki/'), test: url
   const $ = (sel) => document.querySelector(sel);
   const el = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; };
 
-  const res = decodeResult(location.search);
-  if (!res) {
-    $('[data-r-name]').textContent = S.noResult;
-    ['[data-r-axes-card]', '[data-r-near-card]'].forEach((s) => ($(s).hidden = true));
-    const a = el('a', 'btn primary', S.retake); a.href = D.test + 'full/'; $('[data-r-actions]').append(a);
-  } else {
-    // place the stored (raw) scores on the chart the same way the ideologies were placed
-    const k = D.calibration?.scale || {};
-    const subs = res.subs && Object.fromEntries(Object.entries(res.subs).map(([key, v]) => [key, Math.max(-1, Math.min(1, v * (k[key.split('.')[0]] || 1)))]));
-    show({ ...res, s: toChart(res.s, D.calibration), subs });
-  }
-
+  // (the page is drawn at the end of this script, once everything below is defined)
+  const COLS_AX = { x: ['#d9534f', '#3b7dd8'], y: ['#2f9e5b', '#8e5bd6'], p: ['#5a5f66', '#16a3b8'], o: ['#7d8794', '#e0a020'], a: ['#3f8f8f', '#e8642c'] };
   function category(v, ax) {
     const pole = v < 0 ? ax.neg[L] : ax.pos[L];
     const k = v < -0.6 ? 'catStrongNeg' : v < -0.2 ? 'catNeg' : v <= 0.2 ? 'catMid' : v <= 0.6 ? 'catPos' : 'catStrongPos';
@@ -116,14 +135,11 @@ const data = { ...clientData(lang), strings, wiki: url(lang, 'wiki/'), test: url
     if (quick) go(S.tryFull, D.test + 'full/');
     if (mode === 'full') go(S.tryPro, D.test + 'pro/');
     go(S.retake, D.test + mode + '/');
-    const share = el('button', 'btn', S.share); share.type = 'button';
-    share.addEventListener('click', () => { const done = () => { share.textContent = S.copied; }; navigator.clipboard ? navigator.clipboard.writeText(location.href).then(done, done) : done(); });
-    const save = el('button', 'btn', S.saveImage); save.type = 'button';
-    save.addEventListener('click', () => saveImage({ s: { ...s, x: at.x, y: at.y }, quick, name, motto, bg: bestCol.bg }));
-    acts.append(share, save);
+    const shareBtn = el('button', 'btn', S.shareBtn); shareBtn.type = 'button';
+    shareBtn.addEventListener('click', () => openShare({ s, c, quick, name, motto, best, bestCol }));
+    acts.append(shareBtn);
 
     // one bar per axis: the left pole's share on the left in its colour, the right pole's on the right
-    const COLS_AX = { x: ['#d9534f', '#3b7dd8'], y: ['#2f9e5b', '#8e5bd6'], p: ['#5a5f66', '#16a3b8'], o: ['#7d8794', '#e0a020'], a: ['#3f8f8f', '#e8642c'] };
     const box = $('[data-r-axes]');
     (quick ? D.axes.slice(0, 2) : D.axes).forEach((ax) => {
       const v = s[ax.key];
@@ -212,54 +228,89 @@ const data = { ...clientData(lang), strings, wiki: url(lang, 'wiki/'), test: url
     marks.append(pin);
   }
 
-  // 1200 × 630: the chart in miniature with your pin, your result beside it
-  function saveImage({ s, quick, name, motto, bg }) {
-    const W = 1200, H = 630, cv = document.createElement('canvas');
-    cv.width = W; cv.height = H;
-    const g = cv.getContext('2d');
-    const font = (w, px) => `${w} ${px}px -apple-system, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif`;
-    g.fillStyle = '#f8f9fa'; g.fillRect(0, 0, W, H);
-    const cs = 34, ox = 48, oy = (H - (ROWS + 2) * cs) / 2;
-    D.ideologies.forEach((ide) => {
-      const gr = gridOf(ide.place);
-      g.fillStyle = ideologyColour(ide).bg;
-      if (gr.kind === 'center') g.fillRect(ox + (CENTER.c0 + 1) * cs, oy + (CENTER.r0 + 1) * cs, 3 * cs - 1, 2 * cs - 1);
-      else g.fillRect(ox + (gr.col + 1) * cs, oy + (gr.row + 1) * cs, cs - 1, cs - 1);
+  // ---------------------------------------------------------------- sharing
+  const dlg = document.querySelector('[data-share]');
+  let current = null, format = 'portrait', cardBlob = null;
+  const shareUrl = (best) => `${location.origin}${D.shareBase}${best.id}/${location.search}`;
+  const siteUrl = () => `${location.host}${D.home.replace(/(en|zh)\/$/, '')}`;
+
+  function render() {
+    const { s, c, quick, name, motto, best, bestCol } = current;
+    const axes = quick ? D.axes.slice(0, 2) : D.axes;
+    const cv = drawShareCard({
+      format, lang: L, label: `${S.site} · ${quick ? S.campIs : S.closest}`, name, motto, colour: bestCol.bg,
+      bars: axes.map((ax) => ({ neg: ax.neg[L], pos: ax.pos[L], label: category(s[ax.key], ax), value: s[ax.key], colors: COLS_AX[ax.key] })),
+      note: c != null ? `${S.consistencyLabel} ${Math.round(c * 100)}%` : '',
+      ideologies: D.ideologies, highlight: best.id, url: current.url, site: S.site, siteUrl: siteUrl(), scan: S.shareScan,
     });
-    g.fillStyle = 'rgba(0,0,0,0.45)';
-    g.fillRect(ox + cs, oy + cs + (ROWS * cs) / 2 - 1, COLS * cs, 2);
-    g.fillRect(ox + cs + (COLS * cs) / 2 - 1, oy + cs, 2, ROWS * cs);
-    const px = ox + cs + ((s.x + 1) / 2) * COLS * cs, py = oy + cs + ((1 - s.y) / 2) * ROWS * cs;
-    [[14, '#111'], [9, '#fff'], [6, '#2563eb']].forEach(([r, c]) => { g.beginPath(); g.arc(px, py, r, 0, Math.PI * 2); g.fillStyle = c; g.fill(); });
-    const tx = ox + (COLS + 2) * cs + 40, tw = W - tx - 48;
-    const wrap = (text, x, y, w, lh) => {
-      const words = L === 'zh' ? [...text] : text.split(' ');
-      let line = '';
-      for (const wd of words) {
-        const test = line ? (L === 'zh' ? line + wd : `${line} ${wd}`) : wd;
-        if (g.measureText(test).width > w && line) { g.fillText(line, x, y); y += lh; line = wd; } else line = test;
-      }
-      g.fillText(line, x, y);
-      return y + lh;
-    };
-    // the ball
-    g.beginPath(); g.arc(tx + 44, 110, 40, 0, Math.PI * 2); g.fillStyle = bg; g.fill(); g.lineWidth = 3; g.strokeStyle = '#111'; g.stroke();
-    [[tx + 32, 104], [tx + 56, 104]].forEach(([ex, ey]) => { g.beginPath(); g.ellipse(ex, ey, 7.5, 9, 0, 0, Math.PI * 2); g.fillStyle = '#fff'; g.fill(); g.lineWidth = 2; g.stroke(); });
-    g.fillStyle = '#999'; g.font = font(600, 15);
-    g.fillText((quick ? S.campIs : S.closest).toUpperCase(), tx, 186);
-    g.fillStyle = '#111'; g.font = font(800, 44);
-    let y = wrap(name, tx, 236, tw, 50);
-    g.fillStyle = '#333'; g.font = font(400, 21);
-    y = wrap(motto, tx, y + 14, tw, 30);
-    g.fillStyle = '#666'; g.font = font(500, 17);
-    const parts = (quick ? D.axes.slice(0, 2) : D.axes).map((ax) => category(s[ax.key], ax));
-    wrap(parts.join(' · '), tx, Math.max(y + 20, 500), tw, 24);
-    g.fillStyle = '#2563eb'; g.font = font(600, 17);
-    g.fillText(`${S.site} · ${location.host}${location.pathname.replace(/result\/?$/, '')}`, tx, H - 40);
-    cv.toBlob((blob) => {
-      const a = document.createElement('a');
-      a.href = URL.createObjectURL(blob); a.download = 'ai-compass.png'; a.click();
-      setTimeout(() => URL.revokeObjectURL(a.href), 2000);
-    });
+    dlg.querySelector('[data-share-img]').src = cv.toDataURL('image/png');
+    cardBlob = null;
+    cv.toBlob((b) => { cardBlob = b; });
+  }
+
+  function openShare(info) {
+    current = { ...info, url: shareUrl(info.best) };
+    dlg.querySelector('[data-share-link]').value = current.url;
+    // a large QR code, for scanning in person
+    const q = qrcode(0, 'M'); q.addData(current.url); q.make();
+    const n = q.getModuleCount(), cv = dlg.querySelector('[data-share-qr]'), g = cv.getContext('2d'), m = cv.width / (n + 4);
+    g.fillStyle = '#fff'; g.fillRect(0, 0, cv.width, cv.height); g.fillStyle = '#111';
+    for (let r = 0; r < n; r++) for (let k = 0; k < n; k++) if (q.isDark(r, k)) g.fillRect(Math.floor((k + 2) * m), Math.floor((r + 2) * m), Math.ceil(m), Math.ceil(m));
+    // posting to other sites
+    const text = S.shareText.replace('{name}', info.name);
+    const u = encodeURIComponent(current.url), tx = encodeURIComponent(text);
+    const sites = [
+      ['X', `https://x.com/intent/post?text=${tx}&url=${u}`],
+      [L === 'zh' ? '微博' : 'Weibo', `https://service.weibo.com/share/share.php?url=${u}&title=${tx}`],
+      ['LinkedIn', `https://www.linkedin.com/sharing/share-offsite/?url=${u}`],
+      ['Telegram', `https://t.me/share/url?url=${u}&text=${tx}`],
+    ];
+    const box = dlg.querySelector('[data-share-sites]'); box.innerHTML = '';
+    sites.forEach(([label, href]) => { const a = el('a', 'chip', label); a.href = href; a.target = '_blank'; a.rel = 'noopener'; box.append(a); });
+    dlg.querySelector('[data-act="native"]').hidden = !navigator.share;
+    render();
+    dlg.showModal();
+  }
+
+  const flash = (btn) => { const t0 = btn.textContent; btn.textContent = S.shareCopied; setTimeout(() => { btn.textContent = t0; }, 1500); };
+  const fileName = () => `ai-compass-${current.best.id}-${format}.png`;
+  const withBlob = (fn) => (cardBlob ? fn(cardBlob) : setTimeout(() => withBlob(fn), 50));
+  dlg.querySelectorAll('[data-format]').forEach((b) => b.addEventListener('click', () => {
+    format = b.dataset.format;
+    dlg.querySelectorAll('[data-format]').forEach((x) => x.classList.toggle('on', x === b));
+    render();
+  }));
+  dlg.querySelector('[data-share-close]').addEventListener('click', () => dlg.close());
+  dlg.addEventListener('click', (e) => { if (e.target === dlg) dlg.close(); });
+  dlg.querySelector('[data-act="save"]').addEventListener('click', () => withBlob((blob) => {
+    const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = fileName(); a.click();
+    setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+  }));
+  dlg.querySelector('[data-act="copy-image"]').addEventListener('click', (e) => withBlob(async (blob) => {
+    try { await navigator.clipboard.write([new ClipboardItem({ 'image/png': blob })]); flash(e.target); } catch { e.target.disabled = true; }
+  }));
+  dlg.querySelector('[data-act="copy-link"]').addEventListener('click', (e) => {
+    const input = dlg.querySelector('[data-share-link]');
+    if (navigator.clipboard) navigator.clipboard.writeText(current.url).then(() => flash(e.target), () => input.select());
+    else input.select();
+  });
+  dlg.querySelector('[data-act="native"]').addEventListener('click', () => withBlob(async (blob) => {
+    const text = S.shareText.replace('{name}', current.name);
+    const file = new File([blob], fileName(), { type: 'image/png' });
+    const payload = navigator.canShare && navigator.canShare({ files: [file] }) ? { files: [file], text, url: current.url } : { text, url: current.url };
+    try { await navigator.share(payload); } catch { /* cancelled */ }
+  }));
+
+  // draw the page
+  const res = decodeResult(location.search);
+  if (!res) {
+    $('[data-r-name]').textContent = S.noResult;
+    ['[data-r-axes-card]', '[data-r-near-card]'].forEach((s) => ($(s).hidden = true));
+    const a = el('a', 'btn primary', S.retake); a.href = D.test + 'full/'; $('[data-r-actions]').append(a);
+  } else {
+    // place the stored (raw) scores on the chart the same way the ideologies were placed
+    const k = D.calibration?.scale || {};
+    const subs = res.subs && Object.fromEntries(Object.entries(res.subs).map(([key, v]) => [key, Math.max(-1, Math.min(1, v * (k[key.split('.')[0]] || 1)))]));
+    show({ ...res, s: toChart(res.s, D.calibration), subs });
   }
 </script>

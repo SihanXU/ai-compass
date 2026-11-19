@@ -16,6 +16,6 @@ relations:
   frenemies: [generative-village-communalism, curiosity-liberalism]
   rivals: [field-robotics-libertarianism, corpus-fundamentalism]
 works:
-  - {title: "Human-level control through deep reinforcement learning", year: 2015}
-  - {title: "Mastering the game of Go with deep neural networks and tree search", year: 2016}
-  - {title: "Grandmaster level in StarCraft II using multi-agent reinforcement learning", year: 2019}
+  - {title: Human-level control through deep reinforcement learning, year: 2015, url: https://doi.org/10.1038/nature14236}
+  - {title: Mastering the game of Go with deep neural networks and tree search, year: 2016, url: https://doi.org/10.1038/nature16961}
+  - {title: Grandmaster level in StarCraft II using multi-agent reinforcement learning, year: 2019, url: https://doi.org/10.1038/s41586-019-1724-z}

@@ -16,6 +16,6 @@ relations:
   frenemies: [self-improving-agentism, game-agent-doctrine]
   rivals: [eval-proceduralism, radical-centrism-or-leaderboardism, scaling-law-planism]
 works:
-  - {title: "Abandoning Objectives: Evolution Through the Search for Novelty Alone", year: 2011}
-  - {title: "Paired Open-Ended Trailblazer (POET): Endlessly Generating Increasingly Complex and Diverse Learning Environments and Their Solutions", year: 2019, url: https://arxiv.org/abs/1901.01753}
-  - {title: "OMNI: Open-endedness via Models of human Notions of Interestingness", year: 2023, url: https://arxiv.org/abs/2306.01711}
+  - {title: 'Abandoning Objectives: Evolution Through the Search for Novelty Alone', year: 2011, url: https://doi.org/10.1162/evco_a_00025}
+  - {title: 'Paired Open-Ended Trailblazer (POET): Endlessly Generating Increasingly Complex and Diverse Learning Environments and Their Solutions', year: 2019, url: https://arxiv.org/abs/1901.01753}
+  - {title: 'OMNI: Open-endedness via Models of human Notions of Interestingness', year: 2023, url: https://arxiv.org/abs/2306.01711}

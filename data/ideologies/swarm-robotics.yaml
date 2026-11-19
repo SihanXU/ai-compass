@@ -16,5 +16,5 @@ relations:
   frenemies: [field-robotics-libertarianism, evolutionary-federalism]
   rivals: [humanoid-centralism, robot-foundation-imperialism, vla-monarchism]
 works:
-  - {title: "Flocks, Herds, and Schools: A Distributed Behavioral Model", year: 1987}
-  - {title: "Programmable self-assembly in a thousand-robot swarm", year: 2014}
+  - {title: 'Flocks, Herds, and Schools: A Distributed Behavioral Model', year: 1987, url: https://doi.org/10.1145/280811.281008}
+  - {title: Programmable self-assembly in a thousand-robot swarm, year: 2014, url: https://doi.org/10.1126/science.1254295}

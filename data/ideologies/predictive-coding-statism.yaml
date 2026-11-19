@@ -16,5 +16,5 @@ relations:
   frenemies: [next-token-totalitarianism, world-simulator-statism]
   rivals: [bitter-lesson-orthodoxy, pipeline-pragmatism, symbolic-restorationism]
 works:
-  - {title: "Deep Predictive Coding Networks for Video Prediction and Unsupervised Learning", year: 2016, url: "https://arxiv.org/abs/1605.08104"}
-  - {title: "The free-energy principle: a unified brain theory?", year: 2010}
+  - {title: Deep Predictive Coding Networks for Video Prediction and Unsupervised Learning, year: 2016, url: https://arxiv.org/abs/1605.08104}
+  - {title: 'The free-energy principle: a unified brain theory?', year: 2010, url: https://doi.org/10.1038/nrn2787}

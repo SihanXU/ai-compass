@@ -16,5 +16,5 @@ relations:
   frenemies: [physical-law-absolutism]
   rivals: [latent-prediction-doctrine, world-as-code-doctrine, classical-control-conservatism]
 works:
-  - {title: "Video generation models as world simulators", year: 2024}
-  - {title: "Genie: Generative Interactive Environments", year: 2024, url: "https://arxiv.org/abs/2402.15391"}
+  - {title: Video generation models as world simulators, year: 2024, url: https://openai.com/index/video-generation-models-as-world-simulators/}
+  - {title: 'Genie: Generative Interactive Environments', year: 2024, url: https://arxiv.org/abs/2402.15391}

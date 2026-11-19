@@ -16,6 +16,6 @@ relations:
   frenemies: [world-simulator-statism, innatism]
   rivals: [video-scalism, emergentism, text-only-conservatism]
 works:
-  - {title: "Simulation as an engine of physical scene understanding", year: 2013}
-  - {title: "IntPhys: A Framework and Benchmark for Visual Intuitive Physics Reasoning", year: 2018, url: "https://arxiv.org/abs/1803.07616"}
-  - {title: "Physion: Evaluating Physical Prediction from Vision in Humans and Machines", year: 2021, url: "https://arxiv.org/abs/2106.08261"}
+  - {title: Simulation as an engine of physical scene understanding, year: 2013, url: https://doi.org/10.1037/e633262013-904}
+  - {title: 'IntPhys: A Framework and Benchmark for Visual Intuitive Physics Reasoning', year: 2018, url: https://arxiv.org/abs/1803.07616}
+  - {title: 'Physion: Evaluating Physical Prediction from Vision in Humans and Machines', year: 2021, url: https://arxiv.org/abs/2106.08261}

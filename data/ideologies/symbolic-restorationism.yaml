@@ -16,5 +16,5 @@ relations:
   frenemies: [neuro-symbolic-federalism, program-synthesis-doctrine]
   rivals: [bitter-lesson-orthodoxy, emergentism, next-token-totalitarianism]
 works:
-  - {title: "Computer Science as Empirical Inquiry: Symbols and Search", year: 1976}
-  - {title: "CYC: A Large-Scale Investment in Knowledge Infrastructure", year: 1995}
+  - {title: 'Computer Science as Empirical Inquiry: Symbols and Search', year: 1976, url: https://doi.org/10.1145/1283920.1283930}
+  - {title: 'CYC: A Large-Scale Investment in Knowledge Infrastructure', year: 1995, url: https://doi.org/10.1145/219717.219745}

@@ -16,6 +16,6 @@ relations:
   frenemies: [latent-prediction-doctrine]
   rivals: [corpus-fundamentalism, text-only-conservatism, object-centrism]
 works:
-  - {title: "Sequential Modeling Enables Scalable Learning for Large Vision Models", year: 2023}
-  - {title: "VideoPoet: A Large Language Model for Zero-Shot Video Generation", year: 2023}
-  - {title: "Video generation models as world simulators", year: 2024}
+  - {title: Sequential Modeling Enables Scalable Learning for Large Vision Models, year: 2023, url: https://arxiv.org/abs/2312.00785}
+  - {title: 'VideoPoet: A Large Language Model for Zero-Shot Video Generation', year: 2023, url: https://arxiv.org/abs/2312.14125}
+  - {title: Video generation models as world simulators, year: 2024, url: https://openai.com/index/video-generation-models-as-world-simulators/}

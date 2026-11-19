@@ -16,5 +16,5 @@ relations:
   frenemies: [bitter-lesson-orthodoxy]
   rivals: [pretraining-maximalism, rlhf-paternalism, classical-control-conservatism]
 works:
-  - {title: "Evolving Neural Networks through Augmenting Topologies", year: 2002}
-  - {title: "Evolution Strategies as a Scalable Alternative to Reinforcement Learning", year: 2017, url: "https://arxiv.org/abs/1703.03864"}
+  - {title: Evolving Neural Networks through Augmenting Topologies, year: 2002, url: https://doi.org/10.1162/106365602320169811}
+  - {title: Evolution Strategies as a Scalable Alternative to Reinforcement Learning, year: 2017, url: https://arxiv.org/abs/1703.03864}

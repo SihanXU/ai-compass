@@ -16,4 +16,4 @@ relations:
   frenemies: [context-engineering-liberalism]
   rivals: [prompt-anarchism, workflow-bureaucratism, fine-tune-cooperativism]
 works:
-  - {title: "Pre-train, Prompt, and Predict: A Systematic Survey of Prompting Methods in Natural Language Processing", year: 2021}
+  - {title: "Pre-train, Prompt, and Predict: A Systematic Survey of Prompting Methods in Natural Language Processing", year: 2021, url: "https://arxiv.org/abs/2107.13586"}

@@ -16,5 +16,5 @@ relations:
   frenemies: [knowledge-graph-monarchism, code-as-thought]
   rivals: [bitter-lesson-orthodoxy, next-token-totalitarianism, emergentism]
 works:
-  - {title: "The Neuro-Symbolic Concept Learner: Interpreting Scenes, Words, and Sentences From Natural Supervision", year: 2019, url: https://arxiv.org/abs/1904.12584}
-  - {title: "Solving olympiad geometry without human demonstrations", year: 2024}
+  - {title: 'The Neuro-Symbolic Concept Learner: Interpreting Scenes, Words, and Sentences From Natural Supervision', year: 2019, url: https://arxiv.org/abs/1904.12584}
+  - {title: Solving olympiad geometry without human demonstrations, year: 2024, url: https://doi.org/10.1038/s41586-023-06747-5}

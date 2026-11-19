@@ -16,5 +16,5 @@ relations:
   frenemies: [linguistic-multimodalism]
   rivals: [distributional-semanticism, corpus-fundamentalism, linguistic-relativism]
 works:
-  - {title: "The Symbol Grounding Problem", year: 1990}
-  - {title: "Experience Grounds Language", year: 2020, url: "https://arxiv.org/abs/2004.10151"}
+  - {title: The Symbol Grounding Problem, year: 1990, url: https://arxiv.org/abs/cs/9906002}
+  - {title: Experience Grounds Language, year: 2020, url: https://arxiv.org/abs/2004.10151}

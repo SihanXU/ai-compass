@@ -1,0 +1,44 @@
+---
+// What a shared result link points to: a page whose link preview shows the ideology, which then opens the full
+// result (the scores travel in the query string, which crawlers ignore and the browser keeps).
+import { ideologies } from '../../../lib/data.js';
+import { t, url, asset, LANGS } from '../../../lib/i18n.js';
+
+export function getStaticPaths() {
+  return LANGS.flatMap((lang) => ideologies.map((ide) => ({ params: { lang, id: ide.id } })));
+}
+const { lang, id } = Astro.params;
+const ide = ideologies.find((i) => i.id === id);
+const title = `${t(lang, 'shareTitle', { name: ide.name[lang] })} · ${t(lang, 'site')}`;
+const desc = `“${ide.motto[lang]}” — ${t(lang, 'ogSiteLine')}`;
+const site = (Astro.site?.href || 'https://sihanxu.me/').replace(/\/$/, '');
+const image = `${site}${asset(`og/${lang}/${id}.png`)}`;
+const result = url(lang, 'result');
+const entry = url(lang, `wiki/${id}`);
+---
+<!DOCTYPE html>
+<html lang={lang === 'zh' ? 'zh-CN' : 'en'}>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title}</title>
+    <meta name="description" content={desc}>
+    <meta property="og:type" content="website">
+    <meta property="og:title" content={title}>
+    <meta property="og:description" content={desc}>
+    <meta property="og:image" content={image}>
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content={title}>
+    <meta name="twitter:description" content={desc}>
+    <meta name="twitter:image" content={image}>
+    <link rel="icon" href="data:,">
+    <script define:vars={{ result, entry }}>
+      location.replace(location.search ? result + location.search : entry);
+    </script>
+</head>
+<body style="font-family:system-ui,sans-serif;padding:3rem">
+    <p><a href={entry}>{t(lang, 'shareOpen')}</a></p>
+</body>
+</html>

@@ -16,5 +16,5 @@ relations:
   frenemies: [linguistic-relativism, intuitive-physics-doctrine]
   rivals: [distributional-semanticism, emergentism, next-token-totalitarianism, bitter-lesson-orthodoxy]
 works:
-  - {title: "Syntactic Structures", year: 1957}
-  - {title: "Aspects of the Theory of Syntax", year: 1965}
+  - {title: Syntactic Structures, year: 1957, url: https://arxiv.org/abs/1610.00311}
+  - {title: Aspects of the Theory of Syntax, year: 1965, url: https://doi.org/10.21236/ad0616323}

@@ -382,3 +382,27 @@ a.cell:hover { outline: 2px solid #111; outline-offset: -2px; z-index: 3; }
 .certainty .meter i { display: block; height: 100%; background: var(--accent); }
 .certainty b { color: var(--ink-strong); }
 @media (max-width: 900px) { .quiz-page .cards { grid-template-columns: 1fr !important; } }
+
+/* ======================================================= share panel */
+dialog.share { margin: auto; width: min(980px, calc(100vw - 2rem)); max-height: calc(100vh - 2rem); border: 1px solid var(--line); border-radius: 16px; padding: 0; background: var(--card); color: var(--ink); box-shadow: 0 30px 80px rgba(0, 0, 0, 0.3); overflow: auto; }
+dialog.share::backdrop { background: rgba(10, 12, 16, 0.55); }
+.share-head { display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.25rem; border-bottom: 1px solid var(--line); }
+.share-head h2 { font-size: 1.2rem; color: var(--ink-strong); }
+.share-head .ghost { font-size: 1.1rem; padding: 0.2rem 0.5rem; }
+.share-body { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 1.5rem; padding: 1.25rem; }
+.share-preview { display: flex; flex-direction: column; gap: 0.75rem; align-items: center; background: var(--bg-alt); border-radius: var(--radius); padding: 1rem; }
+.share-preview img { width: 100%; max-height: 60vh; object-fit: contain; border-radius: 8px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12); background: #fff; }
+.seg { display: inline-flex; border: 1px solid var(--line-strong); border-radius: 999px; padding: 2px; background: var(--card); }
+.seg button { border: 0; background: none; padding: 0.3rem 0.9rem; border-radius: 999px; cursor: pointer; color: var(--muted); font-size: 0.9rem; }
+.seg button.on { background: var(--accent); color: #fff; }
+.share-side { display: flex; flex-direction: column; gap: 1rem; min-width: 0; }
+.share-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; }
+.share-actions .btn { width: 100%; }
+.share-link { width: 100%; padding: 0.55rem 0.75rem; border: 1px solid var(--line-strong); border-radius: 8px; background: var(--bg-alt); color: var(--muted); font: 0.85rem var(--mono); }
+.share-qr { display: flex; align-items: center; gap: 1rem; color: var(--muted); font-size: 0.9rem; }
+.share-qr canvas { width: 132px; height: 132px; border: 1px solid var(--line); border-radius: 8px; background: #fff; flex-shrink: 0; }
+.share-side .label { margin-bottom: -0.5rem; }
+@media (max-width: 760px) {
+    .share-body { grid-template-columns: 1fr; }
+    .share-preview img { max-height: 45vh; }
+}

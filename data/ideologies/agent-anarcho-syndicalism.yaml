@@ -16,4 +16,4 @@ relations:
   frenemies: [multi-agent-parliamentarism, agent-society-socialism]
   rivals: [workflow-bureaucratism, prompt-monarchism, role-play-collectivism]
 works:
-  - {title: "The Society of Mind", year: 1986}
+  - {title: The Society of Mind, year: 1986, url: https://en.wikipedia.org/wiki/Society_of_Mind}

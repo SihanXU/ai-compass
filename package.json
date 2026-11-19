@@ -14,6 +14,12 @@
   "dependencies": {
     "astro": "^5.18.2",
     "js-yaml": "^5.5.0",
+    "qrcode-generator": "^2.0.4",
     "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "satori": "^0.63.2",
+    "subset-font": "^2.9.0"
   }
 }

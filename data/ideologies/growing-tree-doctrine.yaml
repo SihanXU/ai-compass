@@ -16,5 +16,5 @@ relations:
   frenemies: [classical-planning-restoration, workflow-bureaucratism]
   rivals: [vla-monarchism, end-to-end-driving-absolutism, chat-absolutism]
 works:
-  - {title: "How to Control an Agent with a Growing Behavior Tree", year: 2026}
-  - {title: "Voyager: An Open-Ended Embodied Agent with Large Language Models", year: 2023, url: https://arxiv.org/abs/2305.16291}
+  - {title: How to Control an Agent with a Growing Behavior Tree, year: 2026, url: https://sihanxu.me/harnesstree/}
+  - {title: 'Voyager: An Open-Ended Embodied Agent with Large Language Models', year: 2023, url: https://arxiv.org/abs/2305.16291}

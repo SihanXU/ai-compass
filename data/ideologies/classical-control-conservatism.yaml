@@ -16,4 +16,4 @@ relations:
   frenemies: [sim-to-real-pragmatism, hierarchical-control]
   rivals: [vla-monarchism, end-to-end-driving-absolutism, robot-foundation-imperialism]
 works:
-  - {title: "A New Approach to Linear Filtering and Prediction Problems", year: 1960}
+  - {title: A New Approach to Linear Filtering and Prediction Problems, year: 1960, url: https://doi.org/10.1109/9780470544334.ch9}

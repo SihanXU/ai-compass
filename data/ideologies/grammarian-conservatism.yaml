@@ -16,5 +16,5 @@ relations:
   frenemies: [distributional-semanticism, circuit-constitutionalism]
   rivals: [byte-level-populism, next-token-totalitarianism, bitter-lesson-orthodoxy]
 works:
-  - {title: "Recurrent Neural Network Grammars", year: 2016, url: "https://arxiv.org/abs/1602.07776"}
-  - {title: "Building a Large Annotated Corpus of English: The Penn Treebank", year: 1993}
+  - {title: Recurrent Neural Network Grammars, year: 2016, url: https://arxiv.org/abs/1602.07776}
+  - {title: 'Building a Large Annotated Corpus of English: The Penn Treebank', year: 1993, url: https://doi.org/10.21236/ada273556}

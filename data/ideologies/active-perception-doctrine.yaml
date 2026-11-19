@@ -16,5 +16,5 @@ relations:
   frenemies: [self-supervised-liberalism]
   rivals: [captionist-centralism, pixel-totalitarianism, corpus-fundamentalism]
 works:
-  - {title: "Active perception", year: 1988}
-  - {title: "Recurrent Models of Visual Attention", year: 2014, url: "https://arxiv.org/abs/1406.6247"}
+  - {title: Active perception, year: 1988, url: https://arxiv.org/abs/2608.13605}
+  - {title: Recurrent Models of Visual Attention, year: 2014, url: https://arxiv.org/abs/1406.6247}

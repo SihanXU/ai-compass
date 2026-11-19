@@ -16,6 +16,6 @@ relations:
   frenemies: [ai-doomerism, rlhf-paternalism]
   rivals: [effective-accelerationism, bitter-lesson-orthodoxy, harness-nihilism]
 works:
-  - {title: "Axiomatic Attribution for Deep Networks", year: 2017, url: "https://arxiv.org/abs/1703.01365"}
-  - {title: "Network Dissection: Quantifying Interpretability of Deep Visual Representations", year: 2017, url: "https://arxiv.org/abs/1704.05496"}
-  - {title: "Towards Monosemanticity: Decomposing Language Models With Dictionary Learning", year: 2023}
+  - {title: Axiomatic Attribution for Deep Networks, year: 2017, url: https://arxiv.org/abs/1703.01365}
+  - {title: 'Network Dissection: Quantifying Interpretability of Deep Visual Representations', year: 2017, url: https://arxiv.org/abs/1704.05796}
+  - {title: 'Towards Monosemanticity: Decomposing Language Models With Dictionary Learning', year: 2023, url: https://transformer-circuits.pub/2023/monosemantic-features/index.html}

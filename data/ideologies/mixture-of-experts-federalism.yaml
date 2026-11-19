@@ -16,6 +16,6 @@ relations:
   frenemies: [omni-model-absolutism, small-model-localism]
   rivals: [edge-ai-localism, local-model-mutualism]
 works:
-  - {title: "Adaptive Mixtures of Local Experts", year: 1991}
-  - {title: "Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer", year: 2017, url: "https://arxiv.org/abs/1701.06538"}
-  - {title: "Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity", year: 2021, url: "https://arxiv.org/abs/2101.03961"}
+  - {title: Adaptive Mixtures of Local Experts, year: 1991, url: https://doi.org/10.1109/icnn.1993.298760}
+  - {title: 'Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer', year: 2017, url: https://arxiv.org/abs/1701.06538}
+  - {title: 'Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity', year: 2021, url: https://arxiv.org/abs/2101.03961}

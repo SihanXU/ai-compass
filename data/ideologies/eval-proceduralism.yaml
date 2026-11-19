@@ -16,6 +16,6 @@ relations:
   frenemies: [radical-centrism-or-leaderboardism, emergentism]
   rivals: [prompt-anarchism, effective-accelerationism, objectiveless-anarchism]
 works:
-  - {title: "ImageNet: A large-scale hierarchical image database", year: 2009}
-  - {title: "GLUE: A Multi-Task Benchmark and Analysis Platform for Natural Language Understanding", year: 2018, url: "https://arxiv.org/abs/1804.07461"}
-  - {title: "Holistic Evaluation of Language Models", year: 2022, url: "https://arxiv.org/abs/2211.09110"}
+  - {title: 'ImageNet: A large-scale hierarchical image database', year: 2009, url: https://doi.org/10.1109/cvpr.2009.5206848}
+  - {title: 'GLUE: A Multi-Task Benchmark and Analysis Platform for Natural Language Understanding', year: 2018, url: https://arxiv.org/abs/1804.07461}
+  - {title: Holistic Evaluation of Language Models, year: 2022, url: https://arxiv.org/abs/2211.09110}

@@ -16,4 +16,4 @@ relations:
   frenemies: [sim-to-real-pragmatism]
   rivals: [vla-monarchism, robot-foundation-imperialism, humanoid-centralism]
 works:
-  - {title: "ROS: an open-source Robot Operating System", year: 2009}
+  - {title: 'ROS: an open-source Robot Operating System', year: 2009, url: https://www.ros.org/}

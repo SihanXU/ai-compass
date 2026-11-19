@@ -16,6 +16,6 @@ relations:
   frenemies: [sensor-network-anarchism]
   rivals: [end-to-end-driving-absolutism, vla-monarchism]
 works:
-  - {title: "Probabilistic Robotics", year: 2005}
-  - {title: "Stanley: The Robot that Won the DARPA Grand Challenge", year: 2006}
-  - {title: "PointPillars: Fast Encoders for Object Detection from Point Clouds", year: 2018, url: "https://arxiv.org/abs/1812.05784"}
+  - {title: Probabilistic Robotics, year: 2005, url: http://www.probabilistic-robotics.org/}
+  - {title: 'Stanley: The Robot that Won the DARPA Grand Challenge', year: 2006, url: https://doi.org/10.1002/rob.20147}
+  - {title: 'PointPillars: Fast Encoders for Object Detection from Point Clouds', year: 2018, url: https://arxiv.org/abs/1812.05784}

@@ -408,5 +408,5 @@ dialog.share::backdrop { background: rgba(10, 12, 16, 0.55); }
 }
 
 /* comments (giscus) */
-.giscus-box { margin: 0.5rem 0 1rem; min-height: 120px; }
+.giscus-box { margin: 2.5rem 0 1rem; min-height: 120px; }
 .giscus-box .giscus, .giscus-box .giscus-frame { width: 100%; }

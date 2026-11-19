@@ -35,7 +35,6 @@ const toc = [
   ...(works.length ? [['works', t(lang, 'works')]] : []),
   ['relationships', t(lang, 'relationsTitle')],
   ['how', t(lang, 'howTo')],
-  ['comments', t(lang, 'comments')],
 ];
 const relCols = [['friends', 'friends', friends], ['frenemies', 'frenemies', frenemies], ['enemies', 'enemies', enemies]];
 ---
@@ -119,9 +118,7 @@ const relCols = [['friends', 'friends', friends], ['frenemies', 'frenemies', fre
                     <a class="btn" href={url(lang, 'test/quick')}>{t(lang, 'quickTitle')}</a>
                 </div>
 
-                <h2 id="comments">{t(lang, 'comments')}</h2>
-                <p class="muted" style="font-size:0.95rem">{t(lang, 'commentsDek')}</p>
-                <div class="giscus-box" data-giscus data-term={`wiki/${id}`} data-lang={lang === 'zh' ? 'zh-CN' : 'en'}></div>
+                <div class="giscus-box" id="comments" data-giscus data-term={`wiki/${id}`} data-lang={lang === 'zh' ? 'zh-CN' : 'en'}></div>
 
                 <div class="cats">
                     <b>{t(lang, 'categories')}:</b>

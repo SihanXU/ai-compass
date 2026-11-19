@@ -6,7 +6,8 @@ motto:
   en: Intelligence lives in the hands
   zh: 智能长在手上
 level: 2
-point: { x: 1, y: -0.241, p: 0.849 }
+kind: topic
+point: { x: 1, y: -0.235, p: 0.843 }
 place:
   col: 12
   row: 6

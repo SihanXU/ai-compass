@@ -6,7 +6,8 @@ motto:
   en: The world is 3D; so should models be
   zh: 世界是三维的，模型也该是
 level: 2
-point: { x: 0.582, y: -0.514, p: 0.871 }
+kind: topic
+point: { x: 0.57, y: -0.503, p: 0.865 }
 place:
   col: 8
   row: 7

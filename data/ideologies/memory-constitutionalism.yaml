@@ -6,7 +6,8 @@ motto:
   en: Long-term memory is the agent’s constitution
   zh: 长期记忆是智能体的宪法
 level: 7
-point: { x: -0.7, y: -0.981, p: -0.481 }
+kind: topic
+point: { x: -0.685, y: -0.96, p: -0.478 }
 place:
   col: 1
   row: 11

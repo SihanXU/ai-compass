@@ -6,7 +6,8 @@ motto:
   en: LoRA for everyone
   zh: LoRA 人人可做
 level: 4
-point: { x: -0.7, y: -0.467, p: 0.285 }
+kind: topic
+point: { x: -0.685, y: -0.457, p: 0.283 }
 place:
   col: 2
   row: 5

@@ -6,7 +6,8 @@ motto:
   en: The brain is a prediction machine
   zh: 大脑就是一台预测机器
 level: 3
-point: { x: 0.958, y: 0.671, p: 0.598 }
+kind: core
+point: { x: 0.938, y: 0.656, p: 0.594 }
 place:
   col: 10
   row: 2

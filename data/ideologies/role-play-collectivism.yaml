@@ -6,7 +6,8 @@ motto:
   en: Every agent gets a persona
   zh: 每个代理一个人设
 level: 6
-point: { x: -0.814, y: -1, p: -0.181 }
+kind: topic
+point: { x: -0.796, y: -0.993, p: -0.179 }
 place:
   col: 0
   row: 11

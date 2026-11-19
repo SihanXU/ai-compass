@@ -30,6 +30,8 @@ const Ideology = z.object({
   name: pair,
   motto: pair,
   level: z.number().int().min(1).max(9),
+  kind: z.enum(['core', 'topic']).optional(),
+  anchor: z.object({ x: z.number().min(-1).max(1), y: z.number().min(-1).max(1), p: z.number().min(-1).max(1) }).strict().optional(),
   point: z.object({ x: z.number().min(-1).max(1), y: z.number().min(-1).max(1), p: z.number().min(-1).max(1) }).strict().optional(),
   place: Place,
   parents: z.array(id).default([]),
@@ -65,6 +67,7 @@ for (const i of ideologies) {
 }
 for (let r = 0; r < ROWS; r++) for (let c = 0; c < COLS; c++) if (!inCenter(c, r) && !taken.has(`${c},${r}`)) err('chart', `cell col ${c}, row ${r} is empty`);
 if (!taken.has('center')) err('chart', 'the centre block is empty');
+for (const i of ideologies) if (!i.place.ring && !i.kind) err(`data/ideologies/${i.id}.yaml`, 'needs kind: core or topic');
 
 // references
 for (const i of ideologies) {

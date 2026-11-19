@@ -6,7 +6,8 @@ motto:
   en: No body, no mind
   zh: 没有身体就没有智能
 level: 3
-point: { x: 1, y: 1, p: 0.586 }
+kind: core
+point: { x: 1, y: 1, p: 0.582 }
 place:
   col: 12
   row: 0

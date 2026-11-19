@@ -6,7 +6,8 @@ motto:
   en: A hundred million years in simulation
   zh: 在仿真里跑一亿年
 level: 4
-point: { x: 0.729, y: 0.731, p: 0.299 }
+kind: topic
+point: { x: 0.713, y: 0.715, p: 0.297 }
 place:
   col: 9
   row: 1

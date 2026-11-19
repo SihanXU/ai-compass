@@ -6,7 +6,8 @@ motto:
   en: Human priors always lose to compute
   zh: 人类先验终将被算力碾过
 level: 8
-point: { x: -0.014, y: 1, p: -0.646 }
+kind: core
+point: { x: -0.013, y: 1, p: -0.642 }
 place:
   col: 5
   row: 0

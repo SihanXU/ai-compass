@@ -6,11 +6,12 @@ motto:
   en: World state and rules are code
   zh: 世界的状态与规则都是代码
 level: 3
-point: { x: -0.422, y: -0.915, p: 0.527 }
+kind: topic
+point: { x: -0.413, y: -0.895, p: 0.524 }
 place:
   col: 5
   row: 9
-parents: [program-synthesis-doctrine, code-as-thought]
+parents: [code-as-thought]
 relations:
   allies: [game-agent-doctrine, classical-planning-restoration, generative-village-communalism]
   frenemies: [world-model-vanguardism, physical-law-absolutism]

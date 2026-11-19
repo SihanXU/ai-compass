@@ -6,7 +6,8 @@ motto:
   en: Video generation is world simulation
   zh: 视频生成就是世界模拟
 level: 7
-point: { x: 0.636, y: 0.853, p: -0.52 }
+kind: core
+point: { x: 0.622, y: 0.834, p: -0.516 }
 place:
   col: 8
   row: 1

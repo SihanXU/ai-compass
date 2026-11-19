@@ -6,7 +6,8 @@ motto:
   en: Small and fine, on device
   zh: 小而美，跑在端侧
 level: 5
-point: { x: -0.59, y: -0.766, p: -0.119 }
+kind: topic
+point: { x: -0.577, y: -0.749, p: -0.118 }
 place:
   col: 4
   row: 6

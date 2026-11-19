@@ -6,7 +6,8 @@ motto:
   en: Agents write the code and run the tests
   zh: 代理自己写代码、跑测试
 level: 6
-point: { x: -0.882, y: -0.488, p: -0.296 }
+kind: topic
+point: { x: -0.863, y: -0.477, p: -0.294 }
 place:
   col: 0
   row: 6

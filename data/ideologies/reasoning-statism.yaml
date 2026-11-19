@@ -6,7 +6,8 @@ motto:
   en: Lengthen the chain of thought; intelligence follows
   zh: 思维链拉长，智能就来了
 level: 7
-point: { x: -1, y: 0.879, p: -0.537 }
+kind: core
+point: { x: -1, y: 0.86, p: -0.534 }
 place:
   col: 0
   row: 1

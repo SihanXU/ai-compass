@@ -6,7 +6,8 @@ motto:
   en: Think longer at inference
   zh: 推理时多想一会儿
 level: 6
-point: { x: -0.7, y: 0.424, p: -0.246 }
+kind: core
+point: { x: -0.685, y: 0.415, p: -0.245 }
 place:
   col: 2
   row: 3

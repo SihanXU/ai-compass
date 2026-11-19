@@ -6,7 +6,8 @@ motto:
   en: Fuse early, fuse everything
   zh: 越早融合越强
 level: 6
-point: { x: 0.502, y: 0.774, p: -0.164 }
+kind: topic
+point: { x: 0.491, y: 0.757, p: -0.162 }
 place:
   col: 6
   row: 2

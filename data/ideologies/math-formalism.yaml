@@ -6,7 +6,8 @@ motto:
   en: Only what is proved is reasoned
   zh: 能证明的才算推理
 level: 3
-point: { x: -0.986, y: -0.861, p: 0.388 }
+kind: topic
+point: { x: -0.965, y: -0.843, p: 0.386 }
 place:
   col: 0
   row: 8

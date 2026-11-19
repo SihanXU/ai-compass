@@ -6,7 +6,8 @@ motto:
   en: Meaning can be written in logic
   zh: 意义可以用逻辑写出来
 level: 1
-point: { x: -0.689, y: -0.838, p: 0.904 }
+kind: topic
+point: { x: -0.674, y: -0.82, p: 0.898 }
 place:
   col: 1
   row: 8

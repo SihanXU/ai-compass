@@ -6,7 +6,8 @@ motto:
   en: Learning with no finish line
   zh: 没有终点的学习
 level: 1
-point: { x: 0.037, y: -0.461, p: 1 }
+kind: core
+point: { x: 0.036, y: -0.451, p: 1 }
 place:
   col: 7
   row: 7

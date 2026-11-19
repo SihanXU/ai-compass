@@ -6,7 +6,8 @@ motto:
   en: Tokens and parameters, by five-year plan
   zh: token 与参数按五年计划配比
 level: 9
-point: { x: -0.545, y: 0.794, p: -1 }
+kind: core
+point: { x: -0.534, y: 0.777, p: -1 }
 place:
   col: 4
   row: 2

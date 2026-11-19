@@ -6,7 +6,8 @@ motto:
   en: Training across a thousand homes
   zh: 训练分布在千家万户
 level: 5
-point: { x: 0, y: -0.695, p: 0 }
+kind: topic
+point: { x: 0, y: -0.68, p: 0 }
 place:
   col: 7
   row: 8

@@ -6,7 +6,8 @@ motto:
   en: Models flow through the network
   zh: 模型在网络里流动
 level: 7
-point: { x: -0.7, y: -0.739, p: -0.54 }
+kind: topic
+point: { x: -0.685, y: -0.723, p: -0.536 }
 place:
   col: 1
   row: 6

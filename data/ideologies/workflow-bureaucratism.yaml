@@ -6,13 +6,14 @@ motto:
   en: Every step goes in the flowchart
   zh: 每一步都写进流程图
 level: 8
-point: { x: -0.396, y: -0.997, p: -0.679 }
+kind: core
+point: { x: -0.388, y: -0.976, p: -0.674 }
 place:
   col: 5
   row: 11
-parents: [chain-syndicalism]
+parents: []
 relations:
-  allies: [chain-syndicalism, function-call-federalism, eval-proceduralism]
+  allies: [function-call-federalism, eval-proceduralism]
   frenemies: [harness-liberalism, multi-agent-parliamentarism]
   rivals: [autonomous-agent-anarchism, agent-anarcho-syndicalism, prompt-anarchism]
 works:

@@ -6,7 +6,8 @@ motto:
   en: Mouse and keyboard are the universal API
   zh: 鼠标键盘是通用接口
 level: 3
-point: { x: -0.471, y: -0.136, p: 0.57 }
+kind: topic
+point: { x: -0.461, y: -0.133, p: 0.566 }
 place:
   col: 4
   row: 4

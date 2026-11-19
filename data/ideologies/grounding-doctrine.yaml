@@ -6,7 +6,8 @@ motto:
   en: Symbols must be grounded in perception
   zh: 符号必须扎根于感知
 level: 2
-point: { x: 1, y: 0.614, p: 0.74 }
+kind: core
+point: { x: 1, y: 0.601, p: 0.735 }
 place:
   col: 11
   row: 3

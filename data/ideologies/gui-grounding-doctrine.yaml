@@ -6,7 +6,8 @@ motto:
   en: First, find the button
   zh: 先认清那个按钮
 level: 3
-point: { x: 0.599, y: -0.453, p: 0.523 }
+kind: topic
+point: { x: 0.586, y: -0.443, p: 0.519 }
 place:
   col: 8
   row: 6

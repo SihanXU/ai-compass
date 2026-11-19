@@ -6,7 +6,8 @@ motto:
   en: The world is made of objects
   zh: 世界由物体组成
 level: 1
-point: { x: 0.658, y: -0.559, p: 0.973 }
+kind: topic
+point: { x: 0.644, y: -0.547, p: 0.966 }
 place:
   col: 9
   row: 8

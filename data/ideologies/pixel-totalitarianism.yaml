@@ -6,7 +6,8 @@ motto:
   en: Text is just another image
   zh: 文字也只是一张图
 level: 4
-point: { x: 0.663, y: 0.784, p: 0.296 }
+kind: topic
+point: { x: 0.649, y: 0.767, p: 0.294 }
 place:
   col: 8
   row: 2

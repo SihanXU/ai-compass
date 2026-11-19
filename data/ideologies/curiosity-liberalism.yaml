@@ -6,7 +6,8 @@ motto:
   en: Intrinsic motivation drives exploration
   zh: 内在动机驱动探索
 level: 2
-point: { x: 0.651, y: 0.609, p: 0.864 }
+kind: core
+point: { x: 0.637, y: 0.596, p: 0.858 }
 place:
   col: 7
   row: 3

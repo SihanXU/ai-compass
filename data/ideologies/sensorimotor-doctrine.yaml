@@ -6,7 +6,8 @@ motto:
   en: Perception and action are one loop
   zh: 感知与行动是同一个回路
 level: 2
-point: { x: 1, y: 0.423, p: 0.837 }
+kind: core
+point: { x: 1, y: 0.414, p: 0.832 }
 place:
   col: 12
   row: 4

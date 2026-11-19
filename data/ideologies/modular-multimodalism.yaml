@@ -6,7 +6,8 @@ motto:
   en: Separate encoders, assembled
   zh: 各模态各有编码器，再拼起来
 level: 8
-point: { x: -0.734, y: -0.925, p: -0.76 }
+kind: core
+point: { x: -0.718, y: -0.905, p: -0.755 }
 place:
   col: 1
   row: 10

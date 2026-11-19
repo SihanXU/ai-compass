@@ -6,7 +6,8 @@ motto:
   en: The limits of language are the limits of the world
   zh: 语言的边界就是世界的边界
 level: 7
-point: { x: -0.836, y: -0.2, p: -0.608 }
+kind: topic
+point: { x: -0.819, y: -0.196, p: -0.604 }
 place:
   col: 1
   row: 4

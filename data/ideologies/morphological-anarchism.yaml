@@ -6,7 +6,8 @@ motto:
   en: Body and brain evolve together
   zh: 身体与大脑一起进化
 level: 1
-point: { x: 1, y: -0.748, p: 1 }
+kind: topic
+point: { x: 1, y: -0.732, p: 1 }
 place:
   col: 12
   row: 10

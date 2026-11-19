@@ -81,9 +81,12 @@ const sections = [
 
             <h2 id="matching">{zh ? '匹配' : 'Matching'}</h2>
             <p>{zh
-                ? '你的主义是距离你最近的那一格。距离以“格”为单位：横向一格是 2/13，纵向一格是 2/12；范式每差一个等级，相当于差约 0.7 格。正中央的大格虽然画成 3 × 2 格，但和其他格子一样按它的中心点匹配，不会因为面积大而多吸走人。简单版不看范式，只把横轴和纵轴各三等分，得到九个阵营之一。'
-                : 'Your ideology is the cell nearest to you, measured in cells: one column is 2/13 of x, one row 2/12 of y, and one paradigm level of mismatch costs about 0.7 of a cell. The centre block is drawn three cells wide and two tall, but it is matched at its centre point like any other cell, so its size does not pull extra people in. The quick test ignores paradigm and splits x and y into thirds, giving one of nine camps.'}</p>
-            <pre>d² = (Δx / (2/13))² + (Δy / (2/12))² + 0.5 × (Δp / 0.25)²</pre>
+                ? '你的主义是距离你最近的那一格。距离以“格”为单位：横向一格是 2/13，纵向一格是 2/12；范式每差一个等级，相当于差一格。正中央的大格虽然画成 3 × 2 格，但和其他格子一样按它的中心点匹配，不会因为面积大而多吸走人。简单版不看范式，只把横轴和纵轴各三等分，得到九个阵营之一。'
+                : 'Your ideology is the cell nearest to you, measured in cells: one column is 2/13 of x, one row 2/12 of y, and one paradigm level of mismatch costs one cell. The centre block is drawn three cells wide and two tall, but it is matched at its centre point like any other cell, so its size does not pull extra people in. The quick test ignores paradigm and splits x and y into thirds, giving one of nine camps.'}</p>
+            <pre>d² = (Δx / (2/13))² + (Δy / (2/12))² + (Δp / 0.25)²</pre>
+            <p>{zh
+                ? '主义分两类。核心立场是由这几根轴本身定义的立场，比如“Harness 自由主义”“世界模型先锋队”；专题主义讲一个具体话题，比如灵巧手、字节级建模、语音。测试只量轴上的位置，看不出你是否关心某个专题，所以结果的标题总是离你最近的核心立场；专题主义出现在“与你相近的还有”里。'
+                : 'Ideologies come in two kinds. Core stances are defined by the axes themselves, such as Harness Liberalism or World-Model Vanguardism; topic ideologies are about one subject, such as dexterous hands, byte-level models or speech. The test measures only a position on the axes and cannot tell whether you care about a subject, so a result is always headed by the nearest core stance, and topic ideologies appear among those close to you.'}</p>
             <p>{zh
                 ? '外圈称号各自写明条件（例如“速度 > 0.6”），满足就获得，可以同时获得多个。'
                 : 'Each ring title states its condition (for example “Speed > 0.6”); meet it and you earn the title, and you can earn several.'}</p>
@@ -95,6 +98,7 @@ const sections = [
             <p>{zh
                 ? '人们很少每题都选最极端的答案，所以原始分数会挤在中间。每根图轴各有一个拉伸系数，使 90% 的主义落在图的边界以内；所有测试者的分数都按同样的系数拉伸后再放到图上，因此答案相同的人和主义一定落在同一格。最后用匈牙利算法把主义分配到格子上，使整体移动最小；范式等级由拉伸后的范式分数决定。'
                 : 'People rarely answer every statement at the extreme, so raw scores crowd the middle. Each chart axis has a stretch factor that brings 90% of the ideologies inside the chart’s edges; every test-taker’s scores are stretched by the same factors before being placed, so a person and an ideology with the same answers land on the same cell. Ideologies are then assigned to cells by the Hungarian algorithm, with the least total displacement, and each paradigm level comes from the stretched paradigm score.'}</p>
+            <p>{zh ? '少数核心立场是为了覆盖图上原本空着的区域而写的（比如“新范式统一主义”）。它们的信徒同样会在作答时走向极端，把它们拉到区域边缘，所以这几个主义固定在它们要覆盖的区域中心（数据里的 anchor）。' : 'A few core stances were written to cover regions of the chart that had none (such as Neo-Paradigm Monism). Their adherents answer at the extremes like everyone else, which would pull them to the edge of the region, so these stances are anchored at the region they cover (anchor in the data).'}</p>
             {calibration && <pre>{`scale  x ${calibration.scale.x}   y ${calibration.scale.y}   p ${calibration.scale.p}`}</pre>}
             <p>{zh ? '这些作答记录在仓库的 data/calibration/personas/ 里，' : 'The answers are in data/calibration/personas/ in the repository, and '}<code>node scripts/calibrate.mjs</code>{zh ? ' 会重新完成整个校准。改了题目或词条之后，应该重新作答并重新校准。' : ' redoes the whole calibration. After statements or entries change, they should be answered again and the chart recalibrated.'}</p>
 

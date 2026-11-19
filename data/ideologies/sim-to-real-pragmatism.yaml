@@ -6,7 +6,8 @@ motto:
   en: Train in sim, deploy in real
   zh: 仿真里练，现实里用
 level: 5
-point: { x: 0.521, y: -0.666, p: -0.038 }
+kind: topic
+point: { x: 0.51, y: -0.652, p: -0.038 }
 place:
   col: 8
   row: 8

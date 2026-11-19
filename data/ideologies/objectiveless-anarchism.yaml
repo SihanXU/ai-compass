@@ -6,7 +6,8 @@ motto:
   en: No objective function
   zh: 不要目标函数
 level: 1
-point: { x: 0.7, y: -0.657, p: 1 }
+kind: topic
+point: { x: 0.685, y: -0.643, p: 1 }
 place:
   col: 10
   row: 8

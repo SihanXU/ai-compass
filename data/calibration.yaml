@@ -1,6 +1,6 @@
 # Written by scripts/calibrate.mjs from data/calibration/personas/. Do not edit by hand.
 # scale: how far each chart axis is stretched before a score is placed (see toChart in src/lib/compass.js).
 scale:
-  x: 1.4
-  'y': 1.39
-  p: 1.52
+  x: 1.37
+  'y': 1.36
+  p: 1.51

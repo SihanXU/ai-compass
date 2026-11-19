@@ -6,7 +6,8 @@ motto:
   en: Understand the model first
   zh: 先看懂模型再说
 level: 7
-point: { x: -0.626, y: -0.74, p: -0.549 }
+kind: topic
+point: { x: -0.613, y: -0.724, p: -0.545 }
 place:
   col: 3
   row: 6

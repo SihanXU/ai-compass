@@ -6,7 +6,8 @@ motto:
   en: Infinite context, no memory needed
   zh: 上下文无限长，记忆就免了
 level: 7
-point: { x: -0.14, y: 0.615, p: -0.53 }
+kind: topic
+point: { x: -0.137, y: 0.602, p: -0.527 }
 place:
   col: 5
   row: 3

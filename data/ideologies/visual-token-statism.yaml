@@ -6,7 +6,8 @@ motto:
   en: Discretize the pixels, unify the realm
   zh: 离散化像素，统一天下
 level: 9
-point: { x: -0.157, y: 0.983, p: -1 }
+kind: topic
+point: { x: -0.153, y: 0.962, p: -0.995 }
 place:
   col: 4
   row: 0

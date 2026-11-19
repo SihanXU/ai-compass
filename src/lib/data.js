@@ -66,7 +66,7 @@ export function clientData(lang) {
     lang,
     version: tests.version,
     ideologies: ideologies.map((i) => ({
-      id: i.id, name: i.name, motto: i.motto, level: i.level, place: i.place, point: i.point,
+      id: i.id, name: i.name, motto: i.motto, level: i.level, place: i.place, point: i.point, kind: i.kind,
     })),
     questions: Object.fromEntries(questionList.map((q) => [q.id, { effects: q.effects, sub: q.sub, text: q.text }])),
     tests: {

@@ -6,7 +6,8 @@ motto:
   en: Compute with real neurons
   zh: 用真的神经元计算
 level: 1
-point: { x: 0.694, y: 0.457, p: 1 }
+kind: topic
+point: { x: 0.679, y: 0.447, p: 1 }
 place:
   col: 9
   row: 3

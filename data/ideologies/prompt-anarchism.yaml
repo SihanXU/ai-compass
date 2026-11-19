@@ -6,7 +6,8 @@ motto:
   en: No system prompt
   zh: 没有系统提示
 level: 5
-point: { x: -0.7, y: 0.759, p: 0 }
+kind: topic
+point: { x: -0.685, y: 0.743, p: 0 }
 place:
   col: 2
   row: 1

@@ -6,7 +6,8 @@ motto:
   en: 'There is one interface: the chat box'
   zh: 接口只有一个：对话框
 level: 8
-point: { x: -0.656, y: 0.621, p: -0.76 }
+kind: topic
+point: { x: -0.642, y: 0.608, p: -0.755 }
 place:
   col: 4
   row: 3

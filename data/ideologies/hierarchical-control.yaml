@@ -6,7 +6,8 @@ motto:
   en: The cortex plans; the cerebellum executes
   zh: 大脑规划，小脑执行
 level: 2
-point: { x: 0.63, y: -0.858, p: 0.852 }
+kind: core
+point: { x: 0.617, y: -0.84, p: 0.847 }
 place:
   col: 9
   row: 10

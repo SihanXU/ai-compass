@@ -6,7 +6,8 @@ motto:
   en: Language is innate
   zh: 语言能力是天生的
 level: 1
-point: { x: -0.258, y: -0.891, p: 0.939 }
+kind: topic
+point: { x: -0.253, y: -0.872, p: 0.933 }
 place:
   col: 6
   row: 8

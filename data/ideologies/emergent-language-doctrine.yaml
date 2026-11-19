@@ -6,7 +6,8 @@ motto:
   en: Let agents invent their own language
   zh: 让代理自己发明语言
 level: 1
-point: { x: 0.65, y: -0.679, p: 1 }
+kind: topic
+point: { x: 0.636, y: -0.665, p: 1 }
 place:
   col: 10
   row: 9

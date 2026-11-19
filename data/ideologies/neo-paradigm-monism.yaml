@@ -1,0 +1,22 @@
+id: neo-paradigm-monism
+name:
+  en: Neo-Paradigm Monism
+  zh: 新范式统一主义
+motto:
+  en: "One model, but not this recipe"
+  zh: "一个模型，但不是这套配方"
+level: 1
+kind: core
+anchor: { x: 0.0, y: 0.8, p: 0.9 }
+point: { x: 0, y: 0.8, p: 0.9 }
+place:
+  col: 3
+  row: 7
+parents: [paradigm-iconoclasm]
+relations:
+  allies: [latent-prediction-doctrine, predictive-coding-statism, diffusion-autoregressive-syncretism]
+  frenemies: [bitter-lesson-orthodoxy, omni-model-absolutism]
+  rivals: [harness-liberalism, pretraining-maximalism, scaling-law-planism, workflow-bureaucratism]
+works:
+  - {title: "Mamba: Linear-Time Sequence Modeling with Selective State Spaces", year: 2023, url: https://arxiv.org/abs/2312.00752}
+  - {title: "The Forward-Forward Algorithm: Some Preliminary Investigations", year: 2022, url: https://arxiv.org/abs/2212.13345}

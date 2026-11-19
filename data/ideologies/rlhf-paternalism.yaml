@@ -6,7 +6,8 @@ motto:
   en: Models are raised by human preference
   zh: 模型由人类偏好管教长大
 level: 8
-point: { x: -0.676, y: 0.591, p: -0.846 }
+kind: topic
+point: { x: -0.662, y: 0.578, p: -0.841 }
 place:
   col: 3
   row: 3

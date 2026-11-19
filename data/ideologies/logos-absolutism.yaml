@@ -6,7 +6,8 @@ motto:
   en: The world is one token stream, read by one model
   zh: 世界是一串 token，模型只需一个
 level: 8
-point: { x: -0.466, y: 1, p: -0.639 }
+kind: core
+point: { x: -0.456, y: 1, p: -0.635 }
 place:
   col: 3
   row: 0

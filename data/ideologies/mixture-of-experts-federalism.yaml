@@ -6,7 +6,8 @@ motto:
   en: Let the experts specialize
   zh: 让专家各司其职
 level: 8
-point: { x: -0.7, y: 0.774, p: -0.705 }
+kind: topic
+point: { x: -0.685, y: 0.757, p: -0.7 }
 place:
   col: 1
   row: 0

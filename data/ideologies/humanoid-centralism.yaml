@@ -6,7 +6,8 @@ motto:
   en: The world is built for humanoids
   zh: 世界为人形设计，故用人形
 level: 8
-point: { x: 0.766, y: 0.684, p: -0.684 }
+kind: topic
+point: { x: 0.749, y: 0.669, p: -0.679 }
 place:
   col: 9
   row: 2

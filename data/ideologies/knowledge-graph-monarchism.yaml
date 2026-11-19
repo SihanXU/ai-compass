@@ -6,7 +6,8 @@ motto:
   en: Truth lives in triples
   zh: 真理住在三元组里
 level: 5
-point: { x: -0.332, y: -0.932, p: -0.029 }
+kind: topic
+point: { x: -0.325, y: -0.911, p: -0.029 }
 place:
   col: 6
   row: 10

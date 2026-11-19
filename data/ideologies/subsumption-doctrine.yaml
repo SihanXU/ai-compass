@@ -6,7 +6,8 @@ motto:
   en: Intelligence without representation
   zh: 无需表征的智能
 level: 4
-point: { x: 0.619, y: -0.461, p: 0.294 }
+kind: topic
+point: { x: 0.606, y: -0.451, p: 0.292 }
 place:
   col: 9
   row: 7

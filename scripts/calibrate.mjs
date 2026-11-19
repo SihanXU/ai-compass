@@ -39,6 +39,9 @@ const q90 = (k) => { const v = onChart.map((i) => Math.abs(raw[i.id][k])).sort((
 const scale = Object.fromEntries(['x', 'y', 'p'].map((k) => [k, Math.round((1 / Math.max(q90(k), 0.05)) * 100) / 100]));
 const cal = { scale };
 const pt = Object.fromEntries(ideologies.map((i) => [i.id, toChart(raw[i.id], cal)]));
+// a stance written to cover a region of the chart is anchored there: its adherents answer at the extremes, as every
+// persona does, which would pull it to the edge of the region it exists to cover
+for (const i of ideologies) if (i.anchor) pt[i.id] = { ...pt[i.id], ...i.anchor };
 
 // 3. assignment
 const cells = [];

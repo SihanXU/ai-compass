@@ -6,13 +6,14 @@ motto:
   en: A thousand small models beat one giant
   zh: 一千个小模型胜过一个大模型
 level: 4
-point: { x: -0.613, y: -0.87, p: 0.192 }
+kind: core
+point: { x: -0.6, y: -0.852, p: 0.191 }
 place:
   col: 4
   row: 8
 parents: [multi-agent-parliamentarism]
 relations:
-  allies: [small-model-localism, model-market-anarchism, agent-anarcho-communism, swarm-robotics]
+  allies: [small-model-localism, model-market-anarchism, agent-anarcho-syndicalism, swarm-robotics]
   frenemies: [mixture-of-experts-federalism]
   rivals: [compute-theocracy, scale-sublimism, compute-statism]
 works:

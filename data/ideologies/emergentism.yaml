@@ -6,7 +6,8 @@ motto:
   en: Scale it and everything emerges
   zh: 大到一定程度，什么都会冒出来
 level: 8
-point: { x: -0.572, y: 1, p: -0.748 }
+kind: core
+point: { x: -0.56, y: 1, p: -0.743 }
 place:
   col: 2
   row: 0

@@ -6,7 +6,8 @@ motto:
   en: The body computes
   zh: 身体本身就在计算
 level: 1
-point: { x: 0.948, y: -0.75, p: 0.896 }
+kind: topic
+point: { x: 0.928, y: -0.734, p: 0.89 }
 place:
   col: 11
   row: 9

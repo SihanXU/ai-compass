@@ -6,7 +6,8 @@ motto:
   en: Data stays home
   zh: 数据不出门
 level: 2
-point: { x: 0.734, y: -0.422, p: 0.686 }
+kind: topic
+point: { x: 0.718, y: -0.413, p: 0.682 }
 place:
   col: 10
   row: 6

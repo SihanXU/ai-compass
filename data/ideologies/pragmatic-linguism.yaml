@@ -1,0 +1,22 @@
+id: pragmatic-linguism
+name:
+  en: Pragmatic Linguism
+  zh: 务实语言主义
+motto:
+  en: "A language model, a few good tools, ship it"
+  zh: "一个语言模型，几件趁手的工具，先上线"
+level: 7
+kind: core
+anchor: { x: -0.8, y: -0.25, p: -0.6 }
+point: { x: -0.8, y: -0.25, p: -0.6 }
+place:
+  col: 8
+  row: 5
+parents: [neoliberal-linguism, tool-use-liberalism]
+relations:
+  allies: [rag-mutualism, function-call-federalism, instruction-corporatism, prompt-craftism]
+  frenemies: [harness-liberalism, chat-absolutism]
+  rivals: [autonomous-agent-anarchism, world-model-vanguardism, paradigm-iconoclasm]
+works:
+  - {title: "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks", year: 2020, url: https://arxiv.org/abs/2005.11401}
+  - {title: "Toolformer: Language Models Can Teach Themselves to Use Tools", year: 2023, url: https://arxiv.org/abs/2302.04761}

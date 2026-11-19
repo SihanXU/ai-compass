@@ -80,7 +80,7 @@ const data = { ...clientData(lang), strings, wiki: url(lang, 'wiki/'), test: url
 </Layout>
 
 <script>
-  import { toChart, decodeResult, rank, earned, campOf, ideologyColour, gridOf, COLS, ROWS, CENTER } from '../../lib/compass.js';
+  import { toChart, decodeResult, rank, headline, earned, campOf, ideologyColour, gridOf, COLS, ROWS, CENTER } from '../../lib/compass.js';
   import { ballSvg } from '../../lib/ball.js';
   import { drawShareCard } from '../../lib/sharecard.js';
   import qrcode from 'qrcode-generator';
@@ -110,8 +110,9 @@ const data = { ...clientData(lang), strings, wiki: url(lang, 'wiki/'), test: url
 
   function show({ mode, s, subs, c }) {
     const quick = mode === 'quick';
-    const ranked = rank(D.ideologies, s, quick);
-    const best = ranked[0].ide;
+    const best = headline(D.ideologies, s, quick)[0].ide;
+    // neighbours: everything nearby, topic ideologies included, other than the headline
+    const ranked = [{ ide: best }, ...rank(D.ideologies, s, quick).filter((e) => e.ide.id !== best.id)];
     const titles = quick ? [] : earned(D.ideologies, s);
     const bestCol = ideologyColour(best);
 

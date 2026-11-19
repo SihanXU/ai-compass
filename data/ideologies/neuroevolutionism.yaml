@@ -6,7 +6,8 @@ motto:
   en: Let evolution search
   zh: 让进化去搜索
 level: 1
-point: { x: 0.842, y: -0.22, p: 1 }
+kind: topic
+point: { x: 0.824, y: -0.215, p: 1 }
 place:
   col: 11
   row: 6

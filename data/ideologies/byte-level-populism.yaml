@@ -6,7 +6,8 @@ motto:
   en: Abolish tokenizers; return to bytes
   zh: 废除分词，回归字节
 level: 1
-point: { x: 0.308, y: 0.695, p: 0.912 }
+kind: topic
+point: { x: 0.301, y: 0.68, p: 0.906 }
 place:
   col: 6
   row: 3

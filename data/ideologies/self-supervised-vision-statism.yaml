@@ -6,14 +6,15 @@ motto:
   en: No labels, just pixels
   zh: 不要标签，只要像素
 level: 5
-point: { x: 1, y: 0.598, p: -0.118 }
+kind: topic
+point: { x: 0.98, y: 0.585, p: -0.117 }
 place:
   col: 12
   row: 3
 parents: [self-supervised-liberalism]
 relations:
   allies: [representation-centralism, visualism, latent-prediction-doctrine]
-  frenemies: [contrastive-alignmentism, contrastive-liberalism]
+  frenemies: [contrastive-alignmentism]
   rivals: [captionist-centralism, text-only-conservatism, multimodal-linguism]
 works:
   - {title: "Masked Autoencoders Are Scalable Vision Learners", year: 2021, url: "https://arxiv.org/abs/2111.06377"}

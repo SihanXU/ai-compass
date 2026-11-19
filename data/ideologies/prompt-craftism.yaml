@@ -6,13 +6,14 @@ motto:
   en: Every word is worth a fortune
   zh: 一字千金
 level: 8
-point: { x: -0.711, y: -0.815, p: -0.865 }
+kind: topic
+point: { x: -0.695, y: -0.797, p: -0.859 }
 place:
   col: 1
   row: 7
 parents: [prompt-monarchism]
 relations:
-  allies: [chain-syndicalism, role-play-collectivism, prompt-monarchism]
+  allies: [workflow-bureaucratism, role-play-collectivism, prompt-monarchism]
   frenemies: [context-engineering-liberalism]
   rivals: [prompt-anarchism, fine-tune-cooperativism, bitter-lesson-orthodoxy]
 works:

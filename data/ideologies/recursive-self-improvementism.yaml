@@ -6,7 +6,8 @@ motto:
   en: Agents build better agents
   zh: 代理造出更好的代理
 level: 2
-point: { x: -0.662, y: -0.871, p: 0.801 }
+kind: core
+point: { x: -0.647, y: -0.853, p: 0.796 }
 place:
   col: 2
   row: 9

@@ -6,7 +6,8 @@ motto:
   en: Sound came before writing
   zh: 声音比文字更早
 level: 3
-point: { x: 0.631, y: 0.819, p: 0.518 }
+kind: topic
+point: { x: 0.617, y: 0.801, p: 0.515 }
 place:
   col: 7
   row: 2

@@ -6,7 +6,8 @@ motto:
   en: 'Plan, perceive, control: divide and rule'
   zh: 规划、感知、控制分而治之
 level: 5
-point: { x: 0.513, y: -1, p: 0.052 }
+kind: core
+point: { x: 0.502, y: -1, p: 0.051 }
 place:
   col: 9
   row: 11

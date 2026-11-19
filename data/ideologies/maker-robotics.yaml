@@ -6,7 +6,8 @@ motto:
   en: A $300 robot arm
   zh: 三百美元的机械臂
 level: 5
-point: { x: 0.841, y: 0.262, p: -0.109 }
+kind: topic
+point: { x: 0.823, y: 0.256, p: -0.108 }
 place:
   col: 9
   row: 4

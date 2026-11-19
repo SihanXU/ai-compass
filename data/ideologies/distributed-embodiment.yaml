@@ -6,7 +6,8 @@ motto:
   en: One mind, countless bodies
   zh: 一个心智，无数身体
 level: 2
-point: { x: 1, y: -0.612, p: 0.868 }
+kind: topic
+point: { x: 1, y: -0.599, p: 0.862 }
 place:
   col: 12
   row: 8

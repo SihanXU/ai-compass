@@ -6,7 +6,8 @@ motto:
   en: Multimodal ends, visual means
   zh: 目标是多模态，骨架是视觉
 level: 6
-point: { x: 0.731, y: 0.933, p: -0.147 }
+kind: core
+point: { x: 0.715, y: 0.913, p: -0.146 }
 place:
   col: 10
   row: 0

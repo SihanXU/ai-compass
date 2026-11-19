@@ -6,7 +6,8 @@ motto:
   en: Learn from the visual cortex
   zh: 向视觉皮层学习
 level: 1
-point: { x: 0.736, y: 0.353, p: 1 }
+kind: topic
+point: { x: 0.72, y: 0.345, p: 1 }
 place:
   col: 8
   row: 4

@@ -6,7 +6,8 @@ motto:
   en: Predict representations, not pixels
   zh: 预测表征，而不是像素
 level: 1
-point: { x: 0.979, y: 0.454, p: 0.997 }
+kind: core
+point: { x: 0.958, y: 0.444, p: 0.99 }
 place:
   col: 11
   row: 4

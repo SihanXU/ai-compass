@@ -6,7 +6,8 @@ motto:
   en: Every body, one policy
   zh: 所有本体，同一个策略
 level: 7
-point: { x: 0.998, y: 0.958, p: -0.447 }
+kind: core
+point: { x: 0.976, y: 0.937, p: -0.444 }
 place:
   col: 11
   row: 0

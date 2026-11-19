@@ -6,7 +6,8 @@ motto:
   en: The right context beats a bigger model
   zh: 喂对上下文比换模型重要
 level: 6
-point: { x: -0.646, y: -0.878, p: -0.373 }
+kind: core
+point: { x: -0.632, y: -0.859, p: -0.37 }
 place:
   col: 3
   row: 9

@@ -1,0 +1,22 @@
+id: systems-pragmatism
+name:
+  en: Systems Pragmatism
+  zh: 系统实用主义
+motto:
+  en: "Build the system; the modality can wait"
+  zh: "先把系统搭起来，模态之后再说"
+level: 5
+kind: core
+anchor: { x: 0.05, y: -0.6, p: 0.0 }
+point: { x: 0.05, y: -0.6, p: 0 }
+place:
+  col: 5
+  row: 10
+parents: [pipeline-pragmatism, harness-liberalism]
+relations:
+  allies: [eval-proceduralism, memory-constitutionalism, protocol-federalism, composable-liberalism]
+  frenemies: [workflow-bureaucratism, harness-nihilism]
+  rivals: [bitter-lesson-orthodoxy, omni-model-absolutism, scale-sublimism]
+works:
+  - {title: "Hidden Technical Debt in Machine Learning Systems", year: 2015}
+  - {title: "DSPy: Compiling Declarative Language Model Calls into Self-Improving Pipelines", year: 2023, url: https://arxiv.org/abs/2310.03714}

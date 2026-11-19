@@ -6,7 +6,8 @@ motto:
   en: 'See, hear, speak, act: delegate it all'
   zh: 看、听、说、做都交给代理
 level: 8
-point: { x: -0.355, y: -0.782, p: -0.76 }
+kind: core
+point: { x: -0.347, y: -0.765, p: -0.755 }
 place:
   col: 5
   row: 7

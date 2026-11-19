@@ -6,7 +6,8 @@ motto:
   en: No plans, only reflexes
   zh: 不要计划，只要反射
 level: 3
-point: { x: 0.638, y: -0.428, p: 0.429 }
+kind: topic
+point: { x: 0.625, y: -0.419, p: 0.426 }
 place:
   col: 9
   row: 6

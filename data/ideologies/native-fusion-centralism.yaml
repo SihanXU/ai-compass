@@ -6,7 +6,8 @@ motto:
   en: Fused from the very first token
   zh: 从第一个 token 起就融合
 level: 8
-point: { x: 0.568, y: 0.942, p: -0.736 }
+kind: core
+point: { x: 0.556, y: 0.922, p: -0.731 }
 place:
   col: 7
   row: 1

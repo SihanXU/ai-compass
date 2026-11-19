@@ -6,13 +6,14 @@ motto:
   en: Model and index help each other
   zh: 模型与知识库互助
 level: 7
-point: { x: -0.589, y: -0.965, p: -0.544 }
+kind: topic
+point: { x: -0.576, y: -0.944, p: -0.54 }
 place:
   col: 4
   row: 10
 parents: [retrieval-statism]
 relations:
-  allies: [retrieval-statism, knowledge-graph-monarchism, chain-syndicalism, memory-constitutionalism]
+  allies: [retrieval-statism, knowledge-graph-monarchism, workflow-bureaucratism, memory-constitutionalism]
   frenemies: [context-engineering-liberalism]
   rivals: [long-context-expansionism, pretraining-maximalism]
 works:

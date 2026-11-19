@@ -6,7 +6,8 @@ motto:
   en: A single system prompt rules all
   zh: 一切由一段系统提示统治
 level: 7
-point: { x: -0.622, y: 0.686, p: -0.583 }
+kind: topic
+point: { x: -0.609, y: 0.671, p: -0.579 }
 place:
   col: 3
   row: 2

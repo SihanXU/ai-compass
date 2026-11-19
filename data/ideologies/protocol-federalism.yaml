@@ -6,13 +6,14 @@ motto:
   en: One standard protocol connects every tool
   zh: 一个标准协议连起所有工具
 level: 5
-point: { x: -0.395, y: -0.915, p: -0.118 }
+kind: topic
+point: { x: -0.386, y: -0.895, p: -0.117 }
 place:
   col: 5
   row: 8
 parents: [function-call-federalism]
 relations:
-  allies: [harness-liberalism, tool-use-liberalism, composable-liberalism, agent-anarcho-communism]
+  allies: [harness-liberalism, tool-use-liberalism, composable-liberalism, agent-anarcho-syndicalism]
   frenemies: [workflow-bureaucratism, computer-use-liberalism]
   rivals: [chat-absolutism, omni-model-absolutism, any-to-any-imperialism]
 works:

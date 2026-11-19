@@ -5,8 +5,9 @@ name:
 motto:
   en: Compute is power; parameters are justice
   zh: 算力即国力，参数即正义
-level: 9
-point: { x: -0.54, y: 0.858, p: -0.878 }
+level: 8
+kind: core
+point: { x: -0.528, y: 0.839, p: -0.872 }
 place:
   col: 3
   row: 1

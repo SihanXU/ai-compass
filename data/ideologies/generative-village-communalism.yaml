@@ -6,7 +6,8 @@ motto:
   en: A whole town of agents
   zh: 一整个小镇的代理
 level: 5
-point: { x: -0.7, y: -0.851, p: -0.119 }
+kind: topic
+point: { x: -0.685, y: -0.832, p: -0.119 }
 place:
   col: 1
   row: 9

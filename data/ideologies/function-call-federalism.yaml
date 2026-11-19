@@ -6,14 +6,15 @@ motto:
   en: Every capability is an API
   zh: 一切能力皆是 API
 level: 6
-point: { x: -0.533, y: -0.827, p: -0.365 }
+kind: topic
+point: { x: -0.522, y: -0.809, p: -0.363 }
 place:
   col: 4
   row: 7
 parents: [tool-use-liberalism]
 relations:
   allies: [protocol-federalism, tool-use-liberalism, workflow-bureaucratism]
-  frenemies: [computer-use-liberalism, chain-syndicalism]
+  frenemies: [computer-use-liberalism, workflow-bureaucratism]
   rivals: [visual-agent-doctrine, omni-model-absolutism]
 works:
   - {title: "HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in Hugging Face", year: 2023, url: "https://arxiv.org/abs/2303.17580"}

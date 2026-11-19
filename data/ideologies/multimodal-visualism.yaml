@@ -6,7 +6,8 @@ motto:
   en: Vision is the substance; the rest assist
   zh: 视觉是本体，其余模态辅佐
 level: 4
-point: { x: 1, y: 0.033, p: 0.279 }
+kind: core
+point: { x: 0.997, y: 0.032, p: 0.277 }
 place:
   col: 12
   row: 5

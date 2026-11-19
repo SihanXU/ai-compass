@@ -6,7 +6,8 @@ motto:
   en: One brain reigns over every robot
   zh: 一个大脑统治所有机器人
 level: 8
-point: { x: -0.257, y: 0.92, p: -0.671 }
+kind: core
+point: { x: -0.252, y: 0.9, p: -0.666 }
 place:
   col: 4
   row: 1

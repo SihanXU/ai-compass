@@ -6,7 +6,8 @@ motto:
   en: Time is the neglected modality
   zh: 时间是被忽略的模态
 level: 4
-point: { x: 0.939, y: 0.641, p: 0.309 }
+kind: topic
+point: { x: 0.919, y: 0.628, p: 0.307 }
 place:
   col: 10
   row: 3

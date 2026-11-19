@@ -6,7 +6,8 @@ motto:
   en: GPU at home, weights in hand
   zh: 显卡在家，权重在手
 level: 7
-point: { x: -0.7, y: -0.665, p: -0.43 }
+kind: topic
+point: { x: -0.685, y: -0.65, p: -0.427 }
 place:
   col: 1
   row: 5

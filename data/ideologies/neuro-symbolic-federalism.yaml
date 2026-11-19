@@ -6,13 +6,14 @@ motto:
   en: Neural perception, symbolic reasoning
   zh: 神经网络感知，符号系统推理
 level: 3
-point: { x: -0.404, y: -1, p: 0.586 }
+kind: core
+point: { x: -0.395, y: -1, p: 0.582 }
 place:
   col: 4
   row: 11
 parents: [symbolic-restorationism, composable-liberalism]
 relations:
-  allies: [program-synthesis-doctrine, classical-planning-restoration, math-formalism, object-centrism]
+  allies: [world-as-code-doctrine, classical-planning-restoration, math-formalism, object-centrism]
   frenemies: [knowledge-graph-monarchism, code-as-thought]
   rivals: [bitter-lesson-orthodoxy, next-token-totalitarianism, emergentism]
 works:

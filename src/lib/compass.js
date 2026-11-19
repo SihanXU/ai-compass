@@ -113,9 +113,16 @@ export function distance(ide, s, pw) {
 export function rank(ideologies, s, quick = false) {
   return ideologies
     .filter((i) => !i.place.ring)
-    .map((ide) => ({ ide, d: distance(ide, s, quick ? 0 : 0.5) }))
+    .map((ide) => ({ ide, d: distance(ide, s, quick ? 0 : 1) }))
     .sort((a, b) => a.d - b.d);
 }
+
+/**
+ * The headline result: the nearest core stance. Topic ideologies (one subject: hands, bytes, a protocol…) sit on the
+ * chart and in the wiki, and appear among the neighbours, but a position on three axes cannot tell whether someone
+ * cares about their subject, so they never stand for a whole result.
+ */
+export const headline = (ideologies, s, quick = false) => rank(ideologies.filter((i) => i.kind !== 'topic'), s, quick);
 
 /** A ring condition like { a: '>0.6', x: '<-0.7' }: every clause must hold. */
 export function meets(when, s) {
@@ -217,7 +224,7 @@ export function consistency(questions, answers) {
  * cells to the current score. Returns { id, pair: [ideA, ideB] } (the pair it separates most), or null.
  */
 export function pickFollowUp(questions, pool, asked, ideologies, s) {
-  const top = rank(ideologies, s).slice(0, 4);
+  const top = headline(ideologies, s).slice(0, 4);
   const pts = top.map((e) => ({ ide: e.ide, d: e.d, pt: pointOf(e.ide) }));
   let best = null;
   for (const id of pool) {

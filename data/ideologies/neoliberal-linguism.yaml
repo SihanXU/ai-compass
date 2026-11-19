@@ -6,7 +6,8 @@ motto:
   en: The LM is the backbone; the rest are plugins
   zh: 语言模型是主干，其余皆插件
 level: 9
-point: { x: -0.856, y: -0.844, p: -0.935 }
+kind: core
+point: { x: -0.838, y: -0.825, p: -0.929 }
 place:
   col: 0
   row: 7

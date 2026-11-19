@@ -6,7 +6,8 @@ motto:
   en: The model must obey Newton
   zh: 模型必须服从牛顿
 level: 2
-point: { x: 0.327, y: -0.277, p: 0.748 }
+kind: topic
+point: { x: 0.32, y: -0.271, p: 0.743 }
 place:
   col: 6
   row: 4

@@ -6,7 +6,8 @@ motto:
   en: The web’s text is all knowledge
   zh: 互联网文本就是全部知识
 level: 8
-point: { x: -1, y: 0.715, p: -0.716 }
+kind: core
+point: { x: -1, y: 0.699, p: -0.711 }
 place:
   col: 0
   row: 2

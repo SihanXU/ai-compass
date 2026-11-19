@@ -5,7 +5,7 @@ summary: "Ring title for extreme Language scores: language is not one modality a
 
 Logocentrism is a ring title earned when the Language-World score falls below -0.85, the far left edge of the chart, whatever the position on the vertical axis. The name borrows a term from philosophy and wears it with pride rather than as a criticism: in the beginning was the Word. Its holders believe reasoning is fundamentally linguistic, that a chain of thought is the thinking rather than a report of it, and that perception and action matter only insofar as they can be described, labelled and reasoned about in language.
 
-Because it is about the horizontal extreme alone, a logocentrist can be a monolith-scaler or a harness-builder; what unites them is that every other modality is translated into words before anything important happens. Its Ultra-Orthodox shade reflects that this is the reigning consensus of the language model era, defended against the rising tide of world-model and embodiment advocates.
+Because it is about the horizontal extreme alone, a logocentrist can be a monolith-scaler or a harness-builder; what unites them is that every other modality is translated into words before anything important happens. Its Orthodox shade reflects that this is the reigning consensus of the language model era, defended against the rising tide of world-model and embodiment advocates.
 
 ## Arguments
 

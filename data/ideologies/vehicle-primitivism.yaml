@@ -6,7 +6,8 @@ motto:
   en: Back to the light-seeking little vehicle
   zh: 回到最简单的趋光小车
 level: 1
-point: { x: 0.883, y: -0.797, p: 1 }
+kind: topic
+point: { x: 0.864, y: -0.78, p: 1 }
 place:
   col: 11
   row: 10

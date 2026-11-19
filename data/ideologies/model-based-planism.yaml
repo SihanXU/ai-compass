@@ -6,7 +6,8 @@ motto:
   en: Plan in imagination
   zh: 在想象中规划
 level: 2
-point: { x: 0.779, y: -0.125, p: 0.774 }
+kind: core
+point: { x: 0.762, y: -0.122, p: 0.769 }
 place:
   col: 9
   row: 5

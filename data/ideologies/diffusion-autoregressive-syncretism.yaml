@@ -6,7 +6,8 @@ motto:
   en: Denoising and autoregression are one body
   zh: 去噪与自回归本是一体
 level: 6
-point: { x: 0.528, y: 1, p: -0.245 }
+kind: topic
+point: { x: 0.517, y: 1, p: -0.243 }
 place:
   col: 6
   row: 0

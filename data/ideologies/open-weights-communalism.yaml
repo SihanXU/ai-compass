@@ -6,7 +6,8 @@ motto:
   en: Weights belong to the people
   zh: 权重属于人民
 level: 2
-point: { x: -0.7, y: -0.811, p: 0.76 }
+kind: topic
+point: { x: -0.685, y: -0.793, p: 0.755 }
 place:
   col: 2
   row: 7

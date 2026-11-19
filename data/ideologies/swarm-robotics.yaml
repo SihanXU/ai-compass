@@ -6,7 +6,8 @@ motto:
   en: Simple units, complex swarms
   zh: 简单个体，复杂集体
 level: 2
-point: { x: 0.822, y: -0.816, p: 0.839 }
+kind: topic
+point: { x: 0.804, y: -0.798, p: 0.834 }
 place:
   col: 11
   row: 11

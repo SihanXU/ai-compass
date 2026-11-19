@@ -6,7 +6,8 @@ motto:
   en: The model is the engine; the harness is the car
   zh: 模型是引擎，harness 才是车
 level: 7
-point: { x: -0.637, y: -0.953, p: -0.436 }
+kind: core
+point: { x: -0.624, y: -0.933, p: -0.434 }
 place:
   col: 3
   row: 11

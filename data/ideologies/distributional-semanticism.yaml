@@ -6,7 +6,8 @@ motto:
   en: A word is known by its company
   zh: 词义取决于它的邻居
 level: 8
-point: { x: -0.81, y: 0.265, p: -0.872 }
+kind: topic
+point: { x: -0.793, y: 0.259, p: -0.867 }
 place:
   col: 2
   row: 4

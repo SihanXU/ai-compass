@@ -6,13 +6,14 @@ motto:
   en: Populations beat individuals
   zh: 种群胜过个体
 level: 2
-point: { x: -0.292, y: -0.893, p: 0.651 }
+kind: core
+point: { x: -0.286, y: -0.873, p: 0.647 }
 place:
   col: 6
   row: 9
 parents: [neuroevolutionism]
 relations:
-  allies: [open-endedness, program-synthesis-doctrine, swarm-collectivism]
+  allies: [open-endedness, world-as-code-doctrine, swarm-collectivism]
   frenemies: [self-improving-agentism, mixture-of-experts-federalism]
   rivals: [compute-statism, pretraining-maximalism]
 works:

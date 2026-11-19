@@ -6,7 +6,8 @@ motto:
   en: Infants learn object permanence first
   zh: 婴儿先学会物体恒存
 level: 1
-point: { x: 0.968, y: -0.616, p: 1 }
+kind: topic
+point: { x: 0.948, y: -0.603, p: 0.998 }
 place:
   col: 12
   row: 9

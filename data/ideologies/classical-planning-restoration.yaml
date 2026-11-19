@@ -6,7 +6,8 @@ motto:
   en: PDDL never dies
   zh: PDDL 永不过时
 level: 3
-point: { x: -0.005, y: -1, p: 0.602 }
+kind: topic
+point: { x: -0.005, y: -1, p: 0.598 }
 place:
   col: 7
   row: 11

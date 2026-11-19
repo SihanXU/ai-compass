@@ -6,7 +6,8 @@ motto:
   en: What the model has solved grows into a node
   zh: 模型解决过的情形长成节点
 level: 4
-point: { x: 0.233, y: -1, p: 0.221 }
+kind: topic
+point: { x: 0.228, y: -1, p: 0.22 }
 place:
   col: 8
   row: 11

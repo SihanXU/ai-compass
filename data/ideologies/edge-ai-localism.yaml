@@ -6,7 +6,8 @@ motto:
   en: Inference on device
   zh: 推理在设备上
 level: 4
-point: { x: 0.538, y: -0.752, p: 0.347 }
+kind: topic
+point: { x: 0.526, y: -0.735, p: 0.345 }
 place:
   col: 9
   row: 9

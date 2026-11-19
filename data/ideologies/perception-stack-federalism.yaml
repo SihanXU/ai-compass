@@ -6,7 +6,8 @@ motto:
   en: One module per sensor
   zh: 每个传感器一个模块
 level: 6
-point: { x: 0.412, y: -0.964, p: -0.269 }
+kind: topic
+point: { x: 0.404, y: -0.944, p: -0.267 }
 place:
   col: 8
   row: 10

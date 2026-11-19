@@ -64,6 +64,7 @@ const relCols = [['friends', 'friends', friends], ['frenemies', 'frenemies', fre
                     <div class="ib-cap">“{ide.motto[lang]}”</div>
                     <div class="ib-sec">{t(lang, 'ibInfo')}</div>
                     <dl class="ib-rows">
+                        {ide.kind && <div><dt>{t(lang, 'ibKind')}</dt><dd>{t(lang, ide.kind === 'core' ? 'kindCore' : 'kindTopic')}</dd></div>}
                         <div><dt>{t(lang, 'ibCamp')}</dt><dd><a href={url(lang, `wiki/category/${group.key}`)}>{tr(group.name, lang)}</a></dd></div>
                         {!ide.place.ring && <div><dt>{t(lang, 'ibPosition')}</dt><dd>x {f(pt.x)}<br />y {f(pt.y)}</dd></div>}
                         <div><dt>{t(lang, 'ibParadigm')}</dt><dd><a href={url(lang, `wiki/category/level-${ide.level}`)}>{lv[lang]}</a></dd></div>

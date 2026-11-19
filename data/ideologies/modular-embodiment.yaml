@@ -1,0 +1,22 @@
+id: modular-embodiment
+name:
+  en: Modular Embodiment
+  zh: 模块化具身主义
+motto:
+  en: "A body in the world, run by a system"
+  zh: "身在世界，靠系统运转"
+level: 4
+kind: core
+anchor: { x: 0.7, y: -0.4, p: 0.2 }
+point: { x: 0.7, y: -0.4, p: 0.2 }
+place:
+  col: 4
+  row: 9
+parents: [hierarchical-control, perception-stack-federalism]
+relations:
+  allies: [model-based-planism, skill-library-doctrine, robot-federalism]
+  frenemies: [robot-foundationism, sensorimotor-doctrine]
+  rivals: [end-to-end-driving-absolutism, vla-monarchism, logos-absolutism]
+works:
+  - {title: "Probabilistic Robotics", year: 2005}
+  - {title: "Do As I Can, Not As I Say: Grounding Language in Robotic Affordances", year: 2022, url: https://arxiv.org/abs/2204.01691}

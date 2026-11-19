@@ -6,7 +6,8 @@ motto:
   en: Agents rewrite their own harness
   zh: 代理改写自己的 harness
 level: 5
-point: { x: -0.634, y: -0.841, p: -0.063 }
+kind: core
+point: { x: -0.62, y: -0.823, p: -0.062 }
 place:
   col: 3
   row: 8

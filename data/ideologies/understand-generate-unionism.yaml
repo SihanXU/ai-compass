@@ -6,7 +6,8 @@ motto:
   en: Seeing and drawing are one act
   zh: 看与画是同一件事
 level: 7
-point: { x: 0.692, y: 0.922, p: -0.462 }
+kind: topic
+point: { x: 0.677, y: 0.902, p: -0.459 }
 place:
   col: 9
   row: 0

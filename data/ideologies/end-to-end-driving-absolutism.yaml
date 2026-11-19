@@ -6,7 +6,8 @@ motto:
   en: Pixels in, steering out
   zh: 像素进，方向盘出
 level: 4
-point: { x: 1, y: 0.76, p: 0.155 }
+kind: topic
+point: { x: 1, y: 0.744, p: 0.154 }
 place:
   col: 12
   row: 1

@@ -6,7 +6,8 @@ motto:
   en: Multimodal senses, thinking in language
   zh: 感官多模态，思考在语言里
 level: 8
-point: { x: -1, y: 0.175, p: -0.704 }
+kind: core
+point: { x: -1, y: 0.171, p: -0.699 }
 place:
   col: 0
   row: 4

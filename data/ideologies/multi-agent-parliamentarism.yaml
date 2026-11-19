@@ -6,7 +6,8 @@ motto:
   en: Let agents debate and vote
   zh: 让代理辩论、表决
 level: 5
-point: { x: -0.848, y: -0.959, p: 0 }
+kind: core
+point: { x: -0.83, y: -0.938, p: 0 }
 place:
   col: 0
   row: 10

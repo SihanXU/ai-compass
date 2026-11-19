@@ -6,7 +6,8 @@ motto:
   en: There is no model but the omni model
   zh: Omni 之外别无模型
 level: 8
-point: { x: 0.57, y: 1, p: -0.711 }
+kind: core
+point: { x: 0.558, y: 1, p: -0.706 }
 place:
   col: 7
   row: 0

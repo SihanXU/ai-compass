@@ -6,7 +6,8 @@ motto:
   en: Language has structure; so should models
   zh: 语言有结构，模型也该有
 level: 3
-point: { x: -0.647, y: -0.776, p: 0.616 }
+kind: topic
+point: { x: -0.634, y: -0.759, p: 0.612 }
 place:
   col: 2
   row: 6

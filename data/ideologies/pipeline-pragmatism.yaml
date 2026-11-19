@@ -6,7 +6,8 @@ motto:
   en: 'Detect, segment, recognize: one pipeline'
   zh: 检测、分割、识别一条龙
 level: 7
-point: { x: 0.019, y: -0.926, p: -0.566 }
+kind: topic
+point: { x: 0.019, y: -0.906, p: -0.562 }
 place:
   col: 7
   row: 9

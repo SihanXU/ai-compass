@@ -6,7 +6,8 @@ motto:
   en: The data flywheel spins in the real world
   zh: 数据飞轮在真实世界里转
 level: 6
-point: { x: 0.988, y: 0.738, p: -0.363 }
+kind: topic
+point: { x: 0.967, y: 0.722, p: -0.36 }
 place:
   col: 11
   row: 1

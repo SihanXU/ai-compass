@@ -6,7 +6,8 @@ motto:
   en: Everything organized by instruction
   zh: 万事按指令编队
 level: 8
-point: { x: -0.726, y: 0.705, p: -0.76 }
+kind: topic
+point: { x: -0.711, y: 0.69, p: -0.755 }
 place:
   col: 1
   row: 2

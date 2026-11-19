@@ -6,7 +6,8 @@ motto:
   en: It is always the tokenizer
   zh: 问题总出在分词上
 level: 7
-point: { x: 0, y: -0.695, p: -0.484 }
+kind: topic
+point: { x: 0, y: -0.68, p: -0.48 }
 place:
   col: 6
   row: 7

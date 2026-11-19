@@ -6,7 +6,8 @@ motto:
   en: Video is the next internet corpus
   zh: 视频是下一个互联网语料
 level: 9
-point: { x: 0.794, y: 0.784, p: -0.894 }
+kind: topic
+point: { x: 0.777, y: 0.767, p: -0.888 }
 place:
   col: 10
   row: 1

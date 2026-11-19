@@ -6,7 +6,8 @@ motto:
   en: Physics before intelligence
   zh: 先懂物理，再谈智能
 level: 1
-point: { x: 0.844, y: -0.376, p: 0.941 }
+kind: core
+point: { x: 0.826, y: -0.368, p: 0.934 }
 place:
   col: 11
   row: 7

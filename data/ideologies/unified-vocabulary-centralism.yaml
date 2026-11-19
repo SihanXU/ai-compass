@@ -6,7 +6,8 @@ motto:
   en: 'Images, audio, actions: one vocabulary'
   zh: 图像、声音、动作，统统进同一张词表
 level: 8
-point: { x: -0.077, y: 0.975, p: -0.78 }
+kind: topic
+point: { x: -0.075, y: 0.954, p: -0.775 }
 place:
   col: 5
   row: 1

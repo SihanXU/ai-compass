@@ -5,10 +5,11 @@ name:
 motto:
   en: PID never let me down
   zh: PID 从未让我失望
-level: 8
+level: 6
+point: { x: 0.411, y: -0.888, p: -0.266 }
 place:
-  col: 11
-  row: 5
+  col: 8
+  row: 9
 parents: [cybernetic-primitivism]
 relations:
   allies: [physicalism, robot-federalism, classical-planning-restoration, field-robotics-libertarianism]

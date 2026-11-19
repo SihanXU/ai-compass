@@ -5,7 +5,7 @@ summary: "Agents should coordinate as self-organizing peers through shared proto
 
 Agent Anarcho-Syndicalism objects to the boss agent. In most multi-agent frameworks, a central orchestrator decomposes the task, assigns subtasks and merges results; every other agent is a worker taking orders. The anarcho-syndicalist alternative is horizontal: agents advertise what they can do, pick up work from shared queues or blackboards, negotiate with each other directly, and form temporary coalitions around tasks. Coordination comes from protocols and local rules rather than command, much as in markets, open-source projects or ant colonies.
 
-It sits left of center, since its agents mostly coordinate through language and messages, and near the bottom of the Harness axis, because the system-of-agents is everything and no single model sits on top. Its paradigm level is progressive: it bets on decentralized coordination over the orchestrator patterns that dominate today's agent engineering.
+It sits well toward the Language side, since its agents mostly coordinate through language and messages, and in the lower half toward Harness, because the system-of-agents is everything and no single model sits on top. Its paradigm level is steady: its agents are ordinary language models, and betting on decentralized coordination over the orchestrator patterns that dominate today's agent engineering changes the organisation, not the paradigm.
 
 ## Arguments
 

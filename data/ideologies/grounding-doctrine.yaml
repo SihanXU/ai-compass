@@ -5,10 +5,11 @@ name:
 motto:
   en: Symbols must be grounded in perception
   zh: 符号必须扎根于感知
-level: 5
+level: 2
+point: { x: 1, y: 0.614, p: 0.74 }
 place:
-  col: 8
-  row: 6
+  col: 11
+  row: 3
 parents: [visualism]
 relations:
   allies: [gui-grounding-doctrine, embodied-statism, developmentalism, multimodal-visualism]

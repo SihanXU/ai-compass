@@ -5,10 +5,11 @@ name:
 motto:
   en: Abolish tokenizers; return to bytes
   zh: 废除分词，回归字节
-level: 3
+level: 1
+point: { x: 0.308, y: 0.695, p: 0.912 }
 place:
-  col: 3
-  row: 5
+  col: 6
+  row: 3
 parents: [tokenizer-reformism]
 relations:
   allies: [pixel-totalitarianism, bitter-lesson-orthodoxy, logos-absolutism]

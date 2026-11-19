@@ -5,10 +5,11 @@ name:
 motto:
   en: GOFAI shall return
   zh: GOFAI 终将归来
-level: 9
+level: 2
+point: { x: -0.653, y: -1, p: 0.678 }
 place:
-  col: 0
-  row: 4
+  col: 2
+  row: 11
 parents: [logocentrism]
 relations:
   allies: [knowledge-graph-monarchism, formal-semanticism, classical-planning-restoration, math-formalism]

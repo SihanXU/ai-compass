@@ -5,10 +5,11 @@ name:
 motto:
   en: Video generation is world simulation
   zh: 视频生成就是世界模拟
-level: 3
+level: 7
+point: { x: 0.636, y: 0.853, p: -0.52 }
 place:
-  col: 9
-  row: 0
+  col: 8
+  row: 1
 parents: [video-scalism]
 relations:
   allies: [world-model-vanguardism, simulation-hypothesism, video-native-doctrine]

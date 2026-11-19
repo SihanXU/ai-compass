@@ -5,10 +5,11 @@ name:
 motto:
   en: First, find the button
   zh: 先认清那个按钮
-level: 5
+level: 3
+point: { x: 0.599, y: -0.453, p: 0.523 }
 place:
   col: 8
-  row: 8
+  row: 6
 parents: [grounding-doctrine, visual-agent-doctrine]
 relations:
   allies: [computer-use-liberalism, multimodal-agentism, pipeline-pragmatism]

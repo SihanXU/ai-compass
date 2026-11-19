@@ -5,7 +5,7 @@ summary: "Holds that visual understanding is the core goal, with language, audio
 
 Multimodal Visualism reads the naming rule literally: vision is the substance, multimodality the means. The point of the whole enterprise is to see well, to detect, segment, track and understand scenes. Language is useful as a cheap supervisor and as a convenient way for humans to specify what they want ("find the red mug"), and depth, audio or motion can help disambiguate. But they are servants of perception, not its master. Open-vocabulary detectors and promptable segmenters are its model citizens.
 
-It sits right of center on the World side and in the upper-middle band: one strong visual system, prompted by many kinds of input. Its paradigm level is neutral. It is the natural ideology of computer vision as a discipline, which absorbed language supervision without giving up its own questions about pixels, boxes and masks.
+It sits at the far World edge and a little above the middle of the vertical axis: one strong visual system, prompted by many kinds of input. Its paradigm level is Exploratory. It is the natural ideology of computer vision as a discipline, which absorbed language supervision without giving up its own questions about pixels, boxes and masks.
 
 ## Arguments
 

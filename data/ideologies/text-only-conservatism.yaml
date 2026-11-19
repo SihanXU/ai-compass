@@ -5,9 +5,10 @@ name:
 motto:
   en: Text is enough; vision is surplus
   zh: 文本就够了，视觉是多余的
-level: 7
+level: 9
+point: { x: -1, y: 0.264, p: -0.932 }
 place:
-  col: 1
+  col: 0
   row: 3
 parents: [logocentrism]
 relations:

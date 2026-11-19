@@ -5,10 +5,11 @@ name:
 motto:
   en: Predict representations, not pixels
   zh: 预测表征，而不是像素
-level: 2
+level: 1
+point: { x: 0.979, y: 0.454, p: 0.997 }
 place:
-  col: 10
-  row: 2
+  col: 11
+  row: 4
 parents: [world-model-vanguardism, self-supervised-liberalism]
 relations:
   allies: [predictive-coding-statism, model-based-planism, intuitive-physics-doctrine]

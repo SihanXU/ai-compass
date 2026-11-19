@@ -5,10 +5,11 @@ name:
 motto:
   en: Agents write the code and run the tests
   zh: 代理自己写代码、跑测试
-level: 4
+level: 6
+point: { x: -0.882, y: -0.488, p: -0.296 }
 place:
-  col: 4
-  row: 8
+  col: 0
+  row: 6
 parents: [harness-liberalism, code-as-thought]
 relations:
   allies: [tool-use-liberalism, eval-proceduralism, context-engineering-liberalism]

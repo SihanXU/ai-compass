@@ -5,7 +5,8 @@ name:
 motto:
   en: Every capability is an API
   zh: 一切能力皆是 API
-level: 5
+level: 6
+point: { x: -0.533, y: -0.827, p: -0.365 }
 place:
   col: 4
   row: 7

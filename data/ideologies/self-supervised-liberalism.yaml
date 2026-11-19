@@ -6,8 +6,9 @@ motto:
   en: Data speaks for itself
   zh: 数据自己会说话
 level: 4
+point: { x: 0.994, y: 0.118, p: 0.27 }
 place:
-  col: 8
+  col: 11
   row: 5
 parents: [representation-centralism]
 relations:

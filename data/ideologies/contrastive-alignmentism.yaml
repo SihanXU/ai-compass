@@ -6,9 +6,10 @@ motto:
   en: Contrastive learning pulls all into one space
   zh: 对比学习把一切拉进同一空间
 level: 5
+point: { x: 0.522, y: 0.426, p: 0.025 }
 place:
-  col: 6
-  row: 3
+  col: 7
+  row: 4
 parents: [contrastive-liberalism]
 relations:
   allies: [representation-centralism, captionist-centralism, grounding-doctrine]

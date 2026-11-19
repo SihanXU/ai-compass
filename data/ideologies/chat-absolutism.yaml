@@ -5,10 +5,11 @@ name:
 motto:
   en: 'There is one interface: the chat box'
   zh: 接口只有一个：对话框
-level: 7
+level: 8
+point: { x: -0.656, y: 0.621, p: -0.76 }
 place:
-  col: 1
-  row: 2
+  col: 4
+  row: 3
 parents: [instruction-corporatism]
 relations:
   allies: [rlhf-paternalism, prompt-monarchism, prompt-craftism]

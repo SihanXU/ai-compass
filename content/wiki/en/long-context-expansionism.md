@@ -5,7 +5,7 @@ summary: "Believes ever-longer context windows will replace retrieval systems an
 
 Long-Context Expansionism pursues territorial growth measured in tokens. Why build retrievers, chunkers, vector databases and memory managers when the model could simply read the whole codebase, the whole contract archive, the whole book series in one pass? Each expansion of the context window dissolves another piece of scaffolding. Attention is the most flexible retrieval mechanism ever invented; give it enough room, and it will find what it needs without a separate system guessing in advance what is relevant.
 
-It sits left of center on the Language side and in the middle band: still a single model, but one that absorbs functions which harness builders would otherwise implement externally. Its paradigm level is neutral. Rotary embeddings, efficient attention kernels and distributed sequence parallelism have made very long contexts practical, and expansionists treat each new limit as a temporary border.
+It sits just left of centre and in the upper half, toward Monolith: still a single model, but one that absorbs functions which harness builders would otherwise implement externally. Its paradigm level is Mainstream. Rotary embeddings, efficient attention kernels and distributed sequence parallelism have made very long contexts practical, and expansionists treat each new limit as a temporary border.
 
 ## Arguments
 

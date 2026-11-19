@@ -5,7 +5,7 @@ summary: "Meaning is truth conditions expressible in logic, and a system underst
 
 Formal Semanticism holds that the meaning of a sentence is what the world must be like for it to be true, and that this meaning is built compositionally from the meanings of its parts. Quantifiers, negation, scope and entailment are not statistical tendencies but logical operations with right answers. A system that merely predicts plausible continuations, the formal semanticist says, may sound fluent while getting 'every' and 'some' backwards, and fluency is not understanding.
 
-It sits at the far Language edge (col 0) at mid-height: meaning lives in symbolic representations, and the doctrine is open to systems that parse into logical forms and hand them to provers or databases rather than insisting on one monolithic network. Its dark shade marks the old guard. Formal semantics shaped decades of linguistics and early NLP, and it now watches neural language models with a mix of skepticism and grudging curiosity about whether they have rediscovered compositionality.
+It sits near the far Language edge, in the lower half toward Harness: meaning lives in symbolic representations, and the doctrine favours systems that parse into logical forms and hand them to provers or databases over one monolithic network. Its beyond-revolutionary shade marks how far it stands from today's mainstream. Formal semantics shaped decades of linguistics and early NLP, and it now watches neural language models with a mix of skepticism and grudging curiosity about whether they have rediscovered compositionality.
 
 ## Arguments
 

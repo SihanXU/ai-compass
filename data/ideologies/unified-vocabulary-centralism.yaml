@@ -5,10 +5,11 @@ name:
 motto:
   en: 'Images, audio, actions: one vocabulary'
   zh: 图像、声音、动作，统统进同一张词表
-level: 5
+level: 8
+point: { x: -0.077, y: 0.975, p: -0.78 }
 place:
-  col: 4
-  row: 0
+  col: 5
+  row: 1
 parents: [logos-absolutism]
 relations:
   allies: [visual-token-statism, early-fusion-statism, any-to-any-imperialism]

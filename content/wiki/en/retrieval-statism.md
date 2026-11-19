@@ -5,7 +5,7 @@ summary: "Holds that knowledge belongs in an external index rather than in model
 
 Retrieval Statism draws a firm line between thinking and remembering. Weights should hold skills: reading, reasoning, composing. Facts should live in a large, updatable index that the model consults as it works. Memorizing the world into parameters is wasteful, stale the day training ends and impossible to audit. A model that retrieves can be smaller, cites its sources, and stays current by re-indexing instead of retraining. The state's job is to build the great library and make retrieval a native organ of the model.
 
-It sits on the Language side and in the middle band. Unlike looser RAG pipelines further toward the Harness end, it treats retrieval as part of the model itself, often trained jointly, which keeps it closer to the monolithic camp. Its paradigm level is moderately established: retrieval-augmented models are well studied and widely deployed, though the purist vision of tiny reasoners over enormous indexes is still argued over.
+It sits on the Language side, near the Harness end, right beside the looser RAG pipelines of RAG Mutualism. What sets it apart is that it treats retrieval as part of the model itself, often trained jointly, rather than as a pipeline bolted on afterward. Its paradigm level is Steady: retrieval-augmented models are well studied and widely deployed, though the purist vision of tiny reasoners over enormous indexes is still argued over.
 
 ## Arguments
 

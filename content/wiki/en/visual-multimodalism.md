@@ -5,7 +5,7 @@ summary: "Aims at general multimodal intelligence but builds it on vision, treat
 
 Visual Multimodalism wants the same destination as its language-first counterpart, a model that handles every modality, but picks a different road: vision is the means. Why tokenize a web page when you can look at it? Why parse a PDF when the rendered page already contains layout, figures and text? Screenshots, charts, handwriting and even plain text can all be rendered as pixels, and a strong visual model can learn to read them along with everything else. Language becomes one of many things that appear in images.
 
-It sits just right of center, the first step onto the World side, and in the upper-middle band: one model with a visual core reaching out to every modality. Its paradigm level is neutral to progressive. It challenges the assumption that text is the natural common currency, while still sharing the mainstream's faith in one large, general model.
+It sits well over on the World side and at the very top, the Monolith end: one model with a visual core reaching out to every modality. Its paradigm level is Steady, one step off Mainstream. It challenges the assumption that text is the natural common currency, while still sharing the mainstream's faith in one large, general model.
 
 ## Arguments
 

@@ -5,7 +5,7 @@ summary: "Agents that design, test and improve their own code, prompts and succe
 
 Recursive Self-Improvementism takes the old idea of a machine that improves the machine that improves itself and makes it an engineering programme. Today's version is concrete: an agent proposes changes to its own scaffolding, prompts, tools or training data, evaluates them on a benchmark, keeps what helps and repeats. The researcher's job shifts from designing agents to designing the loop that designs agents. If each generation is even slightly better at improving the next, progress compounds.
 
-It sits at the bottom of the chart, the Harness extreme, because what gets rewritten is mostly the system around the model, and on the Language side, because the medium of self-modification is code and text. It carries the most revolutionary shade on the chart: it proposes that the next paradigm will not be invented by people at all.
+It sits near the bottom of the chart, toward the Harness end, because what gets rewritten is mostly the system around the model, and on the Language side, because the medium of self-modification is code and text. It carries an Ultra-Revolutionary shade, one step short of the chart's extreme: it proposes that the next paradigm will not be invented by people at all.
 
 ## Arguments
 

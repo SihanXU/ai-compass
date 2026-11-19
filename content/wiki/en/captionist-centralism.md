@@ -5,7 +5,7 @@ summary: "Every image should first be converted into a detailed caption, because
 
 Captionist Centralism solves multimodality by translation. Whatever arrives through the eyes is immediately written up in prose: a dense caption, a list of objects, a description of the scene. From that moment on, the language model takes over and reasons in its native tongue. The doctrine also runs in reverse: train image generators on rich, rewritten captions and they follow prompts far better. Captions are the bureaucracy through which all perception must pass, and good bureaucracy makes everything work.
 
-It sits near the top of the chart, left of center. The language lean is obvious: text is the lingua franca and the place where reasoning happens. The Monolith lean comes from its ambition to fold perception into one language-centric model and data pipeline. Its paradigm score leans establishment, because recaptioning and caption-based reasoning are now routine engineering rather than radical bets.
+It sits at the far Language edge of the chart, just above the middle. The language lean is obvious: text is the lingua franca and the place where reasoning happens. The slight Monolith lean comes from its ambition to fold perception into one language-centric model and data pipeline. Its paradigm level is orthodox, because recaptioning and caption-based reasoning are now routine engineering rather than radical bets.
 
 ## Arguments
 

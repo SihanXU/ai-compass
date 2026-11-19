@@ -5,7 +5,7 @@ summary: "Robust behaviour comes from tight sensor-to-actuator reflexes, not fro
 
 Reactive Anarchism distrusts anything that sits between perception and action. Plans go stale, world models are wrong, and deliberation is too slow for a world that keeps moving. Its robots are built from simple behaviours, avoid obstacles, wander, follow walls, each mapping sensors directly to motors and layered so that higher behaviours can suppress lower ones. There is no central planner and no symbolic map; the world is consulted directly, every few milliseconds, instead of being remembered.
 
-It sits deep on the World side and at the Harness extreme: intelligence is a system of many small reflex modules coupled through the environment, not one model holding a representation. Its old-guard shade reflects its age; this is a decades-old rebellion against classical AI planning that newer world-model enthusiasts now regard as a conservative position.
+It sits well on the World side and just below the centre line, toward Harness: intelligence is a system of many small reflex modules coupled through the environment, not one model holding a representation. Its Revolutionary shade reflects its stance: this decades-old rebellion against classical AI planning still rejects the representation-heavy mainstream, including today's large world models.
 
 ## Arguments
 

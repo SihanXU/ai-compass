@@ -5,7 +5,7 @@ summary: "Populations of candidate models, programs or agents, selected and reco
 
 Evolutionary Federalism holds that progress comes from populations, not prodigies. Keep many variants alive (of weights, hyperparameters, prompts, programs or whole agents), let them compete on a task, keep and mutate the fittest, and crossbreed good ideas. Gradients are wonderful when you have them, but selection works on anything you can evaluate, including non-differentiable objectives, discrete programs and entire training recipes. The "federalism" is the structure: many semi-independent members, loosely coordinated by a shared selection process rather than a central optimizer.
 
-It sits at the center of the Language-World axis, since populations can evolve text, code, controllers or robot bodies alike, and deep in the Harness half because the intelligence is in the population-and-selection machinery around the models. Its paradigm level is progressive: evolutionary computation is old, but pairing it with large models has given it a second life.
+It sits at the center of the Language-World axis, since populations can evolve text, code, controllers or robot bodies alike, and deep in the Harness half because the intelligence is in the population-and-selection machinery around the models. Its paradigm level is ultra-revolutionary: evolutionary computation is old, but reviving it alongside large models is a sharp break from the gradient-and-scale mainstream.
 
 ## Arguments
 

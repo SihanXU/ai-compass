@@ -5,10 +5,11 @@ name:
 motto:
   en: Atomic skills compose tasks
   zh: 原子技能拼成任务
-level: 5
+level: 4
+point: { x: 0.057, y: -0.959, p: 0.177 }
 place:
-  col: 11
-  row: 7
+  col: 7
+  row: 10
 parents: [hierarchical-control]
 relations:
   allies: [hierarchical-control, growing-tree-doctrine, code-as-thought, composable-liberalism]

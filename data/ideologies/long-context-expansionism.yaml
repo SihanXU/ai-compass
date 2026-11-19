@@ -5,10 +5,11 @@ name:
 motto:
   en: Infinite context, no memory needed
   zh: 上下文无限长，记忆就免了
-level: 5
+level: 7
+point: { x: -0.14, y: 0.615, p: -0.53 }
 place:
-  col: 3
-  row: 4
+  col: 5
+  row: 3
 parents: [compute-statism]
 relations:
   allies: [test-time-centralism, pretraining-maximalism, logos-absolutism]

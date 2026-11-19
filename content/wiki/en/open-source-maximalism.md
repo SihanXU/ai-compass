@@ -5,7 +5,7 @@ summary: "Ring title for extreme openness scores: weights, data, code and recipe
 
 Open-Source Maximalism is a ring title earned by openness scores above 0.6, independent of position on the main chart. Its holders believe the strongest models' weights should be released, that results on closed models nobody can reproduce should not count as scientific contributions, and that academia can do frontier research with open models alone. Openness is not a nice-to-have but the condition for verification, safety research, fair competition and global access.
 
-Because the title measures a stance on openness rather than method, it sits on the left ring outside the axes: an open-weights language monolith and an open-hardware robot co-op can both earn it. Its revolutionary shade reflects ambition beyond "open weights" toward fully open training data, code, logs and intermediate checkpoints, a standard few releases have met.
+Because the title measures a stance on openness rather than method, it sits on the left ring outside the axes: an open-weights language monolith and an open-hardware robot co-op can both earn it. Its neutral shade reflects that openness says nothing about which research paradigm to pursue; its ambition lies elsewhere, beyond "open weights" toward fully open training data, code, logs and intermediate checkpoints, a standard few releases have met.
 
 ## Arguments
 

@@ -5,7 +5,7 @@ summary: "The text of the web already contains essentially all human knowledge, 
 
 Corpus Fundamentalism holds that the written record is the scripture of intelligence. Everything humans know about physics, law, cooking, mathematics and gossip has been written down somewhere, and most of it is now on the web. The task of AI is therefore to gather that text, clean it, deduplicate it, filter it and feed it to a model. Architecture tweaks are commentary; the corpus is the canon.
 
-It sits on the far left of the chart, one row below the top: about as language-first as a position can be, and strongly Monolith, because the knowledge is meant to live inside the pretrained weights rather than be fetched at runtime. Its paradigm score leans old-guard. The belief that data quality matters more than model cleverness was once a contrarian insight; it is now the standard operating procedure of every pretraining team.
+It sits on the far left of the chart, close to the top: about as language-first as a position can be, and strongly Monolith, because the knowledge is meant to live inside the pretrained weights rather than be fetched at runtime. Its paradigm level is orthodox. The belief that data quality matters more than model cleverness was once a contrarian insight; it is now the standard operating procedure of every pretraining team.
 
 ## Arguments
 

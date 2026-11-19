@@ -5,10 +5,11 @@ name:
 motto:
   en: Truth lives in triples
   zh: 真理住在三元组里
-level: 9
+level: 5
+point: { x: -0.332, y: -0.932, p: -0.029 }
 place:
-  col: 1
-  row: 4
+  col: 6
+  row: 10
 parents: [symbolic-restorationism]
 relations:
   allies: [formal-semanticism, retrieval-statism, neuro-symbolic-federalism]

@@ -5,10 +5,11 @@ name:
 motto:
   en: Intelligence lives in the hands
   zh: 智能长在手上
-level: 4
+level: 2
+point: { x: 1, y: -0.241, p: 0.849 }
 place:
   col: 12
-  row: 4
+  row: 6
 parents: [embodied-statism]
 relations:
   allies: [sim-to-real-pragmatism, morphological-computationalism, sensorimotor-doctrine]

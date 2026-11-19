@@ -5,7 +5,7 @@ summary: "Tokenizers are an unelected elite; models should read raw bytes and le
 
 Byte-Level Populism wants to abolish the tokenizer outright. Every vocabulary, it argues, is a set of decisions made by a frequency count over somebody else's corpus, and those decisions quietly privilege common languages, common spellings and common formats. Raw bytes are the people's alphabet: every script, every file type and every typo is representable, and nothing is out-of-vocabulary. Let the network learn its own chunking, through patching, pooling or hierarchical models, instead of inheriting one.
 
-It sits on the Language side (col 3) and middle height. It is still about text-like sequences, but it pushes them toward a universal, modality-agnostic stream, which is why it gets on so well with those who render text as pixels. Its shade is fairly revolutionary: it does not want a better tokenizer but none at all, and it accepts real engineering costs for the principle.
+It sits at the centre of the Language-World axis, in the upper half toward Monolith. It is still about text-like sequences, but it pushes them toward a universal, modality-agnostic stream, which is why it gets on so well with those who render text as pixels. Its shade is beyond revolutionary: it does not want a better tokenizer but none at all, and it accepts real engineering costs for the principle.
 
 ## Arguments
 

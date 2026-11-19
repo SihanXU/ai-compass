@@ -5,10 +5,11 @@ name:
 motto:
   en: See the screen, use the computer
   zh: 看着屏幕操作电脑
-level: 4
+level: 5
+point: { x: 0.186, y: -0.315, p: 0.109 }
 place:
-  col: 9
-  row: 7
+  col: 5
+  row: 4
 parents: [computer-use-liberalism]
 relations:
   allies: [gui-grounding-doctrine, computer-use-liberalism, multimodal-agentism]

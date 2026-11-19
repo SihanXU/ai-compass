@@ -5,7 +5,7 @@ summary: "Qualitatively new abilities appear unpredictably once models pass cert
 
 Emergentism is the romantic wing of the scaling movement. Where Scaling-Law Planism sees smooth, forecastable curves, Emergentism sees phase transitions: abilities such as multi-step arithmetic, in-context learning or instruction following that are absent in smaller models and then suddenly present in larger ones. More is different. The right attitude is therefore not to engineer each capability, but to scale and watch what appears.
 
-It sits in the top row band, left of center: language-leaning because most celebrated emergent abilities were observed in language models, and Monolith because emergence is a property of one big network, not of an assembled system. Its paradigm score is neutral. The idea is widely cited and widely disputed in roughly equal measure.
+It sits at the very top of the chart, near the Language edge: language-leaning because most celebrated emergent abilities were observed in language models, and Monolith because emergence is a property of one big network, not of an assembled system. Its paradigm level is orthodox. The idea is a pillar of the mainstream scaling story, however often it is disputed.
 
 ## Arguments
 

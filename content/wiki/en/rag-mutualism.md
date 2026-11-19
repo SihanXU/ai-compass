@@ -5,7 +5,7 @@ summary: "A language model and an external index work best as partners, the inde
 
 RAG Mutualism believes in a cooperative arrangement between parametric and non-parametric memory. The model is good at understanding queries, synthesizing and writing; the index is good at holding large, current, citable facts. Neither should try to do the other's job. Retrieve the relevant passages, put them in context, and let the model reason over them: knowledge stays updatable without retraining, answers can point to their sources, and the model can spend its parameters on skill rather than trivia.
 
-It sits on the Language side (col 2) toward Harness (row 7): retrieval is a system-level design with a retriever, an index and a generator. It is the practical, cooperative cousin of Retrieval Statism above, which wants knowledge out of the weights as a matter of principle; mutualists are content as long as the two help each other. Its shade marks an established school: retrieval augmentation is now standard practice in enterprise and search-backed assistants.
+It sits left of centre on the Language side, near the Harness end: retrieval is a system-level design with a retriever, an index and a generator. It is the practical, cooperative cousin of Retrieval Statism just to its left, which wants knowledge out of the weights as a matter of principle; mutualists are content as long as the two help each other. Its Mainstream shade marks an established school: retrieval augmentation is now standard practice in enterprise and search-backed assistants.
 
 ## Arguments
 

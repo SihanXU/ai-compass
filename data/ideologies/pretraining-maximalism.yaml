@@ -5,7 +5,8 @@ name:
 motto:
   en: Pretraining gives ability; post-training is manners
   zh: 能力来自预训练，后训练只是礼仪
-level: 7
+level: 8
+point: { x: -0.766, y: 0.745, p: -0.813 }
 place:
   col: 1
   row: 1

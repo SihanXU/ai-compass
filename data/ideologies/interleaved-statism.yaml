@@ -5,7 +5,8 @@ name:
 motto:
   en: Interleaved documents are the new textbooks
   zh: 交错文档是新教科书
-level: 5
+level: 8
+point: { x: -0.084, y: 0.746, p: -0.76 }
 place:
   col: 5
   row: 2

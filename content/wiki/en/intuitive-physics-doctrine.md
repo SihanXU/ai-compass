@@ -5,7 +5,7 @@ summary: "Holds that AI should first acquire the core physical intuitions infant
 
 Intuitive-Physics Doctrine takes its curriculum from developmental psychology. Infants, long before they talk, are surprised when a ball passes through a wall or a toy vanishes behind a screen and fails to reappear. These core expectations of permanence, solidity, continuity and support form the bedrock of common sense. A model that lacks them, however fluent, will make mistakes no toddler would. So AI should be tested, and ideally trained, on these intuitions directly, using violation-of-expectation paradigms borrowed from infant studies.
 
-It sits toward the World end and in the middle band, preferring models with structured physical understanding over either pure scale or agent pipelines. Its paradigm level is progressive. It borrows tools from cognitive science to ask what models actually understand about the physical world, and it is often the source of the uncomfortable benchmark that shows a celebrated model failing at something simple.
+It sits at the far World edge and low toward the Harness end, preferring structured physical understanding, probed one intuition at a time, over faith in pure scale. Its paradigm level is Beyond Revolutionary. It borrows tools from cognitive science to ask what models actually understand about the physical world, and it is often the source of the uncomfortable benchmark that shows a celebrated model failing at something simple.
 
 ## Arguments
 

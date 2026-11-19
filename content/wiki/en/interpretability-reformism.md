@@ -5,7 +5,7 @@ summary: "Before scaling or deploying models further, we must understand what th
 
 Interpretability Reformism believes the black box can be opened and should be, sooner rather than later. Attribution methods, probing classifiers, feature visualization, sparse dictionary learning and causal interventions on activations are its toolkit. The goal is not to replace neural networks with something more legible but to reform how we build them: debug them like software, audit them before deployment, and catch deceptive or brittle behaviour from the inside rather than waiting for it to show up in outputs.
 
-It sits on the Language side (col 2) at mid-height, since most of its recent energy has gone into language models, and since it studies a single model's internals while happily building tooling around it. The neutral shade fits a reformist rather than revolutionary posture: it does not oppose deep learning or scale, it wants them accompanied by understanding, much as engineering disciplines eventually acquired measurement and inspection.
+It sits on the Language side, left of centre and just below the middle of the vertical axis, since most of its recent energy has gone into language models, and since it studies a single model's internals while happily building tooling around it. Its Mainstream shade fits a reformist rather than revolutionary posture: it does not oppose deep learning or scale, it wants them accompanied by understanding, much as engineering disciplines eventually acquired measurement and inspection.
 
 ## Arguments
 

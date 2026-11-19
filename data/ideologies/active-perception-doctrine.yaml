@@ -5,10 +5,11 @@ name:
 motto:
   en: Seeing is an action
   zh: 看本身就是一种行动
-level: 3
+level: 2
+point: { x: 0.865, y: 0.378, p: 0.801 }
 place:
   col: 10
-  row: 5
+  row: 4
 parents: [sensorimotor-doctrine]
 relations:
   allies: [embodied-statism, curiosity-liberalism, sensorimotor-doctrine, video-native-doctrine]

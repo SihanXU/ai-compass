@@ -5,7 +5,7 @@ summary: "Believes vision models should learn from raw unlabeled pixels at scale
 
 Self-Supervised Vision Statism holds that pixels themselves contain enough signal to learn rich visual understanding, if only the state invests in big enough models and datasets. Masking patches and reconstructing them, matching augmented views of the same image, distilling a student into a teacher: these pretext tasks turn the world's unlabeled images into a free curriculum. Labels are expensive, biased toward what annotators thought to name, and capped by human patience. Captions are better but still filter vision through language.
 
-It sits right of center, firmly on the perception side, and up toward the Monolith because its program is one large backbone pretrained centrally and handed out to everyone. The "statism" is the scale: not a cottage industry of hand-tuned features but a national program of GPU-hours and curated image collections. Its paradigm level is modern but not radical; it is the established way to pretrain vision when you do not want to depend on text.
+It sits at the far World edge, firmly on the perception side, and in the upper half toward the Monolith because its program is one large backbone pretrained centrally and handed out to everyone. The "statism" is the scale: not a cottage industry of hand-tuned features but a national program of GPU-hours and curated image collections. Its paradigm level is neutral, neither the mainstream recipe nor a break from it; it is the established way to pretrain vision when you do not want to depend on text.
 
 ## Arguments
 

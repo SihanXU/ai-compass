@@ -5,10 +5,11 @@ name:
 motto:
   en: Multimodal ends, visual means
   zh: 目标是多模态，骨架是视觉
-level: 5
+level: 6
+point: { x: 0.731, y: 0.933, p: -0.147 }
 place:
-  col: 7
-  row: 3
+  col: 10
+  row: 0
 parents: [visualism]
 relations:
   allies: [pixel-totalitarianism, gui-grounding-doctrine, visual-agent-doctrine]

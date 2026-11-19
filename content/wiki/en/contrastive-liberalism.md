@@ -5,7 +5,7 @@ summary: "Representations are best learned by a free market of positives and neg
 
 Contrastive Liberalism treats learning as a market. Each sample is offered a positive partner, usually another view of the same thing, and a crowd of negatives; the loss rewards the model for telling them apart. No pixel needs to be reconstructed and no label needs to be written: the price signal of similarity does the coordinating. The doctrine's faith is that this simple exchange, run at scale with good augmentations, produces representations that organize the visual world cleanly.
 
-It sits on the World side (col 9) at mid-height, focused on perception rather than language, and indifferent to whether the resulting encoder lives inside one model or a pipeline. Its neutral shade reflects that contrastive learning is now established practice, a former revolution that became infrastructure. It is close kin to the cross-modal alignment camp on the Language side, but where they use contrast to bind images to text, liberals are content to let images compete among themselves.
+It sits right of centre, just above the middle, focused on perception rather than language, and indifferent to whether the resulting encoder lives inside one model or a pipeline. Its exploratory shade reflects that, while contrastive learning is now established practice, its image-only form still leans away from today's language-centred recipe. It is close kin to the cross-modal alignment camp just to its left, but where they use contrast to bind images to text, liberals are content to let images compete among themselves.
 
 ## Arguments
 

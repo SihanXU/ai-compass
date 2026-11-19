@@ -5,7 +5,7 @@ summary: "Holds that language depends on innate, specialized structure, so stati
 
 Innatism is the oldest school in the linguistics department and it has not changed its mind. Children acquire rich grammatical knowledge quickly, from limited and noisy input, and converge on rules they were never explicitly shown. That poverty of the stimulus, the argument goes, implies an innate language faculty with built-in constraints on possible grammars. Large language models, trained on more text than any human could read in many lifetimes, do not refute this; if anything, their enormous data appetite is evidence that they learn differently from children, and that fluent output is not the same as competence.
 
-It sits at the far Language edge and in the very middle of the vertical axis, since its concern is theory rather than system design. Its paradigm level is maximally old guard: it predates neural networks and regards much of the current enterprise as engineering that says little about the human mind.
+It sits in the centre of the Language–World axis and in the lower half, toward Harness: its concern is theory rather than system design, but it expects minds to be built from innate, structured components rather than one blank-slate network. Its paradigm level is beyond revolutionary, the most extreme on the chart: it predates neural networks and regards much of the current enterprise as engineering that says little about the human mind.
 
 ## Arguments
 

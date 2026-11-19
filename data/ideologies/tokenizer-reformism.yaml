@@ -5,10 +5,11 @@ name:
 motto:
   en: It is always the tokenizer
   zh: 问题总出在分词上
-level: 4
+level: 7
+point: { x: 0, y: -0.695, p: -0.484 }
 place:
-  col: 2
-  row: 5
+  col: 6
+  row: 7
 parents: [linguistic-relativism]
 relations:
   allies: [linguistic-relativism, unified-vocabulary-centralism, eval-proceduralism]

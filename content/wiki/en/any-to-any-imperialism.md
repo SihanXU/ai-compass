@@ -5,7 +5,7 @@ summary: "One model should take any modality as input and produce any modality a
 
 Any-to-Any Imperialism looks at the zoo of specialist models (a captioner here, a text-to-speech system there, an image generator somewhere else) and sees provinces waiting to be unified. Its goal is a single network that maps any combination of text, image, audio and video to any other combination. Every specialist that survives is, in this view, just a capability the empire has not yet absorbed.
 
-It sits at the top center of the chart. The Monolith position reflects its expansionism: capabilities should be added by training, not by bolting on another model. Its horizontal position is balanced, because it is genuinely modality-agnostic, with no special loyalty to language or to perception. Its paradigm score leans revolutionary: few production systems have fully achieved it, and the attempt itself forces new architectures.
+It sits at the very top of the chart, a little right of centre. The Monolith position reflects its expansionism: capabilities should be added by training, not by bolting on another model. Its horizontal position is only slightly right of centre, because it is genuinely modality-agnostic, with no special loyalty to language or to perception. Its paradigm score is neutral: few production systems have fully achieved it, but the attempt extends today's scaled Transformer recipe rather than abandoning it.
 
 ## Arguments
 

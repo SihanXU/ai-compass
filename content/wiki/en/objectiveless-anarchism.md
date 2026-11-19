@@ -5,7 +5,7 @@ summary: "Ambitious objectives are deceptive; open-ended search for novelty and 
 
 Objectiveless Anarchism holds that fixing a loss function is the original sin of machine learning. Great discoveries are reached through stepping stones that look nothing like the destination, so optimising directly toward an ambitious goal steers you away from the very intermediate steps you need. Its alternative is to search for novelty, diversity and interestingness, keep an ever-growing archive of different solutions, and let environments and problems co-evolve with the agents that solve them.
 
-It sits at the Harness extreme because its "intelligence" is an open-ended process, archives plus generators plus selection, rather than a single trained model, and it leans slightly toward the Language side in today's form, where language models increasingly serve as judges of what counts as interesting. Its shade is the most revolutionary on the chart: it questions not a method but the very idea of an objective.
+It sits in the lower half toward Harness, because its "intelligence" is an open-ended process, archives plus generators plus selection, rather than a single trained model, and well on the World side, since its natural habitat is environments and agents that co-evolve, even as language models increasingly serve as judges of what counts as interesting. Its Beyond Revolutionary shade is the far end of the scale: it questions not a method but the very idea of an objective.
 
 ## Arguments
 

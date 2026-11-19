@@ -5,7 +5,7 @@ summary: "Many small, cheap models sampling, voting and collaborating can match 
 
 Swarm Collectivism bets on the crowd. Instead of one frontier model answering once, it runs many smaller models or many samples, lets them propose, critique, vote and aggregate, and trusts the collective output. Diversity of errors is the secret: if the members fail in different ways, majority voting and layered aggregation cancel much of the noise. A swarm is also cheap to grow, easy to run on commodity hardware and hard to monopolise.
 
-It sits at the Harness end of the chart, because capability is a property of the ensemble and the protocol that combines it, not of any one set of weights, and on the Language side, because its members mostly communicate and vote in text. The revolutionary shade comes from its direct challenge to the idea that the path forward is one ever-larger model.
+It sits in the lower, Harness half of the chart, because capability is a property of the ensemble and the protocol that combines it, not of any one set of weights, and left of centre on the Language side, because its members mostly communicate and vote in text. The Exploratory shade, leaning toward paradigm shift, comes from its direct challenge to the idea that the path forward is one ever-larger model.
 
 ## Arguments
 

@@ -5,7 +5,7 @@ summary: "Reliable long-horizon behavior needs explicit symbolic planning; learn
 
 Classical-Planning Restoration is the movement to bring the planning tradition of STRIPS operators, PDDL domains and heuristic search back to the center of agent design. Its members watched language models produce plausible-looking plans that violate preconditions, forget goals or loop, and concluded that what was missing was not more scale but a solver. Their preferred architecture lets learned models do what they are good at (parsing messy goals, perceiving states, proposing domain descriptions) and hands the actual sequencing to a sound, complete planner that can prove its plan achieves the goal.
 
-It sits far toward World because planning is about states, actions and effects in an environment, especially in robotics, and in the Harness half because it is explicitly a hybrid system of model plus planner. Its shade marks it as old guard: it is a restoration, and proud of it.
+It sits just right of centre because planning is about states, actions and effects in an environment, especially in robotics, and at the very bottom of the Harness axis because it is explicitly a hybrid system of model plus planner. Its shade is revolutionary: reviving classical planning breaks with today's scale-only recipe. It is a restoration, and proud of it.
 
 ## Arguments
 

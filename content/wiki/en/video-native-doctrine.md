@@ -5,7 +5,7 @@ summary: "Holds that time is the neglected modality, and that models should lear
 
 Video-Native Doctrine thinks the field has been studying photographs of a movie. Still images freeze the world at its least informative moment: no motion, no causation, no before and after. Video carries the dynamics, how objects persist, collide, fall and get used, and it does so at a scale no text corpus can match. A model that learns natively from video, with time as a first-class dimension rather than a stack of frames fed to an image encoder, will pick up physics, intent and causality that static data simply does not contain.
 
-It sits deep on the World side and in the upper-middle band: one large spatiotemporal model, not a pipeline of per-frame detectors. Its paradigm level is revolutionary. It argues that the image-and-caption era was a detour and that the next foundation will be built on moving pictures.
+It sits deep on the World side and in the upper-middle band: one large spatiotemporal model, not a pipeline of per-frame detectors. Its paradigm level is Exploratory, leaning toward paradigm shift. It argues that the image-and-caption era was a detour and that the next foundation will be built on moving pictures.
 
 ## Arguments
 

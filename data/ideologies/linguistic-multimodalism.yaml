@@ -5,10 +5,11 @@ name:
 motto:
   en: Multimodal ends, linguistic means
   zh: 目标是多模态，骨架是语言
-level: 5
+level: 8
+point: { x: -0.015, y: 0.847, p: -0.812 }
 place:
-  col: 5
-  row: 3
+  col: 6
+  row: 1
 parents: [any-to-any-imperialism]
 relations:
   allies: [unified-vocabulary-centralism, early-fusion-statism, understand-generate-unionism]

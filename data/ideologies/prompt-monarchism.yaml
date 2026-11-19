@@ -5,9 +5,10 @@ name:
 motto:
   en: A single system prompt rules all
   zh: 一切由一段系统提示统治
-level: 8
+level: 7
+point: { x: -0.622, y: 0.686, p: -0.583 }
 place:
-  col: 0
+  col: 3
   row: 2
 parents: [instruction-corporatism]
 relations:

@@ -5,7 +5,7 @@ summary: "A light-seeking little vehicle with two sensors and two wires already 
 
 Vehicle Primitivism returns to the thought experiment of Braitenberg vehicles: a toy cart with two light sensors wired to two wheels. Cross the wires and it charges toward the light; leave them straight and it turns away; add inhibition and it lingers near the source as if in love. Out of almost nothing comes behaviour observers instinctively describe in psychological terms. The lesson the primitivist draws is that much apparent intelligence is a property of the coupling between a simple body and its environment, and that we should understand such couplings before building anything bigger.
 
-It sits in the far corner of World and Harness: there is no model at all, only a body, sensors, wires and a world, and the "system" is the whole loop. It wears the darkest old-guard shade on the chart, a deliberate step back to the simplest possible agent, from an era long before deep learning.
+It sits near the far corner of World and Harness: there is no model at all, only a body, sensors, wires and a world, and the "system" is the whole loop. It wears the chart's most extreme paradigm-shift shade, Beyond Revolutionary: a deliberate return to the simplest possible agent, from an era long before deep learning, rejects the scaling mainstream wholesale.
 
 ## Arguments
 

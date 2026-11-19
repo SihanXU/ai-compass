@@ -5,10 +5,11 @@ name:
 motto:
   en: Long-term memory is the agent’s constitution
   zh: 长期记忆是智能体的宪法
-level: 5
+level: 7
+point: { x: -0.7, y: -0.981, p: -0.481 }
 place:
   col: 1
-  row: 8
+  row: 11
 parents: [rag-mutualism]
 relations:
   allies: [context-engineering-liberalism, rag-mutualism, harness-liberalism, retrieval-statism]

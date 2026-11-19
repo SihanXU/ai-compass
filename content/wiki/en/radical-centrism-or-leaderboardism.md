@@ -5,7 +5,7 @@ summary: "Every camp has a point and none deserves loyalty; use whatever method 
 
 Radical Centrism or Leaderboardism is the dead centre of the chart, earned by answering every debate with "it depends". Language or world? Both, weighted by the task. One model or a harness? Whichever ships. New paradigm or more scale? Ask again after the next benchmark release. In its sincere form this is principled empiricism: ideology is a prior, evaluation is the posterior, and the leaderboard is where priors go to be updated. In its less flattering form it is a refusal to hold any view that a benchmark has not yet confirmed.
 
-Its neutral shade and central position mean exactly that: no lean on either axis, no paradigm bet, no strong feelings about openness or speed. The double name is the joke and the point. The same person can be a careful pragmatist who weighs evidence from every camp, or someone whose research agenda is set by whatever topped a public ranking last week.
+Its central position and Steady shade mean exactly that: no lean on either axis, no bold paradigm bet, no strong feelings about openness or speed. The double name is the joke and the point. The same person can be a careful pragmatist who weighs evidence from every camp, or someone whose research agenda is set by whatever topped a public ranking last week.
 
 ## Arguments
 

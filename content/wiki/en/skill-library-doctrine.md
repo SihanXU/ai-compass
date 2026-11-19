@@ -5,7 +5,7 @@ summary: "Agents should build and reuse a library of atomic skills, composing th
 
 Skill-Library Doctrine believes competence is a toolbox, not a monolith. Pick, place, open, pour, navigate: each is learned or written once, verified, named and stored. New tasks are solved by composing existing skills, often with a language model or planner choosing the sequence, and genuinely new skills are added to the library when needed. Over time the library grows, and the agent becomes more capable without any single network getting bigger.
 
-It sits on the World side (col 11) toward Harness (row 7): it is about physical or simulated action, and its intelligence lives in a curated, growing collection plus the composer that uses it. Its neutral shade reflects a pragmatic, widely used design in both robotics and game agents. Its rivals are the generalist robot policy camps, which bet that a single large model will absorb all skills implicitly; the librarian prefers skills you can list, test and debug individually.
+It sits just right of centre, toward World, and near the Harness end: it is about physical or simulated action, and its intelligence lives in a curated, growing collection plus the composer that uses it. Its Exploratory shade reflects a pragmatic, widely used design in both robotics and game agents that still steps away from the one-big-model mainstream. Its rivals are the generalist robot policy camps, which bet that a single large model will absorb all skills implicitly; the librarian prefers skills you can list, test and debug individually.
 
 ## Arguments
 

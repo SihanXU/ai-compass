@@ -5,7 +5,7 @@ summary: "Ring title for the far Language-Harness corner: my agent, its memory a
 
 Agent Solipsism is a ring title for scores far toward Language (x below -0.7) and far toward Harness (y below -0.7) simultaneously. It is the bottom-left corner taken to its logical conclusion. The agent is a language model wrapped in memory, tools, prompts and workflows, and from the agent's point of view, nothing exists outside its context window: the world is whatever its tools return, other agents are just more text, and reality is a retrieval result. The holder, meanwhile, has spent so long tuning a personal agent that it has become the only system that seems real.
 
-On the chart it sits where language as substance meets the harness as means: no embodiment, no world model, no single giant model, just an ever more elaborate personal stack of context engineering. The revolutionary shade reflects how far this pushes the harness thesis; the joke is that a perfectly self-contained agent cannot tell its tools from the world.
+On the chart it sits where language as substance meets the harness as means: no embodiment, no world model, no single giant model, just an ever more elaborate personal stack of context engineering. The mainstream shade reflects that it asks for no new paradigm: it takes today's pretrained language models as given and simply builds ever more around them; the joke is that a perfectly self-contained agent cannot tell its tools from the world.
 
 ## Arguments
 

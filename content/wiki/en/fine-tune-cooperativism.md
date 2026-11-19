@@ -5,7 +5,7 @@ summary: "Cheap, parameter-efficient fine-tuning lets every community adapt shar
 
 Fine-Tune Cooperativism believes the most useful models are not the biggest ones but the ones adapted to a particular language, domain, style or task. Thanks to low-rank adapters and quantized training, that adaptation no longer requires a cluster: a single GPU and a curated dataset of modest size can specialize a strong open base model. The cooperative ideal is a commons of small, shareable adapters built by many groups on a few shared bases, each serving its own members while others can reuse, merge and improve them.
 
-It sits left of center, since its home turf is language-model adaptation, and in the lower Harness half, because it treats the base model as shared infrastructure and puts capability into a distributed layer of adapters and datasets around it. Its paradigm level is neutral: it is a practical economics of adaptation more than a new theory of intelligence.
+It sits near the Language edge, since its home turf is language-model adaptation, and close to the middle of the vertical axis: it builds on one shared base model, but puts capability into a distributed layer of adapters and datasets around it. Its paradigm level is exploratory: less a new theory of intelligence than a practical economics of adaptation that departs from the one-big-model mainstream.
 
 ## Arguments
 

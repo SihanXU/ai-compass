@@ -5,10 +5,11 @@ name:
 motto:
   en: Games are the gym of AGI
   zh: 游戏是 AGI 的训练场
-level: 4
+level: 2
+point: { x: 0.694, y: -0.451, p: 0.652 }
 place:
   col: 10
-  row: 8
+  row: 7
 parents: [model-based-planism]
 relations:
   allies: [open-endedness, world-as-code-doctrine, growing-tree-doctrine, sim-scale-statism]

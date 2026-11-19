@@ -5,7 +5,7 @@ summary: "Trains robot policies in simulation at massive scale, then transfers t
 
 Sim-to-Real Pragmatism has done the math on robot time. A real robot collects experience at one second per second, breaks things and needs supervision. A GPU-parallel simulator runs thousands of robots at once, faster than real time, and nothing gets hurt. So train in simulation and close the reality gap with whatever works: domain randomization over textures, masses and friction, system identification, careful actuator modeling, a little real-world fine-tuning. No grand theory required, just policies that walk, grasp and balance when they leave the simulator.
 
-It sits near the World edge and in the middle band: the policy may be a single network, but it lives inside an engineering pipeline of simulators, randomizers and deployment tooling. Its paradigm level is neutral. Sim-to-real is a mature, widely used methodology, especially for locomotion, and its practitioners care more about robots that work than about which ideology gets the credit.
+It sits right of centre, toward World, and in the lower half toward Harness: the policy may be a single network, but it lives inside an engineering pipeline of simulators, randomizers and deployment tooling. Its paradigm level is neutral. Sim-to-real is a mature, widely used methodology, especially for locomotion, and its practitioners care more about robots that work than about which ideology gets the credit.
 
 ## Arguments
 

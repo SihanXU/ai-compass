@@ -5,10 +5,11 @@ name:
 motto:
   en: Every step goes in the flowchart
   zh: 每一步都写进流程图
-level: 7
+level: 8
+point: { x: -0.396, y: -0.997, p: -0.679 }
 place:
-  col: 0
-  row: 8
+  col: 5
+  row: 11
 parents: [chain-syndicalism]
 relations:
   allies: [chain-syndicalism, function-call-federalism, eval-proceduralism]

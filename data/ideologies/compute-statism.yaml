@@ -5,10 +5,11 @@ name:
 motto:
   en: Compute is power; parameters are justice
   zh: 算力即国力，参数即正义
-level: 6
+level: 9
+point: { x: -0.54, y: 0.858, p: -0.878 }
 place:
-  col: 2
-  row: 0
+  col: 3
+  row: 1
 parents: [bitter-lesson-orthodoxy]
 relations:
   allies: [scaling-law-planism, scale-sublimism, frontier-kratocracy]

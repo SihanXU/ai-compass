@@ -5,10 +5,11 @@ name:
 motto:
   en: Text is just another image
   zh: 文字也只是一张图
-level: 3
+level: 4
+point: { x: 0.663, y: 0.784, p: 0.296 }
 place:
   col: 8
-  row: 0
+  row: 2
 parents: [visualism]
 relations:
   allies: [visual-token-statism, video-scalism, self-supervised-vision-statism]

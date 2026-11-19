@@ -5,10 +5,11 @@ name:
 motto:
   en: The right context beats a bigger model
   zh: 喂对上下文比换模型重要
-level: 4
+level: 6
+point: { x: -0.646, y: -0.878, p: -0.373 }
 place:
-  col: 2
-  row: 8
+  col: 3
+  row: 9
 parents: [prompt-craftism, rag-mutualism]
 relations:
   allies: [harness-liberalism, memory-constitutionalism, coding-agent-syndicalism]

@@ -5,10 +5,11 @@ name:
 motto:
   en: Perception and action are one loop
   zh: 感知与行动是同一个回路
-level: 3
+level: 2
+point: { x: 1, y: 0.423, p: 0.837 }
 place:
   col: 12
-  row: 6
+  row: 4
 parents: [embodied-statism, cybernetic-primitivism]
 relations:
   allies: [active-perception-doctrine, morphological-computationalism, subsumption-doctrine, dexterity-doctrine]

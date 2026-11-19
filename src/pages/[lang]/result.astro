@@ -53,7 +53,7 @@ const data = { ...clientData(lang), strings, wiki: url(lang, 'wiki/'), test: url
 </Layout>
 
 <script>
-  import { decodeResult, rank, earned, campOf, ideologyColour, gridOf, COLS, ROWS, CENTER } from '../../lib/compass.js';
+  import { toChart, decodeResult, rank, earned, campOf, ideologyColour, gridOf, COLS, ROWS, CENTER } from '../../lib/compass.js';
   import { ballSvg } from '../../lib/ball.js';
 
   const D = JSON.parse(document.getElementById('compass-data').textContent);
@@ -67,7 +67,12 @@ const data = { ...clientData(lang), strings, wiki: url(lang, 'wiki/'), test: url
     $('[data-r-name]').textContent = S.noResult;
     ['[data-r-axes-card]', '[data-r-near-card]'].forEach((s) => ($(s).hidden = true));
     const a = el('a', 'btn primary', S.retake); a.href = D.test + 'full/'; $('[data-r-actions]').append(a);
-  } else show(res);
+  } else {
+    // place the stored (raw) scores on the chart the same way the ideologies were placed
+    const k = D.calibration?.scale || {};
+    const subs = res.subs && Object.fromEntries(Object.entries(res.subs).map(([key, v]) => [key, Math.max(-1, Math.min(1, v * (k[key.split('.')[0]] || 1)))]));
+    show({ ...res, s: toChart(res.s, D.calibration), subs });
+  }
 
   function category(v, ax) {
     const pole = v < 0 ? ax.neg[L] : ax.pos[L];
@@ -114,7 +119,7 @@ const data = { ...clientData(lang), strings, wiki: url(lang, 'wiki/'), test: url
     const share = el('button', 'btn', S.share); share.type = 'button';
     share.addEventListener('click', () => { const done = () => { share.textContent = S.copied; }; navigator.clipboard ? navigator.clipboard.writeText(location.href).then(done, done) : done(); });
     const save = el('button', 'btn', S.saveImage); save.type = 'button';
-    save.addEventListener('click', () => saveImage({ s, quick, name, motto, bg: bestCol.bg }));
+    save.addEventListener('click', () => saveImage({ s: { ...s, x: at.x, y: at.y }, quick, name, motto, bg: bestCol.bg }));
     acts.append(share, save);
 
     // one bar per axis: the left pole's share on the left in its colour, the right pole's on the right
@@ -201,7 +206,9 @@ const data = { ...clientData(lang), strings, wiki: url(lang, 'wiki/'), test: url
       const camp = el('div', 'camp'); camp.style.cssText = `left:${(c.col / 3) * 100}%;top:${(c.row / 3) * 100}%;width:33.34%;height:33.34%`;
       marks.append(camp);
     }
-    const pin = el('div', 'pin'); pin.style.left = `${((s.x + 1) / 2) * 100}%`; pin.style.top = `${((1 - s.y) / 2) * 100}%`;
+    // the pin sits on the cell you matched (the quick test, which has no cell match, pins your raw position)
+    const at = quick ? { x: s.x, y: s.y } : (() => { const g = gridOf(best.place); return g.kind === 'center' ? { x: 0, y: 0 } : { x: -1 + (g.c + 0.5) * (2 / COLS), y: 1 - (g.r + 0.5) * (2 / ROWS) }; })();
+    const pin = el('div', 'pin'); pin.style.left = `${((at.x + 1) / 2) * 100}%`; pin.style.top = `${((1 - at.y) / 2) * 100}%`;
     marks.append(pin);
   }
 

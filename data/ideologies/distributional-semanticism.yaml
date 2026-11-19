@@ -5,10 +5,11 @@ name:
 motto:
   en: A word is known by its company
   zh: 词义取决于它的邻居
-level: 6
+level: 8
+point: { x: -0.81, y: 0.265, p: -0.872 }
 place:
-  col: 1
-  row: 6
+  col: 2
+  row: 4
 parents: [corpus-fundamentalism]
 relations:
   allies: [next-token-totalitarianism, pretraining-maximalism, contrastive-alignmentism, linguistic-relativism]

@@ -5,10 +5,11 @@ name:
 motto:
   en: Agents will form a society
   zh: 代理终将形成社会
-level: 3
+level: 5
+point: { x: -0.671, y: -0.901, p: -0.008 }
 place:
   col: 2
-  row: 9
+  row: 10
 parents: [multi-agent-parliamentarism]
 relations:
   allies: [generative-village-communalism, role-play-collectivism, emergent-language-doctrine, agent-anarcho-communism]

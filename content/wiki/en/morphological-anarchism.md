@@ -5,7 +5,7 @@ summary: "Bodies and brains should co-evolve freely; no fixed robot form, humano
 
 Morphological Anarchism rejects the assumption that we already know what a robot should look like. Engineers design a body first and then train a controller for it, but in nature body and nervous system evolved together, and much of the "intelligence" of a gecko or an octopus is in its shape and materials. So it lets morphology itself be searched: limb counts, joint placements, stiffness and sensor layout are all variables, optimised jointly with the policy. The result is often strange, sometimes a wobbling blob, and that is the point.
 
-It sits at the far World edge, where the body is not a peripheral but part of the computation, and at the Harness end, because there is no single central model governing everything; control is spread across a body whose physics does part of the work. The deep revolutionary shade comes from refusing both the fixed-form robot and the humanoid consensus at once.
+It sits at the far World edge, where the body is not a peripheral but part of the computation, and near the Harness end, because there is no single central model governing everything; control is spread across a body whose physics does part of the work. The Beyond Revolutionary shade comes from refusing both the fixed-form robot and the humanoid consensus at once.
 
 ## Arguments
 

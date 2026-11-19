@@ -5,7 +5,7 @@ summary: "Holds that the world is three-dimensional, so models should represent 
 
 Geometric Doctrine is tired of models that see the world as a stack of flat pictures. Objects have depth, shape and pose; cameras move; occlusion follows rules. A system that represents scenes in 3D, whether as point clouds, meshes, neural radiance fields or Gaussian splats, can render novel views, reason about where things are and plan how to reach them. Two-dimensional models must relearn the consequences of geometry from countless examples; geometric models get them as structure.
 
-It sits right of center on the World side and in the middle band: not a single giant model but not an agent toolkit either, a structured representation layer that both monoliths and robotics stacks can build on. Its paradigm level is neutral. Multi-view geometry is an old discipline, and neural 3D representations have given it a vigorous second life rather than a revolution.
+It sits right of center on the World side, just into the Harness half: not a single giant model but not an agent toolkit either, a structured representation layer that both monoliths and robotics stacks can build on. Its paradigm level is ultra-revolutionary. Multi-view geometry is an old discipline, and putting explicit 3D structure back at the centre runs sharply against the mainstream bet on unstructured scale.
 
 ## Arguments
 

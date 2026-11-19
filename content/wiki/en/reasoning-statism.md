@@ -5,7 +5,7 @@ summary: "Long chains of thought, trained with reinforcement learning on verifia
 
 Reasoning Statism holds that intelligence is not just what a model knows but how long and how carefully it can think. Give the model room to write out intermediate steps, reward it when the final answer checks out, and it learns to plan, backtrack, verify and try alternatives on its own. The state program is simple: build ever larger pools of math, code and logic problems with checkable answers, and let reinforcement learning grow ever longer, ever better chains of thought.
 
-It sits in the upper band, left of center. The language lean is natural, since the reasoning happens in written tokens. The Monolith lean reflects that the reasoning is trained into one model's weights rather than orchestrated by an external search or agent framework. Its paradigm score is mildly revolutionary: the approach reshaped frontier models quickly, and its limits are still being probed.
+It sits in the top-left corner, at the Language edge. The language lean is natural, since the reasoning happens in written tokens. The Monolith lean reflects that the reasoning is trained into one model's weights rather than orchestrated by an external search or agent framework. Its paradigm level is Mainstream: the approach quickly became part of how frontier models are built, though its limits are still being probed.
 
 ## Arguments
 

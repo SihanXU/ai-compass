@@ -6,9 +6,10 @@ motto:
   en: No body, no mind
   zh: 没有身体就没有智能
 level: 3
+point: { x: 1, y: 1, p: 0.586 }
 place:
   col: 12
-  row: 2
+  row: 0
 parents: [pan-embodimentism]
 relations:
   allies: [robot-foundationism, vla-monarchism, sensorimotor-doctrine]

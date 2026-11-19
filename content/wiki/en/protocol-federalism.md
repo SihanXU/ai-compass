@@ -5,7 +5,7 @@ summary: "Agents and tools should meet through open, standard protocols, so any 
 
 Protocol Federalism thinks the agent ecosystem's real bottleneck is integration, not intelligence. Every product reinventing its own tool format, auth scheme and context plumbing produces an N-by-M mess of adapters. The federalist answer is a common constitution: a small, open protocol that describes tools, resources and prompts, so servers written once can be used by any compliant client and any model. Sovereign tool providers keep their autonomy; they just agree on how to talk.
 
-It sits at the center of the Language-World axis, since protocols are neutral about what flows through them (text, files, screenshots, sensor reads), and in the Harness half, because it is pure system architecture around the model. Its paradigm level is mildly progressive: standards are not glamorous, but they are how the web, USB and package managers won.
+It sits near the center of the Language-World axis, just to the Language side, since protocols are largely neutral about what flows through them (text, files, screenshots, sensor reads), and in the Harness half, because it is pure system architecture around the model. Its paradigm level is neutral: standards are not glamorous, but they are how the web, USB and package managers won.
 
 ## Arguments
 

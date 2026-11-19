@@ -5,10 +5,11 @@ name:
 motto:
   en: No eval, no progress
   zh: 没有评测就没有进步
-level: 5
+level: 6
+point: { x: -0.488, y: -0.629, p: -0.327 }
 place:
   col: 4
-  row: 6
+  row: 5
 parents: [radical-centrism-or-leaderboardism]
 relations:
   allies: [interpretability-reformism, workflow-bureaucratism, math-formalism]

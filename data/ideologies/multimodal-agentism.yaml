@@ -5,10 +5,11 @@ name:
 motto:
   en: 'See, hear, speak, act: delegate it all'
   zh: 看、听、说、做都交给代理
-level: 4
+level: 8
+point: { x: -0.355, y: -0.782, p: -0.76 }
 place:
-  col: 6
-  row: 8
+  col: 5
+  row: 7
 parents: [tool-use-liberalism, modular-multimodalism]
 relations:
   allies: [visual-agent-doctrine, computer-use-liberalism, composable-liberalism]

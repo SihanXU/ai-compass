@@ -5,10 +5,11 @@ name:
 motto:
   en: Seeing and drawing are one act
   zh: 看与画是同一件事
-level: 4
+level: 7
+point: { x: 0.692, y: 0.922, p: -0.462 }
 place:
-  col: 6
-  row: 1
+  col: 9
+  row: 0
 parents: [any-to-any-imperialism]
 relations:
   allies: [diffusion-autoregressive-syncretism, native-fusion-centralism, visual-token-statism]

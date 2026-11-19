@@ -5,7 +5,7 @@ summary: "Populate a simulated town with memory-equipped language agents and bel
 
 Generative-Village Communalism is the cozy wing of agent research. Its founding image is a small sandbox town where a couple of dozen language-model agents wake up, make breakfast, go to work, gossip, remember each other, and, when one decides to throw a party, spread invitations and actually show up. The ingredients are simple: a memory stream of observations, periodic reflection that distills memories into higher-level beliefs, and planning that turns beliefs into a daily schedule. Put them together in a shared world and social behavior appears that nobody scripted line by line.
 
-It sits right of center because its agents live in a spatial, simulated world with places, objects and movement, and low in the Harness half because believability comes from the memory-reflection-planning architecture wrapped around the model. Its paradigm level is mildly progressive.
+It sits near the Language edge because its agents think, remember and talk in natural language even inside their simulated world, and low in the Harness half because believability comes from the memory-reflection-planning architecture wrapped around the model. Its paradigm level is neutral.
 
 ## Arguments
 

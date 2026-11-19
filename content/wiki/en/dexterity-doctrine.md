@@ -5,7 +5,7 @@ summary: "Holds that dexterous manipulation with multi-fingered hands is the tru
 
 Dexterity Doctrine believes intelligence lives in the hands. Walking is impressive, but many animals walk; what sets humans apart is the ability to twirl a pen, tie a knot, crack an egg or turn a key. These tasks demand fine contact control, tactile sensing, coordination across many degrees of freedom and constant adjustment to slips and surprises. A robot that can do them has solved most of what makes physical work hard, and the effort to get there forces progress in perception, control and learning all at once.
 
-It sits at the far World edge and in the middle band: dexterity typically needs a learned policy wrapped in careful hardware, sensing and control engineering, neither a pure monolith nor a loose agent system. Its paradigm level is progressive. It insists that grippers and pick-and-place are not enough, and that the frontier of robotics is the multi-fingered hand.
+It sits at the far World edge, just below the middle band: dexterity typically needs a learned policy wrapped in careful hardware, sensing and control engineering, neither a pure monolith nor a loose agent system. Its paradigm level is ultra-revolutionary. It insists that grippers and pick-and-place are not enough, and that the frontier of robotics is the multi-fingered hand.
 
 ## Arguments
 

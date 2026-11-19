@@ -5,10 +5,11 @@ name:
 motto:
   en: Chain the calls
   zh: 把调用串成链
-level: 6
+level: 8
+point: { x: -0.373, y: -0.975, p: -0.76 }
 place:
-  col: 1
-  row: 7
+  col: 5
+  row: 10
 parents: [prompt-craftism]
 relations:
   allies: [workflow-bureaucratism, rag-mutualism, prompt-craftism, tool-use-liberalism]

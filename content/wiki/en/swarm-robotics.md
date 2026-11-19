@@ -5,7 +5,7 @@ summary: "Many simple, cheap robots following local rules can achieve robust col
 
 Swarm Robotics takes its inspiration from ant colonies, bird flocks and fish schools. Each unit is deliberately simple: limited sensing, short-range communication, a handful of local rules. No unit holds a global map or a master plan. Yet together the swarm can aggregate, form shapes, explore terrain, carry objects or cover an area, and it degrades gracefully when individual units fail. Intelligence, in this view, is a property of the collective and its interactions, not of any single brain.
 
-It sits at the far World edge, since everything happens through bodies in physical space, and in the Harness half, since behavior comes from a system of many interacting parts rather than one end-to-end model. Its paradigm level is mildly progressive: an established field that keeps looking radical next to the one-big-robot mainstream.
+It sits near the far World edge, since everything happens through bodies in physical space, and at the very bottom, the Harness end, since behavior comes from a system of many interacting parts rather than one end-to-end model. Its paradigm level is Ultra-Revolutionary: an established field, but one that rejects the one-big-robot mainstream outright.
 
 ## Arguments
 

@@ -5,7 +5,7 @@ summary: "Agents should operate computers the way people do, through screens, mo
 
 Computer-Use Liberalism starts from a simple observation: almost all digital work is already exposed through a graphical interface built for humans, while only a fraction is exposed through clean APIs. Rather than waiting for every vendor to publish tools, let the agent look at the screen, move the pointer, click and type. The mouse and keyboard become the universal adapter, and the long tail of legacy software, internal dashboards and forms becomes reachable overnight.
 
-It sits just right of center, because the agent must perceive pixels and act in an environment rather than only read text, and in the Harness half, because computer use is a loop of screenshot, decision and action run by a system around the model. Its "liberalism" is a laissez-faire attitude toward integration: no permission or API required. Its paradigm level is mildly progressive.
+It sits left of centre, because the agent still reasons mostly in language even as it perceives pixels and acts in an environment, and in the upper half toward Monolith, because one model increasingly runs the whole loop of screenshot, decision and action. Its "liberalism" is a laissez-faire attitude toward integration: no permission or API required. Its paradigm level is revolutionary.
 
 ## Arguments
 

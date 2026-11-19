@@ -5,7 +5,7 @@ summary: "Holds that scenes should be represented as sets of discrete objects, e
 
 Object-Centrism believes the world comes pre-divided into things. A kitchen is not a grid of pixels or a single global embedding; it is a kettle, a cup, a table and a cat, each with position, shape and properties, interacting according to rules. A model that represents a scene as a set of object slots can count, track, compose and reason about relations far more naturally than one that smears everything into a feature map. Better still, objects can be discovered without labels, by architectures that compete to explain different parts of the input.
 
-It sits right of center on the World side and in the middle band: a structured inductive bias inside a learned model, neither pure scale nor external tooling. Its paradigm level is progressive. It challenges the scale camp's assumption that structure will simply emerge, arguing that objectness is a prior worth building in.
+It sits on the World side and in the lower half, toward Harness: a structured inductive bias that splits a scene into separate object slots and their interactions, rather than one undivided pure-scale model. Its paradigm level is Beyond Revolutionary. It challenges the scale camp's assumption that structure will simply emerge, arguing that objectness is a prior worth building in.
 
 ## Arguments
 

@@ -6,9 +6,10 @@ motto:
   en: Compute with real neurons
   zh: 用真的神经元计算
 level: 1
+point: { x: 0.694, y: 0.457, p: 1 }
 place:
-  col: 10
-  row: 11
+  col: 9
+  row: 3
 parents: [artificial-life-doctrine]
 relations:
   allies: [neuro-inspired-visualism, morphological-anarchism, predictive-coding-statism]

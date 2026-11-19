@@ -5,10 +5,11 @@ name:
 motto:
   en: Language has structure; so should models
   zh: 语言有结构，模型也该有
-level: 8
+level: 3
+point: { x: -0.647, y: -0.776, p: 0.616 }
 place:
-  col: 0
-  row: 3
+  col: 2
+  row: 6
 parents: [innatism]
 relations:
   allies: [formal-semanticism, symbolic-restorationism, neuro-symbolic-federalism]

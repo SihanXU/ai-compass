@@ -7,8 +7,8 @@ questions:
     sub:
       x: medium
     text:
-      en: Language is the vehicle of thought; a strong enough language model truly understands.
-      zh: 语言是思维的载体，一个足够强的语言模型就具备了真正的理解。
+      en: Language is the vehicle of thought; almost anything a mind can think, it could in principle work through in words.
+      zh: 语言是思维的载体：心智能想的几乎任何东西，原则上都可以用语言一步步想出来。
   - id: x2
     effects:
       x: 1
@@ -55,8 +55,8 @@ questions:
     sub:
       x: medium
     text:
-      en: Reasoning is fundamentally linguistic; the chain of thought is the thinking itself.
-      zh: 推理本质上是语言性的，思维链就是思考本身。
+      en: 'Reasoning is fundamentally linguistic: the hard part of solving a problem happens in words and symbols, not in wordless intuition.'
+      zh: 推理本质上是语言性的：解题中真正难的部分发生在文字和符号里，而不是在无法言说的直觉里。
   - id: x8
     effects:
       x: 1
@@ -87,13 +87,13 @@ questions:
     sub:
       x: medium
     text:
-      en: Language is a low-bandwidth, lossy compression of the world.
-      zh: 语言是对世界的一种低带宽、有损的压缩。
+      en: Language is a low-bandwidth, lossy compression of the world, so models trained mainly on text will hit a hard capability ceiling.
+      zh: 语言是对世界的低带宽、有损压缩，所以主要靠文本训练的模型终将撞上一个绕不过去的能力天花板。
   - id: x12
     effects:
       x: -1
     sub:
-      x: body
+      x: source
     text:
       en: A model that writes good code and proves theorems is closer to general intelligence than one that understands video.
       zh: 能写好代码、能证明定理的模型，比“看懂视频”的模型更接近通用智能。
@@ -151,8 +151,8 @@ questions:
     sub:
       'y': arch
     text:
-      en: The field should concentrate its resources on training the single strongest base model.
-      zh: 整个领域应该把资源集中在训练一个最强的基座模型上。
+      en: Making one general model stronger is a better use of research effort than engineering systems that combine several models.
+      zh: 把一个通用模型做得更强，比搭建组合多个模型的系统更值得投入研究精力。
   - id: y8
     effects:
       'y': -1
@@ -183,8 +183,8 @@ questions:
     sub:
       'y': control
     text:
-      en: Multi-agent systems mostly patch over the weaknesses of a single model.
-      zh: 多智能体系统大多只是在弥补单个模型的不足。
+      en: Multi-agent systems are a temporary patch for weak single models; better models will make most of them unnecessary.
+      zh: 多 agent 系统只是弥补单个模型不足的权宜之计，模型更强之后，大部分都会变得多余。
   - id: y12
     effects:
       'y': -1
@@ -199,8 +199,8 @@ questions:
     sub:
       p: arch
     text:
-      en: The Transformer will not be the final architecture on the way to general intelligence.
-      zh: Transformer 不会是通往通用智能的最终架构。
+      en: The Transformer will be replaced as the default architecture for frontier models within five years.
+      zh: 五年之内，Transformer 会被取代，不再是前沿模型的默认架构。
   - id: p2
     effects:
       p: -1
@@ -223,8 +223,8 @@ questions:
     sub:
       p: arch
     text:
-      en: Backpropagation on static datasets is itself a paradigm that needs replacing.
-      zh: 在静态数据集上做反向传播，这个范式本身需要被替换。
+      en: Backpropagation will eventually be replaced; future frontier systems will learn with a fundamentally different algorithm.
+      zh: 反向传播终将被取代，未来的前沿系统会用一种根本不同的算法来学习。
   - id: p5
     effects:
       p: -1
@@ -245,10 +245,10 @@ questions:
     effects:
       p: -1
     sub:
-      p: objective
+      p: arch
     text:
-      en: Methods from decades ago are badly underrated; the answers are often already there.
-      zh: 几十年前的老方法被严重低估了，答案往往早就有了。
+      en: Today's winning recipe is mostly decades-old neural-network ideas finally given enough data and compute; the hunt for a new paradigm is overrated.
+      zh: 今天胜出的配方，大多是几十年前的神经网络老想法终于等来了足够的数据和算力；寻找新范式这件事被高估了。
   - id: p8
     effects:
       p: 1
@@ -269,7 +269,7 @@ questions:
     effects:
       p: 1
     sub:
-      p: objective
+      p: arch
     text:
       en: In ten years, today’s mainstream methods will look as dated as SVMs look today.
       zh: 十年后回看，今天的主流方法会像今天回看 SVM 一样过时。
@@ -287,8 +287,8 @@ questions:
     sub:
       o: weights
     text:
-      en: Frontier capability is better concentrated in a few labs with safety teams.
-      zh: 前沿能力集中在少数有安全团队的实验室里更好。
+      en: Frontier capability is better concentrated in a few well-resourced developers than spread across many open-weight releases.
+      zh: 前沿能力集中在少数资源充足的开发者手里，比分散到大量开放权重模型里更好。
   - id: o3
     effects:
       o: 1
@@ -303,8 +303,8 @@ questions:
     sub:
       o: science
     text:
-      en: Academia can do frontier research with open models alone.
-      zh: 学术界只靠开放模型，也能做出前沿研究。
+      en: Publicly funded AI research should be required to release its models, training data and code.
+      zh: 公共资金资助的 AI 研究，应该被要求公开模型、训练数据和代码。
   - id: o5
     effects:
       o: -1
@@ -319,8 +319,8 @@ questions:
     sub:
       o: weights
     text:
-      en: The open community will catch up with, or even pass, the closed frontier.
-      zh: 开源社区终将追上甚至超过闭源前沿。
+      en: Being able to run, inspect and modify a model locally is worth accepting a noticeable capability gap to the best closed model.
+      zh: 能在本地运行、检查和修改模型，值得为此接受与最强闭源模型之间明显的能力差距。
   - id: o7
     effects:
       o: -1
@@ -351,8 +351,8 @@ questions:
     sub:
       a: pace
     text:
-      en: The chance that advanced AI causes catastrophe deserves serious attention.
-      zh: 先进 AI 带来灾难性后果的可能性，值得认真对待。
+      en: The probability that advanced AI causes a global catastrophe within this century is above ten percent.
+      zh: 先进 AI 在本世纪内造成全球性灾难的概率超过百分之十。
   - id: a3
     effects:
       a: 1
@@ -399,8 +399,8 @@ questions:
     sub:
       a: oversight
     text:
-      en: Independent bodies should safety-test models before they are deployed.
-      zh: 模型部署前应该由独立机构做安全评测。
+      en: Independent bodies should safety-test frontier models before deployment, even if this delays releases by months.
+      zh: 前沿模型部署前应该由独立机构做安全评测，即使这会让发布推迟几个月。
   - id: x13
     effects:
       x: 1
@@ -487,8 +487,8 @@ questions:
     sub:
       x: body
     text:
-      en: Object common sense, that cups spill and cloth folds, is learned mainly by acting on objects, so VLA models need large amounts of real robot data.
-      zh: 杯子会洒、布会折这类物体常识，主要是靠动手学会的，所以 VLA 模型离不开大量真实机器人数据。
+      en: Object common sense, such as that cups spill and cloth folds, is learned mainly by acting on objects, not by watching or reading about them.
+      zh: 杯子会洒、布会折这类物体常识，主要是靠亲手操作物体学会的，而不是靠看或读。
   - id: x24
     effects:
       x: -1
@@ -519,8 +519,8 @@ questions:
     sub:
       x: body
     text:
-      en: Training agents to act in physically rich simulators such as MuJoCo or Isaac teaches skills that no amount of text pretraining can substitute for.
-      zh: 在 MuJoCo、Isaac 这类物理丰富的模拟器里训练 agent 动手，学到的技能是再多文本预训练也替代不了的。
+      en: Learning to act in physically rich simulators such as MuJoCo is needed for general intelligence, not only for robotics; text pretraining cannot substitute for it.
+      zh: 在 MuJoCo 这类物理丰富的模拟器里学会动手，不只是机器人需要，而是通用智能所必需的，再多文本预训练也替代不了。
   - id: x28
     effects:
       x: -1
@@ -533,7 +533,7 @@ questions:
     effects:
       x: 1
     sub:
-      x: body
+      x: source
     text:
       en: Touch and proprioception matter as much as vision for a general world model, and today's multimodal models badly neglect them.
       zh: 对一个通用的 world model 来说，触觉和本体感觉和视觉一样重要，而现在的多模态模型几乎忽视了它们。
@@ -551,8 +551,8 @@ questions:
     sub:
       'y': arch
     text:
-      en: Separately trained perception, prediction and planning modules, as in modular self-driving stacks, are easier to verify than an end-to-end driving network.
-      zh: 像模块化自动驾驶栈那样分别训练感知、预测和规划模块，比一个端到端驾驶网络更容易验证。
+      en: Routing each request to the cheapest adequate model in a pool will keep beating sending everything to one frontier model on cost-adjusted quality.
+      zh: 把每个请求路由到模型池里够用且最便宜的模型，在性价比上会一直胜过把所有请求都交给同一个前沿模型。
   - id: y14
     effects:
       'y': 1
@@ -599,8 +599,8 @@ questions:
     sub:
       'y': arch
     text:
-      en: On hard benchmarks such as SWE-bench, systems combining several distinct models will keep holding the top results, rather than any single model.
-      zh: 在 SWE-bench 这类困难 benchmark 上，榜首会一直属于组合了多个不同模型的系统，而不是任何单个模型。
+      en: On hard agentic tasks such as SWE-bench, combining several distinct models is a better investment than squeezing more performance out of any single model.
+      zh: 在 SWE-bench 这类困难的 agent 任务上，把几个不同的模型组合起来，比在单个模型上继续压榨性能更值得投入。
   - id: y20
     effects:
       'y': 1
@@ -647,8 +647,8 @@ questions:
     sub:
       'y': memory
     text:
-      en: Test-time training or fast-weight updates on the running context will replace external vector-store memory for long-running agents.
-      zh: 对长时间运行的 agent，test-time training 或 fast weights 式的在线更新，会取代外部的向量库记忆。
+      en: External memory files and skill libraries add more failure modes than they remove; an agent's working state belongs in context and its skills in the weights.
+      zh: 外部记忆文件和技能库引入的故障点比解决的问题还多；agent 的工作状态应该放在上下文里，技能应该放在权重里。
   - id: y26
     effects:
       'y': 1
@@ -711,8 +711,8 @@ questions:
     sub:
       p: arch
     text:
-      en: ConvNets and LSTMs trained with modern recipes, data and compute close most of their gap to Transformers.
-      zh: 用现代的训练配方、数据和算力去训 ConvNet 和 LSTM，它们和 Transformer 的差距大部分都能补上。
+      en: ConvNets and LSTMs trained with modern recipes, data and compute close most of their gap to Transformers; scale matters far more than architecture.
+      zh: 用现代的训练配方、数据和算力去训 ConvNet 和 LSTM，它们和 Transformer 的差距大部分都能补上；真正起作用的是规模，而不是架构。
   - id: p14
     effects:
       p: 1
@@ -799,8 +799,8 @@ questions:
     sub:
       o: weights
     text:
-      en: For most developers, a well-priced API with fine-tuning endpoints is worth more than direct access to the weights.
-      zh: 对大多数开发者来说，一个价格合理、支持微调的 API，比直接拿到权重更有价值。
+      en: For most developers, a well-priced API with fine-tuning endpoints makes direct access to the weights largely unimportant.
+      zh: 对大多数开发者来说，有了价格合理、支持微调的 API，能不能直接拿到权重基本无关紧要。
   - id: o13
     effects:
       o: -1
@@ -815,8 +815,8 @@ questions:
     sub:
       o: science
     text:
-      en: Detailed results from dangerous-capability evaluations, such as biology uplift studies, should be shared only with vetted researchers.
-      zh: 危险能力评测（比如生物方面的 uplift 研究）的详细结果，只应该提供给经过审核的研究者。
+      en: AI developers are justified in withholding key training innovations from publication for a year or more to protect their lead.
+      zh: AI 开发者为了保住领先优势，把关键的训练创新压一年以上再发表，是正当的。
   - id: o15
     effects:
       o: -1
@@ -879,8 +879,8 @@ questions:
     sub:
       a: oversight
     text:
-      en: An agent that can spend money or send messages for a user should get explicit human confirmation before each such action.
-      zh: 能替用户花钱或发消息的 agent，每次执行这类操作前都应该得到人的明确确认。
+      en: An agent that can spend money or send messages for a user should get explicit confirmation before every such action, even small routine ones, despite the friction.
+      zh: 能替用户花钱或发消息的 agent，每一次这类操作前都应该得到人的明确确认，哪怕是小额的日常操作，哪怕这样很麻烦。
   - id: d1
     effects:
       x: 0.7
@@ -966,11 +966,11 @@ questions:
       'y': -0.7
       p: 0.7
     sub:
-      'y': memory
-      p: continual
+      'y': arch
+      p: arch
     text:
-      en: Agents will learn continually by writing new skills into an external, editable library, not by retraining their weights.
-      zh: agent 的持续学习会通过把新技能写进外部可编辑的技能库来实现，而不是重新训练权重。
+      en: Reliable reasoning will come from coupling neural networks with explicit symbolic solvers and program search, not from scaling a single network.
+      zh: 可靠的推理会来自神经网络与显式符号求解器、程序搜索的结合，而不是继续放大单个网络。
   - id: d10
     effects:
       'y': 0.7
@@ -983,24 +983,22 @@ questions:
       zh: 朴素的 decoder-only Transformer 只要放大规模，就能在内部学会检索和规划，不需要任何新的架构组件。
   - id: k1
     effects:
-      x: 0.6
-      'y': 0.4
+      'y': 1
     sub:
-      x: source
       'y': arch
     text:
       en: A vision-language model should fully retrain its vision encoder on its own data, rather than keep a frozen contrastive encoder and train only the projector.
       zh: 视觉语言模型应该用自己的数据把视觉编码器完整地重新训练一遍，而不是冻结一个对比学习编码器、只训练投影层。
   - id: k2
     effects:
-      x: -0.4
-      'y': 0.4
+      x: 0.4
+      'y': 0.8
     sub:
       x: medium
       'y': memory
     text:
-      en: For agent performance, deciding exactly what text enters the context window matters more than adding tools, sub-agents or execution environments.
-      zh: 对 agent 的表现来说，精确决定哪些文本进入 context window，比增加工具、sub-agent 或执行环境更重要。
+      en: Computer-use agents that see raw screenshots and act through mouse and keyboard will eventually beat agents given structured APIs and accessibility trees.
+      zh: 直接看原始截图、用鼠标键盘操作的 computer-use agent，最终会胜过那些拿着结构化 API 和无障碍树的 agent。
   - id: k3
     effects:
       x: 0.4
@@ -1023,65 +1021,55 @@ questions:
       zh: 先把图像转成详细的描述文字，再让纯文本模型在上面推理，在大多数真实任务上损失不大。
   - id: k5
     effects:
-      x: 0.6
-      p: -0.6
+      x: 0.4
+      p: -0.8
     sub:
       x: body
       p: arch
     text:
-      en: Physics simulators with hand-written dynamics will remain essential for training robots; learned video world models will not replace them.
-      zh: 带有手写动力学的物理仿真器仍将是训练机器人的必需品，学出来的视频世界模型取代不了它们。
+      en: General-purpose robot manipulation mainly needs far more real robot data under today's Transformer recipe, not new learning algorithms.
+      zh: 通用的机器人操作，主要缺的是在现有 Transformer 配方下多得多的真实机器人数据，而不是新的学习算法。
   - id: k6
     effects:
-      x: 0.4
-      'y': 0.4
-      p: 0.6
+      a: -1
     sub:
-      x: medium
-      'y': control
-      p: objective
+      a: oversight
     text:
-      en: If RL pushes a model's reasoning traces into sequences no human can read, that is acceptable and may even raise accuracy.
-      zh: 如果 RL 把模型的推理轨迹推成了人类读不懂的序列，这可以接受，甚至可能提高准确率。
+      en: Developers should accept some loss of accuracy to keep reasoning traces human-readable, rather than let RL drift them into unreadable sequences.
+      zh: 开发者应该宁可牺牲一些准确率，也要让推理轨迹保持人类可读，而不是任由 RL 把它们推成读不懂的序列。
   - id: k7
     effects:
-      'y': 0.8
-      p: -0.4
+      'y': 1
     sub:
       'y': memory
-      p: arch
     text:
-      en: Once context windows reach tens of millions of tokens, retrieval pipelines will be unnecessary for most document-grounded tasks.
-      zh: 一旦 context window 达到几千万 token，大多数基于文档的任务就不再需要检索流水线了。
+      en: Models should learn to compress and manage their own long-running context, instead of relying on hand-written summarization and memory-management code.
+      zh: 模型应该自己学会压缩和管理长时间运行中的上下文，而不是依赖手写的摘要和记忆管理代码。
   - id: k8
     effects:
-      x: -0.4
-      'y': 0.4
-      p: 0.4
+      p: -1
     sub:
-      x: medium
-      'y': control
       p: objective
     text:
-      en: Over the next few years, longer chains of thought at test time will add more capability than further scaling of pretraining.
-      zh: 未来几年里，测试时更长的思维链带来的能力提升，会超过继续放大预训练。
+      en: RL-trained chains of thought have opened a scaling axis within the current recipe that will keep delivering large gains for years.
+      zh: 用 RL 训练的思维链在现有配方内部打开了一条新的 scaling 维度，未来几年还会持续带来大幅提升。
   - id: k9
     effects:
-      'y': 0.6
+      'y': 0.4
       p: 0.8
+      a: 0.4
     sub:
       'y': memory
       p: continual
+      a: oversight
     text:
       en: A model that keeps updating its own weights from each user's interactions is worth the cost in reproducibility and auditability.
       zh: 一个根据每个用户的交互不断更新自身权重的模型，值得为此付出可复现性和可审计性的代价。
   - id: k10
     effects:
-      x: -0.4
       'y': -0.8
-      p: 0.4
+      p: -0.4
     sub:
-      x: medium
       'y': memory
       p: continual
     text:
@@ -1089,31 +1077,25 @@ questions:
       zh: agent 在工作中学到的东西，应该存成可编辑的文本笔记和 skill 文件，而不是 fine-tune 进权重。
   - id: k11
     effects:
-      x: 0.4
-      p: 0.6
+      p: 1
     sub:
-      x: medium
-      p: arch
+      p: objective
     text:
       en: Within five years, diffusion rather than left-to-right autoregression will be the main way frontier models generate text.
       zh: 五年之内，前沿模型生成文本的主要方式会是 diffusion，而不是从左到右的自回归。
   - id: k12
     effects:
-      x: 0.4
-      'y': 0.6
+      'y': 1
     sub:
-      x: medium
       'y': arch
     text:
       en: Using separate visual tokenizers for image understanding and image generation is a mistake; one shared visual representation should serve both.
       zh: 图像理解和图像生成各用一套视觉 tokenizer 是个错误，应该由同一套视觉表示同时服务两者。
   - id: k13
     effects:
-      x: 0.6
-      'y': -0.6
-      p: -0.6
+      'y': -0.8
+      p: 0.4
     sub:
-      x: body
       'y': control
       p: arch
     text:
@@ -1133,31 +1115,27 @@ questions:
       zh: VLA 模型应该把动作当作语言模型词表里的离散 token 来输出，而不是另接一个连续的 action head。
   - id: k15
     effects:
-      x: 0.4
-      'y': 0.6
+      'y': 1
     sub:
-      x: body
       'y': arch
     text:
       en: One policy trained on data from many different robot bodies will beat policies trained for a single specific robot, even on that robot.
       zh: 用多种不同机器人本体的数据训练出的单一策略，即使在某台特定机器人上，也会胜过专门为它训练的策略。
   - id: k16
     effects:
-      x: -0.4
-      p: 0.6
+      p: 1
     sub:
-      x: medium
       p: arch
     text:
       en: Tokenizer-free models that read raw bytes will replace subword tokenization in frontier language models.
       zh: 直接读取原始字节、不用 tokenizer 的模型，会在前沿语言模型中取代 subword 分词。
   - id: k17
     effects:
-      'y': -0.4
       p: 0.8
+      a: 0.4
     sub:
-      'y': control
       p: continual
+      a: oversight
     text:
       en: Agents that rewrite their own scaffolding code and prompts from experience will improve faster than any harness designed by humans.
       zh: 根据经验改写自身脚手架代码和 prompt 的 agent，会比任何人类设计的 harness 进步得更快。
@@ -1165,7 +1143,7 @@ questions:
     effects:
       x: -0.4
       'y': -0.6
-      p: -0.8
+      p: 0.6
     sub:
       x: source
       'y': memory
@@ -1175,21 +1153,17 @@ questions:
       zh: 人工整理的知识图谱回答事实性问题仍然比任何语言模型的参数记忆更可靠，而且会一直如此。
   - id: k19
     effects:
-      'y': 0.6
-      p: -0.4
+      'y': 1
     sub:
       'y': control
-      p: objective
     text:
       en: Multi-agent debate improves answers mainly by sampling more; a single model with majority voting at equal compute matches it.
       zh: 多 agent 辩论提升答案质量，主要是因为采样更多；同等算力下，单个模型做多数投票就能追平。
   - id: k20
     effects:
-      x: 0.4
-      'y': -0.8
-      p: 0.4
+      'y': -0.7
+      p: 0.7
     sub:
-      x: medium
       'y': arch
       p: arch
     text:
@@ -1197,60 +1171,48 @@ questions:
       zh: 写成可执行代码的世界模型，比如物理程序或游戏引擎，比神经网络视频模型泛化得更好。
   - id: k21
     effects:
-      x: 0.4
-      'y': -0.6
-    sub:
-      x: body
-      'y': control
-    text:
-      en: Model-free RL is too sample-hungry for real robots; they must plan explicitly with a learned dynamics model.
-      zh: model-free RL 对真实机器人来说样本效率太低，机器人必须借助学到的动力学模型进行显式规划。
-  - id: k22
-    effects:
-      x: -0.6
-      p: -0.4
+      x: 1
     sub:
       x: source
-      p: objective
+    text:
+      en: Spatial reasoning in current models will stay brittle until they are trained on data from agents moving through and acting in 3D environments.
+      zh: 现有模型的空间推理会一直很脆弱，直到用在三维环境中移动和行动的 agent 数据来训练它们为止。
+  - id: k22
+    effects:
+      x: -1
+    sub:
+      x: source
     text:
       en: Most of what a multimodal model knows about images comes from their paired captions, so caption quality matters more than image volume.
       zh: 多模态模型对图像的认识大多来自配对的描述文字，所以 caption 的质量比图像数量更重要。
   - id: k23
     effects:
-      x: -0.4
-      'y': 0.4
+      p: -1
     sub:
-      x: source
-      'y': arch
+      p: arch
     text:
-      en: Pretraining one model on interleaved image-text web documents matters more for multimodal ability than scaling paired image-caption data.
-      zh: 对多模态能力来说，用图文交错的网页文档预训练一个模型，比扩大图文配对数据更重要。
+      en: Claims that scaling has hit a wall keep being proven wrong; scaling the current recipe will continue to unlock new capabilities.
+      zh: “scaling 撞墙了”的说法一再被证伪；继续放大现有配方，还会不断解锁新能力。
   - id: k24
     effects:
-      x: -0.4
-      'y': -0.6
+      'y': -1
     sub:
-      x: medium
       'y': control
     text:
-      en: Coding agents get most of their reliability from test suites and execution feedback, not from the model writing correct code on the first try.
-      zh: coding agent 的可靠性主要来自测试用例和执行反馈，而不是模型第一次就写出正确的代码。
+      en: For coding agents, improving the test-and-execution scaffolding around the model now matters more for reliability than improving the model itself.
+      zh: 对 coding agent 来说，改进模型外围的测试和执行脚手架，现在比改进模型本身更能提升可靠性。
   - id: k25
     effects:
-      x: 0.4
-      'y': -0.8
+      'y': -1
     sub:
-      x: body
       'y': arch
     text:
       en: Separate detection, tracking, mapping and planning modules remain the right foundation for deployed self-driving, rather than one end-to-end driving network.
       zh: 对已部署的自动驾驶来说，分开的检测、跟踪、建图和规划模块仍然是正确的基础，而不是一个端到端的驾驶网络。
   - id: k26
     effects:
-      x: 0.6
-      'y': 0.6
+      'y': 1
     sub:
-      x: medium
       'y': arch
     text:
       en: Speech should be modeled end to end as audio tokens; cascading ASR, a text model and TTS throws away what matters.
@@ -1267,11 +1229,11 @@ questions:
       zh: 让模型在自己的思维链里决定想多久，比在它的输出上强加 tree-of-thought 之类的外部搜索更好。
   - id: k28
     effects:
-      'y': -0.6
-      p: -0.4
+      'y': -0.8
+      o: 0.4
     sub:
       'y': arch
-      p: objective
+      o: weights
     text:
       en: Small task-specific models fine-tuned with standard methods will match a frontier general model on most narrow tasks a team actually needs.
       zh: 用常规方法 fine-tune 的小型专用模型，在一个团队真正需要的大多数窄任务上，能追平前沿通用模型。

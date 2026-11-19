@@ -5,10 +5,11 @@ name:
 motto:
   en: Agents self-organize; no orchestrator
   zh: 代理自治，无需编排者
-level: 3
+level: 6
+point: { x: -0.671, y: -0.84, p: -0.275 }
 place:
-  col: 4
-  row: 10
+  col: 2
+  row: 8
 parents: [agent-anarcho-communism]
 relations:
   allies: [swarm-collectivism, emergent-language-doctrine, protocol-federalism, peer-to-peer-inference]

@@ -5,9 +5,10 @@ name:
 motto:
   en: Every camera is a neuron
   zh: 每个摄像头都是一个神经元
-level: 4
+level: 2
+point: { x: 0.967, y: -0.924, p: 0.852 }
 place:
-  col: 8
+  col: 12
   row: 11
 parents: [edge-ai-localism]
 relations:

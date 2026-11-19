@@ -5,10 +5,11 @@ name:
 motto:
   en: Everything organized by instruction
   zh: 万事按指令编队
-level: 5
+level: 8
+point: { x: -0.726, y: 0.705, p: -0.76 }
 place:
-  col: 3
-  row: 3
+  col: 1
+  row: 2
 parents: [pretraining-maximalism]
 relations:
   allies: [rlhf-paternalism, chat-absolutism, synthetic-data-planism]

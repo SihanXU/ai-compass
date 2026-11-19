@@ -5,7 +5,7 @@ summary: "Carefully handcrafted prompts unlock most of a model's ability, so pro
 
 Prompt Craftism treats the prompt as an artisan's workpiece. The right role, the right examples in the right order, the right phrasing of constraints and output format: each choice can swing results, and the craftsperson knows which ones from long practice. Where others see prompting as a temporary hack, the craftist sees a genuine skill, closer to editing or teaching than to programming, and keeps a well-worn notebook of templates that work.
 
-It sits at the far Language edge (col 0), since everything happens in natural language, and below the middle, toward Harness, because the prompt is scaffolding around a fixed model rather than a change to the model itself. Its fairly dark shade marks an older school by the field's fast clock: prompt craft was the defining practice of the early large-model era, and newer camps talk instead about context engineering, automatic prompt optimization or simply models that need less coaxing. The craftist is unbothered; handmade still sells.
+It sits near the far Language edge, since everything happens in natural language, and a little below the middle, toward Harness, because the prompt is scaffolding around a fixed model rather than a change to the model itself. Its Orthodox shade marks loyalty to the mainstream large-model recipe: prompt craft was the defining practice of the early large-model era, and newer camps talk instead about context engineering, automatic prompt optimization or simply models that need less coaxing. The craftist is unbothered; handmade still sells.
 
 ## Arguments
 

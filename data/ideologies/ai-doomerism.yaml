@@ -5,7 +5,7 @@ name:
 motto:
   en: Pause. Pause now.
   zh: 暂停，现在就暂停
-level: 7
+level: 8
 place:
   ring: right
   when: {a: <-0.6}

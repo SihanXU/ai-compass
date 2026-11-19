@@ -1,6 +1,6 @@
 # AI Research Compass · AI 研究立场图谱
 
-A political compass for AI research. Is intelligence built on **language** or on the **world**? Does it live in one end-to-end **monolith**, or in a **harness** of tools, memory and agents? Revolution or the old guard?
+A political compass for AI research. Is intelligence built on **language** or on the **world**? Does it live in one end-to-end **monolith**, or in a **harness** of tools, memory and agents? The mainstream recipe or a paradigm shift?
 
 **Site:** https://sihanxu.me/ai-compass/
 
@@ -31,6 +31,7 @@ npm run build      # validate, then build to dist/
 | `data/camps.yaml`, `data/axes.yaml`, `data/levels.yaml` | The quick test's nine camps, the five axes, the nine paradigm levels |
 | `src/lib/compass.js` | Scoring and matching |
 | `scripts/validate.mjs` | The checks every pull request must pass |
+| `data/calibration/`, `scripts/calibrate.mjs` | How every ideology was placed: its blind answers, and the script that turns them into the chart |
 
 ## Contributing
 

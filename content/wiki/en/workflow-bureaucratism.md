@@ -5,7 +5,7 @@ summary: "LLM applications should follow explicit, predefined workflows and stan
 
 Workflow Bureaucratism trusts the flowchart. Every request is triaged, routed to the right department, processed according to a standard operating procedure, checked and filed. Branches are explicit, handoffs are logged, and nothing happens that is not in the diagram. Where agent enthusiasts give a model a goal and hope, the bureaucrat gives it a form to fill in. The result is slower to build and less exciting to demo, but it behaves the same way on Tuesday as it did on Monday.
 
-It sits at the far Language edge (col 0) and well toward Harness (row 8): the steps are prompts and text, and the intelligence is mostly in the process design. Its fairly dark shade marks a conservative school. Graph-based orchestration, SOP-driven multi-agent frameworks and declarative pipelines all belong here, and they remain the backbone of many production deployments precisely because auditors, compliance teams and on-call engineers like knowing what will happen next.
+It sits left of centre and at the very bottom, the Harness end: the steps are prompts and text, and the intelligence is mostly in the process design. Its Orthodox shade marks an established, mainstream school. Graph-based orchestration, SOP-driven multi-agent frameworks and declarative pipelines all belong here, and they remain the backbone of many production deployments precisely because auditors, compliance teams and on-call engineers like knowing what will happen next.
 
 ## Arguments
 

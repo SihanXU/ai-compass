@@ -5,10 +5,11 @@ name:
 motto:
   en: 'Detect, segment, recognize: one pipeline'
   zh: 检测、分割、识别一条龙
-level: 6
+level: 7
+point: { x: 0.019, y: -0.926, p: -0.566 }
 place:
   col: 7
-  row: 7
+  row: 9
 parents: []
 relations:
   allies: [perception-stack-federalism, modular-multimodalism, robot-federalism, object-centrism]

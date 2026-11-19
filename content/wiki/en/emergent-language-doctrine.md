@@ -5,7 +5,7 @@ summary: "Agents should invent their own communication through shared tasks, so 
 
 The Emergent-Language Doctrine argues that a language learned by imitating the internet is borrowed, not owned. Human language arose because creatures needed to coordinate in a shared world, so the doctrine recreates that pressure: put agents in referential games, cooperative navigation or negotiation, give them a channel of discrete symbols, and let a protocol emerge. Study which conditions make that protocol compositional, efficient and interpretable, and you learn what language is for, not just what it looks like.
 
-It sits in the Harness extreme, because meaning lives in a population of interacting agents and their environment rather than in one network, and near the middle of the Language-World axis: it is about language, but language that must be grounded in perception and action. Its revolutionary shade reflects that it treats today's corpus-trained models as a shortcut that skips the interesting part.
+It sits low in the Harness half, because meaning lives in a population of interacting agents and their environment rather than in one network, and well toward the World side: it is about language, but language that must be grounded in perception and action. Its beyond-revolutionary shade, the most radical on the chart, reflects that it treats today's corpus-trained models as a shortcut that skips the interesting part.
 
 ## Arguments
 

@@ -5,7 +5,7 @@ summary: "Autonomous driving should be one neural network mapping camera pixels 
 
 End-to-End Driving Absolutism looks at the classic self-driving stack of perception, prediction, planning and control, each with its own team, interface and failure modes, and wants to delete the boundaries. Train one network on huge volumes of human driving, feed it raw sensor data, and have it output the trajectory or control commands directly. Intermediate representations may still exist inside the network, but they are learned rather than specified.
 
-It sits at the top-right of the chart: about as World as possible, since its inputs are pixels and its outputs are physical motion, and fully Monolith because the whole point is to replace a federation of modules with one model. Its paradigm score is mildly revolutionary. Early demonstrations of pixel-to-steering learning are decades old, but the approach became an industrial bet only once fleet data and compute caught up.
+It sits at the top-right of the chart: about as World as possible, since its inputs are pixels and its outputs are physical motion, and fully Monolith because the whole point is to replace a federation of modules with one model. Its paradigm level is exploratory. Early demonstrations of pixel-to-steering learning are decades old, but the approach became an industrial bet only once fleet data and compute caught up.
 
 ## Arguments
 

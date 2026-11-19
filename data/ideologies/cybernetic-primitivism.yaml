@@ -5,7 +5,7 @@ name:
 motto:
   en: The feedback loop is everything
   zh: 反馈回路就是一切
-level: 9
+level: 2
 place:
   ring: br
   when: {x: '>0.7', 'y': <-0.7}

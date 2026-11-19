@@ -5,10 +5,11 @@ name:
 motto:
   en: Simple units, complex swarms
   zh: 简单个体，复杂集体
-level: 4
+level: 2
+point: { x: 0.822, y: -0.816, p: 0.839 }
 place:
-  col: 12
-  row: 8
+  col: 11
+  row: 11
 parents: [artificial-life-doctrine]
 relations:
   allies: [swarm-collectivism, reactive-anarchism, distributed-embodiment, sensor-network-anarchism]

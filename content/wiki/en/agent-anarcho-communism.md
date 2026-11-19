@@ -5,7 +5,7 @@ summary: "Every agent should have open access to every tool, skill and memory; c
 
 Agent Anarcho-Communism imagines an agent ecosystem without ownership. Tools, skills, prompts, memories and learned workflows go into a common pool, and any agent can draw on any of them according to its needs. There is no orchestrator deciding who may call what, and no vendor-locked plugin store. When one agent learns to file an expense report or fix a flaky build, that skill becomes everyone's skill. "From each agent according to its abilities, to each according to its tool calls."
 
-It sits at the far Language and far Harness corner: agents are language models talking to one another through text and tool schemas, and all the interesting capability lives in the shared system around them rather than in any single model's weights. Its revolutionary shade reflects how far this is from current practice, where tools are permissioned, sandboxed and very much owned.
+It sits on the Language side, a little below the middle toward Harness: agents are language models talking to one another through text and tool schemas, and much of the interesting capability lives in the shared system around them rather than in any single model's weights. Its shade is only steady, since it builds on today's language models and tool protocols; its radicalism concerns ownership, not method, and that is still far from current practice, where tools are permissioned, sandboxed and very much owned.
 
 ## Arguments
 

@@ -5,7 +5,7 @@ summary: "When natural data runs short, models should generate their own trainin
 
 Synthetic-Data Planism answers the data wall with a printing press. If the supply of high-quality human text is finite, then models must produce more of it: instructions written by models, textbook-style explanations generated on demand, reasoning traces filtered by verifiers, captions rewritten by stronger captioners. Like a planned economy, the key is not raw production but quotas and quality control. Decide what the next model needs, generate it, filter it, and train.
 
-It sits in the upper band at the center of the chart. Its horizontal position is balanced because synthetic data is used for text, images and simulated robotics alike. The Monolith lean reflects that the end product is still one model trained on a planned corpus. Its paradigm score is mildly revolutionary: synthetic data has moved from a curiosity to a core part of many training pipelines.
+It sits in the upper half, close to the Language edge. Its horizontal position leans hard toward Language because its main product is model-written text: instructions, explanations and reasoning traces. The Monolith lean reflects that the end product is still one model trained on a planned corpus. Its paradigm level is Mainstream: synthetic data has moved from a curiosity to a core part of many training pipelines.
 
 ## Arguments
 

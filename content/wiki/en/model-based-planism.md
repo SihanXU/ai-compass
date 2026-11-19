@@ -5,7 +5,7 @@ summary: "Agents should learn a model of their environment and plan inside it, t
 
 Model-Based Planism holds that the smart way to act is to think first. Learn a dynamics model from experience, then use it to roll out candidate futures, score them and choose: by tree search, trajectory optimization or by training a policy on imagined experience. Every mistake made in imagination is a mistake not made in the world, which is why the planist sees model-free trial-and-error as wasteful, especially where real interaction is slow, expensive or dangerous.
 
-It sits on the World side (col 11) at mid-height. It is about physical and game environments with dynamics, and it combines a learned model with a planning procedure, a two-part system rather than one reflexive network or a sprawling agent harness. Its shade is fairly revolutionary in spirit: planning in a learned latent space is still an active frontier, and the planist expects it to be how robots and agents eventually generalize beyond what they have directly practised.
+It sits on the World side, just above mid-height. It is about physical and game environments with dynamics, and it combines a learned model with a planning procedure, a two-part system rather than one reflexive network or a sprawling agent harness. Its shade is Ultra-Revolutionary: planning in a learned latent space is still an active frontier, and the planist expects it to be how robots and agents eventually generalize beyond what they have directly practised.
 
 ## Arguments
 

@@ -5,10 +5,11 @@ name:
 motto:
   en: Think longer at inference
   zh: 推理时多想一会儿
-level: 4
+level: 6
+point: { x: -0.7, y: 0.424, p: -0.246 }
 place:
-  col: 4
-  row: 2
+  col: 2
+  row: 3
 parents: [bitter-lesson-orthodoxy]
 relations:
   allies: [reasoning-statism, code-as-thought, compute-statism]

@@ -5,7 +5,7 @@ summary: "To understand a situation is to write a program that explains it; inte
 
 Program-Synthesis Doctrine holds that the right output of perception and learning is not a vector or a caption but a program: a compact, executable, compositional description that reproduces what was observed and generalizes beyond it. Faced with a puzzle grid, a visual scene or a handful of input-output pairs, an intelligent system should search for the shortest program that explains them, and build up a library of reusable abstractions as it goes. Generalization from few examples, on this view, is exactly what program induction delivers and pattern-matching does not.
 
-It sits right of center because its showcase problems are visual and spatial (abstract grid puzzles, scenes, drawings) rather than linguistic, and in the lower Harness half because it couples models with interpreters, search procedures and growing libraries. Its paradigm level is neutral: program induction is an old idea, newly energized by models that can write code.
+It sits left of centre because its programs are written in code even when its showcase problems are visual and spatial (abstract grid puzzles, scenes, drawings), and well toward the Harness end because it couples models with interpreters, search procedures and growing libraries. Its paradigm level is Revolutionary: program induction is an old idea from outside today's mainstream, newly energized by models that can write code.
 
 ## Arguments
 

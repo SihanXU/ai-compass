@@ -30,6 +30,7 @@ export const camps = readYaml('data/camps.yaml').camps;
 export const axes = readYaml('data/axes.yaml').axes;
 export const levels = readYaml('data/levels.yaml').levels;
 export const subaxes = readYaml('data/subaxes.yaml').subaxes;
+export const calibration = fs.existsSync(path.join(ROOT, 'data/calibration.yaml')) ? readYaml('data/calibration.yaml') : null;
 export const levelOf = (lv) => levels.find((l) => l.level === lv);
 
 
@@ -38,8 +39,9 @@ export const childrenOf = (id) => ideologies.filter((i) => (i.parents || []).inc
 /** which of the nine camps an on-chart ideology sits in; null for the centre block and the ring */
 export function campIndex(ide) {
   if (ide.place.ring || ide.place.center) return null;
-  const pt = pointOf(ide);
-  return campOf(pt);
+  // by where the ideology is drawn, so a camp on the wiki is a region of the chart
+  const g = gridOf(ide.place);
+  return campOf({ x: -1 + (g.c + 0.5) * (2 / COLS), y: 1 - (g.r + 0.5) * (2 / ROWS) });
 }
 export const campAt = (col, row) => camps.find((c) => c.col === col && c.row === row);
 
@@ -64,7 +66,7 @@ export function clientData(lang) {
     lang,
     version: tests.version,
     ideologies: ideologies.map((i) => ({
-      id: i.id, name: i.name, motto: i.motto, level: i.level, place: i.place,
+      id: i.id, name: i.name, motto: i.motto, level: i.level, place: i.place, point: i.point,
     })),
     questions: Object.fromEntries(questionList.map((q) => [q.id, { effects: q.effects, sub: q.sub, text: q.text }])),
     tests: {
@@ -72,6 +74,7 @@ export function clientData(lang) {
       ...(tests.pro ? { pro: tests.pro.questions, proPool: tests.pro.followups.pool, proAsk: tests.pro.followups.ask, proVersion: tests.pro.version } : {}),
     },
     subaxes,
+    calibration,
     camps,
     axes: axes.map((a) => ({ key: a.key, neg: a.neg, pos: a.pos, title: a.title })),
     levels,

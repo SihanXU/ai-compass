@@ -5,7 +5,7 @@ summary: "Compute is the decisive factor of production in AI, so whoever concent
 
 Compute Statism treats FLOPs the way an old planned economy treated steel output. Algorithms come and go, datasets get scraped and re-scraped, but the size of the cluster determines what is possible this year. Progress is therefore a matter of capital allocation: build bigger data centers, secure more accelerators, and let parameters do the rest. Cleverness is welcome, but it is a multiplier on compute, never a substitute for it.
 
-It sits near the top-left: language-leaning, because text is where compute has paid off most visibly, and firmly Monolith, because concentrated compute favors one giant run over many small systems. Its paradigm score tilts toward the establishment; this is less a revolution than the internal logic of an industry that already won the argument.
+It sits near the top-left: language-leaning, because text is where compute has paid off most visibly, and firmly Monolith, because concentrated compute favors one giant run over many small systems. Its paradigm level is ultra-orthodox; this is less a revolution than the internal logic of an industry that already won the argument.
 
 ## Arguments
 

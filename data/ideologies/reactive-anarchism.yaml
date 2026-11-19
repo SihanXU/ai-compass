@@ -5,10 +5,11 @@ name:
 motto:
   en: No plans, only reflexes
   zh: 不要计划，只要反射
-level: 8
+level: 3
+point: { x: 0.638, y: -0.428, p: 0.429 }
 place:
-  col: 11
-  row: 11
+  col: 9
+  row: 6
 parents: [subsumption-doctrine]
 relations:
   allies: [vehicle-primitivism, cybernetic-primitivism, sensorimotor-doctrine]

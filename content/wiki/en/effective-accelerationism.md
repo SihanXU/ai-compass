@@ -5,7 +5,7 @@ summary: "Ring title for extreme acceleration scores: progress itself is the saf
 
 Effective Accelerationism is a ring title earned by acceleration scores above 0.6, regardless of where one sits on the main chart. Its holders agree with statements like "human approval is the bottleneck" and "doom talk is mostly marketing or panic". The core belief is that technological progress is overwhelmingly positive, that slowing it has real costs measured in problems left unsolved, and that the best way to handle risks from powerful AI is more capable AI, more competition and more openness, not pauses and licensing regimes.
 
-Because it is about speed rather than method, the title sits on the left ring outside the two main axes; a Language monolith-builder and a World swarm-roboticist can both earn it. The revolutionary shade fits its self-image as a challenge to institutional caution, though critics note that "go faster" is a stance on governance, not a research paradigm.
+Because it is about speed rather than method, the title sits on the left ring outside the two main axes; a Language monolith-builder and a World swarm-roboticist can both earn it. The neutral shade reflects that "go faster" is a stance on governance, not a research paradigm: it will accelerate whatever recipe works, even though its holders see themselves as challenging institutional caution.
 
 ## Arguments
 

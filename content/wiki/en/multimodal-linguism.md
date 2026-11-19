@@ -5,7 +5,7 @@ summary: "Holds that a model may perceive through many senses, but its thinking 
 
 Multimodal Linguism follows the naming rule exactly: language is the substance, multimodality the means. Eyes and ears are welcome, but they are input devices. Whatever comes in, whether an image, a chart or an audio clip, is translated into the model's linguistic workspace, and that is where reasoning, planning and explanation take place. Language is the most general representational system humans have, so it is the natural place for a mind to think, even when what it thinks about is visual.
 
-It sits just left of center, on the Language side but close to the multimodal heartland, and in the upper-middle band: one model, with perception folded in. Its paradigm level is neutral, since it describes the architecture of many current vision-language assistants, where image tokens flow into a language model that does the talking and the thinking.
+It sits at the far Language edge, and in the upper half of the vertical axis: one model, with perception folded in. Its paradigm level is Orthodox, since it describes the architecture of many current vision-language assistants, where image tokens flow into a language model that does the talking and the thinking.
 
 ## Arguments
 

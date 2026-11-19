@@ -5,9 +5,10 @@ name:
 motto:
   en: All intelligence is next-token prediction
   zh: 一切智能都是预测下一个词
-level: 7
+level: 9
+point: { x: -0.956, y: 1, p: -1 }
 place:
-  col: 1
+  col: 0
   row: 0
 parents: [logos-absolutism]
 relations:

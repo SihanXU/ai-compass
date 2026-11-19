@@ -5,10 +5,11 @@ name:
 motto:
   en: Only what is proved is reasoned
   zh: 能证明的才算推理
-level: 6
+level: 3
+point: { x: -0.986, y: -0.861, p: 0.388 }
 place:
-  col: 5
-  row: 4
+  col: 0
+  row: 8
 parents: [formal-semanticism]
 relations:
   allies: [symbolic-restorationism, neuro-symbolic-federalism, reasoning-statism]

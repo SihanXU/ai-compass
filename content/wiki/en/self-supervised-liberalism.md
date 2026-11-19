@@ -5,7 +5,7 @@ summary: "Let data supervise itself; labels and captions are optional, and good 
 
 Self-Supervised Liberalism holds that the data already contains its own supervision. Mask part of an image and predict it, show two views and ask that they agree, distill a student from a slowly moving teacher: in each case the signal comes from the structure of the world, not from a human annotator or a caption scraped from the web. Freed from labels, a model can learn from far more data and pick up properties nobody thought to label, such as object boundaries and part correspondences.
 
-It sits on the World side (col 8) at mid-height. The liberal label is about its laissez-faire attitude to supervision and its pluralism about method: masking, distillation and contrastive objectives all welcome, no single central loss decreed. Unlike its statist cousin above, it does not insist on one giant backbone ruling everything, and it is comfortable as one component inside larger systems. Its shade marks a modern, moderately revolutionary view.
+It sits well over on the World side, just above mid-height. The liberal label is about its laissez-faire attitude to supervision and its pluralism about method: masking, distillation and contrastive objectives all welcome, no single central loss decreed. Unlike its statist cousin above, it does not insist on one giant backbone ruling everything, and it is comfortable as one component inside larger systems. Its shade is Exploratory, leaning mildly toward paradigm shift.
 
 ## Arguments
 

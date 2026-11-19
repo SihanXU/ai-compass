@@ -5,10 +5,11 @@ name:
 motto:
   en: Language labels what vision already knows
   zh: 语言只是视觉的标签
-level: 4
+level: 3
+point: { x: 1, y: 0.638, p: 0.414 }
 place:
-  col: 9
-  row: 3
+  col: 12
+  row: 2
 parents: [pan-embodimentism]
 relations:
   allies: [self-supervised-vision-statism, video-scalism, pixel-totalitarianism, neuro-inspired-visualism]

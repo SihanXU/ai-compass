@@ -5,10 +5,11 @@ name:
 motto:
   en: The model is the engine; the harness is the car
   zh: 模型是引擎，harness 才是车
-level: 4
+level: 7
+point: { x: -0.637, y: -0.953, p: -0.436 }
 place:
   col: 3
-  row: 8
+  row: 11
 parents: [tool-use-liberalism]
 relations:
   allies: [context-engineering-liberalism, coding-agent-syndicalism, protocol-federalism, memory-constitutionalism]

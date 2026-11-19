@@ -5,10 +5,11 @@ name:
 motto:
   en: Data stays home
   zh: 数据不出门
-level: 5
+level: 2
+point: { x: 0.734, y: -0.422, p: 0.686 }
 place:
-  col: 6
-  row: 10
+  col: 10
+  row: 6
 parents: []
 relations:
   allies: [edge-ai-localism, decentralized-training-doctrine, sensor-network-anarchism, small-model-localism]

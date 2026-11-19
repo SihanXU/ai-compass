@@ -5,7 +5,7 @@ summary: "Perception should be spread across countless cheap networked sensors t
 
 Sensor-Network Anarchism imagines perception without a centre. Instead of one powerful robot or one model looking at the world through one camera, it wants thousands of cheap cameras, microphones, accelerometers and air-quality sensors, each running a tiny model on-device, gossiping summaries to their neighbours. The world is observed from everywhere at once, and understanding emerges from the network rather than from any single vantage point. "Every camera is a neuron" is meant only slightly as a metaphor.
 
-It sits on the World side, because the raw material is continuous physical sensing, and at the Harness extreme, because the "model" is a distributed system of nodes, protocols and aggregation rules. The neutral-leaning shade reflects that much of its toolkit, from sensor fusion to edge inference and federated updates, is established engineering applied with anarchic ambition.
+It sits in the far World, far Harness corner: World because the raw material is continuous physical sensing, Harness because the "model" is a distributed system of nodes, protocols and aggregation rules. Its shade is Ultra-Revolutionary: much of its toolkit, from sensor fusion to edge inference and federated updates, is established engineering, but replacing the central model with a planetary network is a sharp break from the mainstream.
 
 ## Arguments
 

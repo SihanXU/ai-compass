@@ -5,10 +5,11 @@ name:
 motto:
   en: The model must obey Newton
   zh: 模型必须服从牛顿
-level: 5
+level: 2
+point: { x: 0.327, y: -0.277, p: 0.748 }
 place:
-  col: 11
-  row: 2
+  col: 6
+  row: 4
 parents: [physicalism]
 relations:
   allies: [intuitive-physics-doctrine, geometric-doctrine, classical-control-conservatism]

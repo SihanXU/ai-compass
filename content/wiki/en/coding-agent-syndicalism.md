@@ -5,7 +5,7 @@ summary: "Software is the first workplace agents take over; agents that read rep
 
 Coding-Agent Syndicalism believes the decisive unit of AI progress is not the chat answer but the merged change. Give a model a repository, a shell, a test suite and a loop, and it can read, edit, run, fail, read the error and try again, much as a working engineer does. Code is the ideal proving ground because it comes with its own judge: compilers and tests say yes or no without a human grader. The "syndicalism" is the conviction that agents should organize around the actual work, with the tools of the trade in their own hands.
 
-It sits just left of center, since code is a formal language but one that touches real systems, and in the upper Harness half, because the power comes from the loop of tools, execution and feedback rather than from a single forward pass. Its paradigm level is mildly progressive: it extends existing models more than it overturns them.
+It sits at the far Language edge, since code is a formal language, though one that touches real systems, and just below the middle on the Harness side, because the power comes from the loop of tools, execution and feedback rather than from a single forward pass. Its paradigm level is steady: it extends existing models more than it overturns them.
 
 ## Arguments
 

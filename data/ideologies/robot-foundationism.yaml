@@ -5,10 +5,11 @@ name:
 motto:
   en: The data flywheel spins in the real world
   zh: 数据飞轮在真实世界里转
-level: 4
+level: 6
+point: { x: 0.988, y: 0.738, p: -0.363 }
 place:
-  col: 12
-  row: 3
+  col: 11
+  row: 1
 parents: [robot-foundation-imperialism, embodied-statism]
 relations:
   allies: [vla-monarchism, humanoid-centralism, open-hardware-mutualism]

@@ -5,7 +5,7 @@ summary: "Neural networks implement legible circuits of features and connections
 
 Circuit Constitutionalism takes interpretability one step further: it holds that models are not just partly explainable but are built from identifiable circuits, small subgraphs of features and weights that implement specific algorithms. Induction heads that copy patterns, curve detectors that assemble into shapes, and indirect-object circuits are its founding documents. If behaviour is written in circuits, then reading the circuits is reading the model's real law, more authoritative than any system prompt or policy document.
 
-It sits on the Language side (col 3) at mid-height, where most circuit work on transformers has happened, and its program is about one model's internals rather than external tooling. Its shade is fairly revolutionary: it bets that mechanistic, bottom-up understanding of networks is possible at all, a claim that many in deep learning considered naive not long ago. The constitutional metaphor also carries a hope: a constitution can be amended, so circuits might one day be edited deliberately.
+It sits well toward the Language side and near the Monolith top, where most circuit work on transformers has happened, and its program is about one model's internals rather than external tooling. Its shade is orthodox: it works entirely within today's Transformer-plus-scale recipe, studying the very models the mainstream builds, even if its bet that mechanistic, bottom-up understanding is possible at all once struck many as naive. The constitutional metaphor also carries a hope: a constitution can be amended, so circuits might one day be edited deliberately.
 
 ## Arguments
 

@@ -5,7 +5,7 @@ summary: "Inference belongs on the device, close to the sensors and the user, fo
 
 Edge-AI Localism holds that sending every camera frame, voice command and sensor reading to a distant datacenter is wasteful, slow and fragile. Models should run where the data is born: on phones, cameras, cars, drones, wearables and microcontrollers. That demands a craft of its own (efficient architectures, quantization, pruning, distillation, hardware-aware design), and the localists treat these constraints as a feature: a model that fits in a few megabytes and answers in milliseconds is a better engineered artifact than one that needs a rack.
 
-It sits right of center because edge inference is mostly about perceiving and acting in the physical world (vision, audio, sensors) rather than generating long text, and near the bottom of the Harness axis, because intelligence is spread across many small devices cooperating with, but not dependent on, the cloud. Its paradigm level is neutral: an old engineering discipline, newly urgent as models grow.
+It sits on the World side because edge inference is mostly about perceiving and acting in the physical world (vision, audio, sensors) rather than generating long text, and near the bottom of the Harness axis, because intelligence is spread across many small devices cooperating with, but not dependent on, the cloud. Its paradigm level is exploratory: an old engineering discipline, newly urgent as models grow, that pushes against the cloud-centred mainstream.
 
 ## Arguments
 

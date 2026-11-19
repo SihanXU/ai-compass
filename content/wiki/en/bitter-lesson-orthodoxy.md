@@ -5,7 +5,7 @@ summary: "General methods that scale with computation, namely search and learnin
 
 Bitter-Lesson Orthodoxy rests on a much-quoted reading of history: in chess, Go, speech, vision and language, researchers repeatedly encoded their own understanding of a domain into systems, won in the short term, and were then overtaken by methods that simply exploited more computation. The lesson is "bitter" because it insults the researcher's intuition. The orthodox response is discipline: resist the urge to build in what you know, and invest in methods that improve as compute grows.
 
-It sits at the top of the chart, center-left. The Monolith placement follows naturally, since hand-crafted modules and pipelines are exactly the kind of human prior the doctrine distrusts. Its language lean is mild and mostly historical, because language is where the lesson was most recently relearned. Its paradigm score is establishment-leaning: the doctrine is now taught rather than discovered.
+It sits at the very top of the chart, just left of centre. The Monolith placement follows naturally, since hand-crafted modules and pipelines are exactly the kind of human prior the doctrine distrusts. Its language lean is mild and mostly historical, because language is where the lesson was most recently relearned. Its paradigm level is orthodox: the doctrine is now taught rather than discovered.
 
 ## Arguments
 

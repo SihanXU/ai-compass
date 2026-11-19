@@ -5,7 +5,7 @@ summary: "Believes general robot skill will come from foundation models trained 
 
 Robot Foundationism applies the foundation-model recipe to physical action, with one stubborn amendment: the data must come from real robots in the real world. Language models had the internet; robots have nothing comparable, so the data must be manufactured through teleoperation, fleets of deployed machines and pooled datasets across labs and embodiments. Train a large vision-language-action policy on all of it, deploy, collect more, retrain. The flywheel, not a clever algorithm, is what will produce generalist robots.
 
-It sits at the far World edge and in the upper-middle band: a single generalist policy, but one embedded in an operational system of data collection and deployment. Its paradigm level is progressive. It treats robotics as a scaling problem, which is a sharp break from decades of hand-engineered controllers, yet it is pragmatic about the messy logistics that scaling requires.
+It sits near the far World edge and close to the Monolith end: a single generalist policy, though one embedded in an operational system of data collection and deployment. Its paradigm level is Steady. It treats robotics as a scaling problem, a break from decades of hand-engineered controllers but in line with today's mainstream recipe, and it is pragmatic about the messy logistics that scaling requires.
 
 ## Arguments
 

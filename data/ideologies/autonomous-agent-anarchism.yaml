@@ -5,10 +5,11 @@ name:
 motto:
   en: Give it a goal and walk away
   zh: 给它一个目标，然后走开
-level: 2
+level: 6
+point: { x: -0.68, y: -0.56, p: -0.337 }
 place:
-  col: 2
-  row: 11
+  col: 3
+  row: 5
 parents: [harness-liberalism]
 relations:
   allies: [effective-accelerationism, recursive-self-improvementism, agent-anarcho-syndicalism, coding-agent-syndicalism]

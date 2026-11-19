@@ -5,10 +5,11 @@ name:
 motto:
   en: Circuits are the constitution
   zh: 电路即宪法
-level: 4
+level: 8
+point: { x: -0.67, y: 0.658, p: -0.801 }
 place:
-  col: 3
-  row: 6
+  col: 2
+  row: 2
 parents: [interpretability-reformism]
 relations:
   allies: [interpretability-reformism, open-weights-communalism, distributional-semanticism]

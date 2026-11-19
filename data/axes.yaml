@@ -16,12 +16,12 @@ axes:
       en: Where does intelligence live? The Monolith side bets on one end-to-end model; memory, planning and tool use should emerge inside it, and today's scaffolding will be absorbed by the next generation. The Harness side bets on the system around the model — tools, memory, workflows, explicit structure, many agents — and holds that the harness can matter more than the model.
       zh: 智能住在哪里？统一一侧押注一个端到端的模型：记忆、规划、工具使用都应在模型内部涌现，今天的脚手架会被下一代模型吸收。系统一侧押注模型之外的系统：工具、记忆、工作流、显式结构、多个 agent，认为 harness 可以比模型本身更重要。
   - key: p
-    neg: { en: Old Guard, zh: 守旧 }
-    pos: { en: Revolution, zh: 革命 }
+    neg: { en: Mainstream, zh: 主流 }
+    pos: { en: Paradigm shift, zh: 范式转换 }
     title: { en: Paradigm, zh: 范式 }
     text:
-      en: Is the current recipe enough? The Revolution side expects new architectures, new objectives and continual learning to replace today's Transformer-plus-scale recipe. The Old Guard side expects incremental engineering on the current recipe to keep winning, or holds that older ideas were right all along. On the chart this axis is the shade of each cell.
-      zh: 现有配方够不够？革命一侧期待新架构、新学习目标和持续学习取代今天的“Transformer 加规模”。守旧一侧认为在现有配方上做渐进的工程改进会继续赢下去，或者认为老方法本来就是对的。在图上，这根轴是每一格颜色的深浅。
+      en: Is today's mainstream recipe the road? The Mainstream side holds that the Transformer, pretraining on next-token or next-pixel prediction, post-training and scale will keep winning, improved by engineering. The Paradigm-shift side holds that a different paradigm is needed, whether a new idea or an older one the mainstream left behind, such as symbolic methods or evolution. On the chart this axis is the shade of each cell.
+      zh: 今天的主流配方是不是正路？主流一侧认为 Transformer、以预测下一个 token 或像素为目标的预训练、后训练加规模会继续赢下去，靠工程不断改进。范式转换一侧认为需要另一种范式，可以是新想法，也可以是被主流抛下的老路线，比如符号方法或进化方法。在图上，这根轴是每一格颜色的深浅。
   - key: o
     neg: { en: Frontier, zh: 闭源前沿 }
     pos: { en: Open, zh: 开放 }

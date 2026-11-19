@@ -5,10 +5,11 @@ name:
 motto:
   en: Grow up like a child
   zh: 像孩子一样长大
-level: 3
+level: 1
+point: { x: 0.91, y: -0.417, p: 0.884 }
 place:
-  col: 9
-  row: 6
+  col: 12
+  row: 7
 parents: [embodied-statism]
 relations:
   allies: [intuitive-physics-doctrine, curiosity-liberalism, grounding-doctrine, open-endedness]

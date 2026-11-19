@@ -6,9 +6,10 @@ motto:
   en: Knowledge belongs in an index, not in weights
   zh: 知识该放在库里而不是参数里
 level: 6
+point: { x: -0.601, y: -0.943, p: -0.348 }
 place:
-  col: 2
-  row: 4
+  col: 3
+  row: 10
 parents: [rag-mutualism]
 relations:
   allies: [knowledge-graph-monarchism, memory-constitutionalism, small-model-localism]

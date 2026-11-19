@@ -6,8 +6,9 @@ motto:
   en: World state and rules are code
   zh: 世界的状态与规则都是代码
 level: 3
+point: { x: -0.422, y: -0.915, p: 0.527 }
 place:
-  col: 10
+  col: 5
   row: 9
 parents: [program-synthesis-doctrine, code-as-thought]
 relations:

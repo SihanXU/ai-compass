@@ -5,7 +5,7 @@ summary: "Multimodal systems should be assembled from separately pretrained enco
 
 Modular Multimodalism builds multimodal models the way one builds a workstation: buy the best components and connect them. A strong pretrained vision encoder, a strong pretrained language model, and a small bridge between them, whether a projection layer, a query transformer or cross-attention inserted into frozen layers. Each part keeps what it learned from its own massive pretraining, and the expensive joint training is limited to the connector and some instruction tuning.
 
-It sits at the horizontal center (col 6) and toward Harness (row 7): the system spans vision and language evenly, and it is defined by its seams. Its neutral shade reflects that this recipe was, for a period, the standard way to build vision-language assistants, and it remains popular in open research for its efficiency. Its rivals above, the native and early-fusion camps, argue that seams leave perception second-class; modularists answer that seams also let you upgrade one part without retraining everything.
+It sits near the Language edge, because the language model is the backbone everything else is bridged into, and near the Harness end: the system is defined by its seams. Its Orthodox shade reflects that this recipe was, for a period, the standard way to build vision-language assistants, and it remains popular in open research for its efficiency. Its rivals above, the native and early-fusion camps, argue that seams leave perception second-class; modularists answer that seams also let you upgrade one part without retraining everything.
 
 ## Arguments
 

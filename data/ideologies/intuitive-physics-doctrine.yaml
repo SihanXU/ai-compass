@@ -5,10 +5,11 @@ name:
 motto:
   en: Infants learn object permanence first
   zh: 婴儿先学会物体恒存
-level: 4
+level: 1
+point: { x: 0.968, y: -0.616, p: 1 }
 place:
-  col: 10
-  row: 4
+  col: 12
+  row: 9
 parents: [physicalism, developmentalism]
 relations:
   allies: [object-centrism, latent-prediction-doctrine, physical-law-absolutism]

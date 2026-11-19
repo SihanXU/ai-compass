@@ -5,7 +5,7 @@ summary: "Holds that language has explicit hierarchical structure, and that mode
 
 Grammarian Conservatism keeps the treebank on the shelf and the parse tree in its heart. Sentences are not bags of words or flat strings; they are built from constituents that nest, and meaning is composed along that structure. A model that ignores syntax may produce fluent text, but it will stumble on agreement across long distances, scope ambiguity and novel combinations. The respectable thing is to give models structural inductive biases, whether as explicit grammars, recursive networks or tree-shaped decoders, and to test them on systematic generalization.
 
-It sits at the far Language end, where language is not just the medium but the object of study, and in the middle-upper region: one model, but one with structure carved into it. Its paradigm level is old guard. It remembers when parsing was the central NLP task and views the triumph of unstructured transformers with polite skepticism.
+It sits near the Language end, where language is not just the medium but the object of study, and just below the middle: one model, but one with structure carved into it. Its paradigm level is revolutionary: bringing explicit syntax back would overturn today's mainstream. It remembers when parsing was the central NLP task and views the triumph of unstructured transformers with polite skepticism.
 
 ## Arguments
 

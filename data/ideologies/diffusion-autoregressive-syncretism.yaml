@@ -5,10 +5,11 @@ name:
 motto:
   en: Denoising and autoregression are one body
   zh: 去噪与自回归本是一体
-level: 4
+level: 6
+point: { x: 0.528, y: 1, p: -0.245 }
 place:
-  col: 7
-  row: 1
+  col: 6
+  row: 0
 parents: [understand-generate-unionism]
 relations:
   allies: [native-fusion-centralism, world-simulator-statism, early-fusion-statism]

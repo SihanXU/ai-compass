@@ -5,7 +5,7 @@ summary: "Model weights are a public good; releasing them openly is necessary fo
 
 Open-Weights Communalism holds that trained weights, the distilled product of public text and shared research, should belong to the commons. Releasing them lets anyone study the model, reproduce results, audit behavior, adapt it to new languages and domains, and build without permission. Its adherents argue that progress in deep learning has always rested on shared artifacts (datasets, code, checkpoints) and that closing weights concentrates power over a general-purpose technology in very few hands. The strongest wing wants not just weights but data, training code and logs released too.
 
-It sits on the Language side, as most of its flagship releases are language models, and in the lower Harness half, because openness enables a sprawling, decentralized ecosystem of fine-tunes, tools and deployments built around shared base models. Its paradigm level is progressive in governance terms, even when the models themselves are conventional.
+It sits on the Language side, as most of its flagship releases are language models, and a little below centre on the Harness side, because openness enables a sprawling, decentralized ecosystem of fine-tunes, tools and deployments built around shared base models. Its paradigm level is Ultra-Revolutionary in governance terms, even when the models themselves are conventional.
 
 ## Arguments
 

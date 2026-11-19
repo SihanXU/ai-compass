@@ -5,10 +5,11 @@ name:
 motto:
   en: Inference on device
   zh: 推理在设备上
-level: 5
+level: 4
+point: { x: 0.538, y: -0.752, p: 0.347 }
 place:
-  col: 7
-  row: 10
+  col: 9
+  row: 9
 parents: [small-model-localism]
 relations:
   allies: [federated-learning-localism, local-model-mutualism, sensor-network-anarchism, maker-robotics]

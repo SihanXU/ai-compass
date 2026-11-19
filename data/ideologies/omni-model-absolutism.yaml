@@ -5,9 +5,10 @@ name:
 motto:
   en: There is no model but the omni model
   zh: Omni 之外别无模型
-level: 4
+level: 8
+point: { x: 0.57, y: 1, p: -0.711 }
 place:
-  col: 6
+  col: 7
   row: 0
 parents: [any-to-any-imperialism]
 relations:

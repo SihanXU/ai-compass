@@ -5,7 +5,7 @@ summary: "A word's meaning is the pattern of contexts it appears in, so meaning 
 
 Distributional Semanticism rests on one old slogan: you shall know a word by the company it keeps. Words that appear in similar contexts have similar meanings, so a model that captures the statistics of contexts captures meaning, no dictionary, logic or perception required. Word embeddings made this concrete as geometry, with analogies as vector offsets, and contextual language models extended it from words to whole passages. In this view, next-token prediction is not a trick that happens to work; it is distributional semantics carried to its conclusion.
 
-It sits near the Language edge (col 1) at mid-height. It is a theory of meaning rather than an architecture, so it is agnostic between monoliths and systems, but it firmly locates meaning in text. Its shade marks an established, somewhat senior view: the hypothesis is decades old and has quietly become the foundation of modern NLP, which makes its defenders more confident than combative.
+It sits near the Language edge, a little above the middle. It is a theory of meaning rather than an architecture, so it is largely agnostic between monoliths and systems, but it firmly locates meaning in text. Its orthodox shade marks an established view at the heart of the mainstream: the hypothesis is decades old and has quietly become the foundation of modern NLP, which makes its defenders more confident than combative.
 
 ## Arguments
 

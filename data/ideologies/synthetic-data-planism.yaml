@@ -5,10 +5,11 @@ name:
 motto:
   en: Short on data? Print more
   zh: 数据不够就自己印
-level: 4
+level: 7
+point: { x: -0.837, y: 0.605, p: -0.619 }
 place:
-  col: 6
-  row: 2
+  col: 1
+  row: 3
 parents: [scaling-law-planism]
 relations:
   allies: [reasoning-statism, sim-scale-statism, captionist-centralism]

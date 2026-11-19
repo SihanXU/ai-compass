@@ -5,7 +5,7 @@ summary: "Many model failures trace back to tokenization, so fix the tokenizer c
 
 Tokenizer Reformism has one recurring diagnosis: it is always the tokenizer. Models that cannot count the letters in a word, stumble over arithmetic, waste context on non-Latin scripts or produce baffling glitch tokens are, in this view, mostly victims of a preprocessing step frozen before training began. The cure is not revolution but reform: better merges, digit splitting, fairer multilingual vocabularies, careful handling of whitespace and code, and auditing the vocabulary for under-trained tokens.
 
-It sits on the Language side (col 2), in the middle of the vertical axis, because it treats the tokenizer as a component worth engineering on its own terms rather than an implementation detail of a monolith. Its shade marks a fairly forward-looking position: it wants change, but incremental change. Reformists keep subword units because they are efficient; they simply refuse to treat a vocabulary built by a greedy compression heuristic as sacred.
+It sits in the centre column, just below mid-height toward Harness, because it treats the tokenizer as a component worth engineering on its own terms rather than an implementation detail of a monolith. Its shade is Mainstream: it wants change, but incremental change within today's recipe. Reformists keep subword units because they are efficient; they simply refuse to treat a vocabulary built by a greedy compression heuristic as sacred.
 
 ## Arguments
 

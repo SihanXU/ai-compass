@@ -5,9 +5,10 @@ name:
 motto:
   en: One model annexes every modality
   zh: 一个模型吞并所有模态
-level: 4
+level: 5
+point: { x: 0.619, y: 0.91, p: -0.013 }
 place:
-  col: 5
+  col: 8
   row: 0
 parents: [unified-vocabulary-centralism]
 relations:

@@ -5,10 +5,11 @@ name:
 motto:
   en: Fused from the very first token
   zh: 从第一个 token 起就融合
-level: 4
+level: 8
+point: { x: 0.568, y: 0.942, p: -0.736 }
 place:
   col: 7
-  row: 0
+  row: 1
 parents: [early-fusion-statism]
 relations:
   allies: [unified-vocabulary-centralism, omni-model-absolutism, interleaved-statism]

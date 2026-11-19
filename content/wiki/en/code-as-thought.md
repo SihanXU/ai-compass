@@ -5,7 +5,7 @@ summary: "Holds that code is the best language of reasoning, so models should th
 
 Code-as-Thought argues that natural language is a fine medium for chatting and a poor one for computing. Ask a model to multiply large numbers or track a dozen variables in prose and it will drift; ask it to write a short program and run it, and the interpreter does the arithmetic without complaint. Code is precise, compositional, executable and checkable. It forces the model to make every step explicit, and when it is wrong, the error message says so. Reasoning should therefore be expressed as programs wherever possible, with natural language reserved for the parts that genuinely resist formalization.
 
-It sits left of center, still within the language family since code is a language, and in the middle band: a single model, extended by one very important tool, the interpreter. Its paradigm level is neutral. Training on code and program-aided reasoning are now mainstream, and the ideology's claim is mostly about how far that should go.
+It sits at the far Language edge, since code is a language, and low toward the Harness end: the model matters less than the loop it runs with one very important tool, the interpreter. Its paradigm level is neutral. Training on code and program-aided reasoning are now mainstream, and the ideology's claim is mostly about how far that should go.
 
 ## Arguments
 

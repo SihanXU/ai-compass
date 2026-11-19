@@ -5,7 +5,7 @@ summary: "Holds that speech and sound should be modeled natively, end to end, ra
 
 Audio-Native Doctrine points out that humans spoke for a very long time before anyone wrote anything down. Speech carries tone, emphasis, emotion, hesitation, overlap and timing, nearly all of which vanishes the moment audio is transcribed. The classic voice pipeline of speech recognition, then a text model, then speech synthesis throws that information away twice and adds latency at every hop. Instead, model audio directly: learn discrete or continuous audio units, train language models over them, and let a single system listen and speak in real time.
 
-It sits at the horizontal center, since speech is both language and physical signal, and in the middle band: one model ideally, though often still wrapped in streaming infrastructure. Its paradigm level is progressive. It challenges the assumption that text is the natural interface to intelligence and treats spoken interaction as a first-class goal.
+It sits just right of centre, since speech is both language and physical signal, and near the Monolith top: one end-to-end model is the goal, with streaming infrastructure only a thin shell around it. Its paradigm level is revolutionary. It challenges the assumption that text is the natural interface to intelligence and treats spoken interaction as a first-class goal.
 
 ## Arguments
 

@@ -1,7 +1,7 @@
 ---
 // The method, laid out as documentation: contents on the left, the text, "on this page" on the right.
 import Layout from '../../layouts/Layout.astro';
-import { axes, questionList, tests, levels, subaxes } from '../../lib/data.js';
+import { axes, questionList, tests, levels, subaxes, calibration } from '../../lib/data.js';
 import { t, url, tr, LANGS, REPO } from '../../lib/i18n.js';
 
 export function getStaticPaths() { return LANGS.map((lang) => ({ params: { lang } })); }
@@ -15,6 +15,7 @@ const sections = [
   ...axes.map((a) => [`axis-${a.key}`, tr(a.title, lang)]),
   ['scoring', zh ? '计分' : 'Scoring'],
   ['matching', zh ? '匹配' : 'Matching'],
+  ['calibration', zh ? '校准' : 'Calibration'],
   ...(tests.pro ? [['pro', zh ? '专业版' : 'Pro test']] : []),
   ['principles', zh ? '原则' : 'Principles'],
   ['contributing', zh ? '参与贡献' : 'Contributing'],
@@ -86,6 +87,16 @@ const sections = [
             <p>{zh
                 ? '外圈称号各自写明条件（例如“速度 > 0.6”），满足就获得，可以同时获得多个。'
                 : 'Each ring title states its condition (for example “Speed > 0.6”); meet it and you earn the title, and you can earn several.'}</p>
+
+            <h2 id="calibration">{zh ? '校准' : 'Calibration'}</h2>
+            <p>{zh
+                ? '每个主义在图上的位置不是凭名字摆的，而是由测试本身决定的。对每个主义，先只给出它的百科词条，让人以这个主义坚定信徒的身份、在看不到坐标轴和方向的情况下答完全部题目；再用和普通测试者完全相同的计分方式算出它的坐标。'
+                : 'Where each ideology sits is decided by the test itself, not by its name. For each ideology, its wiki entry alone is given to someone who answers every statement as a committed adherent, blind to the axes and their directions; its coordinates are then scored exactly as anyone’s would be.'}</p>
+            <p>{zh
+                ? '人们很少每题都选最极端的答案，所以原始分数会挤在中间。每根图轴各有一个拉伸系数，使 90% 的主义落在图的边界以内；所有测试者的分数都按同样的系数拉伸后再放到图上，因此答案相同的人和主义一定落在同一格。最后用匈牙利算法把主义分配到格子上，使整体移动最小；范式等级由拉伸后的范式分数决定。'
+                : 'People rarely answer every statement at the extreme, so raw scores crowd the middle. Each chart axis has a stretch factor that brings 90% of the ideologies inside the chart’s edges; every test-taker’s scores are stretched by the same factors before being placed, so a person and an ideology with the same answers land on the same cell. Ideologies are then assigned to cells by the Hungarian algorithm, with the least total displacement, and each paradigm level comes from the stretched paradigm score.'}</p>
+            {calibration && <pre>{`scale  x ${calibration.scale.x}   y ${calibration.scale.y}   p ${calibration.scale.p}`}</pre>}
+            <p>{zh ? '这些作答记录在仓库的 data/calibration/personas/ 里，' : 'The answers are in data/calibration/personas/ in the repository, and '}<code>node scripts/calibrate.mjs</code>{zh ? ' 会重新完成整个校准。改了题目或词条之后，应该重新作答并重新校准。' : ' redoes the whole calibration. After statements or entries change, they should be answered again and the chart recalibrated.'}</p>
 
             {tests.pro && (
                 <>

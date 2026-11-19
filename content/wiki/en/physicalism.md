@@ -5,7 +5,7 @@ summary: "Holds that understanding physical dynamics comes before intelligence, 
 
 Physicalism puts physics at the foundation of the curriculum. Before a system can plan, use tools or reason about other agents, it must know what happens when things push, fall, slide and break. That knowledge should be learned, ideally in structured forms such as graphs of interacting particles and objects, so that learned simulators predict how scenes evolve. Unlike its absolutist neighbor, it does not insist on hand-coding the laws; it wants models that discover dynamics from data while keeping a physical structure that makes discovery tractable.
 
-It sits near the World edge and in the middle band, between monolithic world models and modular robotics stacks. Its paradigm level is neutral: physics simulation and learned dynamics are established fields, and Physicalism mainly insists they be treated as core AI rather than a niche of graphics and engineering.
+It sits near the World edge and a little below centre, between monolithic world models and modular robotics stacks, leaning slightly toward the latter. Its paradigm level is Beyond Revolutionary: physics simulation and learned dynamics lie far from today's Transformer-plus-scale recipe, and Physicalism insists they become the core of AI rather than a niche of graphics and engineering.
 
 ## Arguments
 

@@ -5,7 +5,7 @@ name:
 motto:
   en: All are equal before the cluster
   zh: 在集群面前人人平等
-level: 6
+level: 8
 place:
   ring: top
   when: {'y': '>0.85'}

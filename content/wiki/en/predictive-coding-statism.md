@@ -5,7 +5,7 @@ summary: "Holds that intelligence is fundamentally prediction of incoming sensor
 
 Predictive-Coding Statism takes a theory from computational neuroscience and makes it state policy: the brain, and therefore any intelligent machine, is a hierarchy of predictors. Higher levels send predictions down; lower levels send back only the errors. Perception is the model's best guess about the causes of its senses, and learning is the slow reduction of surprise. Next-token prediction in language models is, from this vantage, a narrow special case of a much older and more general principle.
 
-It sits right of center on the World side, since the signals being predicted are sensory streams rather than text, and toward the Monolith because it seeks one unifying objective for all of cognition. Its paradigm level is fairly revolutionary: it would replace feedforward stacks trained by backpropagation with recurrent, error-passing hierarchies, and it treats action itself as just another way to reduce prediction error.
+It sits well over on the World side, since the signals being predicted are sensory streams rather than text, and near the Monolith end because it seeks one unifying objective for all of cognition. Its paradigm level is Revolutionary: it would replace feedforward stacks trained by backpropagation with recurrent, error-passing hierarchies, and it treats action itself as just another way to reduce prediction error.
 
 ## Arguments
 

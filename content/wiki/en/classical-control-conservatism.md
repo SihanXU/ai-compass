@@ -5,7 +5,7 @@ summary: "Proven control theory, from PID to MPC and Kalman filters, should run 
 
 Classical-Control Conservatism trusts what has flown aircraft, landed rockets and run factories for decades. PID loops, state estimation with Kalman filters, LQR and model predictive control come with stability margins, analyzable failure modes and engineers who know how to tune them. Learned policies may be impressive in demos, the conservative says, but a controller you cannot bound is a controller you cannot certify, and a robot that is right almost every time will, on the remaining occasion, hurt something.
 
-It sits on the World side (col 11), squarely in the physical-control camp, at mid-height: it favors explicit, modular loops over one end-to-end network, without going all the way to sprawling agent systems. Its dark shade marks the old guard. That is less an insult than a description: these methods are mature, ubiquitous and boring in the best sense, and every flashy robot learning paper still runs a low-level controller somewhere underneath.
+It sits right of centre and low toward the Harness end, among the Modular Multimodalists: it favors explicit, modular loops over one end-to-end network, and the intelligence lives in how the parts are wired. Its steady shade puts it on the mainstream side. That is less an insult than a description: these methods are mature, ubiquitous and boring in the best sense, and every flashy robot learning paper still runs a low-level controller somewhere underneath.
 
 ## Arguments
 

@@ -5,10 +5,11 @@ name:
 motto:
   en: The body computes
   zh: 身体本身就在计算
-level: 3
+level: 1
+point: { x: 0.948, y: -0.75, p: 0.896 }
 place:
-  col: 12
-  row: 5
+  col: 11
+  row: 9
 parents: [embodied-statism]
 relations:
   allies: [morphological-anarchism, subsumption-doctrine, dexterity-doctrine, sensorimotor-doctrine]

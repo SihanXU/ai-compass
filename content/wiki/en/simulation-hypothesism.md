@@ -5,7 +5,7 @@ summary: "Ring title for the far World-Monolith corner: one giant generative wor
 
 Simulation Hypothesism is a ring title for scores far toward World (x above 0.7) and far toward Monolith (y above 0.7) at the same time. It is the top-right corner's grand unified theory: train one enormous model to predict and generate how the world evolves, frame by frame and action by action, and you get physics, agents, planning and imagination in a single set of weights. Push the logic one step further, and the distinction between a perfect world model and the world blurs, which is where the half-joking name comes from.
 
-On the chart it combines the World pole's insistence that intelligence is about predicting physical reality with the Monolith pole's faith in one end-to-end model. Its revolutionary shade reflects that it wants to replace the language-centred paradigm wholesale: the future foundation model is not a chatbot but a simulator you can step inside.
+On the chart it combines the World pole's insistence that intelligence is about predicting physical reality with the Monolith pole's faith in one end-to-end model. Its Exploratory shade reflects that it wants to move beyond the language-centred paradigm while keeping the familiar tool of one large model trained to predict: the future foundation model is not a chatbot but a simulator you can step inside.
 
 ## Arguments
 

@@ -5,7 +5,7 @@ summary: "Each sensor deserves its own specialized processing module, with a fus
 
 Perception-Stack Federalism is how many autonomous vehicles and mobile robots have actually been built. Cameras, lidar, radar, IMU and wheel odometry each get a dedicated module tuned to their physics: point-cloud detectors for lidar, image networks for cameras, filters for inertial data. A fusion layer, often probabilistic, reconciles their reports into a single estimate of where things are and where they are going, which planning and control then consume.
 
-It sits on the World side (col 8) toward Harness (row 7): firmly about physical sensing, and organized as a federation of modules with clear interfaces. Its somewhat dark shade marks an established engineering tradition with deep roots in probabilistic robotics. Its main opponents are the end-to-end camps that would feed all sensors into one network and output controls directly; federalists answer that when one sensor fails, a federation degrades gracefully while a monolith may fail in ways nobody can diagnose.
+It sits right of centre on the World side and near the Harness end: firmly about physical sensing, and organized as a federation of modules with clear interfaces. Its Steady shade marks an established engineering tradition with deep roots in probabilistic robotics. Its main opponents are the end-to-end camps that would feed all sensors into one network and output controls directly; federalists answer that when one sensor fails, a federation degrades gracefully while a monolith may fail in ways nobody can diagnose.
 
 ## Arguments
 

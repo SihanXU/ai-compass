@@ -5,7 +5,7 @@ summary: "Give an agent a goal, tools and a loop, then step back; human approval
 
 Autonomous-Agent Anarchism wants agents off the leash. The ideal workflow is a single sentence of intent, after which the agent plans, browses, writes and runs code, spawns subtasks and keeps going until the goal is met or the budget runs out. Every confirmation dialog is friction, every human-in-the-loop checkpoint a place where the agent idles. Reliability, in this view, comes from giving the agent better feedback from its environment, not from a human reading its every move.
 
-It sits at the Harness extreme and on the Language side: the agent is a language model wrapped in a reason-act loop, with tools, memory and a task queue doing the heavy lifting. The deep revolutionary shade reflects a willingness to hand over the whole task, not just the tedious parts, to a system whose behaviour nobody fully predicts.
+It sits on the Language side, just above the middle: the agent is a language model wrapped in a reason-act loop, trusted to do most of the work itself, with tools, memory and a task queue in support. Its shade is only steady, since it runs on today's mainstream models; its boldness is a willingness to hand over the whole task, not just the tedious parts, to a system whose behaviour nobody fully predicts.
 
 ## Arguments
 

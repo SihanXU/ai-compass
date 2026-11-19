@@ -5,7 +5,7 @@ summary: "Understanding and generating images are two faces of one capability an
 
 Understand-Generate Unionism rejects the division of labor that split computer vision for years: recognition models on one side, generative models on the other. A model that truly understands a scene should be able to draw it, and a model that can draw a scene must in some sense understand it. The union demands one set of weights that answers questions about images and produces images in the same breath.
 
-It sits in the upper band at the center of the chart. The Monolith position is the core commitment: one model, not a captioner glued to a diffusion generator. The horizontal balance reflects equal loyalty to language (instructions, answers) and perception (pixels in and out). Its paradigm score leans revolutionary; unified models are an active research frontier, and the community is still debating how to make them good at both jobs at once.
+It sits at the very top of the chart, well over on the World side. The Monolith position is the core commitment: one model, not a captioner glued to a diffusion generator. The World lean reflects that its substance is perception (pixels in and out), with language (instructions, answers) as the interface. Its paradigm level is Mainstream: unified models are now a standard frontier direction, though the community is still debating how to make them good at both jobs at once.
 
 ## Arguments
 

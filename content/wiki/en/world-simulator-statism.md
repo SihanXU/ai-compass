@@ -5,7 +5,7 @@ summary: "Large video generation models, trained at scale, are learning to simul
 
 World-Simulator Statism reads every leap in video generation as a leap in physics understanding. To render a glass falling and shattering convincingly for ten seconds, the argument goes, a model must implicitly track objects, gravity, occlusion and cause and effect. Scale the video model far enough and it stops being a content tool and becomes a general-purpose simulator: a place where agents can be trained, plans can be rehearsed and counterfactuals can be rendered on demand.
 
-It sits at the top of the chart, deep in World territory. The Monolith stance comes from its faith in one large generative model rather than a hand-built physics engine plus renderer. Its paradigm score leans revolutionary: treating a generative video model as a simulator is a recent and still contested claim, and the doctrine is happy to stake its reputation on it.
+It sits near the top of the chart, right of centre. The Monolith stance comes from its faith in one large generative model rather than a hand-built physics engine plus renderer. Its paradigm level is Mainstream: it rides today's scale-the-generative-model recipe, even if treating a video model as a simulator is still a contested claim the doctrine is happy to stake its reputation on.
 
 ## Arguments
 

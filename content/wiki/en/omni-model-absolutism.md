@@ -5,7 +5,7 @@ summary: "The future belongs to a single natively omni-modal model that sees, he
 
 Omni-Model Absolutism is Any-to-Any Imperialism after the empire has been declared. Its creed is that there should be exactly one model in the product: it listens to raw audio, watches the camera, reads the screen and answers in voice, text or image, all with conversational latency. Cascades of speech recognizer, language model and speech synthesizer are seen as a historical embarrassment, like a phone call routed through three interpreters.
 
-It sits at the top center of the chart, as far up as a position can go. The Monolith stance is absolute, and the horizontal balance reflects that it treats voice, vision and text as equal citizens. Its paradigm score leans revolutionary: native omni-modal training at frontier scale is recent, and much of its promise is still being worked out.
+It sits at the very top of the chart, just right of center, as far up as a position can go. The Monolith stance is absolute, and the near-central horizontal position reflects that it treats voice, vision and text as equal citizens. Its paradigm level is Orthodox: one natively omni-modal model is now what the frontier ships, even if much of its promise is still being worked out.
 
 ## Arguments
 

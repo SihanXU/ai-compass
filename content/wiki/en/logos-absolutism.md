@@ -5,7 +5,7 @@ summary: "Everything that can be known can be serialized into one token stream, 
 
 Logos Absolutism holds that the universe is, for all practical purposes, a very long document. Text, code, images, audio and actions are just different encodings of one underlying sequence, and the right response is a single end-to-end model trained to read and continue that sequence. No routers, no specialist modules, no glue code: one stream in, one stream out.
 
-It sits in the extreme top-left corner of the chart. "Language" here is less about English than about the sequence itself as the substrate of thought, and "Monolith" is taken literally: if a capability lives outside the weights, it does not really count. Its paradigm score is dead neutral, because it is at once the founding creed of the current era and a fairly old idea dressed in new compute.
+It sits at the very top of the chart, on the Language side a little in from the left edge. "Language" here is less about English than about the sequence itself as the substrate of thought, and "Monolith" is taken literally: if a capability lives outside the weights, it does not really count. Its paradigm level is Orthodox: it is the founding creed of the current era, a fairly old idea dressed in new compute that the mainstream now takes for granted.
 
 ## Arguments
 

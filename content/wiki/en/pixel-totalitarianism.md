@@ -5,7 +5,7 @@ summary: "Text is just another image, so models should read rendered pixels inst
 
 Pixel Totalitarianism turns the usual multimodal hierarchy upside down. Instead of turning images into words, it turns words into images: render the text, feed the pixels to a vision model, and let it learn to read. Tokenizers, vocabularies and their many quirks simply disappear. A screenshot of a web page, a scanned form, a chart and a paragraph of prose all become one kind of input. Language is not the master modality; it is a visual texture that happens to carry meaning.
 
-It sits at the top of the chart, well toward World. The Monolith stance is strong because one pixel-reading model replaces both the tokenizer and the separate OCR or layout pipeline. Its paradigm score leans revolutionary: few mainstream models work this way, and the idea is a deliberate provocation against the text-first establishment.
+It sits near the top of the chart, right of centre toward World. The Monolith stance is strong because one pixel-reading model replaces both the tokenizer and the separate OCR or layout pipeline. Its paradigm level is Exploratory: few mainstream models work this way, though it keeps the standard recipe and changes only what goes in, a deliberate provocation against the text-first establishment.
 
 ## Arguments
 

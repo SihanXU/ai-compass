@@ -5,7 +5,7 @@ summary: "Vision systems work best as explicit pipelines of detection, segmentat
 
 Pipeline Pragmatism is the doctrine of the working computer-vision engineer. Detect the objects, segment them, classify or track them, then hand structured results to whatever comes next. Each stage has its own model, its own metrics and its own failure analysis. When something breaks, you know which stage to fix; when a better segmenter arrives, you swap it in on Monday. The pragmatist does not claim this is how brains work, only that it ships.
 
-It sits on the World side (col 7), just right of center, and toward Harness (row 7): it is about perceiving the physical world, and its intelligence is spread across a chain of modules rather than packed into one network. Its somewhat dark shade marks an established school: pipelines dominated industrial vision for years and still run much of it. End-to-end camps call it legacy; pragmatists note that promptable segmenters and open-vocabulary detectors have made pipelines more flexible, not less.
+It sits just right of centre on the World side and well toward the Harness end: it is about perceiving the physical world, and its intelligence is spread across a chain of modules rather than packed into one network. Its Mainstream shade marks an established school: pipelines dominated industrial vision for years and still run much of it. End-to-end camps call it legacy; pragmatists note that promptable segmenters and open-vocabulary detectors have made pipelines more flexible, not less.
 
 ## Arguments
 

@@ -5,10 +5,11 @@ name:
 motto:
   en: Intelligence grows out of life
   zh: 智能从生命里长出来
-level: 2
+level: 1
+point: { x: 0.948, y: 0.273, p: 1 }
 place:
   col: 10
-  row: 10
+  row: 5
 parents: [open-endedness]
 relations:
   allies: [neuroevolutionism, morphological-anarchism, open-endedness, bio-hybridism]

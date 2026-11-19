@@ -5,7 +5,7 @@ name:
 motto:
   en: In the beginning was the Word
   zh: 太初有言
-level: 7
+level: 9
 place:
   ring: left
   when: {x: <-0.85}

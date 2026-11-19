@@ -5,7 +5,7 @@ summary: "Holds that general intelligence requires a body acting in the world, a
 
 Embodied Statism takes the old embodiment thesis, that minds arise from bodies interacting with environments, and pairs it with a modern industrial program. Text and images are shadows of the world; to understand gravity, affordances and cause and effect, a system must push things and watch what happens. But unlike the scrappy bottom-up robotics of earlier decades, this camp wants the state-scale version: one big embodied foundation model, fed by fleets of robots and simulators, trained centrally and deployed everywhere.
 
-It sits at the far World edge and in the upper half of the chart: physical embodiment is the substance, and a unified model is the means. Its paradigm level is revolutionary. It claims the language-first route to intelligence is a detour, and that the real frontier is the action loop, where data is scarce and the hardest problems remain unsolved.
+It sits in the top-right corner of the chart, at the far World edge and the Monolith end: physical embodiment is the substance, and a unified model is the means. Its paradigm level is revolutionary. It claims the language-first route to intelligence is a detour, and that the real frontier is the action loop, where data is scarce and the hardest problems remain unsolved.
 
 ## Arguments
 

@@ -5,7 +5,7 @@ summary: "A single carefully written system prompt is enough to govern a model's
 
 Prompt Monarchism holds that the system prompt is the crown. One well-drafted block of instructions, placed at the top of the context, defines the model's persona, rules, tone, refusals and task procedures, and the model obeys it everywhere. Workflows, routers, fine-tuning and external guardrails are seen as needless ministries: if the behavior is wrong, rewrite the decree.
 
-It sits in the upper-left of the chart. The language score is extreme because governance happens purely through natural-language text. The Monolith lean comes from its reliance on one model plus one prompt, with no surrounding system. Its paradigm score is firmly old guard: this was the default way to build on language models in the early chat era, and newer approaches to context and agent design define themselves partly in opposition to it.
+It sits in the upper-left of the chart. The language lean is strong because governance happens purely through natural-language text. The Monolith lean comes from its reliance on one model plus one prompt, with no surrounding system. Its paradigm level is Mainstream: this was the default way to build on language models in the early chat era, and newer approaches to context and agent design define themselves partly in opposition to it.
 
 ## Arguments
 

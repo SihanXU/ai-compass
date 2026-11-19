@@ -5,7 +5,7 @@ summary: "Agents should improve themselves by rewriting their own prompts, tools
 
 Self-Improving Agentism observes that the harness around a model (prompts, tool definitions, retrieval settings, control flow) is mostly code and text, and that models are now competent at writing code and text. So why should humans keep hand-tuning it? Let the agent inspect its own failures, propose changes to its scaffolding, test them against tasks and keep what works. Unlike training-level self-improvement, this happens without touching the weights, which makes it cheap, fast and reversible.
 
-It sits on the Language side because the artifacts being improved are prompts and programs, and deep in the Harness half because the object of improvement is the system around the model. Its paradigm level is strongly revolutionary: it proposes to automate the very job that most other harness-side ideologies treat as human craft.
+It sits on the Language side because the artifacts being improved are prompts and programs, and in the lower, Harness half because the object of improvement is the system around the model. Its paradigm level is neutral: it hands today's models a job that most other harness-side ideologies treat as human craft, without challenging the mainstream recipe itself.
 
 ## Arguments
 

@@ -5,10 +5,11 @@ name:
 motto:
   en: What the model has solved grows into a node
   zh: 模型解决过的情形长成节点
-level: 3
+level: 4
+point: { x: 0.233, y: -1, p: 0.221 }
 place:
-  col: 9
-  row: 8
+  col: 8
+  row: 11
 parents: [skill-library-doctrine, hierarchical-control]
 relations:
   allies: [subsumption-doctrine, game-agent-doctrine, self-improving-agentism, sensorimotor-doctrine]

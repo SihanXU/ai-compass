@@ -5,10 +5,11 @@ name:
 motto:
   en: Sound came before writing
   zh: 声音比文字更早
-level: 4
+level: 3
+point: { x: 0.631, y: 0.819, p: 0.518 }
 place:
-  col: 6
-  row: 4
+  col: 7
+  row: 2
 parents: [omni-model-absolutism]
 relations:
   allies: [native-fusion-centralism, byte-level-populism, any-to-any-imperialism]

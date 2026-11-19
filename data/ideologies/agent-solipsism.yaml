@@ -5,7 +5,7 @@ name:
 motto:
   en: Only my agent is real
   zh: 只有我的 agent 是真的
-level: 2
+level: 7
 place:
   ring: bl
   when: {x: <-0.7, 'y': <-0.7}

@@ -5,9 +5,10 @@ name:
 motto:
   en: Understand the model first
   zh: 先看懂模型再说
-level: 5
+level: 7
+point: { x: -0.626, y: -0.74, p: -0.549 }
 place:
-  col: 2
+  col: 3
   row: 6
 parents: []
 relations:

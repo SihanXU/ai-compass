@@ -5,7 +5,7 @@ summary: "One learning system should inhabit many bodies at once, pooling experi
 
 Distributed Embodiment says the right unit of robot learning is the fleet, not the robot. A single machine collects experience slowly, but many arms, vehicles or drones running the same policy can gather it in parallel and feed a shared model, so that what one body learns, every body knows. The mind is centralised in weights but distributed in experience; it has countless hands, and every one of them is a data source.
 
-It sits on the World side, since learning comes from physical interaction, and at the Harness extreme, because the system that makes it work is a whole infrastructure of fleet logging, data pipelines, cross-embodiment action spaces and continual updates. Its revolutionary shade reflects how different this is from the classic picture of one robot, one controller, one lab.
+It sits at the far World edge, since learning comes from physical interaction, and well into the Harness half, because the system that makes it work is a whole infrastructure of fleet logging, data pipelines, cross-embodiment action spaces and continual updates. Its ultra-revolutionary shade reflects how different this is from the classic picture of one robot, one controller, one lab.
 
 ## Arguments
 

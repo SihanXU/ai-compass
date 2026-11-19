@@ -30,6 +30,7 @@ const Ideology = z.object({
   name: pair,
   motto: pair,
   level: z.number().int().min(1).max(9),
+  point: z.object({ x: z.number().min(-1).max(1), y: z.number().min(-1).max(1), p: z.number().min(-1).max(1) }).strict().optional(),
   place: Place,
   parents: z.array(id).default([]),
   relations: z.object({ allies: z.array(id).default([]), frenemies: z.array(id).default([]), rivals: z.array(id).default([]) }).strict(),

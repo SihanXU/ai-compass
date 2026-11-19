@@ -5,7 +5,7 @@ summary: "Intelligence is a late product of life-like processes, so we should gr
 
 The Artificial-Life Doctrine thinks the field started at the wrong end. Brains are not where intelligence begins; they are what billions of years of self-maintenance, reproduction and adaptation eventually produced. So instead of fitting a giant function to a static dataset, it studies cellular automata that grow and repair shapes, digital organisms that compete for CPU time, and soft simulated creatures that must keep themselves alive. Get the life-like dynamics right, it argues, and cognition will be a byproduct you did not have to design.
 
-It sits low and far toward the World side: intelligence is rooted in bodies, metabolism and environments, not in symbols. Its Harness position reflects a preference for many interacting local units over one central model; there is no master network, only rules that every cell follows. Its dark-revolutionary shade is earned honestly, since it rejects not just the architecture of current AI but the whole train-on-a-dataset framing.
+It sits far toward the World side, just above the middle: intelligence is rooted in bodies, metabolism and environments, not in symbols. Its height, just above the middle, reflects a split: it prefers many interacting local units over one central model, with no master network, only rules that every cell follows, yet it wraps no tools or pipelines around them either. Its beyond-revolutionary shade, the darkest on the chart, is earned honestly, since it rejects not just the architecture of current AI but the whole train-on-a-dataset framing.
 
 ## Arguments
 

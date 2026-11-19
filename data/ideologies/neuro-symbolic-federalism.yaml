@@ -5,10 +5,11 @@ name:
 motto:
   en: Neural perception, symbolic reasoning
   zh: 神经网络感知，符号系统推理
-level: 6
+level: 3
+point: { x: -0.404, y: -1, p: 0.586 }
 place:
-  col: 7
-  row: 9
+  col: 4
+  row: 11
 parents: [symbolic-restorationism, composable-liberalism]
 relations:
   allies: [program-synthesis-doctrine, classical-planning-restoration, math-formalism, object-centrism]

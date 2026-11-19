@@ -5,7 +5,7 @@ summary: "Treats a pretrained language model as the backbone of every system, wi
 
 Neoliberal Linguism has made peace with the market. The language model won; everything else is a supplier. Need vision? Bolt a pretrained image encoder onto the LM through a projection layer and tune on instruction data. Need speech, retrieval, a calculator? Plug them in. The backbone stays sovereign, the modules compete to serve it, and nobody needs to pretrain a new giant from scratch. It is efficient, modular, and deeply pragmatic.
 
-It sits on the Language side, a little in from the edge, and in the upper-middle region: one central model, but one that happily imports components. Its paradigm level is moderately established. This is the default recipe behind a great many open vision-language models and tool-augmented assistants, which makes it less an ideology than the prevailing economic consensus, complete with critics on both flanks.
+It sits at the far Language edge and in the lower half, toward Harness: one central model, but one that happily imports components. Its paradigm level is Ultra-Orthodox. This is the default recipe behind a great many open vision-language models and tool-augmented assistants, which makes it less an ideology than the prevailing economic consensus, complete with critics on both flanks.
 
 ## Arguments
 

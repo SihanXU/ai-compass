@@ -5,10 +5,11 @@ name:
 motto:
   en: Learning with no finish line
   zh: 没有终点的学习
-level: 2
+level: 1
+point: { x: 0.037, y: -0.461, p: 1 }
 place:
-  col: 4
-  row: 9
+  col: 7
+  row: 7
 parents: [artificial-life-doctrine]
 relations:
   allies: [evolutionary-federalism, curiosity-liberalism, objectiveless-anarchism, neuroevolutionism]

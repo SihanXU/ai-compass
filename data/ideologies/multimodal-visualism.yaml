@@ -5,10 +5,11 @@ name:
 motto:
   en: Vision is the substance; the rest assist
   zh: 视觉是本体，其余模态辅佐
-level: 5
+level: 4
+point: { x: 1, y: 0.033, p: 0.279 }
 place:
-  col: 8
-  row: 3
+  col: 12
+  row: 5
 parents: [visualism]
 relations:
   allies: [pipeline-pragmatism, perception-stack-federalism, object-centrism]

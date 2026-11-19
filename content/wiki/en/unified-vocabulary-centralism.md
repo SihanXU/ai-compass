@@ -5,7 +5,7 @@ summary: "Images, audio and actions should be discretized into one shared vocabu
 
 Unified-Vocabulary Centralism believes the real bottleneck in multimodal AI is not architecture but bookkeeping. Give every modality a codebook, append those codes to the text vocabulary, and suddenly an image patch, a snippet of audio and a robot joint command are all just token IDs in one embedding table. The transformer does not need to know which is which; the shared vocabulary is the constitution, and every modality must register under it.
 
-It sits at the top of the chart, slightly left of center. The Monolith position is the whole point: one vocabulary means one model, one loss, one decoding loop. The mild language lean reflects that the template is borrowed from language modeling, even when most tokens are no longer words. Its paradigm score is neutral; the idea is mainstream in research but still contested in production systems.
+It sits at the top of the chart, slightly left of center. The Monolith position is the whole point: one vocabulary means one model, one loss, one decoding loop. The mild language lean reflects that the template is borrowed from language modeling, even when most tokens are no longer words. Its paradigm level is Orthodox: it extends the language-model recipe to every modality, an idea mainstream in research but still contested in production systems.
 
 ## Arguments
 

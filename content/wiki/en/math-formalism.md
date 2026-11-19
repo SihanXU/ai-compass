@@ -5,7 +5,7 @@ summary: "Holds that only formally verified reasoning counts, so models should p
 
 Math Formalism has a simple standard: if it is not proved, it is not reasoned. A model that writes a plausible-looking solution in natural language may be right, may be wrong, and often cannot tell which. A model that writes a proof in a formal language such as Lean, Coq or Isabelle submits it to a proof checker that accepts nothing on faith. This turns mathematics into a perfect training ground: unlimited problems, binary and incorruptible rewards, and every success guaranteed correct.
 
-It sits at the center-left, within the language family because formal languages are languages, and in the middle band: a model working in tight partnership with a verifier, closer to a disciplined pair than a sprawling harness. Its paradigm level is somewhat old guard, since it carries the ambitions of logicism and automated theorem proving, but the marriage of these traditions with large language models is new and moving quickly.
+It sits at the far Language edge, because formal languages are languages, and in the lower half toward Harness: a model working in tight partnership with a proof checker, the intelligence shared between generator and verifier. Its paradigm level is Revolutionary, since it revives the ambitions of logicism and automated theorem proving that the neural mainstream set aside, and the marriage of these traditions with large language models is new and moving quickly.
 
 ## Arguments
 

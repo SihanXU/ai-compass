@@ -5,10 +5,11 @@ name:
 motto:
   en: One mind, countless bodies
   zh: 一个心智，无数身体
-level: 3
+level: 2
+point: { x: 1, y: -0.612, p: 0.868 }
 place:
-  col: 9
-  row: 11
+  col: 12
+  row: 8
 parents: [embodied-statism]
 relations:
   allies: [swarm-robotics, sensor-network-anarchism, robot-foundationism, pan-embodimentism]

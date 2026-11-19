@@ -5,7 +5,7 @@ summary: "Perception and action form one closed loop, so intelligence lies in ma
 
 Sensorimotor Doctrine denies that perception comes first and action second. To see a cup is to know how its appearance will change as you move your eyes, walk around it or reach for it; to feel an edge is to know what happens when your finger slides. Perception, in this view, is the skilful mastery of sensorimotor contingencies, and an agent that has never acted has at best a thin, borrowed kind of perception.
 
-It sits at the far World edge (col 12) at mid-height. It is maximally committed to the physical loop between body and environment, while staying open on architecture: a single visuomotor network and a layered controller can both close the loop. Its shade is fairly revolutionary because most perception research still trains on fixed datasets with no action at all. The doctrine predicts that robots trained with tight perception–action coupling will learn representations that passive vision never will.
+It sits at the far World edge, a little above mid-height. It is maximally committed to the physical loop between body and environment, while staying open on architecture: a single visuomotor network and a layered controller can both close the loop. Its shade is Ultra-Revolutionary because most perception research still trains on fixed datasets with no action at all. The doctrine predicts that robots trained with tight perception–action coupling will learn representations that passive vision never will.
 
 ## Arguments
 

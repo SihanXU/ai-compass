@@ -5,10 +5,11 @@ name:
 motto:
   en: Discretize the pixels, unify the realm
   zh: 离散化像素，统一天下
-level: 5
+level: 9
+point: { x: -0.157, y: 0.983, p: -1 }
 place:
-  col: 8
-  row: 1
+  col: 4
+  row: 0
 parents: [unified-vocabulary-centralism]
 relations:
   allies: [pixel-totalitarianism, understand-generate-unionism, video-scalism]

@@ -5,7 +5,7 @@ summary: "Video is the next internet-scale corpus, and scaling models on it will
 
 Video Scalism looks at the slowing supply of fresh human text and points at a far larger reservoir: the world's video. Hours of footage show physics, tool use, social interaction and cause and effect in a way no written description can. If text pretraining produced models that understand language, video pretraining at comparable scale should produce models that understand the visual and physical world. The recipe is the same; only the corpus changes.
 
-It sits in the upper band toward World: perception is its substance, and time is treated as a first-class dimension. The Monolith lean comes from its scaling faith in a single large model trained on a giant corpus. Its paradigm score leans revolutionary. Video at that scale strains storage, tokenization and compute, and the payoff is still a forecast rather than an accounting entry.
+It sits near the top, well toward World: perception is its substance, and time is treated as a first-class dimension. The Monolith lean comes from its scaling faith in a single large model trained on a giant corpus. Its paradigm level is Ultra-Orthodox: it keeps today's scaling recipe intact and only swaps the corpus. Video at that scale strains storage, tokenization and compute, and the payoff is still a forecast rather than an accounting entry.
 
 ## Arguments
 

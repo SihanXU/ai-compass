@@ -5,7 +5,7 @@ summary: "Argues models should predict abstract representations of missing or fu
 
 Latent-Prediction Doctrine starts from a simple complaint: the world is full of details that cannot and need not be predicted, like the exact pattern of leaves or the grain of a carpet. A model forced to reconstruct every pixel spends its capacity on noise. Instead, encode both the context and the target into a representation space and train a predictor to map one to the other there. The model learns what is predictable, ignores what is not, and ends up with an abstract world model suitable for planning.
 
-It sits toward the World end and high on the Monolith side: the goal is one joint-embedding architecture that learns from video and sensors the way an animal does, then plans with it. Its paradigm level is near the revolutionary edge. It openly rejects both autoregressive token generation and pixel-level generative modeling as the road to general intelligence, which puts it at odds with most of the current mainstream.
+It sits near the World edge and in the upper half, toward Monolith: the goal is one joint-embedding architecture that learns from video and sensors the way an animal does, then plans with it. Its paradigm level is Beyond Revolutionary, the far Paradigm-shift end. It openly rejects both autoregressive token generation and pixel-level generative modeling as the road to general intelligence, which puts it at odds with most of the current mainstream.
 
 ## Arguments
 

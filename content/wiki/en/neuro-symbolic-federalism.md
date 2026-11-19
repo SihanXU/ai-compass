@@ -5,7 +5,7 @@ summary: "Neural networks should handle perception and pattern recognition while
 
 Neuro-Symbolic Federalism proposes a division of powers. Neural networks are unmatched at turning messy sensory input into useful representations, but they reason unreliably, generalize poorly outside their training distribution, and cannot explain themselves. Symbolic systems (logic, programs, search, theorem provers) reason exactly and transparently but cannot perceive. So let each govern its own province: networks parse scenes, text and intuitions into symbols, and symbolic engines manipulate those symbols with guarantees.
 
-It sits right of center, because the canonical use case is grounding symbols in perception of the world (scenes, objects, geometry), and deep in the Harness half because the architecture is explicitly a federation of heterogeneous components. Its shade leans old guard: it is a respectable continuation of long-standing hybrid AI, more reconciliation than revolution.
+It sits left of center, because the symbols it reasons over are named and language-like even when grounded in perception of the world (scenes, objects, geometry), and at the very bottom, the Harness end, because the architecture is explicitly a federation of heterogeneous components. Its shade is Revolutionary: it revives the long tradition of symbolic and hybrid AI that the neural mainstream set aside, more reconciliation than rupture in tone, but a clear break with today's recipe.
 
 ## Arguments
 

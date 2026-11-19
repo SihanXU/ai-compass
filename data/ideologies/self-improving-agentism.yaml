@@ -5,10 +5,11 @@ name:
 motto:
   en: Agents rewrite their own harness
   zh: 代理改写自己的 harness
-level: 2
+level: 5
+point: { x: -0.634, y: -0.841, p: -0.063 }
 place:
   col: 3
-  row: 9
+  row: 8
 parents: [harness-liberalism]
 relations:
   allies: [recursive-self-improvementism, open-endedness, coding-agent-syndicalism, evolutionary-federalism]

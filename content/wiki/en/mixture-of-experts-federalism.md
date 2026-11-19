@@ -5,7 +5,7 @@ summary: "Models should be federations of specialized expert subnetworks, with a
 
 Mixture-of-Experts Federalism believes in specialization under a shared constitution. Instead of every parameter working on every token, a learned router sends each token to a small number of expert subnetworks. The model can then hold far more total parameters, and far more knowledge, while each forward pass costs only a fraction of that. Experts are the states; the router is the federal government; load-balancing losses are the laws that stop any one state from hogging all the traffic.
 
-It sits at the horizontal center-left (col 5) and toward Harness (row 7), an interesting position: an MoE is trained end to end as one model, yet internally it is a federation of parts with routing, the kind of modular structure that harness thinking prizes. Its neutral shade reflects that sparse experts are now mainstream at the frontier, a decades-old idea that found its moment when scaling made compute efficiency urgent.
+It sits at the very top of the chart, near the Language edge: an MoE is trained end to end as one model, and its internal federation of routed experts serves scale rather than replacing it, so the modularity never leaves the weights. Its Orthodox shade reflects that sparse experts are now standard at the frontier, a decades-old idea that found its moment when scaling made compute efficiency urgent.
 
 ## Arguments
 

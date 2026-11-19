@@ -5,7 +5,7 @@ summary: "Every capability should be exposed as a typed API, with the model acti
 
 Function-Call Federalism takes tool use and adds a constitution: schemas. Each capability, whether a database, a payment service, an image generator or another model, is a sovereign state with its own typed interface; the language model is the federal government that routes requests and composes results, but never reaches inside. Structured JSON arguments, validated outputs and clear contracts keep the union orderly, and new states can join simply by publishing a schema.
 
-It sits on the Language side (col 4), just left of center, and toward Harness (row 7): the model speaks in structured text and the work is done by a federation of services. Its neutral shade reflects that function calling is standard infrastructure now. Where tool-use liberals celebrate the model's freedom to use tools, federalists care about the rules that make that freedom safe and composable: typed parameters, permissions and predictable failure.
+It sits on the Language side, left of centre, and in the Harness half: the model speaks in structured text and the work is done by a federation of services. Its steady shade reflects that function calling is standard infrastructure now. Where tool-use liberals celebrate the model's freedom to use tools, federalists care about the rules that make that freedom safe and composable: typed parameters, permissions and predictable failure.
 
 ## Arguments
 

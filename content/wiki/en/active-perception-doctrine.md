@@ -5,7 +5,7 @@ summary: "Seeing is something an agent does, choosing where to look and how to m
 
 Active-Perception Doctrine rejects the idea of vision as a function applied to a fixed photograph. Real perceivers move their eyes, heads, hands and bodies to get the view they need: they peek around occluders, turn objects over, zoom in on the ambiguous bit and ignore the rest. Perception is therefore a control problem, with gaze, viewpoint and sensing as actions chosen to reduce uncertainty about the task at hand.
 
-It sits on the World side (col 10) at mid-height. It is firmly about physical perception, but it is not committed to one giant model: a learned gaze policy, a next-best-view planner or an attention module inside a larger system all count. Its shade is fairly revolutionary, not because the idea is new (it is decades old) but because mainstream vision, trained on static internet images, still largely ignores it. The doctrine is waiting for robotics and video to make the old idea unavoidable.
+It sits well toward the World side, a little above the middle. It is firmly about physical perception, but it is not committed to one giant model: a learned gaze policy, a next-best-view planner or an attention module inside a larger system all count. Its shade is ultra-revolutionary, not because the idea is new (it is decades old) but because mainstream vision, trained on static internet images, still largely ignores it. The doctrine is waiting for robotics and video to make the old idea unavoidable.
 
 ## Arguments
 

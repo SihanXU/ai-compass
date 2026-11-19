@@ -5,7 +5,7 @@ summary: "Run models on your own hardware with weights you control, and share qu
 
 Local-Model Mutualism is the home-lab movement of AI. Its members run language models on consumer GPUs, laptops and small servers, with weights downloaded and kept on their own disks. They care about privacy (nothing leaves the machine), permanence (no model silently changed or retired by a provider), cost and tinkering freedom. The "mutualism" is the culture of mutual aid around it: people publish quantized checkpoints, inference engines, prompt templates, benchmarks for hardware setups and fixes for each other's problems.
 
-It sits on the Language side, because the community centers on text models and chat, and low in the Harness half, because the local stack (inference server, front end, retrieval, tools) is assembled by users from interoperable pieces rather than delivered as one service. Its paradigm level is neutral: it is more about who controls the model than about how intelligence works.
+It sits near the Language edge, because the community centers on text models and chat, and around the middle of the vertical axis, just on the Monolith side: the local stack (inference server, front end, retrieval, tools) is assembled by users from interoperable pieces, but everything revolves around one downloaded model. Its paradigm level is Mainstream: it runs today's standard models and is more about who controls the model than about how intelligence works.
 
 ## Arguments
 

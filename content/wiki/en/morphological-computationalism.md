@@ -5,7 +5,7 @@ summary: "A well-designed body does much of the computing itself, so intelligenc
 
 Morphological Computationalism argues that the brain is not the only computer in a robot. A passive walker strolls down a slope with no controller at all; a soft gripper conforms to an egg without a grasp planner; a whisker's stiffness already filters the signal before any neuron sees it. Choosing the right shape, compliance and material turns hard control problems into easy ones, and sometimes into no problem at all. Intelligence, on this view, is distributed between body, brain and environment, and the cheapest computation is the one physics does for free.
 
-It sits at the far World edge (col 12) and at mid-height. It is maximally physical, but it is neither a giant end-to-end policy nor an agent harness: it is about co-design, which puts it in the middle of the vertical axis. Its shade is fairly revolutionary because mainstream robot learning still treats the body as a fixed given and pours all the cleverness into the network.
+It sits at the far World edge and low toward the Harness end. It is maximally physical, but it is not a giant end-to-end policy: it is about co-design, with intelligence spread across body, controller and environment, which pulls it down the vertical axis. Its shade is Beyond Revolutionary because mainstream robot learning still treats the body as a fixed given and pours all the cleverness into the network.
 
 ## Arguments
 

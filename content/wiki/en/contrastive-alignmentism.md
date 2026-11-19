@@ -5,7 +5,7 @@ summary: "Holds that every modality should be mapped into one shared embedding s
 
 Contrastive Alignmentism is the diplomat of the chart. Text, images, audio, depth, motion: each speaks its own language, but all can be made to meet in one common embedding space. The method is elegant: take naturally paired data, such as an image and its alt-text, pull matching pairs together, push mismatched pairs apart, and repeat over a very large batch. The result is a space where "dog," a photo of a dog and the sound of barking land near each other, and zero-shot recognition becomes a nearest-neighbor lookup.
 
-It sits at the exact horizontal center, neither language-first nor vision-first, which is the whole point: it treats modalities as equals to be aligned. Vertically it is in the upper-middle band, a single shared space rather than a toolchain. Its paradigm level is neutral. Contrastive image-text pretraining was a breakthrough and is now standard equipment, the encoder underneath many generative and multimodal systems.
+It sits just right of the horizontal centre, neither language-first nor vision-first, which is the whole point: it treats modalities as equals to be aligned. Vertically it is in the upper-middle band, a single shared space rather than a toolchain. Its paradigm level is neutral. Contrastive image-text pretraining was a breakthrough and is now standard equipment, the encoder underneath many generative and multimodal systems.
 
 ## Arguments
 

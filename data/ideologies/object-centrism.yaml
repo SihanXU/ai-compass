@@ -5,10 +5,11 @@ name:
 motto:
   en: The world is made of objects
   zh: 世界由物体组成
-level: 4
+level: 1
+point: { x: 0.658, y: -0.559, p: 0.973 }
 place:
   col: 9
-  row: 4
+  row: 8
 parents: [visualism]
 relations:
   allies: [intuitive-physics-doctrine, physicalism, neuro-symbolic-federalism]

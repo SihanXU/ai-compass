@@ -6,9 +6,10 @@ motto:
   en: No objective function
   zh: 不要目标函数
 level: 1
+point: { x: 0.7, y: -0.657, p: 1 }
 place:
-  col: 4
-  row: 11
+  col: 10
+  row: 8
 parents: [open-endedness]
 relations:
   allies: [artificial-life-doctrine, curiosity-liberalism, paradigm-iconoclasm]

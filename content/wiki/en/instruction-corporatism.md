@@ -5,7 +5,7 @@ summary: "Holds that capability is organized and unlocked by instruction tuning,
 
 Instruction Corporatism believes in a well-ordered society of tasks. Translation, summarization, classification, code repair: each is a guild, and each guild is represented by instructions written in plain language. Pretraining supplies raw capacity, but it is instruction tuning that turns a text predictor into something that does what it is asked. Collect thousands of tasks, phrase them as instructions, mix them carefully, and a single model learns to generalize to instructions it has never seen.
 
-It sits left of center on the Language side and in the middle band of the chart: one model, but one whose behavior is shaped by a large, curated system of task formats, a structure halfway between pure scale and engineered pipeline. Its paradigm level is neutral. It was once the new idea that made zero-shot prompting practical; today it is ordinary infrastructure in nearly every post-training recipe.
+It sits near the Language edge and near the top of the chart: one model, whose behavior is shaped by a large, curated system of task formats absorbed into its weights rather than handled by an engineered pipeline. Its paradigm level is orthodox. It was once the new idea that made zero-shot prompting practical; today it is core infrastructure in nearly every post-training recipe.
 
 ## Arguments
 

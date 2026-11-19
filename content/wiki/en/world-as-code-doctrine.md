@@ -5,7 +5,7 @@ summary: "A world model should be an executable program of states and rules, wri
 
 World-as-Code Doctrine agrees that agents need world models, but disagrees about their substance. Instead of learning to predict the next frame in pixel or latent space, write the world down as code: objects with attributes, actions with preconditions and effects, rules for how state changes. Language models are now fluent programmers, so they can draft these simulators from descriptions or observations, test them against experience, and patch them when predictions fail. Code makes the world model exact where it is known, inspectable when it is wrong, and directly usable for planning and search.
 
-It sits well toward World, because the object of interest is the environment and its dynamics, and in the lower Harness half because the world model lives outside the network as an executable artifact the system maintains. Its paradigm level is progressive, positioning itself as a third way between symbolic planning and neural simulation.
+It sits just left of centre, because although the object of interest is the environment and its dynamics, that world is written as code, and in the lower Harness half because the world model lives outside the network as an executable artifact the system maintains. Its paradigm level is Revolutionary, positioning itself as a third way between symbolic planning and neural simulation.
 
 ## Arguments
 

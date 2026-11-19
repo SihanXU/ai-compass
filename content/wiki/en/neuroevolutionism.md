@@ -5,7 +5,7 @@ summary: "Evolutionary search over network weights, topologies and hyperparamete
 
 Neuroevolutionism prefers populations to gradients. Instead of nudging one network down a loss surface, it mutates many candidate networks, keeps the fittest and repeats. Because it only needs a fitness score, it can optimise non-differentiable objectives, sparse rewards, discrete architectures and even the body plans of simulated robots. It also parallelises almost perfectly: each worker evaluates its own candidate and reports back a single number.
 
-On the chart it sits near the World edge, since its natural habitat is control, locomotion and simulated environments rather than text, and low toward the Harness end, because the intelligence lives in a search process over a population plus an environment, not in one monolithic pretrained model. Its moderately revolutionary shade reflects that it is an old idea that keeps resurfacing whenever gradients stall.
+On the chart it sits near the World edge, since its natural habitat is control, locomotion and simulated environments rather than text, and just below the middle toward Harness, because the intelligence lives in a search process over a population plus an environment, not in one monolithic pretrained model. Its Beyond Revolutionary shade reflects that it would replace gradient descent itself, an old idea that keeps resurfacing whenever gradients stall.
 
 ## Arguments
 

@@ -5,7 +5,7 @@ summary: "Games are the ideal training ground for general agents: rich, cheap, s
 
 Game-Agent Doctrine holds that games are where artificial agents learn to act. A game is a world with rules, consequences, long horizons, opponents and a score, and it can be reset a million times at no cost. From board games to real-time strategy to open-world sandboxes, each step up in game complexity has demanded a new capability: search, credit assignment over long horizons, partial observability, multi-agent strategy, open-ended exploration. Mastering games is not a stunt; it is a curriculum.
 
-It sits well toward World, because games are simulated environments where agents perceive and act rather than read, and in the Harness half, because modern game agents combine models with search, skill libraries, memory and game APIs. Its paradigm level is mildly progressive: it has a long and celebrated history, but keeps finding new frontiers.
+It sits well toward World, because games are simulated environments where agents perceive and act rather than read, and in the Harness half, because modern game agents combine models with search, skill libraries, memory and game APIs. Its paradigm level is ultra-revolutionary: it has a long and celebrated history outside the language-model mainstream, and keeps finding new frontiers there.
 
 ## Arguments
 

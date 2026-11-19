@@ -5,7 +5,7 @@ summary: "Aims at a fully multimodal model that understands and generates every 
 
 Linguistic Multimodalism reverses its neighbor's priorities: multimodality is the goal, language the means. The destination is a model that reads and writes images, audio and video as fluently as text. The vehicle is the machinery that already works, autoregressive sequence modeling with a language-model backbone, extended so every modality becomes tokens in one shared stream. Language is not where thinking must happen; it is the proven training recipe that will carry all modalities along.
 
-It sits just right of the Language-World midpoint on the left half, in the upper-middle band: one model, many modalities. Its paradigm level is neutral to progressive. It borrows the confidence of the language-model era but spends it on outputs that are not words, aiming for an any-to-any system that can draw, speak and caption with the same weights.
+It sits on the Language-World midline, near the Monolith end at the top: one model, many modalities. Its paradigm level is Orthodox. It borrows the confidence of the language-model era but spends it on outputs that are not words, aiming for an any-to-any system that can draw, speak and caption with the same weights.
 
 ## Arguments
 

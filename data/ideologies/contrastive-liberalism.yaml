@@ -5,9 +5,10 @@ name:
 motto:
   en: 'Positives and negatives: a free market'
   zh: 正负样本，自由市场
-level: 5
+level: 4
+point: { x: 0.686, y: 0, p: 0.36 }
 place:
-  col: 9
+  col: 8
   row: 5
 parents: [self-supervised-liberalism]
 relations:

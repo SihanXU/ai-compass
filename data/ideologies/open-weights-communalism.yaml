@@ -5,10 +5,11 @@ name:
 motto:
   en: Weights belong to the people
   zh: 权重属于人民
-level: 4
+level: 2
+point: { x: -0.7, y: -0.811, p: 0.76 }
 place:
   col: 2
-  row: 10
+  row: 7
 parents: [open-source-maximalism]
 relations:
   allies: [fine-tune-cooperativism, local-model-mutualism, decentralized-training-doctrine, open-hardware-mutualism]

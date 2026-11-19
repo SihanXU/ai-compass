@@ -5,9 +5,10 @@ name:
 motto:
   en: Every body, one policy
   zh: 所有本体，同一个策略
-level: 3
+level: 7
+point: { x: 0.998, y: 0.958, p: -0.447 }
 place:
-  col: 12
+  col: 11
   row: 0
 parents: [robot-foundationism]
 relations:

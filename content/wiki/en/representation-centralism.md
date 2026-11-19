@@ -5,7 +5,7 @@ summary: "Holds that one general-purpose learned representation, trained once at
 
 Representation Centralism believes the real product of deep learning is not a model that does a task but an embedding space that makes every task easy. Train one excellent encoder, freeze it, and let linear probes, small heads and adapters do the rest. Classification, retrieval, segmentation, policy learning: all are just readouts from the same central bank of features. Task-specific training is seen as wasteful duplication, like every province minting its own currency.
 
-It sits slightly right of center and near the Monolith end: perceptual rather than purely linguistic, because its flagship artifacts are image and video encoders, and monolithic because the whole point is a single backbone. Its paradigm level is moderately progressive. It does not want to abolish the current order, only to make sure every downstream system pays taxes to one representation.
+It sits right of centre and in the upper half, toward the Monolith end: perceptual rather than purely linguistic, because its flagship artifacts are image and video encoders, and monolithic because the whole point is a single backbone. Its paradigm level is Steady. It does not want to abolish the current order, only to make sure every downstream system pays taxes to one representation.
 
 ## Arguments
 

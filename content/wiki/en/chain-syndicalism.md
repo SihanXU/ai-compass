@@ -5,7 +5,7 @@ summary: "Complex tasks should be broken into chains of small, specialized model
 
 Chain Syndicalism organizes language-model work like a union of specialized trades. One call extracts, the next classifies, another drafts and a final one checks; each link has a narrow prompt, a clear input and a clear output. No single call is asked to do everything, and the chain as a whole accomplishes what a monolithic prompt would fumble. The syndicalist ideal is solidarity through division of labour: small, reliable workers coordinated by a fixed structure.
 
-It sits near the Language edge (col 1) and well toward Harness (row 7): the intelligence lives partly in the decomposition, the glue code between calls. Its shade marks a somewhat established, pre-agentic school. Chains were the dominant way to build LLM applications before models became good at planning their own steps, and the newer agent camps sometimes treat them as rigid. Syndicalists reply that a predictable chain is exactly what production systems need.
+It sits just left of centre and near the Harness bottom: much of the intelligence lives in the decomposition, the glue code between calls. Its orthodox shade marks an established, pre-agentic school. Chains were the dominant way to build LLM applications before models became good at planning their own steps, and the newer agent camps sometimes treat them as rigid. Syndicalists reply that a predictable chain is exactly what production systems need.
 
 ## Arguments
 

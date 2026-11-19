@@ -5,7 +5,7 @@ summary: "Autoregression and diffusion are complementary generative principles a
 
 Diffusion-Autoregressive Syncretism refuses to pick a side in the great generative schism. Autoregressive models excel at discrete, sequential, symbolic content such as text; diffusion excels at continuous, high-dimensional content such as images and audio. Rather than forcing images into discrete tokens or forcing text through a denoiser, the syncretist builds one transformer that predicts the next token where tokens make sense and denoises continuous latents where they do not.
 
-It sits in the upper band, slightly right of center. The Monolith position reflects the insistence on one shared network rather than an LLM handing prompts to a separate diffusion model. The lean toward World reflects its respect for continuous perceptual signals, which it refuses to quantize away. Its paradigm score leans revolutionary: hybrid objectives in one backbone are recent, and the right recipe is still being explored.
+It sits at the very top of the chart, in the centre column. The Monolith position reflects the insistence on one shared network rather than an LLM handing prompts to a separate diffusion model. Its balance between Language and World reflects that it keeps language modelling while respecting continuous perceptual signals, which it refuses to quantize away. Its paradigm level is steady: hybrid objectives in one backbone extend the mainstream recipe rather than break from it, though the right mix is still being explored.
 
 ## Arguments
 

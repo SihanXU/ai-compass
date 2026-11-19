@@ -5,10 +5,11 @@ name:
 motto:
   en: No system prompt
   zh: 没有系统提示
-level: 6
+level: 5
+point: { x: -0.7, y: 0.759, p: 0 }
 place:
-  col: 0
-  row: 10
+  col: 2
+  row: 1
 parents: []
 relations:
   allies: [local-model-mutualism, open-weights-communalism, open-source-maximalism]

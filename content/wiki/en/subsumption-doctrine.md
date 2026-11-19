@@ -5,7 +5,7 @@ summary: "Intelligent behavior emerges from layered, reactive sensorimotor modul
 
 Subsumption Doctrine is the classic rebellion against "sense, model, plan, act". It builds robots from layers of simple behaviors, each wired directly from sensors to actuators: avoid obstacles, wander, explore, seek goals. Higher layers can suppress or inhibit lower ones, but every layer is a complete, working behavior on its own, so the robot functions from day one and gains competence as layers are added. There is no central world model to keep updated, because, as the motto goes, the world is its own best model.
 
-It sits near the World edge, since everything is about real-time interaction with the physical environment, and in the lower Harness half because behavior comes from an explicit architecture of interacting modules rather than one learned model. Its shade marks it as old guard: a foundational idea of behavior-based robotics, now cited more than built, but never quite refuted.
+It sits well over on the World side, since everything is about real-time interaction with the physical environment, and in the lower Harness half because behavior comes from an explicit architecture of interacting modules rather than one learned model. Its shade is Exploratory, leaning toward paradigm shift: it revives a foundational idea of behavior-based robotics, now cited more than built, but never quite refuted.
 
 ## Arguments
 

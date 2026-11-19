@@ -5,10 +5,11 @@ name:
 motto:
   en: One good representation rules everything downstream
   zh: 一个好表征统治所有下游
-level: 4
+level: 6
+point: { x: 0.66, y: 0.434, p: -0.286 }
 place:
-  col: 7
-  row: 2
+  col: 8
+  row: 3
 parents: [self-supervised-liberalism]
 relations:
   allies: [self-supervised-vision-statism, contrastive-alignmentism, latent-prediction-doctrine]

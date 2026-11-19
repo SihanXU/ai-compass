@@ -5,7 +5,7 @@ summary: "Large models can be served collaboratively across volunteers' consumer
 
 Peer-to-Peer Inference treats a large model like a file in a torrent swarm. Its layers are split across many volunteers' machines; a request hops from peer to peer, each running a slice of the network, until the output comes back. Anyone with a gaming GPU can contribute capacity, and anyone can run a model too big for their own hardware. Owning a data centre stops being the price of admission to large models.
 
-It sits at the Harness extreme, since the model only exists as a distributed system of peers, routing tables and fault-tolerance logic, and near the middle of the Language-World axis, as the approach is indifferent to what the model is for. Its moderate shade reflects that it reorganises who runs inference, not what inference is.
+It sits just below the centre line on the Harness side, since the model only exists as a distributed system of peers, routing tables and fault-tolerance logic, and far over on the Language side, since the models it shards across volunteers are in practice large language models. Its Mainstream shade reflects that it reorganises who runs inference, not what inference is.
 
 ## Arguments
 

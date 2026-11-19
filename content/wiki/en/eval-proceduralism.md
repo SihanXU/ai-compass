@@ -5,7 +5,7 @@ summary: "Progress exists only when measured by careful, reproducible evaluation
 
 Eval Proceduralism holds that a claim without a well-designed evaluation is an anecdote. Due process matters: held-out splits, contamination checks, multiple seeds, confidence intervals, clear metrics and baselines run fairly. Benchmarks are the field's courts, and like courts they need procedure to be trusted. When a capability is hard to measure, the proceduralist's answer is not to give up but to build a better test, because whatever cannot be measured will be argued about forever.
 
-It sits on the Language side (col 4) at mid-height, close to the center, since most contested benchmarks today are language tasks and since evaluation applies equally to monoliths and harnesses. Its neutral shade reflects that it is neither old nor new: evaluation is how every paradigm proves itself. It is a cousin of leaderboard centrism, but stricter; the proceduralist cares less about who is first and more about whether the ranking means anything.
+It sits on the Language side, left of centre and just above the middle, since most contested benchmarks today are language tasks and since evaluation applies equally to monoliths and harnesses. Its steady shade reflects a measured stance close to the mainstream: evaluation is how every paradigm proves itself. It is a cousin of leaderboard centrism, but stricter; the proceduralist cares less about who is first and more about whether the ranking means anything.
 
 ## Arguments
 

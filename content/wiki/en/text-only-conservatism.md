@@ -5,7 +5,7 @@ summary: "Believes text alone carries enough of human knowledge to reach strong 
 
 Text-Only Conservatism looks at the rush toward multimodality and asks a blunt question: what did the images add? Written language is humanity's compressed record of the world, already abstracted, already labeled, already arguing with itself. Physics textbooks describe gravity better than a million videos of falling apples. A model trained on enough text learns about colors, spatial layouts and cause and effect secondhand, and secondhand is often enough. Pixels are expensive, redundant and mostly about textures nobody needed.
 
-It sits near the Language end and in the upper half, aligned with one large model and the scaling program, but it refuses the multimodal expansion most of its neighbors embraced. Its paradigm level is conservative: it defends the configuration that produced the first generation of strikingly capable language models and sees no need to complicate it.
+It sits at the far Language edge and in the upper half, aligned with one large model and the scaling program, but it refuses the multimodal expansion most of its neighbors embraced. Its paradigm level is Ultra-Orthodox: it defends the configuration that produced the first generation of strikingly capable language models and sees no need to complicate it.
 
 ## Arguments
 

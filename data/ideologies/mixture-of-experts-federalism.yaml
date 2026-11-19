@@ -5,10 +5,11 @@ name:
 motto:
   en: Let the experts specialize
   zh: 让专家各司其职
-level: 5
+level: 8
+point: { x: -0.7, y: 0.774, p: -0.705 }
 place:
-  col: 5
-  row: 7
+  col: 1
+  row: 0
 parents: [scaling-law-planism]
 relations:
   allies: [scaling-law-planism, modular-multimodalism, model-market-anarchism]

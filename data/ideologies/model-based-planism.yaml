@@ -5,10 +5,11 @@ name:
 motto:
   en: Plan in imagination
   zh: 在想象中规划
-level: 4
+level: 2
+point: { x: 0.779, y: -0.125, p: 0.774 }
 place:
-  col: 11
-  row: 6
+  col: 9
+  row: 5
 parents: [world-model-vanguardism]
 relations:
   allies: [world-model-vanguardism, latent-prediction-doctrine, curiosity-liberalism]

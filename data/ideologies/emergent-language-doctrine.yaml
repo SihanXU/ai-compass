@@ -5,10 +5,11 @@ name:
 motto:
   en: Let agents invent their own language
   zh: 让代理自己发明语言
-level: 2
+level: 1
+point: { x: 0.65, y: -0.679, p: 1 }
 place:
-  col: 5
-  row: 11
+  col: 10
+  row: 9
 parents: [agent-society-socialism]
 relations:
   allies: [grounding-doctrine, developmentalism, objectiveless-anarchism]

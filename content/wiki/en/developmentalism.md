@@ -5,7 +5,7 @@ summary: "Intelligence should be grown in stages like a child, through embodied 
 
 Developmentalism takes the child, not the encyclopedia, as its model of how intelligence is acquired. Infants do not read the internet; they track objects, babble, reach, fall over and gradually build concepts of permanence, causality, number and other minds, each stage scaffolding the next. A learning system, developmentalists argue, should follow a similar trajectory: start small, interact with its world, and let competence compound through a curriculum rather than absorb everything at once.
 
-It sits on the World side (col 9) at mid-height. Development is embodied and perceptual first, and language arrives later on top, which places it firmly toward World. On the vertical axis it is neither a single scaled model nor an agent framework, but a learning process. Its shade is fairly revolutionary: the idea of a 'child machine' is old, yet it runs against the dominant recipe of pretraining on everything at once, and a working developmental AI would rewrite the training pipeline.
+It sits at the far World edge, a little below the middle. Development is embodied and perceptual first, and language arrives later on top, which places it firmly toward World. On the vertical axis it is neither a single scaled model nor an agent framework, but a learning process. Its shade is beyond revolutionary: the idea of a 'child machine' is old, yet it runs against the dominant recipe of pretraining on everything at once, and a working developmental AI would rewrite the training pipeline.
 
 ## Arguments
 

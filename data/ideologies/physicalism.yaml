@@ -5,10 +5,11 @@ name:
 motto:
   en: Physics before intelligence
   zh: 先懂物理，再谈智能
-level: 5
+level: 1
+point: { x: 0.844, y: -0.376, p: 0.941 }
 place:
   col: 11
-  row: 3
+  row: 7
 parents: [pan-embodimentism]
 relations:
   allies: [intuitive-physics-doctrine, model-based-planism, object-centrism]

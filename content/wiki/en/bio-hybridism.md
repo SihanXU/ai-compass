@@ -5,7 +5,7 @@ summary: "Living neurons grown on chips can be trained to compute, offering an e
 
 Bio-Hybridism thinks the most promising neural network is the one that is actually made of neurons. Cultured brain cells grown on multi-electrode arrays spontaneously form networks, adapt their activity to stimulation and can be closed into a loop with a simulated environment. Instead of emulating biological learning on power-hungry silicon, it proposes using the real thing, wetware that rewires itself, runs on nutrients and learns continually by its nature.
 
-It sits on the World side, since its intelligence is literally physical tissue embedded in a sensory loop, and at the Harness extreme, because a culture alone is useless without the electrodes, encoders, decoders, life support and software environment that make it a working system. It wears the most revolutionary shade on the chart: it would replace not the architecture but the material.
+It sits on the World side, since its intelligence is literally physical tissue embedded in a sensory loop, and in the upper half toward Monolith, because the culture itself is the computing substrate, one living network rather than a pipeline of parts, even though it needs electrodes, encoders, decoders and life support to run. It wears the beyond-revolutionary shade, the most extreme on the chart: it would replace not the architecture but the material.
 
 ## Arguments
 

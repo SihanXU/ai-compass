@@ -5,10 +5,11 @@ name:
 motto:
   en: Language is innate
   zh: 语言能力是天生的
-level: 9
+level: 1
+point: { x: -0.258, y: -0.891, p: 0.939 }
 place:
-  col: 0
-  row: 5
+  col: 6
+  row: 8
 parents: [logocentrism]
 relations:
   allies: [grammarian-conservatism, formal-semanticism, symbolic-restorationism]

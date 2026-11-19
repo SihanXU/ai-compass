@@ -43,7 +43,7 @@ const others = MODES.filter((m) => m !== mode);
 </Layout>
 
 <script>
-  import { score, scoreMap, scoreSubs, consistency, pickFollowUp, encodeResult } from '../../../lib/compass.js';
+  import { score, scoreMap, scoreSubs, consistency, pickFollowUp, encodeResult, toChart } from '../../../lib/compass.js';
 
   const D = JSON.parse(document.getElementById('compass-data').textContent);
   const root = document.getElementById('quiz');
@@ -126,7 +126,7 @@ const others = MODES.filter((m) => m !== mode);
     }
     if (i < seq.length - 1) { i++; save(); render(); return; }
     if (pro && seq.length < total) {
-      const next = pickFollowUp(D.questions, POOL, new Set(seq), onChart, scoreMap(D.questions, answers));
+      const next = pickFollowUp(D.questions, POOL, new Set(seq), onChart, toChart(scoreMap(D.questions, answers), D.calibration));
       if (next) {
         seq.push(next.id);
         pairs[next.id] = next.pair.map((ide) => ide.name);

@@ -5,10 +5,11 @@ name:
 motto:
   en: Models are raised by human preference
   zh: 模型由人类偏好管教长大
-level: 6
+level: 8
+point: { x: -0.676, y: 0.591, p: -0.846 }
 place:
-  col: 2
-  row: 2
+  col: 3
+  row: 3
 parents: [instruction-corporatism]
 relations:
   allies: [chat-absolutism, prompt-monarchism, eval-proceduralism]

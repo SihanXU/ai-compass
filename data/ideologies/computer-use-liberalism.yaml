@@ -5,10 +5,11 @@ name:
 motto:
   en: Mouse and keyboard are the universal API
   zh: 鼠标键盘是通用接口
-level: 4
+level: 3
+point: { x: -0.471, y: -0.136, p: 0.57 }
 place:
-  col: 7
-  row: 8
+  col: 4
+  row: 4
 parents: [visual-agent-doctrine, tool-use-liberalism]
 relations:
   allies: [gui-grounding-doctrine, multimodal-agentism, coding-agent-syndicalism]

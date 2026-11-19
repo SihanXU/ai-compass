@@ -5,7 +5,7 @@ name:
 motto:
   en: The world is itself a world model
   zh: 世界本来就是一个世界模型
-level: 2
+level: 4
 place:
   ring: tr
   when: {x: '>0.7', 'y': '>0.7'}

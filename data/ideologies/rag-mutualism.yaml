@@ -5,10 +5,11 @@ name:
 motto:
   en: Model and index help each other
   zh: 模型与知识库互助
-level: 6
+level: 7
+point: { x: -0.589, y: -0.965, p: -0.544 }
 place:
-  col: 2
-  row: 7
+  col: 4
+  row: 10
 parents: [retrieval-statism]
 relations:
   allies: [retrieval-statism, knowledge-graph-monarchism, chain-syndicalism, memory-constitutionalism]

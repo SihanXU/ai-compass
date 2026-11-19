@@ -5,10 +5,11 @@ name:
 motto:
   en: The world is built for humanoids
   zh: 世界为人形设计，故用人形
-level: 4
+level: 8
+point: { x: 0.766, y: 0.684, p: -0.684 }
 place:
-  col: 12
-  row: 1
+  col: 9
+  row: 2
 parents: [embodied-statism]
 relations:
   allies: [vla-monarchism, dexterity-doctrine, sim-scale-statism]

@@ -6,8 +6,9 @@ motto:
   en: The brain is a prediction machine
   zh: 大脑就是一台预测机器
 level: 3
+point: { x: 0.958, y: 0.671, p: 0.598 }
 place:
-  col: 9
+  col: 10
   row: 2
 parents: [neuro-inspired-visualism]
 relations:

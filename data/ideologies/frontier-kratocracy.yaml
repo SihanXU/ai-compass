@@ -5,7 +5,7 @@ name:
 motto:
   en: Capability belongs to those who can build it
   zh: 能力属于造得出它的人
-level: 6
+level: 8
 place:
   ring: right
   when: {o: <-0.6}

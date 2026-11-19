@@ -5,7 +5,7 @@ summary: "Robots prove themselves only in uncontrolled real environments; whatev
 
 Field-Robotics Libertarianism has little patience for leaderboards and lab demos. Its home is the desert, the forest, the mine, the farm and the disaster site, where lighting changes, GPS drops out, sensors get dirty and nobody can reset the episode. Its adherents are methodologically free-wheeling: classical state estimation, learned locomotion, careful mechanical design, whatever survives contact with reality. What they share is a conviction that the real world is the only benchmark that cannot be overfit.
 
-It sits at the far World edge, as embodied and physical as it gets, and low in the Harness half because field systems are integrated stacks of perception, mapping, planning and control with plenty of engineering glue. Its shade leans old guard: it values proven reliability over paradigm fashion. The "libertarian" streak is its distrust of central doctrines, simulators included.
+It sits well toward the World edge, as embodied and physical as it gets, and near the Harness end because field systems are integrated stacks of perception, mapping, planning and control with plenty of engineering glue. Its revolutionary shade reflects its distance from the mainstream: it values proven reliability over today's scale-first fashion. The "libertarian" streak is its distrust of central doctrines, simulators included.
 
 ## Arguments
 

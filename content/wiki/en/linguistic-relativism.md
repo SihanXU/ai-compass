@@ -5,7 +5,7 @@ summary: "A model can only think what its language and training corpus let it sa
 
 Linguistic Relativism holds that a model's world is exactly as large as its language. Whatever never made it into the corpus, the vocabulary or the grammar of the training data is, for the model, not merely unknown but unthinkable. The doctrine takes this seriously in both directions: a model trained mostly on one language inherits that language's categories, idioms and blind spots, and a model can gain new concepts simply by being given new words for them.
 
-It sits near the Language edge (col 1) and in the middle of the Monolith–Harness axis: it does not care whether the model is one giant network or a system, only that its medium of thought is linguistic. Its shade marks a moderately established view, the respectable middle-aged cousin of the more absolutist language camps above it. Where Logos Absolutism says language is everything, Linguistic Relativism says something subtler and more anxious: language is everything *you get*, so choose carefully.
+It sits near the Language edge and a little above the middle of the Monolith–Harness axis: it does not care whether the model is one giant network or a system, only that its medium of thought is linguistic. Its Mainstream shade marks an established view, the respectable middle-aged cousin of the more absolutist language camps above it. Where Logos Absolutism says language is everything, Linguistic Relativism says something subtler and more anxious: language is everything *you get*, so choose carefully.
 
 ## Arguments
 

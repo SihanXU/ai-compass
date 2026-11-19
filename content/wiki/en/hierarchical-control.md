@@ -5,7 +5,7 @@ summary: "Control should be layered, with slow high-level planners setting goals
 
 Hierarchical Control holds that no single loop can be both deliberate and fast. A high level reasons over long horizons and abstract goals, 'go to the kitchen, open the fridge'; a middle layer turns these into subgoals or skills; a low level runs at hundreds of hertz to keep the arm stable and the feet planted. Each layer works at its own timescale and abstraction, passing goals down and status up, much as cortex and cerebellum are often described as dividing labour.
 
-It sits on the World side (col 10) toward Harness (row 7): it is about physical action, and it is a layered system rather than one flat policy. Its neutral shade reflects that hierarchy is both an old principle in robotics and a live topic in learning, from options and feudal reinforcement learning to recent systems that put a vision-language model on top of a fast action policy. The hierarchist expects every capable robot to end up layered, whatever its marketing says.
+It sits on the World side, near the Harness end: it is about physical action, and it is a layered system rather than one flat policy. Its ultra-revolutionary shade reflects that hierarchy is an old robotics principle revived against the flat end-to-end mainstream, and a live topic in learning, from options and feudal reinforcement learning to recent systems that put a vision-language model on top of a fast action policy. The hierarchist expects every capable robot to end up layered, whatever its marketing says.
 
 ## Arguments
 

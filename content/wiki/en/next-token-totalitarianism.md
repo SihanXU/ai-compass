@@ -5,7 +5,7 @@ summary: "Predicting the next token is not a proxy for intelligence; it is the w
 
 Next-Token Totalitarianism takes the humble language-modeling loss and declares it sovereign. To predict the next token of a physics textbook well, a model must in effect learn physics; to predict the next line of a negotiation, it must model minds. Compression is understanding, and cross-entropy is the only honest exam. Planning, reasoning and world knowledge are all treated as things the loss will eventually extract, given enough data.
 
-It lives at the very top of the chart, one step right of the corner: deeply linguistic, maximally monolithic. Its paradigm score leans old-guard, which says something about how fast the field moves. A belief that once sounded audacious is now the default that everyone else has to argue against first.
+It lives in the very top-left corner of the chart: deeply linguistic, maximally monolithic. Its paradigm level is Ultra-Orthodox, which says something about how fast the field moves. A belief that once sounded audacious is now the default that everyone else has to argue against first.
 
 ## Arguments
 

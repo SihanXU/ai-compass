@@ -5,9 +5,10 @@ name:
 motto:
   en: See the world, write the program
   zh: 看到世界，写出程序
-level: 5
+level: 3
+point: { x: -0.446, y: -0.901, p: 0.48 }
 place:
-  col: 8
+  col: 4
   row: 9
 parents: [code-as-thought, neuro-symbolic-federalism]
 relations:

@@ -5,10 +5,11 @@ name:
 motto:
   en: Tokens and parameters, by five-year plan
   zh: token 与参数按五年计划配比
-level: 6
+level: 9
+point: { x: -0.545, y: 0.794, p: -1 }
 place:
-  col: 2
-  row: 1
+  col: 4
+  row: 2
 parents: [compute-statism]
 relations:
   allies: [bitter-lesson-orthodoxy, pretraining-maximalism, scale-sublimism]

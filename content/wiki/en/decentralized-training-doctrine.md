@@ -5,7 +5,7 @@ summary: "Large models can and should be trained across many loosely connected m
 
 Decentralized-Training Doctrine challenges the assumption that frontier-scale training requires a single datacenter with ultra-fast interconnect. Its adherents work on algorithms that tolerate slow, unreliable links between workers: infrequent synchronization, compressed gradients, local steps followed by occasional averaging, and fault tolerance for nodes that come and go. If these work at scale, training could be pooled from many independent clusters, labs or even volunteers, loosening the grip that compute concentration has on who gets to build large models.
 
-It sits at the middle of the Language-World axis, since the techniques are modality-agnostic, and near the bottom of the Harness axis, because the substance is the distributed system that produces the model rather than any particular architecture. Its paradigm level is progressive: it is an infrastructure revolution as much as a research agenda.
+It sits just right of the middle of the Language-World axis, since the techniques are modality-agnostic, and in the lower half toward Harness, because the substance is the distributed system that produces the model rather than any particular architecture. Its paradigm level is neutral: it trains mainstream architectures, so its revolution is in infrastructure rather than in the research paradigm.
 
 ## Arguments
 

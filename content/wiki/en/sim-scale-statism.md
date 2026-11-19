@@ -5,7 +5,7 @@ summary: "Robots should learn from massively parallel simulation, compressing ye
 
 Sim-Scale Statism answers robotics' data shortage with industrial policy. Real robots are slow, fragile and expensive; simulated robots are fast, indestructible and can be cloned by the thousand on a single GPU. Run enough parallel environments, randomize their physics and appearance aggressively, and a policy can accumulate what would be centuries of real-world experience before it ever touches hardware. The state owns the simulator, and the simulator produces the data.
 
-It sits in the upper band near the World edge, since everything it does is about physical bodies and dynamics. The Monolith lean comes from its preference for one large learned policy trained end to end in simulation, rather than hand-engineered controllers. Its paradigm score is mildly revolutionary: GPU-parallel simulation has already transformed locomotion, and the doctrine bets the same will happen for manipulation.
+It sits near the top, at the Monolith end, well over on the World side, since everything it does is about physical bodies and dynamics. The Monolith lean comes from its preference for one large learned policy trained end to end in simulation, rather than hand-engineered controllers. Its paradigm level is Exploratory, leaning mildly toward paradigm shift: GPU-parallel simulation has already transformed locomotion, and the doctrine bets the same will happen for manipulation.
 
 ## Arguments
 

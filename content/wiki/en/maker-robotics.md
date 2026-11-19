@@ -5,7 +5,7 @@ summary: "Cheap, hackable, open robot hardware in many hands will move embodied 
 
 Maker Robotics holds that the bottleneck in robot learning is not a missing algorithm but missing robots. Real-world manipulation data is scarce because arms cost as much as a car, break when you look at them, and live behind lab doors. Put a few-hundred-dollar arm, a pair of webcams and a teleoperation rig on every hobbyist's desk, and the data, the bug reports and the clever tricks start arriving from everywhere at once. Precision is negotiable; quantity, repairability and a parts list you can order online are not.
 
-On the chart it sits deep on the World side, because it insists intelligence must be learned through contact with physical things, and low on the Harness side, because a maker robot is a system of 3D-printed parts, servos, open firmware, a dataset format and a training script, glued together by a community rather than delivered as one sealed product. Its shade is neutral: it is not proposing a new paradigm, only that the existing one should be accessible to anyone with a soldering iron.
+On the chart it sits well on the World side, because it insists intelligence must be learned through contact with physical things, and a little above the middle of the vertical axis: a maker robot is a system of 3D-printed parts, servos, open firmware, a dataset format and a training script, glued together by a community, but what all of it feeds is one learned policy. Its shade is Neutral: it is not proposing a new paradigm, only that the existing one should be accessible to anyone with a soldering iron.
 
 ## Arguments
 

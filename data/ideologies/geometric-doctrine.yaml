@@ -5,10 +5,11 @@ name:
 motto:
   en: The world is 3D; so should models be
   zh: 世界是三维的，模型也该是
-level: 5
+level: 2
+point: { x: 0.582, y: -0.514, p: 0.871 }
 place:
-  col: 7
-  row: 4
+  col: 8
+  row: 7
 parents: [physicalism]
 relations:
   allies: [object-centrism, physical-law-absolutism, robot-federalism]

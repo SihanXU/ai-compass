@@ -5,10 +5,11 @@ name:
 motto:
   en: The LM is the backbone; the rest are plugins
   zh: 语言模型是主干，其余皆插件
-level: 6
+level: 9
+point: { x: -0.856, y: -0.844, p: -0.935 }
 place:
-  col: 2
-  row: 3
+  col: 0
+  row: 7
 parents: [logocentrism]
 relations:
   allies: [multimodal-linguism, function-call-federalism, modular-multimodalism]

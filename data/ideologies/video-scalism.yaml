@@ -5,9 +5,10 @@ name:
 motto:
   en: Video is the next internet corpus
   zh: 视频是下一个互联网语料
-level: 4
+level: 9
+point: { x: 0.794, y: 0.784, p: -0.894 }
 place:
-  col: 9
+  col: 10
   row: 1
 parents: [visualism]
 relations:

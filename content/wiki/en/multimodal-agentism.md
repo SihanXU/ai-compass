@@ -5,7 +5,7 @@ summary: "An agent should see, hear, speak and act across modalities, orchestrat
 
 Multimodal Agentism holds that the real world does not arrive as clean text, so an agent confined to text is confined, full stop. It wants agents that read screenshots and photos, listen to audio, talk back in speech, generate images when needed, and take actions in apps and environments. Unlike the omni-model camp, it is happy to get there by delegation: a planner model decides what needs doing and calls vision, speech, OCR, detection or generation modules as tools, stitching their outputs into a plan.
 
-It sits at the exact middle of the Language-World axis, reflecting its even-handed appetite for every modality, and in the Harness half, because multimodality is achieved by coordinating components rather than by fusing everything into one network. Its paradigm level is mildly progressive.
+It sits just left of the middle of the Language-World axis, reflecting its broad appetite for every modality with a language planner at the helm, and in the lower half toward Harness, because multimodality is achieved by coordinating components rather than by fusing everything into one network. Its paradigm level is Orthodox.
 
 ## Arguments
 

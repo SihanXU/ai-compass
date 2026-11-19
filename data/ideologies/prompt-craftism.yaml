@@ -5,9 +5,10 @@ name:
 motto:
   en: Every word is worth a fortune
   zh: 一字千金
-level: 7
+level: 8
+point: { x: -0.711, y: -0.815, p: -0.865 }
 place:
-  col: 0
+  col: 1
   row: 7
 parents: [prompt-monarchism]
 relations:

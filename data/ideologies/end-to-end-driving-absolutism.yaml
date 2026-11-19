@@ -6,9 +6,10 @@ motto:
   en: Pixels in, steering out
   zh: 像素进，方向盘出
 level: 4
+point: { x: 1, y: 0.76, p: 0.155 }
 place:
-  col: 10
-  row: 0
+  col: 12
+  row: 1
 parents: [embodied-statism]
 relations:
   allies: [vla-monarchism, world-simulator-statism, video-scalism]

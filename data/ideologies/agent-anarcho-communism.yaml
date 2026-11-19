@@ -5,10 +5,11 @@ name:
 motto:
   en: All agents share all tools
   zh: 所有代理共享所有工具
-level: 3
+level: 6
+point: { x: -0.671, y: -0.817, p: -0.275 }
 place:
-  col: 0
-  row: 11
+  col: 3
+  row: 7
 parents: [agent-anarcho-syndicalism]
 relations:
   allies: [protocol-federalism, open-source-maximalism, agent-society-socialism, swarm-collectivism]

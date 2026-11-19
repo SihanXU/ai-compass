@@ -5,7 +5,7 @@ summary: "Ring title for extreme caution scores: advanced AI poses risks severe 
 
 AI Doomerism is a ring title earned by acceleration scores below -0.6, the opposite pole of Effective Accelerationism, on the right ring outside the main axes. Its holders think interpretability research deserves more resources than capability research, that independent bodies should safety-test models before deployment, and that more agent autonomy is not automatically better. The motto "Pause. Pause now." captures the strongest form: capabilities are advancing faster than our ability to understand, evaluate and control them, and the prudent move is to stop racing.
 
-Because the title concerns speed and risk rather than method, a doomer can believe in language monoliths or embodied swarms alike; what matters is the conviction that the downside is potentially catastrophic and irreversible. Its old-guard shade is a little unfair to a camp that sees itself as forward-looking, but reflects its stance of slowing the current trajectory rather than proposing a new one.
+Because the title concerns speed and risk rather than method, a doomer can believe in language monoliths or embodied swarms alike; what matters is the conviction that the downside is potentially catastrophic and irreversible. Its orthodox shade is a little unfair to a camp that sees itself as dissenting, but reflects that it proposes no new research paradigm: it accepts the current recipe as powerful and asks only that it slow down.
 
 ## Arguments
 

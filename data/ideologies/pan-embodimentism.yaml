@@ -5,7 +5,7 @@ name:
 motto:
   en: Everything has a body
   zh: 万物皆有身
-level: 3
+level: 2
 place:
   ring: right
   when: {x: '>0.85'}

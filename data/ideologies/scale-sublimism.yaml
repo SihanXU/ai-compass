@@ -5,7 +5,7 @@ name:
 motto:
   en: Just a little bigger
   zh: 再大一点就好了
-level: 4
+level: 9
 place:
   ring: top
   when: {'y': '>0.7', p: <-0.6}

@@ -5,10 +5,11 @@ name:
 motto:
   en: One brain reigns over every robot
   zh: 一个大脑统治所有机器人
-level: 4
+level: 8
+point: { x: -0.257, y: 0.92, p: -0.671 }
 place:
-  col: 11
-  row: 0
+  col: 4
+  row: 1
 parents: [robot-foundationism]
 relations:
   allies: [robot-foundation-imperialism, end-to-end-driving-absolutism, linguistic-multimodalism]

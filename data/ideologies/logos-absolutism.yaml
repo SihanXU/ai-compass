@@ -5,9 +5,10 @@ name:
 motto:
   en: The world is one token stream, read by one model
   zh: 世界是一串 token，模型只需一个
-level: 5
+level: 8
+point: { x: -0.466, y: 1, p: -0.639 }
 place:
-  col: 0
+  col: 3
   row: 0
 parents: [logocentrism]
 relations:

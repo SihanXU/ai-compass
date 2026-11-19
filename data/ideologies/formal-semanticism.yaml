@@ -5,10 +5,11 @@ name:
 motto:
   en: Meaning can be written in logic
   zh: 意义可以用逻辑写出来
-level: 8
+level: 1
+point: { x: -0.689, y: -0.838, p: 0.904 }
 place:
-  col: 0
-  row: 6
+  col: 1
+  row: 8
 parents: [symbolic-restorationism]
 relations:
   allies: [grammarian-conservatism, knowledge-graph-monarchism, math-formalism, innatism]

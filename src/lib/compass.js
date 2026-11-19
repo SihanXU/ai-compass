@@ -3,7 +3,7 @@
 // Coordinates: every score is in [-1, 1].
 //   x: Language (-1) … World (+1)          — chart columns, left to right
 //   y: Harness (-1) … Monolith (+1)        — chart rows, bottom to top
-//   p: Old guard (-1) … Revolution (+1)    — cell shade (paradigm level 9 … 1)
+//   p: Mainstream (-1) … Paradigm shift (+1) — cell shade (paradigm level 9 … 1)
 //   o: Frontier (-1) … Open (+1)           — ring titles only
 //   a: Caution (-1) … Acceleration (+1)    — ring titles only
 
@@ -55,8 +55,9 @@ export function ideologyColour(ide) {
   return colour(family(g.c, g.r < 0 ? 0 : g.r >= ROWS ? ROWS - 1 : g.r), ide.level);
 }
 
-/** The point on the chart an ideology stands for. */
+/** The point an ideology stands for: its calibrated point when it has one, else the centre of its cell. */
 export function pointOf(ide) {
+  if (ide.point) return { x: ide.point.x, y: ide.point.y, p: ide.point.p };
   const g = gridOf(ide.place);
   if (g.kind === 'center') return { x: 0, y: 0, p: levelP(ide.level) };
   return { x: Math.max(-1, Math.min(1, colX(g.c))), y: Math.max(-1, Math.min(1, rowY(g.r))), p: levelP(ide.level) };
@@ -89,6 +90,11 @@ export function score(questions, ids, answers) {
  * pw weighs the paradigm axis: one level of mismatch costs as much as sqrt(pw) cells.
  */
 export function distance(ide, s, pw) {
+  // calibrated ideologies are matched at the point their own answers put them, not at the cell they are drawn in
+  if (ide.point) {
+    const u = (s.x - ide.point.x) / CW, v = (s.y - ide.point.y) / CH, w = (s.p - ide.point.p) / 0.25;
+    return u * u + v * v + pw * w * w;
+  }
   const g = gridOf(ide.place);
   let u, v;
   if (g.kind === 'center') {
@@ -229,4 +235,18 @@ export function pickFollowUp(questions, pool, asked, ideologies, s) {
     if (!best || total > best.total) best = { id, total, pair: bestPair };
   }
   return best && best.total > 0 ? { id: best.id, pair: best.pair } : null;
+}
+
+// ---------------------------------------------------------------- calibration
+/**
+ * Raw scores are compressed toward 0 (people rarely answer every statement at the extreme). data/calibration.yaml
+ * holds one stretch factor per chart axis, fitted so that the ideologies' own blind answers fill the chart;
+ * every score is stretched the same way before it is placed, so a person and an ideology with the same answers
+ * land on the same cell. o and a are not stretched.
+ */
+export function toChart(s, cal) {
+  if (!cal || !cal.scale) return s;
+  const out = { ...s };
+  for (const k of ['x', 'y', 'p']) if (cal.scale[k]) out[k] = Math.max(-1, Math.min(1, s[k] * cal.scale[k]));
+  return out;
 }

@@ -5,7 +5,7 @@ summary: "Better answers come from several model instances proposing, debating, 
 
 Multi-Agent Parliamentarism believes in deliberative democracy for language models. Instead of trusting one sample, convene several agents (or several copies of one), let each propose an answer, have them read and challenge each other's reasoning over a few rounds, and settle by vote or by a judge. Errors that one instance makes confidently are, the hope goes, caught by another; consensus filters noise, and adversarial debate exposes weak arguments.
 
-It sits at the Language edge, since the entire process is conducted in natural-language argument, and in the lower Harness region, since the intelligence lives in the protocol of interaction rather than in a single forward pass. Its paradigm level is neutral: debate and voting are old ideas from both human institutions and ensemble learning, newly applied to LLMs.
+It sits at the Language edge, since the entire process is conducted in natural-language argument, and near the bottom toward the Harness end, since the intelligence lives in the protocol of interaction rather than in a single forward pass. Its paradigm level is Neutral: debate and voting are old ideas from both human institutions and ensemble learning, newly applied to LLMs.
 
 ## Arguments
 

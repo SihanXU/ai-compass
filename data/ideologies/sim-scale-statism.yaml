@@ -6,8 +6,9 @@ motto:
   en: A hundred million years in simulation
   zh: 在仿真里跑一亿年
 level: 4
+point: { x: 0.729, y: 0.731, p: 0.299 }
 place:
-  col: 11
+  col: 9
   row: 1
 parents: [sim-to-real-pragmatism]
 relations:

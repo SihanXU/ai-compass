@@ -1,5 +1,5 @@
 # quick and full share `version`; the pro test has its own. Bump the version when its statements change.
-version: 1
+version: 2
 quick:
   questions:
     - x1
@@ -65,7 +65,7 @@ full:
     - a8
     - p10
 pro:
-  version: 1
+  version: 2
   questions:
     - x1
     - y1

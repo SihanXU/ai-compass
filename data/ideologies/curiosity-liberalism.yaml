@@ -5,10 +5,11 @@ name:
 motto:
   en: Intrinsic motivation drives exploration
   zh: 内在动机驱动探索
-level: 3
+level: 2
+point: { x: 0.651, y: 0.609, p: 0.864 }
 place:
-  col: 10
-  row: 6
+  col: 7
+  row: 3
 parents: [open-endedness]
 relations:
   allies: [developmentalism, active-perception-doctrine, game-agent-doctrine, model-based-planism]

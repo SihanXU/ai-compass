@@ -5,9 +5,10 @@ name:
 motto:
   en: Populations beat individuals
   zh: 种群胜过个体
-level: 3
+level: 2
+point: { x: -0.292, y: -0.893, p: 0.651 }
 place:
-  col: 5
+  col: 6
   row: 9
 parents: [neuroevolutionism]
 relations:

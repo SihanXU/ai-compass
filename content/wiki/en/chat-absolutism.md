@@ -5,7 +5,7 @@ summary: "The chat box is the one true interface to AI, and every capability sho
 
 Chat Absolutism holds that the conversational turn is the atomic unit of human-AI interaction. User types, model replies, repeat. Search, writing, coding, tutoring, analysis and customer service all reduce to a dialogue, and anything that cannot be expressed as one is either a niche or a design failure. Dashboards, buttons and autonomous background agents are distractions from the purest interface ever invented: a text field and a send button.
 
-It sits in the upper-left of the chart: language-first because dialogue is made of words, and Monolith-leaning because the doctrine centers one model answering one conversation rather than a system of agents working on its own. Its paradigm score leans old guard. The chat interface defined the first wave of mass-market language models, and the next wave is increasingly measured by how far it moves beyond it.
+It sits left of centre in the upper half of the chart: language-first because dialogue is made of words, and Monolith-leaning because the doctrine centers one model answering one conversation rather than a system of agents working on its own. Its paradigm level is orthodox. The chat interface defined the first wave of mass-market language models, and the next wave is increasingly measured by how far it moves beyond it.
 
 ## Arguments
 

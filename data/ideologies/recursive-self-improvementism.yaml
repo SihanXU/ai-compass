@@ -5,10 +5,11 @@ name:
 motto:
   en: Agents build better agents
   zh: 代理造出更好的代理
-level: 1
+level: 2
+point: { x: -0.662, y: -0.871, p: 0.801 }
 place:
-  col: 3
-  row: 11
+  col: 2
+  row: 9
 parents: [self-improving-agentism]
 relations:
   allies: [effective-accelerationism, autonomous-agent-anarchism, open-endedness]

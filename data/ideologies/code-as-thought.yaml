@@ -6,9 +6,10 @@ motto:
   en: The best language of reasoning is code
   zh: 最好的推理语言是代码
 level: 5
+point: { x: -0.938, y: -0.917, p: -0.106 }
 place:
-  col: 4
-  row: 4
+  col: 0
+  row: 9
 parents: [tool-use-liberalism]
 relations:
   allies: [program-synthesis-doctrine, coding-agent-syndicalism, world-as-code-doctrine]

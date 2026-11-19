@@ -5,7 +5,7 @@ summary: "Insists that learned models must respect known physical laws, built in
 
 Physical-Law Absolutism has seen one too many generated videos where a glass passes through a table and a ball accelerates for no reason. Its answer is non-negotiable: conservation of energy, momentum and mass are not suggestions to be learned approximately from enough footage. They are laws, and the model should obey them by construction. Put the differential equations in the loss, bake symmetries into the architecture, parameterize dynamics through Hamiltonians or Lagrangians, and the model will generalize where pure data fitting fails.
 
-It sits far toward the World end, since physics is its whole subject, and close to the Monolith because it wants one model whose structure guarantees lawful behavior rather than a checker bolted on afterward. Its paradigm level is neutral: it is neither a new revolution nor the old guard, but a long scientific-computing tradition insisting on its place in the deep learning era.
+It sits in the middle of the Language-World axis, since its laws are written in equations and symbols as much as they are observed in the world, and in the upper half toward the Monolith because it wants one model whose structure guarantees lawful behavior rather than a checker bolted on afterward. Its paradigm level is Ultra-Revolutionary: it revives a long scientific-computing tradition of hard physical structure and rejects the mainstream bet that scale alone will teach models physics.
 
 ## Arguments
 

@@ -78,6 +78,12 @@ for (const i of ideologies) {
   }
 }
 
+// merged ideologies: the old id must be gone and the one it redirects to must exist
+for (const [from, to] of Object.entries(read('data/merged.yaml') || {})) {
+  if (ids.has(from)) err('data/merged.yaml', `"${from}" still exists, so it cannot redirect`);
+  if (!ids.has(to)) err('data/merged.yaml', `${from}: no ideology "${to}"`);
+}
+
 // ---------------------------------------------------------------- wiki prose
 const HEADINGS = { en: ['Beliefs', 'Arguments', 'Critiques'], zh: ['主张', '论据', '批评'] };
 for (const lang of ['en', 'zh']) {

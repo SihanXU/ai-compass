@@ -1,0 +1,6 @@
+# Ideologies that were merged into another one. Their old wiki addresses keep working:
+# each one redirects to the ideology it was merged into (old id: surviving id).
+agent-anarcho-communism: agent-anarcho-syndicalism
+program-synthesis-doctrine: world-as-code-doctrine
+chain-syndicalism: workflow-bureaucratism
+contrastive-liberalism: contrastive-alignmentism

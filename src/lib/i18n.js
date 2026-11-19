@@ -133,6 +133,8 @@ const S = {
   shareClose: ['Close', '关闭'],
   shareOn: ['Share on', '分享到'],
   shareCardResult: ['My result', '我的结果'],
+  comments: ['Comments', '锐评'],
+  commentsDek: ['Agree, object, roast. Sign in with GitHub to join in.', '赞同、反驳、开喷都行。用 GitHub 账号登录即可参与。'],
   testsTitle: ['Choose a test', '选择测试'],
   testsDek: ['Three versions of the same compass. Start quick, or go all the way.', '同一张图谱的三个版本。可以先做简单版，也可以一步到位。'],
   tryPro: ['Take the pro test', '去做专业版'],

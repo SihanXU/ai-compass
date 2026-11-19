@@ -56,3 +56,7 @@ Ideologies are not placed by hand. Each one has a file in `data/calibration/pers
 4. sets each paradigm level from the paradigm score, and saves each ideology's point. People are matched against these points; the cell only decides where an ideology is drawn.
 
 Run `node scripts/calibrate.mjs --dry` first to see what would move. When you add an ideology, add its persona answers. When statements change, all persona answers must be redone, then recalibrate and update the position sentences in the wiki entries that moved.
+
+## Comments
+
+Each wiki entry has a comment thread (giscus): one GitHub Discussion per ideology, in the "Announcements" category, titled `wiki/<id>` and shared by the English and Chinese pages. Moderate there: hide, delete, lock or block as on any discussion.

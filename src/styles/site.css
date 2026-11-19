@@ -406,3 +406,7 @@ dialog.share::backdrop { background: rgba(10, 12, 16, 0.55); }
     .share-body { grid-template-columns: 1fr; }
     .share-preview img { max-height: 45vh; }
 }
+
+/* comments (giscus) */
+.giscus-box { margin: 0.5rem 0 1rem; min-height: 120px; }
+.giscus-box .giscus, .giscus-box .giscus-frame { width: 100%; }
